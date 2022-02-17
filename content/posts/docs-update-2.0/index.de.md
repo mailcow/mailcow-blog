@@ -4,9 +4,6 @@ date: 2022-02-04T14:53:25+01:00
 draft: false
 author: "Niklas Meyer"
 description: "Dieser Artikel enthält alle Informationen über das neue Docs Update 2.0"
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
   
 categories: ["Dokumentation", "Updates"]
 tags: ["2022", "Doku"]

@@ -11,7 +11,7 @@ theme = "LoveIt"
 [params]
   # LoveIt theme version
   version = "0.2.X"
-  description = "Because 🐄 + 🐋 = 💖"
+  description = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕 | Official Blog Page"
   # site keywords
   keywords = ["mailcow", "Docker", "Postfix", "Dovecot", "GitHub", "tinc", "E-Mail", "SOGo"]
   defaultTheme = "auto"
@@ -210,7 +210,7 @@ theme = "LoveIt"
       [[languages.en.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
-        post = "Support"
+        post = " Support"
         name = ""
         url = "https://www.servercow.de/mailcow?lang=en#support"
         title = "Buy Support"
@@ -264,7 +264,7 @@ theme = "LoveIt"
       [[languages.de.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
-        post = "Support"
+        post = " Support"
         name = ""
         url = "https://www.servercow.de/mailcow#support"
         title = "Support erhalten"
@@ -279,7 +279,7 @@ theme = "LoveIt"
         weight = 6		
 	[languages.de.params]
       # site description
-      description = "Weil 🐮 + 🐋 = 💕 ist!"
+      description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕"
 	  dateFormat = "02.01.2006"
         [languages.de.params.home.profile]
           enable = true

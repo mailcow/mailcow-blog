@@ -2,7 +2,7 @@
     <channel>
         <title>mailcow: dockerized - Blog</title>
         <link>http://news.mailcow.email/</link>
-        <description>Because 🐄 &#43; 🐋 = 💖</description>
+        <description>The mailserver suite with the &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Official Blog Page</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
             <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate>
             <atom:link href="http://news.mailcow.email/index.xml" rel="self" type="application/rss+xml" />
