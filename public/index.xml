@@ -1,0 +1,114 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/</link>
+        <description>Because 🐄 &#43; 🐋 = 💖</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate>
+            <atom:link href="http://news.mailcow.email/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title>
+    <link>http://news.mailcow.email/posts/docs-update-2.0/</link>
+    <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/docs-update-2.0/</guid>
+    <description><![CDATA[Moohoo everyone! It&rsquo;s Friday then Then Saturday, Sunday (what?)
+We have an exciting news to share with you!
+We present you the newly released mailcow: dockerized Docs 2.0!
+Not much may have changed at first glance (you would think) but under the hood a lot has changed!
+So we present you from today:
+ Multi-language support (English and German are supported and updated by Servercow itself ) Light-/Darkmode New organized structure (interesting for contributors)  All in all a remake of the existing docs.]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-01a/</link>
+    <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-01a/</guid>
+    <description><![CDATA[Moohoo everyone.
+Today we are releasing the first hotfix for the 2022-01 Update.
+This has changed:
+ Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
+</item><item>
+    <title>Is it a 🐦? Is it a ✈️? No it&#39;s the mailcow on Twitter!</title>
+    <link>http://news.mailcow.email/posts/mailcow-twitter/</link>
+    <pubDate>Mon, 24 Jan 2022 12:33:09 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/mailcow-twitter/</guid>
+    <description><![CDATA[Moohoo everyone!
+Our dear mailcow has taken the plunge into social media: Twitter!
+There she will provide you with new release information or small hints about possible new features as well as general information about the mailcow project.
+Of course you can also tweet about your experiences with mailcow. Just use the Twitter handle: @mailcow_email.
+We look forward to getting in touch with you there and keeping you up to date.]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-01/</link>
+    <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-01/</guid>
+    <description><![CDATA[Moohoo everyone, Niklas here with the latest changelog for our beloved mailcow email software!
+This month there is a big chunk of changes, some of them even very important regarding 2FA, but more about that later.
+First of all we would like to thank you for your loyalty and cooperation, because without you the mailcow project wouldn&rsquo;t be where it is now ❤️
+We would also like to apologize for the fact that we are only now releasing a new update (master branch release), because some of the fixes included in this update (SOGo e.]]></description>
+</item><item>
+    <title>⚠️ Important informations about log4j exploit ⚠️</title>
+    <link>http://news.mailcow.email/posts/log4j-dec2022/</link>
+    <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/log4j-dec2022/</guid>
+    <description><![CDATA[Moohoo everyone! Due to the recent accidents regarding the Java library log4j we would like to inform you, that your mailcow is NOT affected directly by this.
+Yes, it is true, that the Solr Container is a Java application which is affected by the log4j security breach. BUT solr is NOT accessible from the outside of the mailcow stack!
+For those who are worried we released a Solr Hotfix which is fixing the log4j issue with the simple flag +EXTRA_ARGS+=('-Dlog4j2.]]></description>
+</item><item>
+    <title>🐄 Moovember 2021 - Patchnotes</title>
+    <link>http://news.mailcow.email/posts/moovember2021/</link>
+    <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/moovember2021/</guid>
+    <description><![CDATA[Moohoo everyone!
+Niklas here to present you the latest news around our lovely mailcow :)
+Let&rsquo;s get started, shall we?
+ Major changes from November 2021 for the mailcow stack:  SOGo update to 5.3.0 Dovecot update to 2.3.17 ClamAV update to 0.103.4 [Web] Auto-generated app passwords for Apple configuration profiles  Please consider updating your mailcow stack to ensure a stable environment.
+ All changes from November 2021 for the mailcow stack (newest to oldest): 30th November 2021:]]></description>
+</item><item>
+    <title>🐄 Mooctober 2021 - the feldsam edition</title>
+    <link>http://news.mailcow.email/posts/mooctober2021/</link>
+    <pubDate>Mon, 18 Oct 2021 21:55:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/mooctober2021/</guid>
+    <description><![CDATA[A big thanks to Kristian Feldsam for integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
+Furthermore we introduce our new cold standby solution.
+With this new script you are able to create a fully working, 1:1, consistent copy of your running mailcow without downtime.
+Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up -d&rdquo;.]]></description>
+</item><item>
+    <title>more, moore, moooore</title>
+    <link>http://news.mailcow.email/posts/moore_october21/</link>
+    <pubDate>Fri, 01 Oct 2021 21:55:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/moore_october21/</guid>
+    <description><![CDATA[Girls, guys and cows,
+Development is not stuck, we just have trouble handling many requests of new customers. Combined with cases of illness, vacation and the usual business we are really under stress.
+We are also reworking the design a bit, that&rsquo;s a WIP and will take a while. The first new prints will probably be seen on our new cars @ tinc. We are very excited! There are also plans for a mailcow.]]></description>
+</item><item>
+    <title>From Peru with moo!</title>
+    <link>http://news.mailcow.email/posts/xubium_recommend/</link>
+    <pubDate>Wed, 29 Sep 2021 20:13:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/xubium_recommend/</guid>
+    <description><![CDATA[Dear cows,
+For organizations in Spanish-speaking countries I would recommend you check out Xubium.
+
+They are a Latin-American company with expertise in mailcow that works with our infrastructure and support to provide a fully managed email service to medium and small businesses.
+Xubium is an amazing company to work with, it has our recommendation by all means.]]></description>
+</item><item>
+    <title>mailcows updated between 25th August and 2nd September 2021 should be updated again</title>
+    <link>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</link>
+    <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</guid>
+    <description><![CDATA[Hi,
+If you updated your mailcow between 25th August and 2nd September 2021 you most likely encounter a settings map memory leak in Rspamd that was fixed just now.
+Besides that, we also heavily reduced the map hammering with another change in the map generator.
+Update time!
+André]]></description>
+</item></channel>
+</rss>

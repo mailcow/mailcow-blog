@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>log4j - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/de/tags/log4j/</link>
+        <description>log4j - Tag - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/log4j/" rel="self" type="application/rss+xml" /><item>
+    <title>⚠️ Wichtige Informationen über log4j-Exploit ⚠️</title>
+    <link>http://news.mailcow.email/de/posts/log4j-dec2022/</link>
+    <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/log4j-dec2022/</guid>
+    <description><![CDATA[Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
+Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
+Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag +EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true') behebt, welches dieses Problem schließt.]]></description>
+</item></channel>
+</rss>

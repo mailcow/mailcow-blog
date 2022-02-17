@@ -1,0 +1,52 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>2022 - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/de/tags/2022/</link>
+        <description>2022 - Tag - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/2022/" rel="self" type="application/rss+xml" /><item>
+    <title>📘Neu: Die mailcow Docs sprechen jetzt auch Deutsch! 📘 - mailcow Docs 2.0 Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/docs-update-2.0/</link>
+    <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/docs-update-2.0/</guid>
+    <description><![CDATA[Moohoo alle! It&rsquo;s Friday then Then Saturday, Sunday (what?)
+Wir haben eine aufregende Neuigkeit mit euch zu teilen!
+Wir präsentieren euch die neu veröffentlichten mailcow: dockerized Docs 2.0!
+Auf den ersten Blick mag sich nicht viel geändert haben (sollte man meinen), aber unter der Haube hat sich einiges getan!
+So präsentieren wir Ihnen ab heute:
+ Mehrsprachige Unterstützung (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert) Licht-/Dunkelmodus Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)  Alles in allem eine Neuauflage der bestehenden Dokumentation.]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-01a/</link>
+    <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-01a/</guid>
+    <description><![CDATA[Moohoo an alle.
+Heute veröffentlichen wir den ersten Hotfix für das Update 2022-01.
+Das hat sich geändert:
+ Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
+</item><item>
+    <title>Ist es ein 🐦? Ist es ein ✈️? Nein, es ist die mailcow auf Twitter!</title>
+    <link>http://news.mailcow.email/de/posts/mailcow-twitter/</link>
+    <pubDate>Mon, 24 Jan 2022 12:33:09 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/mailcow-twitter/</guid>
+    <description><![CDATA[Moohoo allerseits!
+Unsere liebe mailcow hat den Sprung in die sozialen Medien gewagt: Twitter!
+Dort wird sie euch mit neuen Release-Informationen oder kleinen Hinweisen auf mögliche neue Features sowie allgemeinen Informationen über das mailcow-Projekt versorgen.
+Natürlich können Sie auch über Ihre Erfahrungen mit mailcow twittern. Benutzen Sie einfach das Twitter-Handle: @mailcow_email.
+Wir freuen uns darauf, dort mit Ihnen in Kontakt zu treten und Sie auf dem Laufenden zu halten.
+Bleibt gesund!]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-01/</link>
+    <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-01/</guid>
+    <description><![CDATA[Moohoo an alle, Niklas hier mit dem neuesten Changelog für unsere geliebte mailcow E-Mail-Software!
+Diesen Monat gibt es einen großen Brocken an Änderungen, einige davon sogar sehr wichtig in Bezug auf 2FA, aber dazu später mehr.
+Zuallererst möchten wir uns bei euch für eure Treue und Zusammenarbeit bedanken, denn ohne euch wäre das mailcow-Projekt nicht da, wo es jetzt ist ❤️.
+Wir möchten uns auch dafür entschuldigen, dass wir erst jetzt ein neues Update veröffentlichen (Master-Branch-Release), denn einige der in diesem Update enthaltenen Fehlerbehebungen (SOGo z.]]></description>
+</item></channel>
+</rss>

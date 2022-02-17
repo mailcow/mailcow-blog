@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>update - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/tags/update/</link>
+        <description>update - Tag - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/update/" rel="self" type="application/rss+xml" /><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-01a/</link>
+    <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-01a/</guid>
+    <description><![CDATA[Moohoo everyone.
+Today we are releasing the first hotfix for the 2022-01 Update.
+This has changed:
+ Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-01/</link>
+    <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-01/</guid>
+    <description><![CDATA[Moohoo everyone, Niklas here with the latest changelog for our beloved mailcow email software!
+This month there is a big chunk of changes, some of them even very important regarding 2FA, but more about that later.
+First of all we would like to thank you for your loyalty and cooperation, because without you the mailcow project wouldn&rsquo;t be where it is now ❤️
+We would also like to apologize for the fact that we are only now releasing a new update (master branch release), because some of the fixes included in this update (SOGo e.]]></description>
+</item><item>
+    <title>🐄 Moovember 2021 - Patchnotes</title>
+    <link>http://news.mailcow.email/posts/moovember2021/</link>
+    <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/moovember2021/</guid>
+    <description><![CDATA[Moohoo everyone!
+Niklas here to present you the latest news around our lovely mailcow :)
+Let&rsquo;s get started, shall we?
+ Major changes from November 2021 for the mailcow stack:  SOGo update to 5.3.0 Dovecot update to 2.3.17 ClamAV update to 0.103.4 [Web] Auto-generated app passwords for Apple configuration profiles  Please consider updating your mailcow stack to ensure a stable environment.
+ All changes from November 2021 for the mailcow stack (newest to oldest): 30th November 2021:]]></description>
+</item><item>
+    <title>🐄 Mooctober 2021 - the feldsam edition</title>
+    <link>http://news.mailcow.email/posts/mooctober2021/</link>
+    <pubDate>Mon, 18 Oct 2021 21:55:47 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/mooctober2021/</guid>
+    <description><![CDATA[A big thanks to Kristian Feldsam for integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
+Furthermore we introduce our new cold standby solution.
+With this new script you are able to create a fully working, 1:1, consistent copy of your running mailcow without downtime.
+Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up -d&rdquo;.]]></description>
+</item></channel>
+</rss>

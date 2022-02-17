@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>memoryleak - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/tags/memoryleak/</link>
+        <description>memoryleak - Tag - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/memoryleak/" rel="self" type="application/rss+xml" /><item>
+    <title>mailcows updated between 25th August and 2nd September 2021 should be updated again</title>
+    <link>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</link>
+    <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</guid>
+    <description><![CDATA[Hi,
+If you updated your mailcow between 25th August and 2nd September 2021 you most likely encounter a settings map memory leak in Rspamd that was fixed just now.
+Besides that, we also heavily reduced the map hammering with another change in the map generator.
+Update time!
+André]]></description>
+</item></channel>
+</rss>

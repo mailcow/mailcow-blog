@@ -1,0 +1,316 @@
+baseURL = "http://news.mailcow.email"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+#languageCode = "en"
+title = "mailcow: dockerized - Blog"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+[params]
+  # LoveIt theme version
+  version = "0.2.X"
+  description = "Because 🐄 + 🐋 = 💖"
+  # site keywords
+  keywords = ["mailcow", "Docker", "Postfix", "Dovecot", "GitHub", "tinc", "E-Mail", "SOGo"]
+  defaultTheme = "auto"
+  dateFormat = "01-02-2006"
+  images = ["/images/cow_mailcow.svg"]
+
+[params.search]
+  enable = false
+  type = "lunr"
+  contentLength = 4000
+  placeholder = ""
+  maxResultLength = 10
+  snippetLength = 30
+  highlightTag = "em"
+  absoluteURL = false
+  
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # LoveIt NEW | 0.2.0 Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = "/images/cow_mailcow.svg"
+      # title name
+      name = "mailcow: dockerized - Blog"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = "📰"
+      # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
+      typeit = false
+	  
+[params.footer]
+    enable = true
+    hugo = false
+    copyright = true
+    author = false
+    since = 2017
+    license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
+	custom = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy'
+
+ [params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # URL of avatar shown in home page
+      avatarURL = "/images/cow_mailcow.svg"
+      title = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕"
+      # subtitle shown in home page
+      subtitle = "News and Infos"
+      # whether to use typeit animation for subtitle
+      typeit = false
+      # whether to show social links
+      social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+	  
+  [params.social]
+    GitHub = "https://github.com/mailcow/mailcow-dockerized"
+    Twitter = "https://twitter.com/mailcow_email"
+    Email = "info@servercow.de"
+	
+  [params.social.Telegram]
+    # weight when arranging icons (the greater the weight, the later the icon is positioned)
+    weight = 0
+    # your social ID
+    id = "mailcow"
+    # prefix of your social link
+    prefix = "https://t.me/"
+    # content hovering on the icon
+    title = "Telegram (Support)"
+	
+  [params.social.Offtopic]
+    # weight when arranging icons (the greater the weight, the later the icon is positioned)
+    weight = 7
+    # your social ID
+    id = "mailcowOffTopic"
+    # prefix of your social link
+    prefix = "https://t.me/"
+    # content hovering on the icon
+    title = "Telegram (Offtopic)"	
+
+  [params.social.community]
+    # weight when arranging icons (the greater the weight, the later the icon is positioned)
+    weight = 12
+    # content hovering on the icon
+    title = "Community (Forum)"	
+	
+ [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    [params.page.toc]
+      enable = false
+      keepStatic = false
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 10
+
+[author]
+  name = "Moohoo"
+  email = "info@servercow.de"
+  link = "servercow.de"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+[languages]
+  [languages.en]
+    weight = 1
+    title = "mailcow: dockerized - Blog"
+    languageCode = "en"
+    languageName = "English"
+   [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = ""
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "Posts"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link.
+        title = ""
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Tags"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Categories"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "documentation"
+        pre = ""
+        post = ""
+        name = "Docs"
+        url = "https://mailcow.github.io/mailcow-dockerized-docs/"
+        title = ""
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "support"
+        pre = "<i class='fas fa-band-aid'></i>"
+        post = "Support"
+        name = ""
+        url = "https://www.servercow.de/mailcow?lang=en#support"
+        title = "Buy Support"
+        weight = 5
+      [[languages.en.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/mailcow/mailcow-dockerized"
+        title = "GitHub"
+        weight = 6		
+			  
+  [languages.de]
+    weight = 2
+    title = "mailcow: dockerized - Blog"
+    languageCode = "de"
+    languageName = "Deutsch"
+      [[languages.de.menu.main]]
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "Beiträge"
+        url = "/posts/"
+        title = ""
+        weight = 1
+      [[languages.de.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Tags"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.de.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Kategorien"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.de.menu.main]]
+        identifier = "documentation"
+        pre = ""
+        post = ""
+        name = "Dokumentation"
+        url = "https://mailcow.github.io/mailcow-dockerized-docs/de"
+        title = ""
+        weight = 4
+      [[languages.de.menu.main]]
+        identifier = "support"
+        pre = "<i class='fas fa-band-aid'></i>"
+        post = "Support"
+        name = ""
+        url = "https://www.servercow.de/mailcow#support"
+        title = "Support erhalten"
+        weight = 5
+      [[languages.de.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/mailcow/mailcow-dockerized"
+        title = "GitHub"
+        weight = 6		
+	[languages.de.params]
+      # site description
+      description = "Weil 🐮 + 🐋 = 💕 ist!"
+	  dateFormat = "02.01.2006"
+        [languages.de.params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "/images/cow_mailcow.svg"
+          # title shown in home page (HTML format is supported)
+          title = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕"
+          # subtitle shown in home page
+          subtitle = "Neuigkeiten und Infos"
+          # whether to use typeit animation for subtitle
+          typeit = false
+          # whether to show social links
+          social = true
+          # disclaimer (HTML format is supported)
+          disclaimer = ""
+	
+	[languages.de.params.footer]
+    enable = true
+    hugo = false
+    copyright = true
+    author = false
+    since = 2017
+    license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
+	custom = '<a href="/de/imprint/">Impressum</a> | <a href="/policy/">Datenschutz'
+	
+	[languages.de.params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false

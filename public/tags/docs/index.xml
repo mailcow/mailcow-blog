@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>docs - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/tags/docs/</link>
+        <description>docs - Tag - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/docs/" rel="self" type="application/rss+xml" /><item>
+    <title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title>
+    <link>http://news.mailcow.email/posts/docs-update-2.0/</link>
+    <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/docs-update-2.0/</guid>
+    <description><![CDATA[Moohoo everyone! It&rsquo;s Friday then Then Saturday, Sunday (what?)
+We have an exciting news to share with you!
+We present you the newly released mailcow: dockerized Docs 2.0!
+Not much may have changed at first glance (you would think) but under the hood a lot has changed!
+So we present you from today:
+ Multi-language support (English and German are supported and updated by Servercow itself ) Light-/Darkmode New organized structure (interesting for contributors)  All in all a remake of the existing docs.]]></description>
+</item></channel>
+</rss>

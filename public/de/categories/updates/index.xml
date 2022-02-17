@@ -1,0 +1,61 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Updates - Kategorie - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/de/categories/updates/</link>
+        <description>Updates - Kategorie - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/categories/updates/" rel="self" type="application/rss+xml" /><item>
+    <title>📘Neu: Die mailcow Docs sprechen jetzt auch Deutsch! 📘 - mailcow Docs 2.0 Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/docs-update-2.0/</link>
+    <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/docs-update-2.0/</guid>
+    <description><![CDATA[Moohoo alle! It&rsquo;s Friday then Then Saturday, Sunday (what?)
+Wir haben eine aufregende Neuigkeit mit euch zu teilen!
+Wir präsentieren euch die neu veröffentlichten mailcow: dockerized Docs 2.0!
+Auf den ersten Blick mag sich nicht viel geändert haben (sollte man meinen), aber unter der Haube hat sich einiges getan!
+So präsentieren wir Ihnen ab heute:
+ Mehrsprachige Unterstützung (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert) Licht-/Dunkelmodus Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)  Alles in allem eine Neuauflage der bestehenden Dokumentation.]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-01a/</link>
+    <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-01a/</guid>
+    <description><![CDATA[Moohoo an alle.
+Heute veröffentlichen wir den ersten Hotfix für das Update 2022-01.
+Das hat sich geändert:
+ Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
+</item><item>
+    <title>📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-01/</link>
+    <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-01/</guid>
+    <description><![CDATA[Moohoo an alle, Niklas hier mit dem neuesten Changelog für unsere geliebte mailcow E-Mail-Software!
+Diesen Monat gibt es einen großen Brocken an Änderungen, einige davon sogar sehr wichtig in Bezug auf 2FA, aber dazu später mehr.
+Zuallererst möchten wir uns bei euch für eure Treue und Zusammenarbeit bedanken, denn ohne euch wäre das mailcow-Projekt nicht da, wo es jetzt ist ❤️.
+Wir möchten uns auch dafür entschuldigen, dass wir erst jetzt ein neues Update veröffentlichen (Master-Branch-Release), denn einige der in diesem Update enthaltenen Fehlerbehebungen (SOGo z.]]></description>
+</item><item>
+    <title>🐄 Moovember 2021 - Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/moovember2021/</link>
+    <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/moovember2021/</guid>
+    <description><![CDATA[Moohoo allerseits!
+Niklas hier, um euch die neuesten Nachrichten rund um unsere liebe mailcow zu präsentieren :)
+Dann wollen wir mal loslegen, ja?
+ Wichtige Änderungen ab November 2021 für den mailcow Stack:  SOGo Aktualisierung auf 5.3.0 Dovecot Aktualisierung auf 2.3.17 ClamAV Aktualisierung auf 0.103.4 [Web] Automatisch generierte App-Passwörter für Apple-Konfigurationsprofile  Bitte denken Sie daran, Ihren Mailcow-Stack zu aktualisieren, um eine stabile Umgebung zu gewährleisten.
+ Alle Änderungen ab November 2021 für den mailcow-Stack (neueste bis älteste): 30.]]></description>
+</item><item>
+    <title>🐄 Mooctober 2021 - Die Feldsam Edition</title>
+    <link>http://news.mailcow.email/de/posts/mooctober2021/</link>
+    <pubDate>Mon, 18 Oct 2021 21:55:47 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/mooctober2021/</guid>
+    <description><![CDATA[Ein großes Dankeschön an Kristian Feldsam für die Integration von Twig. Wir sind näher an Bootstrap 5 als je zuvor. Das ist eine große Änderung, die wir hoffentlich bald abschließen können.
+Außerdem stellen wir unsere neue cold standby Lösung vor.
+Mit diesem neuen Skript seid ihr in der Lage, eine voll funktionsfähige, 1:1, konsistente Kopie eurer laufenden mailcow ohne Ausfallzeit zu erstellen.
+Disaster Recovery einer Mailcow ist so einfach wie das Wechseln der IPs und das Ausführen von &ldquo;up -d&rdquo;.]]></description>
+</item></channel>
+</rss>
