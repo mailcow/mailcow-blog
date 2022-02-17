@@ -32,7 +32,7 @@ theme = "LoveIt"
     # desktop header mode ("fixed", "normal", "auto")
     desktopMode = "fixed"
     # mobile header mode ("fixed", "normal", "auto")
-    mobileMode = "auto"
+    mobileMode = "fixed"
     # LoveIt NEW | 0.2.0 Header title config
     [params.header.title]
       # URL of the LOGO
