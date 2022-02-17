@@ -96,15 +96,11 @@ theme = "LoveIt"
     # content hovering on the icon
     title = "Telegram (Support)"
 	
-  [params.social.Offtopic]
+  [params.social.telegram-offtopic]
     # weight when arranging icons (the greater the weight, the later the icon is positioned)
     weight = 7
     # your social ID
     id = "mailcowOffTopic"
-    # prefix of your social link
-    prefix = "https://t.me/"
-    # content hovering on the icon
-    title = "Telegram (Offtopic)"	
 
   [params.social.community]
     # weight when arranging icons (the greater the weight, the later the icon is positioned)
