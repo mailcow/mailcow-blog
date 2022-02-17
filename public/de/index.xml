@@ -2,7 +2,7 @@
     <channel>
         <title>mailcow: dockerized - Blog</title>
         <link>http://news.mailcow.email/de/</link>
-        <description>Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕</description>
+        <description>Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
             <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate>
             <atom:link href="http://news.mailcow.email/de/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +16,8 @@
 Wir haben eine aufregende Neuigkeit mit euch zu teilen!
 Wir präsentieren euch die neu veröffentlichten mailcow: dockerized Docs 2.0!
 Auf den ersten Blick mag sich nicht viel geändert haben (sollte man meinen), aber unter der Haube hat sich einiges getan!
-So präsentieren wir Ihnen ab heute:
- Mehrsprachige Unterstützung (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert) Licht-/Dunkelmodus Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)  Alles in allem eine Neuauflage der bestehenden Dokumentation.]]></description>
+So präsentieren wir euch ab heute:
+ Übersetzungsmöglichkeiten der Dokumentation (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert) Hell-/Dunkelmodus Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)  Alles in allem eine Neuauflage der bestehenden Dokumentation.]]></description>
 </item><item>
     <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-01a/</link>

@@ -18,9 +18,9 @@ Wir präsentieren euch die neu veröffentlichten **mailcow: dockerized Docs 2.0*
 
 Auf den ersten Blick mag sich nicht viel geändert haben (sollte man meinen), aber unter der Haube hat sich einiges getan!
 
-So präsentieren wir Ihnen ab heute:
-- Mehrsprachige Unterstützung (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert)
-- Licht-/Dunkelmodus
+So präsentieren wir euch ab heute:
+- Übersetzungsmöglichkeiten der Dokumentation (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert)
+- Hell-/Dunkelmodus
 - Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)
 
 Alles in allem eine Neuauflage der bestehenden Dokumentation.
@@ -29,10 +29,10 @@ Alles in allem eine Neuauflage der bestehenden Dokumentation.
 
 Mit der Möglichkeit, die gesamten Dokumentseiten zu übersetzen, bieten wir der Community die Möglichkeit, die Doku in ihre Sprache zu übersetzen.
 
-Nähere Informationen finden Sie auf der [Dokumentationsseite](https://github.com/mailcow/mailcow-dockerized-docs).
+Nähere Informationen findet ihr auf der [Dokumentationsseite](https://github.com/mailcow/mailcow-dockerized-docs).
 
 Aufgrund der strukturellen Änderungen haben wir den bisherigen Master-Zweig auf GitHub in **legacy-1.0** Zweig umbenannt und alle PRs (die noch im alten Format existieren) geschlossen.
 
-Wenn Sie weiterhin Ihre Änderungen in die Dokumentation einfügen möchten, müssen Sie das neue Dokumentationsschema verwenden.
+Wenn ihr weiterhin eure Änderungen in die Dokumentation einfügen möchtet, müsstet ihr das neue Dokumentationsschema verwenden.
 
-P.S: *Wir freuen uns auf Ihr Feedback, da es durch die Portierung noch einige Fehler geben wird*.
+P.S: *Wir freuen uns auf euer Feedback, da es durch die Portierung noch einige Fehler geben wird*.

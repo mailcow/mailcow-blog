@@ -279,7 +279,7 @@ theme = "LoveIt"
         weight = 6		
 	[languages.de.params]
       # site description
-      description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕"
+      description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"
 	  dateFormat = "02.01.2006"
         [languages.de.params.home.profile]
           enable = true
