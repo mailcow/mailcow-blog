@@ -4,9 +4,18 @@
         <link>http://news.mailcow.email/de/</link>
         <description>Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</lastBuildDate>
             <atom:link href="http://news.mailcow.email/de/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>🐄💮 März Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-03/</link>
+    <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-03/</guid>
+    <description><![CDATA[Moohoo zusammen, der März ist da und am Ende des Monats ist dann auch wieder Frühling. Sicherlich waren die letzten Tage für euch genauso beängstigend wie für uns.
+🇺🇦 Ukraine, wir stehen hinter euch!
+Kommen wir nun zum März Update unserer mailcow. Spoiler vorab, so voll und umfangreich ist das März Update nicht aber es sind einige nette Updates im Bezug auf die Langzeit enthalten (ich schaue dich an ClamAV und Olefy!]]></description>
+</item><item>
     <title>📘Neu: Die mailcow Docs sprechen jetzt auch Deutsch! 📘 - mailcow Docs 2.0 Änderungen</title>
     <link>http://news.mailcow.email/de/posts/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
@@ -100,16 +109,5 @@ Wenn ihr eure mailcow zwischen dem 25. August und dem 2. September 2021 aktualis
 Außerdem haben wir das Map Hammering mit einer weiteren Änderung im Map Generator stark reduziert.
 Zeit für ein Update!
 André]]></description>
-</item><item>
-    <title>Wo hause ich eine mailcow?</title>
-    <link>http://news.mailcow.email/de/posts/mailcow_housing_external/</link>
-    <pubDate>Thu, 29 Jul 2021 13:03:00 &#43;0100</pubDate>
-    <author>Autor</author>
-    <guid>http://news.mailcow.email/de/posts/mailcow_housing_external/</guid>
-    <description><![CDATA[Da die Frage immer wieder aufkommt und es schwierig ist ein für den Mailserverbetrieb geeignetes ASN zu finden, kann ich heute ruhigen Gewissens Lennarts ETH-Services empfehlen.
-Lennart ist selber in der mailcow Community aktiv und kennt die Kniffe zum Betrieb eines Mailservers.
-Für einen reibungslosen Betrieb einer mailcow empfehle ich den VPS Gianfar.
-Es ist eine aufrichtige, nicht bezahlte und gut gemeinte Empfehlung.
-Zusammen mit unserem mailcow Support steht dem Betrieb nichts mehr im Weg.]]></description>
 </item></channel>
 </rss>

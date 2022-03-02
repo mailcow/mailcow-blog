@@ -4,7 +4,16 @@
         <link>http://news.mailcow.email/categories/updates/</link>
         <description>Updates - Category - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/categories/updates/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/categories/updates/" rel="self" type="application/rss+xml" /><item>
+    <title>🐄💮 Moorch Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-03/</link>
+    <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-03/</guid>
+    <description><![CDATA[Moohoo everyone, March is here and by the end of the month it will be spring again. Surely the last few days were as scary for you as they were for us.
+🇺🇦 Ukraine, we are standing with you!
+Let&rsquo;s move on to the March update of our mailcow. Spoilers ahead, the March update is not that full and extensive but there are some nice updates included in terms of long term (I&rsquo;m looking at you ClamAV and Olefy!]]></description>
+</item><item>
     <title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title>
     <link>http://news.mailcow.email/posts/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>

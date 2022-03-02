@@ -4,7 +4,16 @@
         <link>http://news.mailcow.email/posts/</link>
         <description>All Posts | mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🐄💮 Moorch Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-03/</link>
+    <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-03/</guid>
+    <description><![CDATA[Moohoo everyone, March is here and by the end of the month it will be spring again. Surely the last few days were as scary for you as they were for us.
+🇺🇦 Ukraine, we are standing with you!
+Let&rsquo;s move on to the March update of our mailcow. Spoilers ahead, the March update is not that full and extensive but there are some nice updates included in terms of long term (I&rsquo;m looking at you ClamAV and Olefy!]]></description>
+</item><item>
     <title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title>
     <link>http://news.mailcow.email/posts/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
@@ -97,16 +106,5 @@ For organizations in Spanish-speaking countries I would recommend you check out 
 
 They are a Latin-American company with expertise in mailcow that works with our infrastructure and support to provide a fully managed email service to medium and small businesses.
 Xubium is an amazing company to work with, it has our recommendation by all means.]]></description>
-</item><item>
-    <title>mailcows updated between 25th August and 2nd September 2021 should be updated again</title>
-    <link>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</link>
-    <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</guid>
-    <description><![CDATA[Hi,
-If you updated your mailcow between 25th August and 2nd September 2021 you most likely encounter a settings map memory leak in Rspamd that was fixed just now.
-Besides that, we also heavily reduced the map hammering with another change in the map generator.
-Update time!
-André]]></description>
 </item></channel>
 </rss>
