@@ -3,6 +3,7 @@ title: "📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Patchno
 date: 2022-02-01T15:28:32+01:00
 draft: false
 author: Niklas Meyer
+authorLink: "https://github.com/DerLinkman"
 
 tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
