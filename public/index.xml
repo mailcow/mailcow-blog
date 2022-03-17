@@ -4,9 +4,19 @@
         <link>http://news.mailcow.email/</link>
         <description>The mailserver suite with the &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Official Blog Page</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</lastBuildDate>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 17 Mar 2022 22:29:00 &#43;0100</lastBuildDate>
             <atom:link href="http://news.mailcow.email/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>🐄💮 Moorch Update 2022 – Revision A | Patchnotes</title>
+    <link>http://news.mailcow.email/posts/release-2022-03a/</link>
+    <pubDate>Thu, 17 Mar 2022 22:29:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/release-2022-03a/</guid>
+    <description><![CDATA[Moohoo everyone!
+We have released an impromptu bug fix update that fixes a few minor bugs and graphical issues.
+These are only minor changes this time, but as the saying goes, &ldquo;Every little bit helps&rdquo;.
+  We have moved the version footer back to the correct position. Faithful to the motto: Stay were you are! We have improved the release tag handling with the version footer. The backup and restore script now uses Debian Bullseye instead of Buster.]]></description>
+</item><item>
     <title>🐄💮 Moorch Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
@@ -97,16 +107,5 @@ Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up
     <description><![CDATA[Girls, guys and cows,
 Development is not stuck, we just have trouble handling many requests of new customers. Combined with cases of illness, vacation and the usual business we are really under stress.
 We are also reworking the design a bit, that&rsquo;s a WIP and will take a while. The first new prints will probably be seen on our new cars @ tinc. We are very excited! There are also plans for a mailcow.]]></description>
-</item><item>
-    <title>From Peru with moo!</title>
-    <link>http://news.mailcow.email/posts/xubium_recommend/</link>
-    <pubDate>Wed, 29 Sep 2021 20:13:47 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://news.mailcow.email/posts/xubium_recommend/</guid>
-    <description><![CDATA[Dear cows,
-For organizations in Spanish-speaking countries I would recommend you check out Xubium.
-
-They are a Latin-American company with expertise in mailcow that works with our infrastructure and support to provide a fully managed email service to medium and small businesses.
-Xubium is an amazing company to work with, it has our recommendation by all means.]]></description>
 </item></channel>
 </rss>

@@ -4,7 +4,17 @@
         <link>http://news.mailcow.email/de/posts/</link>
         <description>Alle Artikel | mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 17 Mar 2022 22:32:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🐄💮 März Update 2022 – Revision A | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-03a/</link>
+    <pubDate>Thu, 17 Mar 2022 22:32:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-03a/</guid>
+    <description><![CDATA[Moohoo allerseits!
+Wir haben ein spontanes Bugfix-Update veröffentlicht, das ein paar kleinere Fehler und grafische Probleme behebt.
+Diesmal sind es nur kleine Änderungen, aber wie das Sprichwort sagt: &ldquo;Kleinvieh macht auch Mist&rdquo;.
+  Wir haben die Fußzeile der Version wieder an die richtige Stelle verschoben. Getreu dem Motto: Bleib, wo du bist! Wir haben die Handhabung des Release-Tags mit der Versions-Fußzeile verbessert. Das Sicherungs- und Wiederherstellungsskript verwendet nun Debian Bullseye anstelle von Buster.]]></description>
+</item><item>
     <title>🐄💮 März Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
@@ -96,16 +106,5 @@ Disaster Recovery einer Mailcow ist so einfach wie das Wechseln der IPs und das 
     <description><![CDATA[Mädchen, Jungs und mailcows,
 Die Entwicklung steht nicht still, wir haben nur Schwierigkeiten, die vielen Anfragen von neuen Kunden zu bearbeiten. Kombiniert mit Krankheitsfällen, Urlaub und dem üblichen Geschäft sind wir wirklich im Stress.
 Wir sind auch dabei, das Design ein wenig zu überarbeiten, das ist ein WIP und wird noch eine Weile dauern. Die ersten neuen Drucke werden wahrscheinlich auf unseren neuen Autos @ tinc zu sehen sein. Wir sind sehr aufgeregt!]]></description>
-</item><item>
-    <title>mailcows, die zwischen dem 25. August und dem 2. September 2021 aktualisiert wurden, sollten erneut aktualisiert werden</title>
-    <link>http://news.mailcow.email/de/posts/rspamd_memleak_sep2021/</link>
-    <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
-    <author>Autor</author>
-    <guid>http://news.mailcow.email/de/posts/rspamd_memleak_sep2021/</guid>
-    <description><![CDATA[Hallo!
-Wenn ihr eure mailcow zwischen dem 25. August und dem 2. September 2021 aktualisiert habt, seid ihr höchstwahrscheinlich auf ein Memory-Leak in den Einstellungen von Rspamd gestoßen, das gerade behoben wurde.
-Außerdem haben wir das Map Hammering mit einer weiteren Änderung im Map Generator stark reduziert.
-Zeit für ein Update!
-André]]></description>
 </item></channel>
 </rss>
