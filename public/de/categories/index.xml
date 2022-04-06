@@ -4,7 +4,14 @@
         <link>http://news.mailcow.email/de/categories/</link>
         <description>Categories - Kategorie - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Hotfix</title>
+    <link>http://news.mailcow.email/de/categories/hotfix/</link>
+    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/categories/hotfix/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Updates</title>
     <link>http://news.mailcow.email/de/categories/updates/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>

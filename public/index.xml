@@ -4,9 +4,18 @@
         <link>http://news.mailcow.email/</link>
         <description>The mailserver suite with the &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Official Blog Page</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</lastBuildDate>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate>
             <atom:link href="http://news.mailcow.email/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>⚠️ Important Information about the 2022-04 Update ⚠️</title>
+    <link>http://news.mailcow.email/posts/2022-04-info/</link>
+    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/2022-04-info/</guid>
+    <description><![CDATA[Yesterday we released the 2022-04 update (Moopril) which included a change in the NGINX configuration. During the same day we received a message that SOGo would not work since the update, more precisely the login.
+So we released an update yesterday evening around 23:00 (German summertime) which solves this problem in most cases.
+Please update your mailcow via the update.sh Script as soon as possible to use SOGo as usual again.]]></description>
+</item><item>
     <title>🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
@@ -98,15 +107,5 @@ Niklas here to present you the latest news around our lovely mailcow :)
 Let&rsquo;s get started, shall we?
  Major changes from November 2021 for the mailcow stack:  SOGo update to 5.3.0 Dovecot update to 2.3.17 ClamAV update to 0.103.4 [Web] Auto-generated app passwords for Apple configuration profiles  Please consider updating your mailcow stack to ensure a stable environment.
  All changes from November 2021 for the mailcow stack (newest to oldest): 30th November 2021:]]></description>
-</item><item>
-    <title>🐄 Mooctober 2021 - the feldsam edition</title>
-    <link>http://news.mailcow.email/posts/mooctober2021/</link>
-    <pubDate>Mon, 18 Oct 2021 21:55:47 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://news.mailcow.email/posts/mooctober2021/</guid>
-    <description><![CDATA[A big thanks to Kristian Feldsam for integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
-Furthermore we introduce our new cold standby solution.
-With this new script you are able to create a fully working, 1:1, consistent copy of your running mailcow without downtime.
-Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up -d&rdquo;.]]></description>
 </item></channel>
 </rss>

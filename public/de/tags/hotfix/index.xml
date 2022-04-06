@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>hotfix - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/de/tags/hotfix/</link>
+        <description>hotfix - Tag - mailcow: dockerized - Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/hotfix/" rel="self" type="application/rss+xml" /><item>
+    <title>⚠️ Wichtige Informationen über das Update 2022-04 ⚠️</title>
+    <link>http://news.mailcow.email/de/posts/2022-04-info/</link>
+    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/2022-04-info/</guid>
+    <description><![CDATA[Gestern haben wir das 2022-04 Update (Moopril) veröffentlicht, welches eine Änderung in der NGINX Konfiguration enthielt. Im Verlauf des selbigen Tages erhielten wir vermehrt Meldungen darüber, dass SOGo seit dem Update nicht mehr funktionieren würde, genauer gesagt der Login.
+So wurde am gestrigen Abend gegen 23:00 Uhr (Deutscher Sommerzeit) von uns ein Update veröffentlicht, welcher dieses Problem in den meisten Fällen löst.
+Bitte Updated eure mailcow so schnell es geht via dem update.]]></description>
+</item></channel>
+</rss>

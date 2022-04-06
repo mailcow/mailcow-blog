@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://news.mailcow.email/de/tags/2022/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>http://news.mailcow.email/de/tags/2022/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://news.mailcow.email/tags/2022/"
@@ -10,6 +10,70 @@
                     rel="alternate"
                     hreflang="de"
                     href="http://news.mailcow.email/de/tags/2022/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/categories/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/categories/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/categories/hotfix/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/categories/hotfix/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/categories/hotfix/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/tags/hotfix/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/tags/hotfix/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/tags/hotfix/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/posts/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/posts/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/tags/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/tags/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/tags/wichtig/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://news.mailcow.email/de/posts/2022-04-info/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/posts/2022-04-info/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/posts/2022-04-info/"
                     /></url><url>
             <loc>http://news.mailcow.email/de/tags/bugfix/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
@@ -20,15 +84,6 @@
                     hreflang="de"
                     href="http://news.mailcow.email/de/tags/bugfix/"
                     /></url><url>
-            <loc>http://news.mailcow.email/de/categories/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="http://news.mailcow.email/categories/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="de"
-                    href="http://news.mailcow.email/de/categories/"
-                    /></url><url>
             <loc>http://news.mailcow.email/de/tags/changelog/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -37,33 +92,6 @@
                     rel="alternate"
                     hreflang="de"
                     href="http://news.mailcow.email/de/tags/changelog/"
-                    /></url><url>
-            <loc>http://news.mailcow.email/de/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="http://news.mailcow.email/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="de"
-                    href="http://news.mailcow.email/de/"
-                    /></url><url>
-            <loc>http://news.mailcow.email/de/posts/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="http://news.mailcow.email/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="de"
-                    href="http://news.mailcow.email/de/posts/"
-                    /></url><url>
-            <loc>http://news.mailcow.email/de/tags/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="http://news.mailcow.email/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="de"
-                    href="http://news.mailcow.email/de/tags/"
                     /></url><url>
             <loc>http://news.mailcow.email/de/tags/update/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"

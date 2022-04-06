@@ -4,7 +4,16 @@
         <link>http://news.mailcow.email/tags/2022/</link>
         <description>2022 - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/2022/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/2022/" rel="self" type="application/rss+xml" /><item>
+    <title>⚠️ Important Information about the 2022-04 Update ⚠️</title>
+    <link>http://news.mailcow.email/posts/2022-04-info/</link>
+    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/2022-04-info/</guid>
+    <description><![CDATA[Yesterday we released the 2022-04 update (Moopril) which included a change in the NGINX configuration. During the same day we received a message that SOGo would not work since the update, more precisely the login.
+So we released an update yesterday evening around 23:00 (German summertime) which solves this problem in most cases.
+Please update your mailcow via the update.sh Script as soon as possible to use SOGo as usual again.]]></description>
+</item><item>
     <title>🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
