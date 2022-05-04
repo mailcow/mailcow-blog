@@ -4,7 +4,14 @@
         <link>http://news.mailcow.email/posts/</link>
         <description>All Posts | mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 04 May 2022 14:54:27 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Test</title>
+    <link>http://news.mailcow.email/posts/test/test/</link>
+    <pubDate>Wed, 04 May 2022 14:54:27 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>http://news.mailcow.email/posts/test/test/</guid>
+    <description><![CDATA[Coole tests hier!]]></description>
+</item><item>
     <title>⚠️ Important Information about the 2022-04 Update ⚠️</title>
     <link>http://news.mailcow.email/posts/2022-04-info/</link>
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
@@ -94,16 +101,5 @@ We would also like to apologize for the fact that we are only now releasing a ne
     <description><![CDATA[Moohoo everyone! Due to the recent accidents regarding the Java library log4j we would like to inform you, that your mailcow is NOT affected directly by this.
 Yes, it is true, that the Solr Container is a Java application which is affected by the log4j security breach. BUT solr is NOT accessible from the outside of the mailcow stack!
 For those who are worried we released a Solr Hotfix which is fixing the log4j issue with the simple flag +EXTRA_ARGS+=('-Dlog4j2.]]></description>
-</item><item>
-    <title>🐄 Moovember 2021 - Patchnotes</title>
-    <link>http://news.mailcow.email/posts/moovember2021/</link>
-    <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://news.mailcow.email/posts/moovember2021/</guid>
-    <description><![CDATA[Moohoo everyone!
-Niklas here to present you the latest news around our lovely mailcow :)
-Let&rsquo;s get started, shall we?
- Major changes from November 2021 for the mailcow stack:  SOGo update to 5.3.0 Dovecot update to 2.3.17 ClamAV update to 0.103.4 [Web] Auto-generated app passwords for Apple configuration profiles  Please consider updating your mailcow stack to ensure a stable environment.
- All changes from November 2021 for the mailcow stack (newest to oldest): 30th November 2021:]]></description>
 </item></channel>
 </rss>
