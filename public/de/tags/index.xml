@@ -4,12 +4,33 @@
         <link>http://news.mailcow.email/de/tags/</link>
         <description>Tags - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 05 May 2022 10:34:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/" rel="self" type="application/rss+xml" /><item>
     <title>2022</title>
     <link>http://news.mailcow.email/de/tags/2022/</link>
-    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
     <author>Autor</author>
     <guid>http://news.mailcow.email/de/tags/2022/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>bugfix</title>
+    <link>http://news.mailcow.email/de/tags/bugfix/</link>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/tags/bugfix/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>changelog</title>
+    <link>http://news.mailcow.email/de/tags/changelog/</link>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/tags/changelog/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>update</title>
+    <link>http://news.mailcow.email/de/tags/update/</link>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/tags/update/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>hotfix</title>
@@ -24,27 +45,6 @@
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
     <author>Autor</author>
     <guid>http://news.mailcow.email/de/tags/wichtig/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>bugfix</title>
-    <link>http://news.mailcow.email/de/tags/bugfix/</link>
-    <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
-    <author>Autor</author>
-    <guid>http://news.mailcow.email/de/tags/bugfix/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>changelog</title>
-    <link>http://news.mailcow.email/de/tags/changelog/</link>
-    <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
-    <author>Autor</author>
-    <guid>http://news.mailcow.email/de/tags/changelog/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>update</title>
-    <link>http://news.mailcow.email/de/tags/update/</link>
-    <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
-    <author>Autor</author>
-    <guid>http://news.mailcow.email/de/tags/update/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Doku</title>

@@ -4,13 +4,16 @@
         <link>http://news.mailcow.email/posts/</link>
         <description>All Posts | mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 04 May 2022 14:54:27 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Test</title>
-    <link>http://news.mailcow.email/posts/test/test/</link>
-    <pubDate>Wed, 04 May 2022 14:54:27 &#43;0200</pubDate>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 05 May 2022 10:34:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🌌🐮 Mooay 2022 Update - The Tag Update | Changelog</title>
+    <link>http://news.mailcow.email/posts/release-2022-05/</link>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://news.mailcow.email/posts/test/test/</guid>
-    <description><![CDATA[Coole tests hier!]]></description>
+    <guid>http://news.mailcow.email/posts/release-2022-05/</guid>
+    <description><![CDATA[Here, the new mailcow update 2022-05 is!
+Yoda, in a parallel universe
+ Anyway&hellip; this month we have new stuff for your mailcow again. So let´s get started, shall we?
+What is new? Tags Thanks to the help of @FredleSpl0it the mailcow now has tags. Tags? Yes tags! These can be used for filtering and searching. You can add them either by editing a domain/mailbox or by creating a new one.]]></description>
 </item><item>
     <title>⚠️ Important Information about the 2022-04 Update ⚠️</title>
     <link>http://news.mailcow.email/posts/2022-04-info/</link>

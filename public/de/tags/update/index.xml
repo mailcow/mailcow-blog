@@ -4,7 +4,17 @@
         <link>http://news.mailcow.email/de/tags/update/</link>
         <description>update - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/update/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 05 May 2022 10:34:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/update/" rel="self" type="application/rss+xml" /><item>
+    <title>🌌🐮 Mooai 2022 Update - Das Tag Update | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-05/</link>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-05/</guid>
+    <description><![CDATA[Das neue mailcow update 2022-05 hier ist!
+Yoda, in einem Paralleluniversum
+ Wie dem auch sei, haben wir diesen Monat wieder neue Sachen für die mailcow für euch. Also: Lasst uns loslegen oder?
+Was ist neu? Tags Dank der Hilfe von @FredleSpl0it besitzt die mailcow nun Tags. Tags? Ja Tags! Diese können zum Filtern bzw. suchen verwendet werden. Hinzufügen könnt ihr diese entweder, indem ihr eine Domain/Mailbox bearbeitet oder eine neue anlegt.]]></description>
+</item><item>
     <title>🐄🐰 Moopril 2022 - ClamAV, Rspamd, SOGo Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>

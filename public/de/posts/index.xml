@@ -4,7 +4,17 @@
         <link>http://news.mailcow.email/de/posts/</link>
         <description>Alle Artikel | mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 05 May 2022 10:34:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🌌🐮 Mooai 2022 Update - Das Tag Update | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-05/</link>
+    <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
+    <author>Autor</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-05/</guid>
+    <description><![CDATA[Das neue mailcow update 2022-05 hier ist!
+Yoda, in einem Paralleluniversum
+ Wie dem auch sei, haben wir diesen Monat wieder neue Sachen für die mailcow für euch. Also: Lasst uns loslegen oder?
+Was ist neu? Tags Dank der Hilfe von @FredleSpl0it besitzt die mailcow nun Tags. Tags? Ja Tags! Diese können zum Filtern bzw. suchen verwendet werden. Hinzufügen könnt ihr diese entweder, indem ihr eine Domain/Mailbox bearbeitet oder eine neue anlegt.]]></description>
+</item><item>
     <title>⚠️ Wichtige Informationen über das Update 2022-04 ⚠️</title>
     <link>http://news.mailcow.email/de/posts/2022-04-info/</link>
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
@@ -95,16 +105,5 @@ Wir möchten uns auch dafür entschuldigen, dass wir erst jetzt ein neues Update
     <description><![CDATA[Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
 Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
 Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag +EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true') behebt, welches dieses Problem schließt.]]></description>
-</item><item>
-    <title>🐄 Moovember 2021 - Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/moovember2021/</link>
-    <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
-    <author>Autor</author>
-    <guid>http://news.mailcow.email/de/posts/moovember2021/</guid>
-    <description><![CDATA[Moohoo allerseits!
-Niklas hier, um euch die neuesten Nachrichten rund um unsere liebe mailcow zu präsentieren :)
-Dann wollen wir mal loslegen, ja?
- Wichtige Änderungen ab November 2021 für den mailcow Stack:  SOGo Aktualisierung auf 5.3.0 Dovecot Aktualisierung auf 2.3.17 ClamAV Aktualisierung auf 0.103.4 [Web] Automatisch generierte App-Passwörter für Apple-Konfigurationsprofile  Bitte denken Sie daran, Ihren Mailcow-Stack zu aktualisieren, um eine stabile Umgebung zu gewährleisten.
- Alle Änderungen ab November 2021 für den mailcow-Stack (neueste bis älteste): 30.]]></description>
 </item></channel>
 </rss>
