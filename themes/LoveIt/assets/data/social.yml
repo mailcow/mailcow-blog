@@ -519,6 +519,6 @@ telegram-offtopic:
 
 community:
   Weight: 12
-  URL: https://community.mailcow.email
+  Url: https://community.mailcow.email
   Icon:
     Class: fa-solid fa-user-group

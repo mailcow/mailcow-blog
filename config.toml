@@ -57,7 +57,7 @@ theme = "LoveIt"
 
  [params.home]
     # LoveIt NEW | 0.2.0 amount of RSS pages
-    rss = 10
+    rss = 1
     # Home page profile
     [params.home.profile]
       enable = true
@@ -107,6 +107,12 @@ theme = "LoveIt"
     weight = 12
     # content hovering on the icon
     title = "Community (Forum)"	
+
+  [params.social.rss]
+    # weight when arranging icons (the greater the weight, the later the icon is positioned)
+    weight = 64
+    # content hovering on the icon
+    title = "RSS Feed"	    
 	
  [params.page]
     hiddenFromHomePage = false

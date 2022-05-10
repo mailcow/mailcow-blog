@@ -4,94 +4,94 @@ date: 2022-02-16T11:44:33+01:00
 draft: false
 ---
 
-Vertragsanlage gemäß Auftragsverarbeitung nach Datenschutz-Grundverordnung (EU-DSGVO)
-In Ihrem Servercow-Profil kann ein Vertrag jederzeit durch Sie erstellt, gelöscht und verändert werden.
-Bei Fragen stehen wir Ihnen selbstverständlich zur Verfügung.
+Contract creation in accordance with order processing under the General Data Protection Regulation (EU-DSGVO).
+In your Servercow profile, you can create, delete and modify a contract at any time.
+If you have any questions, please do not hesitate to contact us.
 
-Hinweise zur Datenvorhaltung auf dieser Website
-Zugriffe auf diese Website werden über einen Tag gespeichert, um bösartige Aufrufe zu filtern und entsprechende IP-Adressen zu blockieren.
-Weiterhin dient der zurückgegebene Status-Code dem internen Monitoring.
-Zum Protokoll gehört die IP-Adresse des Besuchers, die Uhrzeit des Aufrufes, der Request sowie der zurückgegebene HTTP-Status:
-1.2.3.4 - - [25/Mar/2018:12:02:21 +0200] "GET / HTTP/1.1" 200
-Datenschutzerklärung
-§ 1 Allgemeines
-Ihre personenbezogenen Daten (z.B. Anrede, Name, Anschrift, E-Mail-Adresse, Telefonnummer, Bankverbindung, Kreditkartennummer) werden von uns nur gemäß den Bestimmungen des deutschen Datenschutzrechts und des Datenschutzrechts der Europäischen Union (EU) verarbeitet. Die nachfolgenden Vorschriften informieren Sie über Art, Umfang und Zweck der Erhebung, Verarbeitung und Nutzung personenbezogener Daten. Diese Datenschutzerklärung bezieht sich nur auf unsere Websites. Falls Sie über Links auf unseren Seiten auf andere Seiten weitergeleitet werden, informieren Sie sich bitte dort über den jeweiligen Umgang mit Ihren Daten.
-§ 2 Informationen über Cookies
-(1) Zur Optimierung unseres Internetauftritts setzen wir Cookies ein. Es handelt sich dabei um kleine Textdateien, die vorübergehend im Arbeitsspeicher Ihres Computers gespeichert werden. Diese Cookies werden nach dem Schließen des Browsers wieder gelöscht, ausgenommen sind Langzeit-Cookies zum Login am Kundencenter.
-(2) Das Speichern von Cookies können Sie verhindern, indem Sie in Ihren Browser-Einstellungen "Cookies blockieren" wählen. Dies kann aber eine Funktionseinschränkung unserer Angebote zur Folge haben.
-§ 3 Rechte der betroffenen Person
-Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d. DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
-1. Auskunftsrecht
-Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.
-Liegt eine solche Verarbeitung vor, können Sie von dem Verantwortlichen über folgende Informationen Auskunft verlangen:
-(1) die Zwecke, zu denen die personenbezogenen Daten verarbeitet werden;
-(2) die Kategorien von personenbezogenen Daten, welche verarbeitet werden;
-(3) die Empfänger bzw. die Kategorien von Empfängern, gegenüber denen die Sie betreffenden personenbezogenen Daten offengelegt wurden oder noch offengelegt werden;
-(4) die geplante Dauer der Speicherung der Sie betreffenden personenbezogenen Daten oder, falls konkrete Angaben hierzu nicht möglich sind, Kriterien für die Festlegung der Speicherdauer;
-(5) das Bestehen eines Rechts auf Berichtigung oder Löschung der Sie betreffenden personenbezogenen Daten, eines Rechts auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung;
-(6) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde;
-(7) alle verfügbaren Informationen über die Herkunft der Daten, wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden;
-(8) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Art. 22 Abs. 1 und 4 DSGVO und – zumindest in diesen Fällen – aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person.
-Ihnen steht das Recht zu, Auskunft darüber zu verlangen, ob die Sie betreffenden personenbezogenen Daten in ein Drittland oder an eine internationale Organisation übermittelt werden. In diesem Zusammenhang können Sie verlangen, über die geeigneten Garantien gem. Art. 46 DSGVO im Zusammenhang mit der Übermittlung unterrichtet zu werden.
-2. Recht auf Berichtigung
-Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen, unrichtig oder unvollständig sind. Der Verantwortliche hat die Berichtigung unverzüglich vorzunehmen.
-3. Recht auf Einschränkung der Verarbeitung
-Unter den folgenden Voraussetzungen können Sie die Einschränkung der Verarbeitung der Sie betreffenden personenbezogenen Daten verlangen:
-(1) wenn Sie die Richtigkeit der Sie betreffenden personenbezogenen für eine Dauer bestreiten, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen;
-(2) die Verarbeitung unrechtmäßig ist und Sie die Löschung der personenbezogenen Daten ablehnen und stattdessen die Einschränkung der Nutzung der personenbezogenen Daten verlangen;
-(3) der Verantwortliche die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger benötigt, Sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, oder
-(4) wenn Sie Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 DSGVO eingelegt haben und noch nicht feststeht, ob die berechtigten Gründe des Verantwortlichen gegenüber Ihren Gründen überwiegen.
-Wurde die Verarbeitung der Sie betreffenden personenbezogenen Daten eingeschränkt, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Union oder eines Mitgliedstaats verarbeitet werden.
-Wurde die Einschränkung der Verarbeitung nach den oben genannten Voraussetzungen eingeschränkt, werden Sie von dem Verantwortlichen unterrichtet bevor die Einschränkung aufgehoben wird.
-4. Recht auf Löschung
-a) Löschungspflicht
-Sie können von dem Verantwortlichen verlangen, dass die Sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, und der Verantwortliche ist verpflichtet, diese Daten unverzüglich zu löschen, sofern einer der folgenden Gründe zutrifft:
-(1) Die Sie betreffenden personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig.
-(2) Sie widerrufen Ihre Einwilligung, auf die sich die Verarbeitung gem. Art. 6 Abs. 1 lit. a oder Art. 9 Abs. 2 lit. a DSGVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.
-(3) Sie legen gem. Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder Sie legen gem. Art. 21 Abs. 2 DSGVO Widerspruch gegen die Verarbeitung ein.
-(4) Die Sie betreffenden personenbezogenen Daten wurden unrechtmäßig verarbeitet.
-(5) Die Löschung der Sie betreffenden personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt.
-(6) Die Sie betreffenden personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.
-b) Information an Dritte
-Hat der Verantwortliche die Sie betreffenden personenbezogenen Daten öffentlich gemacht und ist er gem. Art. 17 Abs. 1 DSGVO zu deren Löschung verpflichtet, so trifft er unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um für die Datenverarbeitung Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu informieren, dass Sie als betroffene Person von ihnen die Löschung aller Links zu diesen personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt haben.
-c) Ausnahmen
-Das Recht auf Löschung besteht nicht, soweit die Verarbeitung erforderlich ist
-(1) zur Ausübung des Rechts auf freie Meinungsäußerung und Information;
-(2) zur Erfüllung einer rechtlichen Verpflichtung, die die Verarbeitung nach dem Recht der Union oder der Mitgliedstaaten, dem der Verantwortliche unterliegt, erfordert, oder zur Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde;
-(3) aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit gemäß Art. 9 Abs. 2 lit. h und i sowie Art. 9 Abs. 3 DSGVO;
-(4) für im öffentlichen Interesse liegende Archivzwecke, wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gem. Art. 89 Abs. 1 DSGVO, soweit das unter Abschnitt a) genannte Recht voraussichtlich die Verwirklichung der Ziele dieser Verarbeitung unmöglich macht oder ernsthaft beeinträchtigt, oder
-(5) zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
-5. Recht auf Unterrichtung
-Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung gegenüber dem Verantwortlichen geltend gemacht, ist dieser verpflichtet, allen Empfängern, denen die Sie betreffenden personenbezogenen Daten offengelegt wurden, diese Berichtigung oder Löschung der Daten oder Einschränkung der Verarbeitung mitzuteilen, es sei denn, dies erweist sich als unmöglich oder ist mit einem unverhältnismäßigen Aufwand verbunden.
-Ihnen steht gegenüber dem Verantwortlichen das Recht zu, über diese Empfänger unterrichtet zu werden.
-6. Recht auf Datenübertragbarkeit
-Sie haben das Recht, die Sie betreffenden personenbezogenen Daten, die Sie dem Verantwortlichen bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Außerdem haben Sie das Recht diese Daten einem anderen Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern
-(1) die Verarbeitung auf einer Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gem. Art. 6 Abs. 1 lit. b DSGVO beruht und
-(2) die Verarbeitung mithilfe automatisierter Verfahren erfolgt.
-In Ausübung dieses Rechts haben Sie ferner das Recht, zu erwirken, dass die Sie betreffenden personenbezogenen Daten direkt von einem Verantwortlichen einem anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist. Freiheiten und Rechte anderer Personen dürfen hierdurch nicht beeinträchtigt werden.
-Das Recht auf Datenübertragbarkeit gilt nicht für eine Verarbeitung personenbezogener Daten, die für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde.
-7. Widerspruchsrecht
-Sie haben das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.
-Der Verantwortliche verarbeitet die Sie betreffenden personenbezogenen Daten nicht mehr, es sei denn, er kann zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
-Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht.
-Widersprechen Sie der Verarbeitung für Zwecke der Direktwerbung, so werden die Sie betreffenden personenbezogenen Daten nicht mehr für diese Zwecke verarbeitet.
-Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft – ungeachtet der Richtlinie 2002/58/EG – Ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.
-8. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung
-Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
-9. Automatisierte Entscheidung im Einzelfall einschließlich Profiling
-Sie haben das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt. Dies gilt nicht, wenn die Entscheidung
-(1) für den Abschluss oder die Erfüllung eines Vertrags zwischen Ihnen und dem Verantwortlichen erforderlich ist,
-(2) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung Ihrer Rechte und Freiheiten sowie Ihrer berechtigten Interessen enthalten oder
-(3) mit Ihrer ausdrücklichen Einwilligung erfolgt.
-Allerdings dürfen diese Entscheidungen nicht auf besonderen Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Abs. 2 lit. a oder g gilt und angemessene Maßnahmen zum Schutz der Rechte und Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden.
-Hinsichtlich der in (1) und (3) genannten Fälle trifft der Verantwortliche angemessene Maßnahmen, um die Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.
-10. Recht auf Beschwerde bei einer Aufsichtsbehörde
-Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt.
-Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den Beschwerdeführer über den Stand und die Ergebnisse der Beschwerde einschließlich der Möglichkeit eines gerichtlichen Rechtsbehelfs nach Art. 78 DSGVO.
-10. Kontaktformular
-Die Daten des Kontaktformulars werden verschlüsselt über die internen Mail-Systeme an info@servercow.de übermittelt. Wenn Sie uns per Kontaktformular Anfragen senden, werden Ihre dort eingegebenen Daten mitsamt Ihren Kontaktdaten für die Bearbeitung der Anfrage bei uns verarbeitet und gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung an Dritte weiter. Die Anfragen, inklusive der darin enthaltenen personenbezogenen Daten, werden regelmäßig gelöscht, solange die Anfrage ohne weitere Geschäftsbeziehung verblieb.
-11. SAL-gebundene Überprüfungen (Checks)
-(12) Bei der Ausführung eines Checks durch "watchdog-mailcow" in Verbindung mit einer SAL werden keine Daten über den sich verbindenden Server oder den Betreiber gespeichert oder anderweitig aufbereitet oder ausgewertet.
+Notes on data retention on this website
+Accesses to this website are stored for one day in order to filter malicious calls and block corresponding IP addresses.
+Furthermore, the returned status code is used for internal monitoring.
+The log includes the IP address of the visitor, the time of the call, the request and the returned HTTP status:
+`1.2.3.4 - - [25/Mar/2018:12:02:21 +0200] "GET / HTTP/1.1" 200`
 
-Verantwortlicher für die Datenverarbeitung ist der Geschäftsbetreiber.
+#### § 1 General
+Your personal data (e.g. title, name, address, e-mail address, telephone number, bank details, credit card number) will only be processed by us in accordance with the provisions of German data protection law and the data protection law of the European Union (EU). The following regulations inform you about the type, scope and purpose of the collection, processing and use of personal data. This data protection declaration refers only to our websites. If you are forwarded to other sites via links on our sites, please inform yourself there about the respective handling of your data.
+#### § 2 Information about cookies
+- (1) We use cookies to optimize our Internet presence. These are small text files that are temporarily stored in the RAM of your computer.    These cookies are deleted after closing the browser, with the exception of long-term cookies for logging into the customer center.
+- (2) You can prevent cookies from being stored by selecting "Block cookies" in your browser settings. However, this may result in a functional restriction of our offers.
+#### § 3 Rights of the data subject
+If personal data is processed by you, you are a data subject within the meaning of the GDPR and you have the following rights against the controller:
+##### 1. Right of access
+You may request confirmation from the controller as to whether personal data concerning you is being processed by us.
+If such processing is taking place, you may request information from the controller about the following:
+- (1) the purposes for which the personal data are processed;
+- (2) the categories of personal data which are processed;
+- (3) the recipients or categories of recipients to whom the personal data concerning you have been or will be disclosed;
+- (4) the planned duration of the storage of the personal data concerning you or, if concrete information on this is not possible, criteria for determining the storage period;
+- (5) the existence of a right to rectification or erasure of the personal data concerning you, a right to restriction of processing by the controller or a right to object to such processing;
+- (6) the existence of a right of appeal to a supervisory authority;
+- (7) any available information on the origin of the data, if the personal data are not collected from the data subject;
+- (8) the existence of automated decision-making, including profiling, pursuant to Article 22(1) and (4) of the GDPR and, at least in these cases, meaningful information about the logic involved and the scope and intended effects of such processing for the data subject.
+You have the right to request information about whether personal data concerning you is transferred to a third country or to an international organization. In this context, you may request to be informed about the appropriate safeguards pursuant to Art. 46 DSGVO in connection with the transfer.
+##### 2. Right to rectification
+You have a right to rectification and/or completion vis-à-vis the controller if the personal data processed concerning you is inaccurate or incomplete. The controller shall carry out the rectification without undue delay.
+##### 3. Right to restriction of processing
+You may request the restriction of the processing of personal data concerning you under the following conditions:
+- (1) if you contest the accuracy of the personal data concerning you for a period enabling the controller to verify the accuracy of the personal data;
+- (2) the processing is unlawful and you object to the erasure of the personal data and request instead the restriction of the use of the personal data;
+- (3) the controller no longer needs the personal data for the purposes of the processing, but you need it for the establishment, exercise or defense of legal claims; or
+- (4) if you have objected to the processing pursuant to Article 21(1) of the GDPR and it is not yet clear whether the controller's legitimate grounds override your grounds.
+If the processing of personal data concerning you has been restricted, such data may - apart from being stored - only be processed with your consent or for the establishment, exercise or defense of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the Union or a Member State.
+If the restriction of processing has been restricted in accordance with the above conditions, you will be informed by the controller before the restriction is lifted.
+##### 4. Right to deletion
+a) Obligation to delete
+You may request the controller to erase the personal data concerning you without undue delay, and the controller is obliged to erase such data without undue delay, if one of the following reasons applies:
+- (1) The personal data concerning you are no longer necessary for the purposes for which they were collected or otherwise processed.
+- (2) You revoke your consent on which the processing was based pursuant to Art. 6(1)(a) or Art. 9(2)(a) DSGVO and there is no other legal basis for the processing.
+- (3) You object to the processing pursuant to Art. 21 (1) DSGVO and there are no overriding legitimate grounds for the processing, or you object to the processing pursuant to Art. 21 (2) DSGVO.
+- (4) The personal data concerning you have been processed unlawfully.
+- (5) The erasure of the personal data concerning you is necessary for compliance with a legal obligation under Union or Member State law to which the controller is subject.
+- (6) The personal data concerning you has been collected in relation to information society services offered pursuant to Article 8(1) DSGVO.
+b) Information to third parties
+If the controller has made the personal data concerning you public and is obliged to erase it pursuant to Article 17(1) of the GDPR, it shall take reasonable steps, including technical measures, having regard to the available technology and the cost of implementation, to inform data controllers that process the personal data that you, as the data subject, have requested them to erase all links to or copies or replications of such personal data.
+c) Exceptions
+The right to erasure does not exist to the extent that the processing is necessary
+- (1) for the exercise of the right to freedom of expression and information;
+- (2) for compliance with a legal obligation which requires processing under Union or Member State law to which the controller is subject, or for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;
+- (3) for reasons of public interest in the area of public health pursuant to Article 9(2)(h) and (i) and Article 9(3) of the GDPR;
+- (4) for archiving purposes in the public interest, scientific or historical research purposes, or statistical purposes pursuant to Article 89(1) DSGVO, insofar as the right referred to in section a) is likely to render impossible or seriously prejudice the achievement of the purposes of such processing; or
+- (5) for the assertion, exercise or defense of legal claims.
+##### 5. Right to information
+If you have asserted the right to rectification, erasure or restriction of processing against the controller, the controller is obliged to inform all recipients to whom the personal data concerning you have been disclosed of this rectification or erasure of the data or restriction of processing, unless this proves impossible or involves a disproportionate effort.
+You have the right against the controller to be informed about these recipients.
+##### 6. Right to data portability
+You have the right to receive the personal data concerning you that you have provided to the controller in a structured, common and machine-readable format. You also have the right to transfer this data to another controller without hindrance from the controller to whom the personal data was provided, provided that.
+- (1) the processing is based on consent pursuant to Art. 6(1)(a) DSGVO or Art. 9(2)(a) DSGVO or on a contract pursuant to Art. 6(1)(b) DSGVO and
+- (2) the processing is carried out with the help of automated procedures.
+In exercising this right, you also have the right to obtain that the personal data concerning you be transferred directly from one controller to another controller, insofar as this is technically feasible. Freedoms and rights of other persons must not be affected by this.
+The right to data portability does not apply to processing of personal data necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.
+##### 7. Right of objection
+You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data concerning you which is carried out on the basis of Article 6(1)(e) or (f) DSGVO; this also applies to profiling based on these provisions.
+The controller shall no longer process the personal data concerning you unless it can demonstrate compelling legitimate grounds for the processing which override your interests, rights and freedoms, or the processing serves the purpose of asserting, exercising or defending legal claims.
+If the personal data concerning you is processed for the purposes of direct marketing, you have the right to object at any time to processing of the personal data concerning you for the purposes of such marketing; this also applies to profiling, insofar as it is related to such direct marketing.
+If you object to the processing for direct marketing purposes, the personal data concerning you will no longer be processed for these purposes.
+You have the possibility, in connection with the use of information society services, notwithstanding Directive 2002/58/EC, to exercise your right to object by means of automated procedures using technical specifications.
+##### 8. Right to revoke the declaration of consent under data protection law
+You have the right to revoke your declaration of consent under data protection law at any time. The revocation of consent does not affect the lawfulness of the processing carried out on the basis of the consent until the revocation.
+##### 9. Automated decision in individual cases including profiling
+You have the right not to be subject to a decision based solely on automated processing - including profiling - which produces legal effects concerning you or similarly significantly affects you. This does not apply if the decision
+- (1) is necessary for the conclusion or performance of a contract between you and the controller,
+- (2) is permitted by legal provisions of the Union or the Member States to which the controller is subject and these legal provisions contain appropriate measures to protect your rights and freedoms as well as your legitimate interests; or
+- (3) is made with your express consent.
+However, these decisions may not be based on special categories of personal data pursuant to Article 9(1) of the GDPR, unless Article 9(2)(a) or (g) applies and appropriate measures have been taken to protect the rights and freedoms as well as your legitimate interests.
+With regard to the cases mentioned in (1) and (3), the controller shall take reasonable steps to safeguard the rights and freedoms as well as your legitimate interests, which include, at a minimum, the right to obtain the intervention of a person on the part of the controller, to express his or her point of view and to contest the decision.
+##### 10. Right to complain to a supervisory authority
+Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your residence, workplace or the place of the alleged infringement, if you consider that the processing of personal data concerning you infringes the GDPR.
+The supervisory authority to which the complaint has been lodged shall inform the complainant of the status and outcome of the complaint, including the possibility of a judicial remedy under Article 78 GDPR.
+##### 11. Contact form
+The data of the contact form are transmitted encrypted via the internal mail systems to info@servercow.de. If you send us inquiries via the contact form, the data you enter there together with your contact data will be processed and stored by us for the purpose of processing the inquiry. We do not pass this data on to third parties without your consent. The inquiries, including the personal data contained therein, are regularly deleted as long as the inquiry remained without further business relationship.
+##### 12. SAL-bound checks (checks)
+(12) During the execution of a check by "watchdog-mailcow" in connection with a SAL, no data about the connecting server or the operator will be stored or otherwise processed or evaluated.
+
+The person responsible for data processing is the business operator.
 
