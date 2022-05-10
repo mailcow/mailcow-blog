@@ -120,7 +120,7 @@
                     hreflang="de"
                     href="http://news.mailcow.email/de/posts/2022-04-info/"
                     /></url><url>
-            <loc>http://news.mailcow.email/de/posts/release-2022-04/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>http://news.mailcow.email/de/posts/release-2022-04/</loc><lastmod>2022-04-05T10:42:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://news.mailcow.email/posts/release-2022-04/"
@@ -146,6 +146,15 @@
                     rel="alternate"
                     hreflang="de"
                     href="http://news.mailcow.email/de/posts/release-2022-03/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/de/policy/</loc><lastmod>2022-02-16T11:44:35&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://news.mailcow.email/policy/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="de"
+                    href="http://news.mailcow.email/de/policy/"
                     /></url><url>
             <loc>http://news.mailcow.email/de/imprint/</loc><lastmod>2022-02-16T11:36:02&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"

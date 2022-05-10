@@ -8,7 +8,7 @@
     <title>📘Neu: Die mailcow Docs sprechen jetzt auch Deutsch! 📘 - mailcow Docs 2.0 Änderungen</title>
     <link>http://news.mailcow.email/de/posts/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/docs-update-2.0/</guid>
     <description><![CDATA[Moohoo alle! It&rsquo;s Friday then Then Saturday, Sunday (what?)
 Wir haben eine aufregende Neuigkeit mit euch zu teilen!
@@ -16,5 +16,6 @@ Wir präsentieren euch die neu veröffentlichten mailcow: dockerized Docs 2.0!
 Auf den ersten Blick mag sich nicht viel geändert haben (sollte man meinen), aber unter der Haube hat sich einiges getan!
 So präsentieren wir euch ab heute:
  Übersetzungsmöglichkeiten der Dokumentation (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert) Hell-/Dunkelmodus Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)  Alles in allem eine Neuauflage der bestehenden Dokumentation.]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

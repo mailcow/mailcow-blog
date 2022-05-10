@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>⚠️ Wichtige Informationen über log4j-Exploit ⚠️ - mailcow: dockerized - Blog</title><meta name="Description" content="Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog"><meta property="og:title" content="⚠️ Wichtige Informationen über log4j-Exploit ⚠️" />
 <meta property="og:description" content="Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
 Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
@@ -21,10 +20,10 @@ Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, 
 <meta name="twitter:description" content="Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
 Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
 Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag &#43;EXTRA_ARGS&#43;=(&#39;-Dlog4j2.formatMsgNoLookups=true&#39;) behebt, welches dieses Problem schließt."/>
-<meta name="application-name" content="mailcow: dockerized - Blog">
-<meta name="apple-mobile-web-app-title" content="mailcow: dockerized - Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/de/posts/log4j-dec2022/" /><link rel="prev" href="http://news.mailcow.email/de/posts/moovember2021/" /><link rel="next" href="http://news.mailcow.email/de/posts/release-2022-01/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/de/posts/log4j-dec2022/" /><link rel="prev" href="http://news.mailcow.email/de/posts/moovember2021/" /><link rel="next" href="http://news.mailcow.email/de/posts/release-2022-01/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -36,13 +35,13 @@ Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, 
         },"genre": "posts","keywords": "2021, bugfix, log4j","wordcount":  93 ,
         "url": "http:\/\/news.mailcow.email\/de\/posts\/log4j-dec2022\/","datePublished": "2021-12-13T08:49:44+01:00","dateModified": "2021-12-13T08:49:44+01:00","publisher": {
             "@type": "Organization",
-            "name": "Niklas Meyer"},"author": {
+            "name": ""},"author": {
                 "@type": "Person",
                 "name": "Niklas Meyer"
             },"description": ""
     }
     </script></head>
-    <body header-desktop="fixed" header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body data-header-desktop="fixed" data-header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -57,10 +56,10 @@ Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, 
         title="/images/cow_mailcow.svg" />mailcow: dockerized - Blog<span class="header-title-post">📰</span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/de/posts/"> Beiträge </a><a class="menu-item" href="/de/tags/"> Tags </a><a class="menu-item" href="/de/categories/"> Kategorien </a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/de" rel="noopener noreffer" target="_blank"> Dokumentation </a><a class="menu-item" href="https://www.servercow.de/mailcow#support" title="Support erhalten" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i>   Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Sprache wählen">Deutsch<i class="fas fa-chevron-right fa-fw"></i>
+            <div class="menu-inner"><a class="menu-item" href="/de/posts/"> Beiträge </a><a class="menu-item" href="/de/tags/"> Tags </a><a class="menu-item" href="/de/categories/"> Kategorien </a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/de" rel="noopener noreffer" target="_blank"> Dokumentation </a><a class="menu-item" href="https://www.servercow.de/mailcow#support" title="Support erhalten" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i>   Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Sprache wählen">Deutsch<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
                         <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/log4j-dec2022/">English</option><option value="/de/posts/log4j-dec2022/" selected>Deutsch</option></select>
-                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Thema wechseln">
-                    <i class="fas fa-adjust fa-fw"></i>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Darstellung ändern">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -82,24 +81,18 @@ Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, 
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/de/posts/" title="">Beiträge</a><a class="menu-item" href="/de/tags/" title="">Tags</a><a class="menu-item" href="/de/categories/" title="">Kategorien</a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/de" title="" rel="noopener noreffer" target="_blank">Dokumentation</a><a class="menu-item" href="https://www.servercow.de/mailcow#support" title="Support erhalten" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i> Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Thema wechseln">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="Sprache wählen">Deutsch<i class="fas fa-chevron-right fa-fw"></i>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/de/posts/" title="">Beiträge</a><a class="menu-item" href="/de/tags/" title="">Tags</a><a class="menu-item" href="/de/categories/" title="">Kategorien</a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/de" title="" rel="noopener noreffer" target="_blank">Dokumentation</a><a class="menu-item" href="https://www.servercow.de/mailcow#support" title="Support erhalten" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i> Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Darstellung ändern">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Sprache wählen">Deutsch<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/posts/log4j-dec2022/">English</option><option value="/de/posts/log4j-dec2022/" selected>Deutsch</option></select>
                 </a></div>
     </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">⚠️ Wichtige Informationen über log4j-Exploit ⚠️</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Niklas Meyer</a></span>&nbsp;<span class="post-category">sortiert in <a href="/de/categories/sicherheit/"><i class="far fa-folder fa-fw"></i>Sicherheit</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="13.12.2021">13.12.2021</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;93 wörter&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;Eine minute&nbsp;</div>
+</header><main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">⚠️ Wichtige Informationen über log4j-Exploit ⚠️</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
+</span>&nbsp;<span class="post-category">enthalten in <a href="/de/categories/sicherheit/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Sicherheit</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="13.12.2021">13.12.2021</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;93 Wörter&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;Eine Minute&nbsp;</div>
         </div><div class="content" id="content"><p><strong>Moohoo an alle!</strong> <br>
 Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek <strong>log4j</strong> möchten wir euch mitteilen, dass eure mailcow <strong>NICHT</strong> direkt davon betroffen ist.</p>
 <p>Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. <strong>Aber</strong> Solr ist <strong>NICHT</strong> von außerhalb des mailcow-Stacks zugänglich!</p>
@@ -112,37 +105,35 @@ Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek <strong>log4j</strong> 
         <div class="post-info-line">
             <div class="post-info-mod">
                 <span>Aktualisiert am 13.12.2021</span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
+            </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span></span>
+                <span><a href="javascript:void(0);" title="Teilen auf Twitter" data-sharer="twitter" data-url="http://news.mailcow.email/de/posts/log4j-dec2022/" data-title="⚠️ Wichtige Informationen über log4j-Exploit ⚠️" data-via="https://twitter.com/mailcow_email" data-hashtags="2021,bugfix,log4j"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Teilen auf Facebook" data-sharer="facebook" data-url="http://news.mailcow.email/de/posts/log4j-dec2022/" data-hashtag="2021"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Teilen auf Hacker News" data-sharer="hackernews" data-url="http://news.mailcow.email/de/posts/log4j-dec2022/" data-title="⚠️ Wichtige Informationen über log4j-Exploit ⚠️"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Teilen auf Line" data-sharer="line" data-url="http://news.mailcow.email/de/posts/log4j-dec2022/" data-title="⚠️ Wichtige Informationen über log4j-Exploit ⚠️"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Teilen auf 微博" data-sharer="weibo" data-url="http://news.mailcow.email/de/posts/log4j-dec2022/" data-title="⚠️ Wichtige Informationen über log4j-Exploit ⚠️"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/bugfix/">bugfix</a>,&nbsp;<a href="/de/tags/log4j/">log4j</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/bugfix/">bugfix</a>,&nbsp;<a href="/de/tags/log4j/">log4j</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Zurück</a></span>&nbsp;|&nbsp;<span><a href="/de/">Startseite</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/de/posts/moovember2021/" class="prev" rel="prev" title="🐄 Moovember 2021 - Änderungen"><i class="fas fa-angle-left fa-fw"></i>🐄 Moovember 2021 - Änderungen</a>
-            <a href="/de/posts/release-2022-01/" class="next" rel="next" title="📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen">📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/de/posts/moovember2021/" class="prev" rel="prev" title="🐄 Moovember 2021 - Änderungen"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>🐄 Moovember 2021 - Änderungen</a>
+            <a href="/de/posts/release-2022-01/" class="next" rel="next" title="📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen">📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><a href="/de/imprint/">Impressum</a> | <a href="/policy/">Datenschutz</div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div>
+        <div class="footer-container"><div class="footer-line"><a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="nach oben">
-                <i class="fas fa-arrow-up fa-fw"></i>
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Nach oben">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
             </a><a href="#" id="view-comments" class="fixed-button" title="Kommentare anzeigen">
-                <i class="fas fa-comment fa-fw"></i>
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"In Zwischenablage kopieren","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"In Zwischenablage kopieren","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

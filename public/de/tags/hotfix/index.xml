@@ -8,10 +8,11 @@
     <title>⚠️ Wichtige Informationen über das Update 2022-04 ⚠️</title>
     <link>http://news.mailcow.email/de/posts/2022-04-info/</link>
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/2022-04-info/</guid>
     <description><![CDATA[Gestern haben wir das 2022-04 Update (Moopril) veröffentlicht, welches eine Änderung in der NGINX Konfiguration enthielt. Im Verlauf des selbigen Tages erhielten wir vermehrt Meldungen darüber, dass SOGo seit dem Update nicht mehr funktionieren würde, genauer gesagt der Login.
 So wurde am gestrigen Abend gegen 23:00 Uhr (Deutscher Sommerzeit) von uns ein Update veröffentlicht, welcher dieses Problem in den meisten Fällen löst.
 Bitte Updated eure mailcow so schnell es geht via dem update.]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

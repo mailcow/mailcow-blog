@@ -8,55 +8,60 @@
     <title>🌌🐮 Mooai 2022 Update - Das Tag Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-05/</link>
     <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-05/</guid>
     <description><![CDATA[Das neue mailcow update 2022-05 hier ist!
 Yoda, in einem Paralleluniversum
  Wie dem auch sei, haben wir diesen Monat wieder neue Sachen für die mailcow für euch. Also: Lasst uns loslegen oder?
-Was ist neu? Tags Dank der Hilfe von @FredleSpl0it besitzt die mailcow nun Tags. Tags? Ja Tags! Diese können zum Filtern bzw. suchen verwendet werden. Hinzufügen könnt ihr diese entweder, indem ihr eine Domain/Mailbox bearbeitet oder eine neue anlegt.]]></description>
-</item><item>
+Was ist neu? Tags Dank der Hilfe von @FredleSpl0itbesitzt die mailcow nun Tags. Tags? Ja Tags! Diese können zum Filtern bzw. suchen verwendet werden. Hinzufügen könnt ihr diese entweder, indem ihr eine Domain/Mailbox bearbeitet oder eine neue anlegt.]]></description>
+</item>
+<item>
     <title>⚠️ Wichtige Informationen über das Update 2022-04 ⚠️</title>
     <link>http://news.mailcow.email/de/posts/2022-04-info/</link>
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/2022-04-info/</guid>
     <description><![CDATA[Gestern haben wir das 2022-04 Update (Moopril) veröffentlicht, welches eine Änderung in der NGINX Konfiguration enthielt. Im Verlauf des selbigen Tages erhielten wir vermehrt Meldungen darüber, dass SOGo seit dem Update nicht mehr funktionieren würde, genauer gesagt der Login.
 So wurde am gestrigen Abend gegen 23:00 Uhr (Deutscher Sommerzeit) von uns ein Update veröffentlicht, welcher dieses Problem in den meisten Fällen löst.
 Bitte Updated eure mailcow so schnell es geht via dem update.]]></description>
-</item><item>
+</item>
+<item>
     <title>🐄🐰 Moopril 2022 - ClamAV, Rspamd, SOGo Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-04/</guid>
     <description><![CDATA[Moohoo zusammen!
 Das April-Update ist da, mit einer Reihe von Neuerungen für Ihren reibungslosen E-Mail-Flow.
 Diesen Monat haben wir 3 Komponenten-Updates (ClamAV, SOGo und Rspamd) und ein paar kleinere Korrekturen, die wie folgt sind:
- Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
-</item><item>
+ Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
+</item>
+<item>
     <title>🐄💮 März Update 2022 – Revision A | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-03a/</link>
     <pubDate>Thu, 17 Mar 2022 22:32:00 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-03a/</guid>
     <description><![CDATA[Moohoo allerseits!
 Wir haben ein spontanes Bugfix-Update veröffentlicht, das ein paar kleinere Fehler und grafische Probleme behebt.
 Diesmal sind es nur kleine Änderungen, aber wie das Sprichwort sagt: &ldquo;Kleinvieh macht auch Mist&rdquo;.
   Wir haben die Fußzeile der Version wieder an die richtige Stelle verschoben. Getreu dem Motto: Bleib, wo du bist! Wir haben die Handhabung des Release-Tags mit der Versions-Fußzeile verbessert. Das Sicherungs- und Wiederherstellungsskript verwendet nun Debian Bullseye anstelle von Buster.]]></description>
-</item><item>
+</item>
+<item>
     <title>🐄💮 März Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-03/</guid>
     <description><![CDATA[Moohoo zusammen, der März ist da und am Ende des Monats ist dann auch wieder Frühling. Sicherlich waren die letzten Tage für euch genauso beängstigend wie für uns.
 🇺🇦 Ukraine, wir stehen hinter euch!
 Kommen wir nun zum März Update unserer mailcow. Spoiler vorab, so voll und umfangreich ist das März Update nicht aber es sind einige nette Updates im Bezug auf die Langzeit enthalten (ich schaue dich an ClamAV und Olefy!]]></description>
-</item><item>
+</item>
+<item>
     <title>📘Neu: Die mailcow Docs sprechen jetzt auch Deutsch! 📘 - mailcow Docs 2.0 Änderungen</title>
     <link>http://news.mailcow.email/de/posts/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/docs-update-2.0/</guid>
     <description><![CDATA[Moohoo alle! It&rsquo;s Friday then Then Saturday, Sunday (what?)
 Wir haben eine aufregende Neuigkeit mit euch zu teilen!
@@ -64,46 +69,50 @@ Wir präsentieren euch die neu veröffentlichten mailcow: dockerized Docs 2.0!
 Auf den ersten Blick mag sich nicht viel geändert haben (sollte man meinen), aber unter der Haube hat sich einiges getan!
 So präsentieren wir euch ab heute:
  Übersetzungsmöglichkeiten der Dokumentation (Englisch und Deutsch werden von Servercow selbst unterstützt und aktualisiert) Hell-/Dunkelmodus Neue Organisationsstruktur (interessant für alle, die auch an der Dokumentation arbeiten möchten)  Alles in allem eine Neuauflage der bestehenden Dokumentation.]]></description>
-</item><item>
+</item>
+<item>
     <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-01a/</link>
     <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-01a/</guid>
     <description><![CDATA[Moohoo an alle.
 Heute veröffentlichen wir den ersten Hotfix für das Update 2022-01.
 Das hat sich geändert:
- Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
-</item><item>
+ Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
+</item>
+<item>
     <title>Ist es ein 🐦? Ist es ein ✈️? Nein, es ist die mailcow auf Twitter!</title>
     <link>http://news.mailcow.email/de/posts/mailcow-twitter/</link>
     <pubDate>Mon, 24 Jan 2022 12:33:09 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/mailcow-twitter/</guid>
     <description><![CDATA[Moohoo allerseits!
 Unsere liebe mailcow hat den Sprung in die sozialen Medien gewagt: Twitter!
 Dort wird sie euch mit neuen Release-Informationen oder kleinen Hinweisen auf mögliche neue Features sowie allgemeinen Informationen über das mailcow-Projekt versorgen.
-Natürlich können Sie auch über Ihre Erfahrungen mit mailcow twittern. Benutzen Sie einfach das Twitter-Handle: @mailcow_email.
-Wir freuen uns darauf, dort mit Ihnen in Kontakt zu treten und Sie auf dem Laufenden zu halten.
-Bleibt gesund!]]></description>
-</item><item>
+Natürlich können Sie auch über Ihre Erfahrungen mit mailcow twittern. Benutzen Sie einfach das Twitter-Handle: @mailcow_email.
+Wir freuen uns darauf, dort mit Ihnen in Kontakt zu treten und Sie auf dem Laufenden zu halten.]]></description>
+</item>
+<item>
     <title>📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-01/</link>
     <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-01/</guid>
     <description><![CDATA[Moohoo an alle, Niklas hier mit dem neuesten Changelog für unsere geliebte mailcow E-Mail-Software!
 Diesen Monat gibt es einen großen Brocken an Änderungen, einige davon sogar sehr wichtig in Bezug auf 2FA, aber dazu später mehr.
 Zuallererst möchten wir uns bei euch für eure Treue und Zusammenarbeit bedanken, denn ohne euch wäre das mailcow-Projekt nicht da, wo es jetzt ist ❤️.
 Wir möchten uns auch dafür entschuldigen, dass wir erst jetzt ein neues Update veröffentlichen (Master-Branch-Release), denn einige der in diesem Update enthaltenen Fehlerbehebungen (SOGo z.]]></description>
-</item><item>
+</item>
+<item>
     <title>⚠️ Wichtige Informationen über log4j-Exploit ⚠️</title>
     <link>http://news.mailcow.email/de/posts/log4j-dec2022/</link>
     <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/log4j-dec2022/</guid>
     <description><![CDATA[Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
 Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
 Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag +EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true') behebt, welches dieses Problem schließt.]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

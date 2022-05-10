@@ -8,70 +8,77 @@
     <title>🌌🐮 Mooay 2022 Update - The Tag Update | Changelog</title>
     <link>http://news.mailcow.email/posts/release-2022-05/</link>
     <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-05/</guid>
     <description><![CDATA[Here, the new mailcow update 2022-05 is!
 Yoda, in a parallel universe
  Anyway&hellip; this month we have new stuff for your mailcow again. So let´s get started, shall we?
-What is new? Tags Thanks to the help of @FredleSpl0it the mailcow now has tags. Tags? Yes tags! These can be used for filtering and searching. You can add them either by editing a domain/mailbox or by creating a new one.]]></description>
-</item><item>
+What is new? Tags Thanks to the help of @FredleSpl0itthe mailcow now has tags. Tags? Yes tags! These can be used for filtering and searching. You can add them either by editing a domain/mailbox or by creating a new one.]]></description>
+</item>
+<item>
     <title>🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-04/</guid>
     <description><![CDATA[Moohoo everyone!
 The April update is here with a bunch of new stuff for your flawless E-Mail Flow.
 This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor fixes which are as follows:
- Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
-</item><item>
+ Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
+</item>
+<item>
     <title>🐄💮 Moorch Update 2022 – Revision A | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-03a/</link>
     <pubDate>Thu, 17 Mar 2022 22:29:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-03a/</guid>
     <description><![CDATA[Moohoo everyone!
 We have released an impromptu bug fix update that fixes a few minor bugs and graphical issues.
 These are only minor changes this time, but as the saying goes, &ldquo;Every little bit helps&rdquo;.
   We have moved the version footer back to the correct position. Faithful to the motto: Stay were you are! We have improved the release tag handling with the version footer. The backup and restore script now uses Debian Bullseye instead of Buster.]]></description>
-</item><item>
+</item>
+<item>
     <title>🐄💮 Moorch Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-03/</guid>
     <description><![CDATA[Moohoo everyone, March is here and by the end of the month it will be spring again. Surely the last few days were as scary for you as they were for us.
 🇺🇦 Ukraine, we are standing with you!
 Let&rsquo;s move on to the March update of our mailcow. Spoilers ahead, the March update is not that full and extensive but there are some nice updates included in terms of long term (I&rsquo;m looking at you ClamAV and Olefy!]]></description>
-</item><item>
+</item>
+<item>
     <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-01a/</link>
     <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-01a/</guid>
     <description><![CDATA[Moohoo everyone.
 Today we are releasing the first hotfix for the 2022-01 Update.
 This has changed:
- Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
-</item><item>
+ Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
+</item>
+<item>
     <title>⚠️ Important informations about log4j exploit ⚠️</title>
     <link>http://news.mailcow.email/posts/log4j-dec2022/</link>
     <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/log4j-dec2022/</guid>
     <description><![CDATA[Moohoo everyone! Due to the recent accidents regarding the Java library log4j we would like to inform you, that your mailcow is NOT affected directly by this.
 Yes, it is true, that the Solr Container is a Java application which is affected by the log4j security breach. BUT solr is NOT accessible from the outside of the mailcow stack!
 For those who are worried we released a Solr Hotfix which is fixing the log4j issue with the simple flag +EXTRA_ARGS+=('-Dlog4j2.]]></description>
-</item><item>
+</item>
+<item>
     <title>mailcows updated between 25th August and 2nd September 2021 should be updated again</title>
     <link>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</link>
     <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>André Peters</author>
     <guid>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</guid>
     <description><![CDATA[Hi,
 If you updated your mailcow between 25th August and 2nd September 2021 you most likely encounter a settings map memory leak in Rspamd that was fixed just now.
 Besides that, we also heavily reduced the map hammering with another change in the map generator.
 Update time!
 André]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

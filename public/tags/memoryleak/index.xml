@@ -8,12 +8,13 @@
     <title>mailcows updated between 25th August and 2nd September 2021 should be updated again</title>
     <link>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</link>
     <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>André Peters</author>
     <guid>http://news.mailcow.email/posts/rspamd_memleak_sep2021/</guid>
     <description><![CDATA[Hi,
 If you updated your mailcow between 25th August and 2nd September 2021 you most likely encounter a settings map memory leak in Rspamd that was fixed just now.
 Besides that, we also heavily reduced the map hammering with another change in the map generator.
 Update time!
 André]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

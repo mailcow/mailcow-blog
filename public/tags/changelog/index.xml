@@ -8,81 +8,89 @@
     <title>🌌🐮 Mooay 2022 Update - The Tag Update | Changelog</title>
     <link>http://news.mailcow.email/posts/release-2022-05/</link>
     <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-05/</guid>
     <description><![CDATA[Here, the new mailcow update 2022-05 is!
 Yoda, in a parallel universe
  Anyway&hellip; this month we have new stuff for your mailcow again. So let´s get started, shall we?
-What is new? Tags Thanks to the help of @FredleSpl0it the mailcow now has tags. Tags? Yes tags! These can be used for filtering and searching. You can add them either by editing a domain/mailbox or by creating a new one.]]></description>
-</item><item>
+What is new? Tags Thanks to the help of @FredleSpl0itthe mailcow now has tags. Tags? Yes tags! These can be used for filtering and searching. You can add them either by editing a domain/mailbox or by creating a new one.]]></description>
+</item>
+<item>
     <title>🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-04/</guid>
     <description><![CDATA[Moohoo everyone!
 The April update is here with a bunch of new stuff for your flawless E-Mail Flow.
 This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor fixes which are as follows:
- Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
-</item><item>
+ Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
+</item>
+<item>
     <title>🐄💮 Moorch Update 2022 – Revision A | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-03a/</link>
     <pubDate>Thu, 17 Mar 2022 22:29:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-03a/</guid>
     <description><![CDATA[Moohoo everyone!
 We have released an impromptu bug fix update that fixes a few minor bugs and graphical issues.
 These are only minor changes this time, but as the saying goes, &ldquo;Every little bit helps&rdquo;.
   We have moved the version footer back to the correct position. Faithful to the motto: Stay were you are! We have improved the release tag handling with the version footer. The backup and restore script now uses Debian Bullseye instead of Buster.]]></description>
-</item><item>
+</item>
+<item>
     <title>🐄💮 Moorch Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-03/</guid>
     <description><![CDATA[Moohoo everyone, March is here and by the end of the month it will be spring again. Surely the last few days were as scary for you as they were for us.
 🇺🇦 Ukraine, we are standing with you!
 Let&rsquo;s move on to the March update of our mailcow. Spoilers ahead, the March update is not that full and extensive but there are some nice updates included in terms of long term (I&rsquo;m looking at you ClamAV and Olefy!]]></description>
-</item><item>
+</item>
+<item>
     <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-01a/</link>
     <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-01a/</guid>
     <description><![CDATA[Moohoo everyone.
 Today we are releasing the first hotfix for the 2022-01 Update.
 This has changed:
- Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
-</item><item>
+ Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
+</item>
+<item>
     <title>📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</title>
     <link>http://news.mailcow.email/posts/release-2022-01/</link>
     <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-01/</guid>
     <description><![CDATA[Moohoo everyone, Niklas here with the latest changelog for our beloved mailcow email software!
 This month there is a big chunk of changes, some of them even very important regarding 2FA, but more about that later.
 First of all we would like to thank you for your loyalty and cooperation, because without you the mailcow project wouldn&rsquo;t be where it is now ❤️
 We would also like to apologize for the fact that we are only now releasing a new update (master branch release), because some of the fixes included in this update (SOGo e.]]></description>
-</item><item>
+</item>
+<item>
     <title>🐄 Moovember 2021 - Patchnotes</title>
     <link>http://news.mailcow.email/posts/moovember2021/</link>
     <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/moovember2021/</guid>
     <description><![CDATA[Moohoo everyone!
 Niklas here to present you the latest news around our lovely mailcow :)
 Let&rsquo;s get started, shall we?
  Major changes from November 2021 for the mailcow stack:  SOGo update to 5.3.0 Dovecot update to 2.3.17 ClamAV update to 0.103.4 [Web] Auto-generated app passwords for Apple configuration profiles  Please consider updating your mailcow stack to ensure a stable environment.
  All changes from November 2021 for the mailcow stack (newest to oldest): 30th November 2021:]]></description>
-</item><item>
+</item>
+<item>
     <title>🐄 Mooctober 2021 - the feldsam edition</title>
     <link>http://news.mailcow.email/posts/mooctober2021/</link>
     <pubDate>Mon, 18 Oct 2021 21:55:47 &#43;0100</pubDate>
-    <author>Author</author>
+    <author>André Peters</author>
     <guid>http://news.mailcow.email/posts/mooctober2021/</guid>
-    <description><![CDATA[A big thanks to Kristian Feldsam for integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
-Furthermore we introduce our new cold standby solution.
+    <description><![CDATA[A big thanks to Kristian Feldsamfor integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
+Furthermore we introduce our new cold standby solution.
 With this new script you are able to create a fully working, 1:1, consistent copy of your running mailcow without downtime.
 Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up -d&rdquo;.]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

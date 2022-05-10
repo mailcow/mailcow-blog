@@ -8,11 +8,12 @@
     <title>📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-01/</link>
     <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
-    <author>Autor</author>
+    <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/de/posts/release-2022-01/</guid>
     <description><![CDATA[Moohoo an alle, Niklas hier mit dem neuesten Changelog für unsere geliebte mailcow E-Mail-Software!
 Diesen Monat gibt es einen großen Brocken an Änderungen, einige davon sogar sehr wichtig in Bezug auf 2FA, aber dazu später mehr.
 Zuallererst möchten wir uns bei euch für eure Treue und Zusammenarbeit bedanken, denn ohne euch wäre das mailcow-Projekt nicht da, wo es jetzt ist ❤️.
 Wir möchten uns auch dafür entschuldigen, dass wir erst jetzt ein neues Update veröffentlichen (Master-Branch-Release), denn einige der in diesem Update enthaltenen Fehlerbehebungen (SOGo z.]]></description>
-</item></channel>
+</item>
+</channel>
 </rss>

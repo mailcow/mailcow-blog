@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes - mailcow: dockerized - Blog</title><meta name="Description" content="Patchnotes for the January 2022 Update"><meta property="og:title" content="📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes" />
 <meta property="og:description" content="Patchnotes for the January 2022 Update" />
 <meta property="og:type" content="article" />
@@ -17,10 +16,10 @@
 
 <meta name="twitter:title" content="📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes"/>
 <meta name="twitter:description" content="Patchnotes for the January 2022 Update"/>
-<meta name="application-name" content="mailcow: dockerized - Blog">
-<meta name="apple-mobile-web-app-title" content="mailcow: dockerized - Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-01/" /><link rel="prev" href="http://news.mailcow.email/posts/log4j-dec2022/" /><link rel="next" href="http://news.mailcow.email/posts/mailcow-twitter/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-01/" /><link rel="prev" href="http://news.mailcow.email/posts/log4j-dec2022/" /><link rel="next" href="http://news.mailcow.email/posts/mailcow-twitter/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,16 +28,16 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/news.mailcow.email\/posts\/release-2022-01\/"
-        },"genre": "posts","keywords": "2022, update, changelog","wordcount":  513 ,
+        },"genre": "posts","keywords": "2022, update, changelog","wordcount":  515 ,
         "url": "http:\/\/news.mailcow.email\/posts\/release-2022-01\/","datePublished": "2022-01-21T14:55:47+01:00","dateModified": "2022-01-21T14:55:47+01:00","publisher": {
             "@type": "Organization",
-            "name": "Niklas Meyer"},"author": {
+            "name": ""},"author": {
                 "@type": "Person",
                 "name": "Niklas Meyer"
             },"description": "Patchnotes for the January 2022 Update"
     }
     </script></head>
-    <body header-desktop="fixed" header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body data-header-desktop="fixed" data-header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -53,10 +52,10 @@
         title="/images/cow_mailcow.svg" />mailcow: dockerized - Blog<span class="header-title-post">📰</span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/" rel="noopener noreffer" target="_blank"> Docs </a><a class="menu-item" href="https://www.servercow.de/mailcow?lang=en#support" title="Buy Support" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i>   Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/" rel="noopener noreffer" target="_blank"> Docs </a><a class="menu-item" href="https://www.servercow.de/mailcow?lang=en#support" title="Buy Support" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i>   Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
                         <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/release-2022-01/" selected>English</option><option value="/de/posts/release-2022-01/">Deutsch</option></select>
                     </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -79,23 +78,17 @@
             </div>
         </div>
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/" title="" rel="noopener noreffer" target="_blank">Docs</a><a class="menu-item" href="https://www.servercow.de/mailcow?lang=en#support" title="Buy Support" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i> Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/posts/release-2022-01/" selected>English</option><option value="/de/posts/release-2022-01/">Deutsch</option></select>
                 </a></div>
     </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Niklas Meyer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw"></i>Updates</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="01-21-2022">01-21-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;513 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+</header><main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="01-21-2022">01-21-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;515 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="content" id="content"><p><strong>Moohoo</strong> everyone, Niklas here with the latest changelog for our beloved mailcow email software!</p>
 <p>This month there is a big chunk of changes, some of them even very important regarding 2FA, but more about that later.</p>
 <p>First of all we would like to thank you for your loyalty and cooperation, because without you the mailcow project wouldn&rsquo;t be where it is now ❤️</p>
@@ -108,18 +101,25 @@
 Well, if you have already registered a FIDO2 security key as 2FA via U2F and you apply the update, you will be greeted by a message saying that your FIDO2 key is still running via U2F and will therefore be removed from the account as 2FA. <strong>But don&rsquo;t worry!</strong> As soon as you are back in the admin administration you can simply register the same key again, but this time as WebAuthn (not U2F).</p>
 <p>The process is the same, even the position of the button to start the registration is the same, so you should be able to set up and use your key without any problems.</p>
 <p>Thanks to <strong>@FreddleSpl0it</strong> for the implementation!</p>
-<p><a href="https://mailcow.github.io/mailcow-dockerized-docs/manual-guides/mailcow-UI/u_e-mailcow_ui-tfa/" title="In our documentation you will find more detailed information." target="_blank" rel="noopener noreffer">In our documentation you will find more detailed information about this.</a></p>
+<p><a href="https://mailcow.github.io/mailcow-dockerized-docs/manual-guides/mailcow-UI/u_e-mailcow_ui-tfa/" title="In our documentation you will find more detailed information." target="_blank" rel="noopener noreffer">In our documentation you will find more detailed information about this.</a>
+</p>
 <h4 id="important-changes">Important changes:</h4>
 <ul>
 <li>Sogo was updated to version 5.5.0. Yay, finally no more grayed out buttons in the submenus!</li>
-<li>The log4j fix (in Solr) has been improved again. On the advice of the <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/2022/01/warnmeldung_cb-k21-1264_update_20.html" title="German Federal Office for Information Security" target="_blank" rel="noopener noreffer">German Federal Office for Information Security</a>, we have removed the affected log4j class. <strong>The Solr container was not accessible from the Internet at any time</strong>.</li>
-<li>On the advice of the <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/TW/2022/01/warnmeldung_tw-t22-0012.html" target="_blank" rel="noopener noreffer">German Federal Office for Information Security</a> we updated <strong>ClamAV to 0.103.5</strong> because it was <em>vulnerable to a Denial of Service attack</em>.</li>
-<li>In the Olefy container, the annoying ping error (spam from Olefy in the console) has finally been fixed! Thanks to <strong>@16bitsysop</strong> for the fix! &ndash;&gt; Fixing issue <a href="https://github.com/mailcow/mailcow-dockerized/issues/4401" title="#4401" target="_blank" rel="noopener noreffer">#4401</a></li>
-<li>Due to the update to Alpine 3.15 or higher the acme container has changed the SSL folder  (Also already sporadically with acme-mailcow 1:79), this was fixed by <strong>@mkuron</strong>. Thanks for that. &ndash;&gt; Fixing issue <a href="https://github.com/mailcow/mailcow-dockerized/issues/4392" title="#4392" target="_blank" rel="noopener noreffer">#4392</a></li>
-<li>We have fixed the bugs regarding GeoIP and netfilter (or rather <strong>@marcvorwerk</strong> did) &ndash;&gt; Fixing issue <a href="https://github.com/mailcow/mailcow-dockerized/issues/2668" title="#2668" target="_blank" rel="noopener noreffer">#2668</a></li>
+<li>The log4j fix (in Solr) has been improved again. On the advice of the <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/2022/01/warnmeldung_cb-k21-1264_update_20.html" title="German Federal Office for Information Security" target="_blank" rel="noopener noreffer">German Federal Office for Information Security</a>
+, we have removed the affected log4j class. <strong>The Solr container was not accessible from the Internet at any time</strong>.</li>
+<li>On the advice of the <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/TW/2022/01/warnmeldung_tw-t22-0012.html" target="_blank" rel="noopener noreffer">German Federal Office for Information Security</a>
+ we updated <strong>ClamAV to 0.103.5</strong> because it was <em>vulnerable to a Denial of Service attack</em>.</li>
+<li>In the Olefy container, the annoying ping error (spam from Olefy in the console) has finally been fixed! Thanks to <strong>@16bitsysop</strong> for the fix! &ndash;&gt; Fixing issue <a href="https://github.com/mailcow/mailcow-dockerized/issues/4401" title="#4401" target="_blank" rel="noopener noreffer">#4401</a>
+</li>
+<li>Due to the update to Alpine 3.15 or higher the acme container has changed the SSL folder  (Also already sporadically with acme-mailcow 1:79), this was fixed by <strong>@mkuron</strong>. Thanks for that. &ndash;&gt; Fixing issue <a href="https://github.com/mailcow/mailcow-dockerized/issues/4392" title="#4392" target="_blank" rel="noopener noreffer">#4392</a>
+</li>
+<li>We have fixed the bugs regarding GeoIP and netfilter (or rather <strong>@marcvorwerk</strong> did) &ndash;&gt; Fixing issue <a href="https://github.com/mailcow/mailcow-dockerized/issues/2668" title="#2668" target="_blank" rel="noopener noreffer">#2668</a>
+</li>
 </ul>
 <hr>
-<p><strong>There were many more!</strong> But that would go beyond the scope here, just have a look at the <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-01" target="_blank" rel="noopener noreffer">Release</a>, then you will see the whole extent.</p>
+<p><strong>There were many more!</strong> But that would go beyond the scope here, just have a look at the <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-01" target="_blank" rel="noopener noreffer">Release</a>
+, then you will see the whole extent.</p>
 <p>Once again, thank you to all the <strong>contributors and donors</strong>.</p>
 <p>On behalf of the Servercow/mailcow/tinc team we wish you (wherever you are) a pleasant morning, noon or evening and <strong>stay healthy</strong>!</p>
 </div><div class="post-footer" id="post-footer">
@@ -127,37 +127,35 @@ Well, if you have already registered a FIDO2 security key as 2FA via U2F and you
         <div class="post-info-line">
             <div class="post-info-mod">
                 <span>Updated on 01-21-2022</span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
+            </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://news.mailcow.email/posts/release-2022-01/" data-title="📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes" data-via="https://twitter.com/mailcow_email" data-hashtags="2022,update,changelog"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://news.mailcow.email/posts/release-2022-01/" data-hashtag="2022"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://news.mailcow.email/posts/release-2022-01/" data-title="📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://news.mailcow.email/posts/release-2022-01/" data-title="📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://news.mailcow.email/posts/release-2022-01/" data-title="📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/2022/">2022</a>,&nbsp;<a href="/tags/update/">update</a>,&nbsp;<a href="/tags/changelog/">changelog</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/2022/">2022</a>,&nbsp;<a href="/tags/update/">update</a>,&nbsp;<a href="/tags/changelog/">changelog</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/log4j-dec2022/" class="prev" rel="prev" title="⚠️ Important informations about log4j exploit ⚠️"><i class="fas fa-angle-left fa-fw"></i>⚠️ Important informations about log4j exploit ⚠️</a>
-            <a href="/posts/mailcow-twitter/" class="next" rel="next" title="Is it a 🐦? Is it a ✈️? No it&#39;s the mailcow on Twitter!">Is it a 🐦? Is it a ✈️? No it&#39;s the mailcow on Twitter!<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/log4j-dec2022/" class="prev" rel="prev" title="⚠️ Important informations about log4j exploit ⚠️"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>⚠️ Important informations about log4j exploit ⚠️</a>
+            <a href="/posts/mailcow-twitter/" class="next" rel="next" title="Is it a 🐦? Is it a ✈️? No it&#39;s the mailcow on Twitter!">Is it a 🐦? Is it a ✈️? No it&#39;s the mailcow on Twitter!<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div>
+        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div>
         </div>
     </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw"></i>
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw"></i>
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>
