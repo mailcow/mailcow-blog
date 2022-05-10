@@ -4,19 +4,7 @@
         <link>http://news.mailcow.email/posts/</link>
         <description>All Posts | mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 10 May 2022 16:58:15 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Rsstest</title>
-    <link>http://news.mailcow.email/posts/rsstest/</link>
-    <pubDate>Tue, 10 May 2022 16:58:15 &#43;0200</pubDate>
-    <author>Moohoo</author>
-    <guid>http://news.mailcow.email/posts/rsstest/</guid>
-    <description><![CDATA[Hallo RSSTESTBot!
-Wie geht´s dir?
-Mir geht´s gut!
-Danke der Nachfrage.
-Liebe Grüße Der Weihnachtsmann]]></description>
-</item>
-<item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 05 May 2022 10:34:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/posts/" rel="self" type="application/rss+xml" /><item>
     <title>🌌🐮 Mooay 2022 Update - The Tag Update | Changelog</title>
     <link>http://news.mailcow.email/posts/release-2022-05/</link>
     <pubDate>Thu, 05 May 2022 10:34:00 &#43;0100</pubDate>
@@ -115,6 +103,16 @@ We look forward to getting in touch with you there and keeping you up to date.]]
 This month there is a big chunk of changes, some of them even very important regarding 2FA, but more about that later.
 First of all we would like to thank you for your loyalty and cooperation, because without you the mailcow project wouldn&rsquo;t be where it is now ❤️
 We would also like to apologize for the fact that we are only now releasing a new update (master branch release), because some of the fixes included in this update (SOGo e.]]></description>
+</item>
+<item>
+    <title>⚠️ Important informations about log4j exploit ⚠️</title>
+    <link>http://news.mailcow.email/posts/log4j-dec2022/</link>
+    <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
+    <author>Niklas Meyer</author>
+    <guid>http://news.mailcow.email/posts/log4j-dec2022/</guid>
+    <description><![CDATA[Moohoo everyone! Due to the recent accidents regarding the Java library log4j we would like to inform you, that your mailcow is NOT affected directly by this.
+Yes, it is true, that the Solr Container is a Java application which is affected by the log4j security breach. BUT solr is NOT accessible from the outside of the mailcow stack!
+For those who are worried we released a Solr Hotfix which is fixing the log4j issue with the simple flag +EXTRA_ARGS+=('-Dlog4j2.]]></description>
 </item>
 </channel>
 </rss>
