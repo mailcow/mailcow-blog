@@ -76,7 +76,7 @@ theme = "LoveIt"
     [params.home.posts]
       enable = true
       # special amount of posts in each home posts page
-      paginate = 6
+      paginate = 10
       # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
       # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
@@ -301,12 +301,4 @@ theme = "LoveIt"
     author = false
     since = 2017
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
-	custom = '<a href="/de/imprint/">Impressum</a> | <a href="/policy/">Datenschutz'
-	
-	[languages.de.params.home.posts]
-      enable = true
-      # special amount of posts in each home posts page
-      paginate = 6
-      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
-      # default behavior when you don't set "hiddenFromHomePage" in front matter
-      defaultHiddenFromHomePage = false
+	custom = '<a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz'
