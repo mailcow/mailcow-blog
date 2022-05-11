@@ -88,12 +88,21 @@ Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, 
                 </a></div>
     </div>
 </header><main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">⚠️ Wichtige Informationen über log4j-Exploit ⚠️</h1><div class="post-meta">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Inhalt</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">⚠️ Wichtige Informationen über log4j-Exploit ⚠️</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
 </span>&nbsp;<span class="post-category">enthalten in <a href="/de/categories/sicherheit/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Sicherheit</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="13.12.2021">13.12.2021</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;93 Wörter&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;Eine Minute&nbsp;</div>
-        </div><div class="content" id="content"><p><strong>Moohoo an alle!</strong> <br>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Inhalt</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p><strong>Moohoo an alle!</strong> <br>
 Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek <strong>log4j</strong> möchten wir euch mitteilen, dass eure mailcow <strong>NICHT</strong> direkt davon betroffen ist.</p>
 <p>Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. <strong>Aber</strong> Solr ist <strong>NICHT</strong> von außerhalb des mailcow-Stacks zugänglich!</p>
 <p>Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag <code>+EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true')</code> behebt, welches dieses Problem schließt.</p>

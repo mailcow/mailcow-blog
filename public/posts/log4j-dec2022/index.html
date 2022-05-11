@@ -88,12 +88,21 @@ For those who are worried we released a Solr Hotfix which is fixing the log4j is
                 </a></div>
     </div>
 </header><main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">⚠️ Important informations about log4j exploit ⚠️</h1><div class="post-meta">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">⚠️ Important informations about log4j exploit ⚠️</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Security</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="12-13-2021">12-13-2021</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;101 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="content" id="content"><p><strong>Moohoo everyone!</strong> <br>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p><strong>Moohoo everyone!</strong> <br>
 Due to the recent accidents regarding the Java library <strong>log4j</strong> we would like to inform you, that your mailcow is <strong>NOT</strong> affected directly by this.</p>
 <p>Yes, it is true, that the Solr Container is a Java application which is affected by the log4j security breach. <strong>BUT</strong> solr is <strong>NOT</strong> accessible from the outside of the mailcow stack!</p>
 <p>For those who are worried we released a Solr Hotfix which is fixing the log4j issue with the simple flag <code>+EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true')</code> which closed this issue.</p>

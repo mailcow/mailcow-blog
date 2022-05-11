@@ -126,7 +126,7 @@ theme = "LoveIt"
     fontawesome = true
     linkToMarkdown = true
     [params.page.toc]
-      enable = false
+      enable = true
       keepStatic = false
       auto = true
     [params.page.code]
