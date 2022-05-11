@@ -92,7 +92,7 @@
                     hreflang="en"
                     href="http://news.mailcow.email/posts/release-2022-05/"
                     /></url><url>
-            <loc>http://news.mailcow.email/categories/hotfix/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>http://news.mailcow.email/categories/hotfix/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="de"
                         href="http://news.mailcow.email/de/categories/hotfix/"
@@ -101,7 +101,7 @@
                     hreflang="en"
                     href="http://news.mailcow.email/categories/hotfix/"
                     /></url><url>
-            <loc>http://news.mailcow.email/tags/hotfix/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>http://news.mailcow.email/tags/hotfix/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="de"
                         href="http://news.mailcow.email/de/tags/hotfix/"
@@ -110,8 +110,8 @@
                     hreflang="en"
                     href="http://news.mailcow.email/tags/hotfix/"
                     /></url><url>
-            <loc>http://news.mailcow.email/tags/important/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>http://news.mailcow.email/posts/2022-04-info/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>http://news.mailcow.email/tags/important/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://news.mailcow.email/posts/2022-04-info/</loc><lastmod>2022-04-06T10:01:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="de"
                         href="http://news.mailcow.email/de/posts/2022-04-info/"
