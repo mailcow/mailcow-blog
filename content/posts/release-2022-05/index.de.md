@@ -1,6 +1,6 @@
 ---
-title: "🌌🐮 Mooai 2022 Update - Das Tag Update | Änderungen"
-date: 2022-05-05T10:34:00+01:00
+title: "🌌🐮 Mooai 2022 Update - Das Tag Update | Revision B - Änderungen"
+date: 2022-05-12T09:34:00+01:00
 draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
@@ -9,13 +9,56 @@ tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
 ---
 
+### 2022-05b
+Wir sind es wieder!
+
+Heute haben wir ein kleines API Update, das sich hauptsächlich auf die UI konzentriert.
+
+Wie einige von euch berichtet haben, funktionieren die API-Aufrufe für Domains/Mailboxen nicht mehr, wenn kein Tag gesetzt ist.
+
+Dies ist nun behoben.
+
+Außerdem haben wir eine kleine Änderung an der Benutzeroberfläche vorgenommen. Wussten Sie schon, dass es ein kleines Plus-Symbol auf der linken Seite einer Domain/Mailbox gibt? Nein? Keine Sorge, es war ein wenig schwer zu sehen... bis jetzt :)
+
+Wie immer gibt es auch zu diesem Update eine eigene Release Seite auf GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05b
+
+Das war's im Grunde... oh nein, warte, eine Sache noch!
+Wir haben jetzt die mailcow Version in unser Bug Reporting Formular auf GitHub aufgenommen. Wenn ihr also einen Bug melden wollt, füllt bitte auch die Versionszeile im Issue-Formular aus.
+
+Das war's dann auch schon!
+
+Nochmals vielen Dank für alle Mitwirkenden und mailcow Nutzer/Admins.
+
+Euer mailcow Team
+
+*Niklas*
+
+---
+
+### 2022-05a
+Hallo nochmal Leute,
+
+wir haben gerade den ersten Hotfix für 2022-05 veröffentlicht.
+
+Er behebt einen kritischen UI Bug, der nach dem Update 2022-05 zu einer Unerreichbarkeit der UI führte.
+
+Das Problem war ein fehlender Platzhalter, der dazu führte, dass ein wichtiger Ordner aus dem Git Repository gelöscht wurde, der für die Anzeige der UI benötigt wird.
+
+Wir entschuldigen uns dafür.
+
+Euer mailcow Team
+
+*Niklas*
+
+---
+
+### 2022-05
+
 > *Das neue mailcow update 2022-05 hier ist!*<br>
 **Yoda, in einem Paralleluniversum**
 
 Wie dem auch sei, haben wir diesen Monat wieder neue Sachen für die mailcow für euch.
 Also: Lasst uns loslegen oder?
-
-### Was ist neu?
 
 #### Tags
 Dank der Hilfe von [@FredleSpl0it](https://github.com/FreddleSpl0it "@FredleSpl0it") besitzt die mailcow nun Tags. Tags? Ja Tags! Diese können zum Filtern bzw. suchen verwendet werden. Hinzufügen könnt ihr diese entweder, indem ihr eine Domain/Mailbox bearbeitet oder eine neue anlegt. In beiden Fällen lacht euch der Tags Bereich an.

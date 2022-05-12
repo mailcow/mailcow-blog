@@ -1,6 +1,6 @@
 ---
-title: "🌌🐮 Mooay 2022 Update - The Tag Update | Changelog"
-date: 2022-05-05T10:34:00+01:00
+title: "🌌🐮 Mooay 2022 Update - The Tag Update | Revision B - Changelog"
+date: 2022-05-12T09:32:00+01:00
 draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
@@ -9,13 +9,55 @@ tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
 ---
 
+### 2022-05b
+It´s us again!
+
+Today we have a small API Fix Update which focus mainly on the UI.
+
+As some of you reported the API Calls for Domains/Mailboxes don´t work anymore if there is no Tag set.
+
+This is now fixed.
+
+Additionaly, we´ve added a small tweak for the UI. Did you know that there was a little plus symbol at the left of a Domain/Mailbox? No? Don´t worry it was a little hard to see... until now :)
+
+As always, feel free to visit the official release page on Github: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05b
+
+That´s all basically... oh no wait one more thing!
+We´ve now included the mailcow Version to our Bug Reporting Formular on GitHub. So if you want to report a Bug please also fill out the Version row on the Issue form.
+
+Now that´s all!
+
+Thanks again for all of the contributors and mailcow users/admins.
+
+Your mailcow Team
+
+*Niklas*
+
+---
+
+### 2022-05a
+Hello again folks,
+
+we´ve just released the first Hotfix for 2022-05.
+
+It fixes a critical UI Bug which caused a inaccessability for the UI after the Update 2022-05.
+
+The issue was a missing placeholder which caused a important folder to be deleted from the Git Repository, which is needed to display the UI.
+
+Sorry for that.
+
+Your mailcow Team
+
+*Niklas*
+
+---
+
+### 2022-05
 > *Here, the new mailcow update 2022-05 is!*<br>
 **Yoda, in a parallel universe**
 
 Anyway... this month we have new stuff for your mailcow again.
 So let´s get started, shall we?
-
-### What is new?
 
 #### Tags
 Thanks to the help of [@FredleSpl0it](https://github.com/FreddleSpl0it "@FredleSpl0it") the mailcow now has tags. Tags? Yes tags! These can be used for filtering and searching. You can add them either by editing a domain/mailbox or by creating a new one. In both cases the tags section will show itself to you.
