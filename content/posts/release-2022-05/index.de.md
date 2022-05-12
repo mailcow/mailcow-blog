@@ -18,7 +18,7 @@ Wie einige von euch berichtet haben, funktionieren die API-Aufrufe für Domains/
 
 Dies ist nun behoben.
 
-Außerdem haben wir eine kleine Änderung an der Benutzeroberfläche vorgenommen. Wussten ihr schon, dass es ein kleines Plus-Symbol auf der linken Seite einer Domain/Mailbox gibt? Nein? Keine Sorge, es war ein wenig schwer zu sehen... bis jetzt :)
+Außerdem haben wir eine kleine Änderung an der Benutzeroberfläche vorgenommen. Wusstet ihr schon, dass es ein kleines Plus-Symbol auf der linken Seite einer Domain/Mailbox gibt? Nein? Keine Sorge, es war ein wenig schwer zu sehen... bis jetzt :)
 
 Wie immer gibt es auch zu diesem Update eine eigene Release Seite auf GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05b
 
