@@ -61,6 +61,18 @@ Diesmal sind es nur kleine Änderungen, aber wie das Sprichwort sagt: &ldquo;Kle
 Kommen wir nun zum März Update unserer mailcow. Spoiler vorab, so voll und umfangreich ist das März Update nicht aber es sind einige nette Updates im Bezug auf die Langzeit enthalten (ich schaue dich an ClamAV und Olefy!]]></description>
 </item>
 <item>
+    <title>Empfehlung des Hauses: Die Videoreihe von Raspberry Pi Cloud (YT)</title>
+    <link>http://news.mailcow.email/de/posts/de-youtube-raspberrypicloud/</link>
+    <pubDate>Wed, 02 Mar 2022 11:57:52 &#43;0200</pubDate>
+    <author>Niklas Meyer</author>
+    <guid>http://news.mailcow.email/de/posts/de-youtube-raspberrypicloud/</guid>
+    <description><![CDATA[Tach zusammen!
+Mal kein Update Log sondern eine Empfehlung unsererseits an alle, die neu in die mailcow Welt einsteigen oder ihr Wissen auffrischen wollen.
+Solltet ihr eines der Sachen mit Ja beantwortet haben wird die folgende Video Reihe für euch interessant sein:
+  Schaut generell einfach mal rein, wenn ihr mögt und lasst ein bisschen Liebe da, als dank der Vorstellung unseres mailcow Projektes.
+Wir bedanken uns an dieser Stelle noch einmal ganz herzlich bei dir Dennis, wenn du das liest fühl dich gedrückt!]]></description>
+</item>
+<item>
     <title>📘Neu: Die mailcow Docs sprechen jetzt auch Deutsch! 📘 - mailcow Docs 2.0 Änderungen</title>
     <link>http://news.mailcow.email/de/posts/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
@@ -106,16 +118,6 @@ Wir freuen uns darauf, dort mit Ihnen in Kontakt zu treten und Sie auf dem Laufe
 Diesen Monat gibt es einen großen Brocken an Änderungen, einige davon sogar sehr wichtig in Bezug auf 2FA, aber dazu später mehr.
 Zuallererst möchten wir uns bei euch für eure Treue und Zusammenarbeit bedanken, denn ohne euch wäre das mailcow-Projekt nicht da, wo es jetzt ist ❤️.
 Wir möchten uns auch dafür entschuldigen, dass wir erst jetzt ein neues Update veröffentlichen (Master-Branch-Release), denn einige der in diesem Update enthaltenen Fehlerbehebungen (SOGo z.]]></description>
-</item>
-<item>
-    <title>⚠️ Wichtige Informationen über log4j-Exploit ⚠️</title>
-    <link>http://news.mailcow.email/de/posts/log4j-dec2022/</link>
-    <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
-    <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/log4j-dec2022/</guid>
-    <description><![CDATA[Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
-Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
-Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag +EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true') behebt, welches dieses Problem schließt.]]></description>
 </item>
 </channel>
 </rss>
