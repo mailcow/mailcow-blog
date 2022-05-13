@@ -1,12 +1,28 @@
 ---
-title: "🌌🐮 Mooay 2022 Update - The Tag Update | Revision B - Changelog"
-date: 2022-05-12T09:32:00+01:00
+title: "🌌🐮 Mooay 2022 Update - The Tag Update | Revision C - Changelog"
+date: 2022-05-13T09:22:00+02:00
 draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 
 tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
+---
+
+### 2022-05c
+It´s us again again!
+
+This time we´ve published the 2022-05c Update which is a very small one.
+
+It changed the API a bit again. This time for security reasons.
+
+Head over to GitHub to see the full changelog: 
+https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c
+
+Stay healthy
+
+*Niklas*
+
 ---
 
 ### 2022-05b

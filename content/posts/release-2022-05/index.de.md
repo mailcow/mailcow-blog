@@ -1,12 +1,28 @@
 ---
-title: "🌌🐮 Mooai 2022 Update - Das Tag Update | Revision B - Änderungen"
-date: 2022-05-12T09:34:00+01:00
+title: "🌌🐮 Mooai 2022 Update - Das Tag Update | Revision C - Änderungen"
+date: 2022-05-12T09:23:00+02:00
 draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 
 tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
+---
+
+### 2022-05c
+Wir sind es wieder (nochmal)!
+
+Diesmal haben wir das 2022-05c Update veröffentlicht, welches ein sehr kleines Update ist.
+
+Es hat die API wieder ein wenig verändert. Diesmal aus Sicherheitsgründen.
+
+Geht rüber zu GitHub, um das vollständige Changelog zu sehen: 
+https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c
+
+Bleibt gesund
+
+*Niklas*
+
 ---
 
 ### 2022-05b

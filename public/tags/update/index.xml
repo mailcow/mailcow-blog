@@ -4,17 +4,20 @@
         <link>http://news.mailcow.email/tags/update/</link>
         <description>update - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 12 May 2022 09:32:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/update/" rel="self" type="application/rss+xml" /><item>
-    <title>🌌🐮 Mooay 2022 Update - The Tag Update | Revision B - Changelog</title>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 13 May 2022 09:22:00 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/tags/update/" rel="self" type="application/rss+xml" /><item>
+    <title>🌌🐮 Mooay 2022 Update - The Tag Update | Revision C - Changelog</title>
     <link>http://news.mailcow.email/posts/release-2022-05/</link>
-    <pubDate>Thu, 12 May 2022 09:32:00 &#43;0100</pubDate>
+    <pubDate>Fri, 13 May 2022 09:22:00 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
     <guid>http://news.mailcow.email/posts/release-2022-05/</guid>
-    <description><![CDATA[2022-05b It´s us again!
+    <description><![CDATA[2022-05c It´s us again again!
+This time we´ve published the 2022-05c Update which is a very small one.
+It changed the API a bit again. This time for security reasons.
+Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05cStay healthy
+Niklas
+ 2022-05b It´s us again!
 Today we have a small API Fix Update which focus mainly on the UI.
-As some of you reported the API Calls for Domains/Mailboxes don´t work anymore if there is no Tag set.
-This is now fixed.
-Additionaly, we´ve added a small tweak for the UI. Did you know that there was a little plus symbol at the left of a Domain/Mailbox? No? Don´t worry it was a little hard to see&hellip; until now :)]]></description>
+As some of you reported the API Calls for Domains/Mailboxes don´t work anymore if there is no Tag set.]]></description>
 </item>
 <item>
     <title>🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</title>
