@@ -1,5 +1,5 @@
 ---
-title: "⚠️ 2022-05c Wichtiges Sicherheitsupdate! ⚠️"
+title: "⚠️ 2022-05d Wichtiges Sicherheitsupdate! ⚠️"
 date: 2022-05-19T16:03:56+02:00
 draft: false
 author: Niklas Meyer
@@ -7,7 +7,7 @@ authorLink: "https://github.com/DerLinkman"
 toc: false
 
 
-tags: ["2022", "update", "changelog", "security", "hotfix", "wichtig"]
+tags: ["2022", "update", "security", "hotfix", "wichtig"]
 categories: ["Sicherheit", "Hotfix"]
 ---
 
