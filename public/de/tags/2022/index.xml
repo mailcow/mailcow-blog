@@ -4,7 +4,19 @@
         <link>http://news.mailcow.email/de/tags/2022/</link>
         <description>2022 - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 12 May 2022 09:23:00 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/2022/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/2022/" rel="self" type="application/rss+xml" /><item>
+    <title>⚠️ 2022-05c Wichtiges Sicherheitsupdate! ⚠️</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-05d/</link>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
+    <author>Niklas Meyer</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-05d/</guid>
+    <description><![CDATA[Hallo zusammen,
+wir haben gestern einen wichtigen Hinweis bezüglich einer kritischen Sicherheitslücke in der mailcow zugespielt bekommen (Danke nochmal dafür).
+Diese betrifft IMAPSYNC und verschafft zugriff auf Administrationsrechte im mailcow UI sowie der API.
+Es wird dringend empfohlen das Update so schnell wie möglich zu installieren um so eine Ausnutzung der Lücke auszuschließen.
+Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05dDas Update entfernt keine wichtigen Funktionen aus der mailcow bzw.]]></description>
+</item>
+<item>
     <title>🌌🐮 Mooai 2022 Update - Das Tag Update | Revision C - Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-05/</link>
     <pubDate>Thu, 12 May 2022 09:23:00 &#43;0200</pubDate>

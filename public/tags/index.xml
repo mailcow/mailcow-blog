@@ -4,12 +4,44 @@
         <link>http://news.mailcow.email/tags/</link>
         <description>Tags - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 13 May 2022 09:22:00 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/tags/" rel="self" type="application/rss+xml" /><item>
     <title>2022</title>
     <link>http://news.mailcow.email/tags/2022/</link>
-    <pubDate>Fri, 13 May 2022 09:22:00 &#43;0200</pubDate>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
     <author>Moohoo</author>
     <guid>http://news.mailcow.email/tags/2022/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>hotfix</title>
+    <link>http://news.mailcow.email/tags/hotfix/</link>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
+    <author>Moohoo</author>
+    <guid>http://news.mailcow.email/tags/hotfix/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>important</title>
+    <link>http://news.mailcow.email/tags/important/</link>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
+    <author>Moohoo</author>
+    <guid>http://news.mailcow.email/tags/important/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>security</title>
+    <link>http://news.mailcow.email/tags/security/</link>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
+    <author>Moohoo</author>
+    <guid>http://news.mailcow.email/tags/security/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>update</title>
+    <link>http://news.mailcow.email/tags/update/</link>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
+    <author>Moohoo</author>
+    <guid>http://news.mailcow.email/tags/update/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -26,30 +58,6 @@
     <pubDate>Fri, 13 May 2022 09:22:00 &#43;0200</pubDate>
     <author>Moohoo</author>
     <guid>http://news.mailcow.email/tags/changelog/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>update</title>
-    <link>http://news.mailcow.email/tags/update/</link>
-    <pubDate>Fri, 13 May 2022 09:22:00 &#43;0200</pubDate>
-    <author>Moohoo</author>
-    <guid>http://news.mailcow.email/tags/update/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>hotfix</title>
-    <link>http://news.mailcow.email/tags/hotfix/</link>
-    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
-    <author>Moohoo</author>
-    <guid>http://news.mailcow.email/tags/hotfix/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>important</title>
-    <link>http://news.mailcow.email/tags/important/</link>
-    <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
-    <author>Moohoo</author>
-    <guid>http://news.mailcow.email/tags/important/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -74,14 +82,6 @@
     <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
     <author>Moohoo</author>
     <guid>http://news.mailcow.email/tags/2021/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>log4j</title>
-    <link>http://news.mailcow.email/tags/log4j/</link>
-    <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
-    <author>Moohoo</author>
-    <guid>http://news.mailcow.email/tags/log4j/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

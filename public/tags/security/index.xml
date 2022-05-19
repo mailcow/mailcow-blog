@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>mailcow: dockerized - Blog</title>
-        <link>http://news.mailcow.email/</link>
-        <description>The mailserver suite with the &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Official Blog Page</description>
+        <title>security - Tag - mailcow: dockerized - Blog</title>
+        <link>http://news.mailcow.email/tags/security/</link>
+        <description>security - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate>
-            <atom:link href="http://news.mailcow.email/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/tags/security/" rel="self" type="application/rss+xml" /><item>
     <title>⚠️ 2022-05d Important Security Update! ⚠️</title>
     <link>http://news.mailcow.email/posts/release-2022-05d/</link>
     <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>

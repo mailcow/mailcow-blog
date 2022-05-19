@@ -4,7 +4,18 @@
         <link>http://news.mailcow.email/tags/hotfix/</link>
         <description>hotfix - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/hotfix/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/tags/hotfix/" rel="self" type="application/rss+xml" /><item>
+    <title>⚠️ 2022-05d Important Security Update! ⚠️</title>
+    <link>http://news.mailcow.email/posts/release-2022-05d/</link>
+    <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
+    <author>Niklas Meyer</author>
+    <guid>http://news.mailcow.email/posts/release-2022-05d/</guid>
+    <description><![CDATA[Hello all,
+Yesterday we received an important tip about a critical security vulnerability in mailcow (thanks again for that). It affects IMAPSYNC and gives access to administration rights in the mailcow UI and API.
+It is strongly recommended to install the update as soon as possible to prevent exploitation.
+As always please take a look at the GitHub Release: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05dThe update does not remove any important functionality from mailcow or IMAPSYNC!]]></description>
+</item>
+<item>
     <title>⚠️ Important Information about the 2022-04 Update ⚠️</title>
     <link>http://news.mailcow.email/posts/2022-04-info/</link>
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
