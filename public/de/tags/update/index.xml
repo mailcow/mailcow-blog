@@ -4,7 +4,19 @@
         <link>http://news.mailcow.email/de/tags/update/</link>
         <description>update - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/update/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 07 Jun 2022 12:07:10 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/update/" rel="self" type="application/rss+xml" /><item>
+    <title>🌕🐄 Mooni Update 2022 - Das Docker Compose v2 Update (Teil I) | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-06/</link>
+    <pubDate>Tue, 07 Jun 2022 12:07:10 &#43;0200</pubDate>
+    <author>Niklas Meyer</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-06/</guid>
+    <description><![CDATA[Moohoo zusammen!
+Heute haben wir für euch wieder ein dickes fettes Update Paket zusammengestellt, welches neben generellen Container Updates eine große Änderung mit sich bringt:
+Docker Compose v2 Unterstützung!!!
+Doch fangen wir erstmal mit dem kleinkram an:
+Kleinere Änderungen  ClamAV nutzt nun Version 0.105 (die neuste zum Release Zeitpunkt). Postfix wurde auf Version 3.5.6 geupdated. netfilter, acme, dockerapi, olefy, watchdog, unbound und phpfpm wurden auf Alpine Linux 3.16 geupdated.  Größere Änderungen  Wie versprochen kommt mit dem 2022-06 Update ein kleines aber feines UI Update, welches die generelle UI Performance verbessert.]]></description>
+</item>
+<item>
     <title>⚠️ 2022-05d Wichtiges Sicherheitsupdate! ⚠️</title>
     <link>http://news.mailcow.email/de/posts/release-2022-05d/</link>
     <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
