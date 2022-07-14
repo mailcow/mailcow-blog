@@ -305,7 +305,7 @@ theme = "LoveIt"
 	
 	[languages.de.params.footer]
     enable = true
-    hugo = false
+    hugo = true
     copyright = true
     author = false
     since = 2016
