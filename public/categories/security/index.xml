@@ -13,7 +13,7 @@
     <description><![CDATA[Hello all,
 Yesterday we received an important tip about a critical security vulnerability in mailcow (thanks again for that). It affects IMAPSYNC and gives access to administration rights in the mailcow UI and API.
 It is strongly recommended to install the update as soon as possible to prevent exploitation.
-As always please take a look at the GitHub Release: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05dThe update does not remove any important functionality from mailcow or IMAPSYNC!]]></description>
+As always please take a look at the GitHub Release: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d The update does not remove any important functionality from mailcow or IMAPSYNC!]]></description>
 </item>
 <item>
     <title>⚠️ Important informations about log4j exploit ⚠️</title>

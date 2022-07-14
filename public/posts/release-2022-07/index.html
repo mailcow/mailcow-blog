@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>☀️🐄 Mooly Update 2022 - TFA Flow Update | Changelog - mailcow: dockerized - Blog</title><meta name="Description" content="The mailserver suite with the &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Official Blog Page"><meta property="og:title" content="☀️🐄 Mooly Update 2022 - TFA Flow Update | Changelog" />
+<meta property="og:description" content="Moohoo everyone!
+It&rsquo;s update time once again, a little later than before (I&rsquo;ll get into that a bit later) but still packed with some changes:
+TFA Changes  2FA is now also possible for mailbox users in the UI (previously this was reserved for administrators). Also, it is now possible to enable multiple 2FA options for an account. Note: Only one is used, which is selected by the user. There is a nice new menu at to select the available 2FA options." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://news.mailcow.email/posts/release-2022-07/" /><meta property="og:image" content="http://news.mailcow.email/images/cow_mailcow.svg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-14T08:30:10+02:00" />
+<meta property="article:modified_time" content="2022-07-14T08:30:10+02:00" /><meta property="og:site_name" content="mailcow: dockerized - Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://news.mailcow.email/images/cow_mailcow.svg"/>
+
+<meta name="twitter:title" content="☀️🐄 Mooly Update 2022 - TFA Flow Update | Changelog"/>
+<meta name="twitter:description" content="Moohoo everyone!
+It&rsquo;s update time once again, a little later than before (I&rsquo;ll get into that a bit later) but still packed with some changes:
+TFA Changes  2FA is now also possible for mailbox users in the UI (previously this was reserved for administrators). Also, it is now possible to enable multiple 2FA options for an account. Note: Only one is used, which is selected by the user. There is a nice new menu at to select the available 2FA options."/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-07/" /><link rel="prev" href="http://news.mailcow.email/posts/release-2022-06/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "☀️🐄 Mooly Update 2022 - TFA Flow Update | Changelog",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/news.mailcow.email\/posts\/release-2022-07\/"
+        },"genre": "posts","keywords": "2022, update, changelog, bugfix","wordcount":  680 ,
+        "url": "http:\/\/news.mailcow.email\/posts\/release-2022-07\/","datePublished": "2022-07-14T08:30:10+02:00","dateModified": "2022-07-14T08:30:10+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Niklas Meyer"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="mailcow: dockerized - Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/cow_mailcow.svg"
+        data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x"
+        data-sizes="auto"
+        alt="/images/cow_mailcow.svg"
+        title="/images/cow_mailcow.svg" />mailcow: dockerized - Blog<span class="header-title-post">📰</span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/" rel="noopener noreffer" target="_blank"> Docs </a><a class="menu-item" href="https://www.servercow.de/mailcow?lang=en#support" title="Buy Support" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i>   Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/release-2022-07/" selected>English</option><option value="/de/posts/release-2022-07/">Deutsch</option></select>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="mailcow: dockerized - Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/cow_mailcow.svg"
+        data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x"
+        data-sizes="auto"
+        alt="/images/cow_mailcow.svg"
+        title="/images/cow_mailcow.svg" />mailcow: dockerized - Blog<span class="header-title-post">📰</span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://mailcow.github.io/mailcow-dockerized-docs/" title="" rel="noopener noreffer" target="_blank">Docs</a><a class="menu-item" href="https://www.servercow.de/mailcow?lang=en#support" title="Buy Support" rel="noopener noreffer" target="_blank"><i class='fas fa-band-aid'></i> Support</a><a class="menu-item" href="https://github.com/mailcow/mailcow-dockerized" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/release-2022-07/" selected>English</option><option value="/de/posts/release-2022-07/">Deutsch</option></select>
+                </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">☀️🐄 Mooly Update 2022 - TFA Flow Update | Changelog</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DerLinkman" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="07-14-2022">07-14-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;680 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tfa-changes">TFA Changes</a></li>
+        <li><a href="#docker-image-changes-mailcow-stack">Docker image changes (mailcow stack)</a></li>
+        <li><a href="#miscellaneous-changesfixes">Miscellaneous changes/fixes</a></li>
+        <li><a href="#the-update-cycle">The update cycle</a></li>
+        <li><a href="#outlook-for-the-future">Outlook for the future</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>Moohoo everyone!</strong></p>
+<p>It&rsquo;s update time once again, a little later than before (I&rsquo;ll get into that a bit later) but still packed with some changes:</p>
+<h3 id="tfa-changes">TFA Changes</h3>
+<ul>
+<li>2FA is now also possible for mailbox users in the UI (previously this was reserved for administrators).</li>
+<li>Also, it is now possible to enable multiple 2FA options for an account. <br><em>Note: Only one is used, which is selected by the user.</em></li>
+<li>There is a nice new menu at to select the available 2FA options.</li>
+</ul>
+<p>The update was developed by <a href="https://github.com/FreddleSpl0it" target="_blank" rel="noopener noreffer">@FreddleSpl0it</a>
+ (Patrick). Thanks for that :)</p>
+<p>Speaking of Patrick, he is an official member of tinc since the beginning of June and is now more intensively dedicated to the mailcow development and everything around here!</p>
+<p>So you may soon read something from him here on the blog page 😊</p>
+<hr>
+<p>All right, where were we? Oh, right! At the other changes besides the new TFA options:</p>
+<h3 id="docker-image-changes-mailcow-stack">Docker image changes (mailcow stack)</h3>
+<ul>
+<li>SOGo (not our software, often asked) has been updated to version 5.7.0. In the mailcow this was implemented in the Docker image sogo:1.109. The official changelog from SOGo can be found here: <a href="https://github.com/inverse-inc/sogo/releases/tag/SOGo-5.7.0" target="_blank" rel="noopener noreffer">https://github.com/inverse-inc/sogo/releases/tag/SOGo-5.7.0</a>
+. Thanks to <a href="https://github.com/MAGICCC" target="_blank" rel="noopener noreffer">@MAGICCC</a>
+ for updating.</li>
+<li>In the ClamAV container, the healthcheck has been rebuilt so that it is now healthy even if ClamAV is not used at all. (Is probably broken by switching to the official images). This is included in the image clamav:1.53! Thanks to <a href="https://github.com/mritzmann" target="_blank" rel="noopener noreffer">@mritzmann</a>
+ for implementing.</li>
+<li>Dovecot has been updated to 2.3.19.1 (<a href="https://dovecot.org/doc/NEWS" target="_blank" rel="noopener noreffer">changelog</a>
+). This comes with the Docker image dovecot:1.17.</li>
+</ul>
+<h3 id="miscellaneous-changesfixes">Miscellaneous changes/fixes</h3>
+<ul>
+<li>The update.sh script no longer updates the installed docker-compose version without being asked. This was noted by some users, thanks for that!</li>
+<li>Also in the update.sh script, the docker-compose version can now be updated alone (with &ndash;update-compose). This feature has been implemented in the cold_standby.sh script so that the target machine now gets an update of docker-compose in addition to the Docker image cleanup process.</li>
+<li>A Lua crash with SOGo was fixed in RSPAMD. Thanks to <a href="https://github.com/andryyy" target="_blank" rel="noopener noreffer">@andryyy</a>
+</li>
+<li>In the SyncJobs, the default mailbox (which always appears when a new job is created) has been removed. This way the messages cannot accidentally end up in the wrong mailbox anymore. Thanks to <a href="https://github.com/RafaelKr" target="_blank" rel="noopener noreffer">@RafaelKr</a>
+</li>
+<li>A blank page was displayed in the browser if the WebUI was accessed with /user but no user was logged in. This has been fixed. Thanks to <a href="https://github.com/mhofer117" target="_blank" rel="noopener noreffer">@mhofer117</a>
+</li>
+</ul>
+<hr>
+<p>Phew, my fingers hurt from writing 🙃</p>
+<p>But anyway, that&rsquo;s it for this time.</p>
+<p>If you want to read the <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-07" target="_blank" rel="noopener noreffer">complete changelog</a>
+ you can do that (as always) on GitHub.</p>
+<p>But now a few words about the major updates 1x a month:</p>
+<h3 id="the-update-cycle">The update cycle</h3>
+<p>Until now the updates were released on the first Tuesday of the month. But we noticed that the update quality and quantity stagnated and also the general tests were a bit too short. Of course, the updates are not always 100% error-free and in an open source project, the feedback of the community is even more important, but we still want to be able to say at our own discretion: &ldquo;<em>Yes, the update is tested so far and functional on the most common installation methods.</em>&rdquo;, which has led us to no longer want to specify a fixed date for a major update per month.</p>
+<p>There will still be at least one major feature update every month, just not on a fixed day like before.</p>
+<h3 id="outlook-for-the-future">Outlook for the future</h3>
+<p>However, we are planning a new type of update for the August update: the Nightly Updates! These allow us to let you test new features or major changes before they go live for everyone.</p>
+<p>For this purpose there will be a possibility to switch between <strong>stable</strong> and <strong>nightly</strong> builds in the update.sh script (but always make a backup before, because <em>no backup, no mercy!</em>).</p>
+<p>The first big nightly test is the new <strong>Bootstrap 5 update</strong>, which is expected to land in the stable build for everyone in <em>September 2022</em>.</p>
+<p>More about the nightly tests when its ready.</p>
+<hr>
+<p>Well, enough of that.</p>
+<p>Stay healthy and take care of yourselves!</p>
+<p><strong>Your mailcow Team</strong> <br>
+<em>Niklas</em></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 07-14-2022</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/2022/">2022</a>,&nbsp;<a href="/tags/update/">update</a>,&nbsp;<a href="/tags/changelog/">changelog</a>,&nbsp;<a href="/tags/bugfix/">bugfix</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/release-2022-06/" class="prev" rel="prev" title="🌕🐄 Moone Update 2022 - The Docker Compose v2 Update (Part I) | Changes"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>🌕🐄 Moone Update 2022 - The Docker Compose v2 Update (Part I) | Changes</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

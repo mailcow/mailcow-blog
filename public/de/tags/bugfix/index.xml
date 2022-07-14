@@ -4,7 +4,17 @@
         <link>http://news.mailcow.email/de/tags/bugfix/</link>
         <description>bugfix - Tag - mailcow: dockerized - Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Tue, 07 Jun 2022 12:07:10 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/bugfix/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 14 Jul 2022 08:30:10 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/bugfix/" rel="self" type="application/rss+xml" /><item>
+    <title>☀️🐄 Mooli Update 2022 - 2FA Flow Update | Änderungen</title>
+    <link>http://news.mailcow.email/de/posts/release-2022-07/</link>
+    <pubDate>Thu, 14 Jul 2022 08:30:10 &#43;0200</pubDate>
+    <author>Niklas Meyer</author>
+    <guid>http://news.mailcow.email/de/posts/release-2022-07/</guid>
+    <description><![CDATA[Moohoo zusammen!
+Es ist wieder einmal Update Zeit, etwas später als bisher (darauf gehe ich später noch etwas ein) aber trotzdem vollgepackt mit einigen Änderungen:
+2FA Änderungen  Die 2FA ist nun auch für Mailbox User im UI möglich (bisher war dies den Administratoren vorbehalten). Ebenfalls ist es jetzt möglich mehrere 2FA Möglichkeiten für ein Account zu aktivieren. Hinweis: Es wird nur eine verwendet, die vom User ausgewählt wird. Es gibt ein schönes neues Menü bei zur Auswahl der verfügbaren 2FA Optionen.]]></description>
+</item>
+<item>
     <title>🌕🐄 Mooni Update 2022 - Das Docker Compose v2 Update (Teil I) | Änderungen</title>
     <link>http://news.mailcow.email/de/posts/release-2022-06/</link>
     <pubDate>Tue, 07 Jun 2022 12:07:10 &#43;0200</pubDate>
@@ -25,7 +35,7 @@ Kleinere Änderungen  ClamAV nutzt nun Version 0.105 (die neuste zum Release Zei
     <description><![CDATA[2022-05c Wir sind es wieder (nochmal)!
 Diesmal haben wir das 2022-05c Update veröffentlicht, welches ein sehr kleines Update ist.
 Es hat die API wieder ein wenig verändert. Diesmal aus Sicherheitsgründen.
-Geht rüber zu GitHub, um das vollständige Changelog zu sehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05cBleibt gesund
+Geht rüber zu GitHub, um das vollständige Changelog zu sehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c Bleibt gesund
 Niklas
  2022-05b Wir sind es wieder!
 Heute haben wir ein kleines API Update, das sich hauptsächlich auf die UI konzentriert.
@@ -40,7 +50,7 @@ Wie einige von euch berichtet haben, funktionieren die API-Aufrufe für Domains/
     <description><![CDATA[Moohoo zusammen!
 Das April-Update ist da, mit einer Reihe von Neuerungen für Ihren reibungslosen E-Mail-Flow.
 Diesen Monat haben wir 3 Komponenten-Updates (ClamAV, SOGo und Rspamd) und ein paar kleinere Korrekturen, die wie folgt sind:
- Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
+ Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden ) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
 </item>
 <item>
     <title>🐄💮 März Update 2022 – Revision A | Änderungen</title>
@@ -72,7 +82,7 @@ Kommen wir nun zum März Update unserer mailcow. Spoiler vorab, so voll und umfa
     <description><![CDATA[Moohoo an alle.
 Heute veröffentlichen wir den ersten Hotfix für das Update 2022-01.
 Das hat sich geändert:
- Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
+ Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437 )   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439 ) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
 </item>
 <item>
     <title>⚠️ Wichtige Informationen über log4j-Exploit ⚠️</title>
