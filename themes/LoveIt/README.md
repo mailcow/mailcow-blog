@@ -71,7 +71,7 @@ I hope you will LoveIt ❤️!
 
 ### Appearance and Layout
 
-* **Responsive** layout
+* **Desktop/Mobile Responsive** layout
 * **Light/Dark** mode
 * Globally consistent **design language**
 * **Pagination** supported
@@ -99,7 +99,7 @@ I hope you will LoveIt ❤️!
 * **Twemoji** supported
 * Automatically **highlighting** code
 * **Copy code** to clipboard with one click
-* **Images gallery** supported by [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
+* **Images gallery** supported by [lightGallery](https://github.com/sachinchoolur/lightgallery)
 * Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
 * Extended Markdown syntax for **ruby annotation**
 * Extended Markdown syntax for **fraction**
@@ -113,7 +113,6 @@ I hope you will LoveIt ❤️!
 * **Custom style** shortcode
 * **Custom script** shortcode
 * **Animated typing** supported by [TypeIt](https://typeitjs.com/)
-* **Dynamic scroll** supported by [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * **Cookie consent banner** supported by [cookieconsent](https://github.com/osano/cookieconsent)
 * ...
 
@@ -164,7 +163,6 @@ Thanks to the authors of following resources included in the theme:
 * [Font Awesome](https://fontawesome.com/)
 * [Simple Icons](https://github.com/simple-icons/simple-icons)
 * [Animate.css](https://daneden.github.io/animate.css/)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * [autocomplete](https://github.com/algolia/autocomplete)
 * [Lunr.js](https://lunrjs.com/)
 * [algoliasearch](https://github.com/algolia/algoliasearch-client-javascript)
@@ -172,7 +170,7 @@ Thanks to the authors of following resources included in the theme:
 * [object-fit-images](https://github.com/fregante/object-fit-images)
 * [Twemoji](https://github.com/twitter/twemoji)
 * [emoji-data](https://github.com/iamcal/emoji-data)
-* [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
+* [lightGallery](https://github.com/sachinchoolur/lightgallery)
 * [clipboard.js](https://github.com/zenorocha/clipboard.js)
 * [Sharer.js](https://github.com/ellisonleao/sharer.js)
 * [TypeIt](https://typeitjs.com/)

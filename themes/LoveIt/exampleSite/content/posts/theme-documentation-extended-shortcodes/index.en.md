@@ -7,7 +7,7 @@ draft: false
 author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "LoveIt theme provides multiple shortcodes on top of built-in ones in Hugo."
-images: ["featured-image.jpg"]
+images: []
 resources:
 - name: "featured-image"
   src: "featured-image.jpg"
@@ -129,7 +129,7 @@ The rendered output looks like this (hover over the link, there should be a tool
 
 {{< version 0.2.0 changed >}}
 
-`image` shortcode is an alternative to [`figure` shortcode](../theme-documentation-built-in-shortcodes#figure). `image` shortcode can take full advantage of the dependent libraries of [lazysizes](https://github.com/aFarkas/lazysizes) and [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js).
+`image` shortcode is an alternative to [`figure` shortcode](../theme-documentation-built-in-shortcodes#figure). `image` shortcode can take full advantage of the dependent libraries of [lazysizes](https://github.com/aFarkas/lazysizes) and [lightGallery](https://github.com/sachinchoolur/lightgallery).
 
 {{< version 0.2.10 >}} The complete usage of [local resource references](../theme-documentation-content#contents-organization) is supported.
 
@@ -344,6 +344,8 @@ console.log('Hello LoveIt!');
 {{< /script >}}
 
 ## 12 raw
+
+{{< version 0.2.11 >}}
 
 `raw` is a shortcode to insert raw **:(fab fa-html5 fa-fw): HTML** content in your post.
 This is useful when you want to include some Markdown content to **avoid being rendered or escaped** by Hugo.

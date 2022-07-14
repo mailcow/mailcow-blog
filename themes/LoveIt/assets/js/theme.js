@@ -454,7 +454,19 @@ var Theme = /*#__PURE__*/function () {
   }, {
     key: "initLightGallery",
     value: function initLightGallery() {
-      if (this.config.lightGallery) lightGallery(document.getElementById('content'), this.config.lightGallery);
+      if (this.config.lightgallery) lightGallery(document.getElementById('content'), {
+        plugins: [lgThumbnail, lgZoom],
+        selector: '.lightgallery',
+        speed: 400,
+        hideBarsDelay: 2000,
+        allowMediaOverlap: true,
+        exThumbImage: 'data-thumbnail',
+        toggleThumb: true,
+        thumbWidth: 80,
+        thumbHeight: '60px',
+        actualSize: false,
+        showZoomInOutIcons: true
+      });
     }
   }, {
     key: "initHighlight",
@@ -856,16 +868,6 @@ var Theme = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "initSmoothScroll",
-    value: function initSmoothScroll() {
-      if (SmoothScroll) new SmoothScroll('[href^="#"]', {
-        speed: 300,
-        speedAsDuration: true,
-        header: '#header-desktop',
-        offset: 10
-      });
-    }
-  }, {
     key: "initCookieconsent",
     value: function initCookieconsent() {
       if (this.config.cookieconsent) cookieconsent.initialise(this.config.cookieconsent);
@@ -931,15 +933,9 @@ var Theme = /*#__PURE__*/function () {
             _step2;
 
         try {
-          var _loop = function _loop() {
-            var event = _step2.value;
-            window.setTimeout(function () {
-              event();
-            }, 100);
-          };
-
           for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            _loop();
+            var event = _step2.value;
+            event();
           }
         } catch (err) {
           _iterator2.e(err);
@@ -947,7 +943,6 @@ var Theme = /*#__PURE__*/function () {
           _iterator2.f();
         }
 
-        ;
         _this12.oldScrollTop = _this12.newScrollTop;
       }, false);
     }
@@ -1024,7 +1019,6 @@ var Theme = /*#__PURE__*/function () {
         this.initHighlight();
         this.initTable();
         this.initHeaderLink();
-        this.initSmoothScroll();
         this.initMath();
         this.initMermaid();
         this.initEcharts();

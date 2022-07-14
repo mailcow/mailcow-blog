@@ -4,6 +4,7 @@ date: 2022-03-02T11:57:52+02:00
 draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
+toc: false
 
 resources:
 - name: "featured-image-preview"

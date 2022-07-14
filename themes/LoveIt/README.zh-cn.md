@@ -66,7 +66,7 @@
 
 ### 外观和布局
 
-* **响应式**布局
+* **桌面端/移动端 响应式**布局
 * **浅色/深色** 主题模式
 * 全局一致的**设计语言**
 * 支持**分页**
@@ -94,7 +94,7 @@
 * 支持 **Twemoji**
 * 支持**代码高亮**
 * 一键**复制代码**到剪贴板
-* 支持基于 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js) 的**图片画廊**
+* 支持基于 [lightGallery](https://github.com/sachinchoolur/lightgallery) 的**图片画廊**
 * 支持 **[Font Awesome](https://fontawesome.com/) 图标**的扩展 Markdown 语法
 * 支持**上标注释**的扩展 Markdown 语法
 * 支持**分数**的扩展 Markdown 语法
@@ -108,7 +108,6 @@
 * 支持**自定义样式**的 shortcode
 * 支持**自定义脚本**的 shortcode
 * 支持基于 [TypeIt](https://typeitjs.com/) 的**打字动画** shortcode
-* 支持基于 [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) 的**滚动动画**
 * 支持基于 [cookieconsent](https://github.com/osano/cookieconsent) 的 **Cookie 许可横幅**
 * ...
 
@@ -159,7 +158,6 @@ LoveIt 主题中用到了以下项目，感谢它们的作者：
 * [Font Awesome](https://fontawesome.com/)
 * [Simple Icons](https://github.com/simple-icons/simple-icons)
 * [Animate.css](https://daneden.github.io/animate.css/)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * [autocomplete](https://github.com/algolia/autocomplete)
 * [Lunr.js](https://lunrjs.com/)
 * [algoliasearch](https://github.com/algolia/algoliasearch-client-javascript)
@@ -167,7 +165,7 @@ LoveIt 主题中用到了以下项目，感谢它们的作者：
 * [object-fit-images](https://github.com/fregante/object-fit-images)
 * [Twemoji](https://github.com/twitter/twemoji)
 * [emoji-data](https://github.com/iamcal/emoji-data)
-* [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
+* [lightGallery](https://github.com/sachinchoolur/lightgallery)
 * [clipboard.js](https://github.com/zenorocha/clipboard.js)
 * [Sharer.js](https://github.com/ellisonleao/sharer.js)
 * [TypeIt](https://typeitjs.com/)

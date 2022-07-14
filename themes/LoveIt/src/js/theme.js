@@ -325,7 +325,19 @@ class Theme {
     }
 
     initLightGallery() {
-        if (this.config.lightGallery) lightGallery(document.getElementById('content'), this.config.lightGallery);
+        if (this.config.lightgallery) lightGallery(document.getElementById('content'), {
+            plugins: [lgThumbnail, lgZoom],
+            selector: '.lightgallery',
+            speed: 400,
+            hideBarsDelay: 2000,
+            allowMediaOverlap: true,
+            exThumbImage: 'data-thumbnail',
+            toggleThumb: true,
+            thumbWidth: 80,
+            thumbHeight: '60px',
+            actualSize: false,
+            showZoomInOutIcons: true,
+        });
     }
 
     initHighlight() {
@@ -636,15 +648,6 @@ class Theme {
         }
     }
 
-    initSmoothScroll() {
-        if (SmoothScroll) new SmoothScroll('[href^="#"]', {
-            speed: 300,
-            speedAsDuration: true,
-            header: '#header-desktop',
-            offset: 10,
-        });
-    }
-
     initCookieconsent() {
         if (this.config.cookieconsent) cookieconsent.initialise(this.config.cookieconsent);
     }
@@ -689,9 +692,7 @@ class Theme {
                 }
                 $fixedButtons.style.display = 'none';
             }
-            for (let event of this.scrollEventSet) window.setTimeout(() => {
-                event();
-            }, 100);;
+            for (let event of this.scrollEventSet) event();
             this.oldScrollTop = this.newScrollTop;
         }, false);
     }
@@ -730,7 +731,6 @@ class Theme {
             this.initHighlight();
             this.initTable();
             this.initHeaderLink();
-            this.initSmoothScroll();
             this.initMath();
             this.initMermaid();
             this.initEcharts();

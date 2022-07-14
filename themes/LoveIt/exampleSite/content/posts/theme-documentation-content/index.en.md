@@ -7,7 +7,7 @@ draft: false
 author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "Find out how to create and organize your content quickly and intuitively in LoveIt theme."
-images: ["featured-image.jpg"]
+images: []
 resources:
 - name: "featured-image"
   src: "featured-image.jpg"
@@ -83,6 +83,7 @@ images: []
 
 tags: []
 categories: []
+
 featuredImage: ""
 featuredImagePreview: ""
 
@@ -101,12 +102,11 @@ toc:
   auto: true
 code:
   copy: true
-  # ...
+  maxShownLines: 50
 math:
-  enable: true
+  enable: false
   # ...
 mapbox:
-  accessToken: ""
   # ...
 share:
   enable: true
@@ -144,6 +144,7 @@ seo:
 
 * **tags**: the tags for the content.
 * **categories**: the categories for the content.
+
 * **featuredImage**: the featured image for the content.
 * **featuredImagePreview**: the featured image for the content preview in the home page.
 
@@ -243,6 +244,8 @@ This part is shown in the [basic markdown syntax page](../basic-markdown-syntax/
 This part is shown in the [emoji support page](../emoji-support/).
 
 ### Mathematical Formula
+
+{{< version 0.2.11 changed >}}
 
 **LoveIt** theme supports mathematical formulas based on [$\KaTeX$](https://katex.org/).
 

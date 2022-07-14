@@ -230,14 +230,19 @@
 
       img {
         display: block;
+        width: 100%;
         height: auto;
         margin: 0 auto;
         overflow: hidden;
       }
     }
 
-    .lazyloading {
-      @include object-fit(none);
+    .lazyload, .lazyloading {
+      @include object-fit(scale-down);
+    }
+
+    .lazyloaded {
+      @include object-fit(fill);
     }
 
     blockquote {
@@ -305,16 +310,6 @@
       }
     }
 
-    .typeit {
-      .code {
-        padding: .375rem;
-        font-size: .875rem;
-        font-family: $code-font-family;
-        font-weight: bold;
-        word-break: break-all;
-      }
-    }
-
     .version {
       height: 1.25em;
       vertical-align: text-bottom;
@@ -323,6 +318,28 @@
 
   @import "../_partial/_single/footer";
   @import "../_partial/_single/comment";
+}
+
+.typeit {
+  .highlight {
+    padding: .375rem;
+    font-size: .875rem;
+    font-family: $code-font-family;
+    font-weight: bold;
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+
+  --ti-cursor-font-family: $global-font-family;
+  --ti-cursor-font-size: $global-font-size;
+  --ti-cursor-font-weight: $global-font-weight;
+  --ti-cursor-line-height: $global-line-height;
+  --ti-cursor-color: $global-font-secondary-color;
+  --ti-cursor-margin-left: 0;
+
+  [theme=dark] & {
+    --ti-cursor-color: $global-font-secondary-color-dark;
+  }
 }
 
 .lg-toolbar .lg-icon::after {

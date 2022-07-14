@@ -7,7 +7,7 @@ draft: false
 author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "了解如何在 LoveIt 主题中快速, 直观地创建和组织内容."
-images: ["featured-image.jpg"]
+images: []
 resources:
 - name: "featured-image"
   src: "featured-image.jpg"
@@ -82,6 +82,7 @@ images: []
 
 tags: []
 categories: []
+
 featuredImage: ""
 featuredImagePreview: ""
 
@@ -100,12 +101,11 @@ toc:
   auto: true
 code:
   copy: true
-  # ...
+  maxShownLines: 50
 math:
-  enable: true
+  enable: false
   # ...
 mapbox:
-  accessToken: ""
   # ...
 share:
   enable: true
@@ -143,6 +143,7 @@ seo:
 
 * **tags**: 文章的标签.
 * **categories**: 文章所属的类别.
+
 * **featuredImage**: 文章的特色图片.
 * **featuredImagePreview**: 用在主页预览的文章特色图片.
 
@@ -242,6 +243,8 @@ resources:
 这部分内容在 [Emoji 支持页面](../emoji-support/) 中介绍.
 
 ### 数学公式
+
+{{< version 0.2.11 changed >}}
 
 **LoveIt** 基于 [$\KaTeX$](https://katex.org/) 提供数学公式的支持.
 
