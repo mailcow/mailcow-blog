@@ -12,7 +12,7 @@
     <guid>http://news.mailcow.email/de/posts/release-2022-07/</guid>
     <description><![CDATA[Moohoo zusammen!
 Es ist wieder einmal Update Zeit, etwas später als bisher (darauf gehe ich später noch etwas ein) aber trotzdem vollgepackt mit einigen Änderungen:
-2FA Änderungen  Die 2FA ist nun auch für Mailbox User im UI möglich (bisher war dies den Administratoren vorbehalten). Ebenfalls ist es jetzt möglich mehrere 2FA Möglichkeiten für ein Account zu aktivieren. Hinweis: Es wird nur eine verwendet, die vom User ausgewählt wird. Es gibt ein schönes neues Menü bei zur Auswahl der verfügbaren 2FA Optionen.]]></description>
+2FA Änderungen  Die 2FA ist nun auch für Mailbox User im UI möglich (bisher war dies den Administratoren vorbehalten). Ebenfalls ist es jetzt möglich mehrere 2FA Möglichkeiten für ein Account zu aktivieren. Hinweis: Es wird nur eine verwendet, die vom User ausgewählt wird. Es gibt ein schönes neues Menü bei der Auswahl der verfügbaren 2FA Optionen.]]></description>
 </item>
 <item>
     <title>🌕🐄 Mooni Update 2022 - Das Docker Compose v2 Update (Teil I) | Änderungen</title>

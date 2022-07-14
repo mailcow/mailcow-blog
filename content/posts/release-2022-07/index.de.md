@@ -19,7 +19,7 @@ Es ist wieder einmal Update Zeit, etwas später als bisher (darauf gehe ich spä
 
 - Die 2FA ist nun auch für Mailbox User im UI möglich (bisher war dies den Administratoren vorbehalten).
 - Ebenfalls ist es jetzt möglich mehrere 2FA Möglichkeiten für ein Account zu aktivieren. <br>*Hinweis: Es wird nur eine verwendet, die vom User ausgewählt wird.*
-- Es gibt ein schönes neues Menü bei zur Auswahl der verfügbaren 2FA Optionen.
+- Es gibt ein schönes neues Menü bei der Auswahl der verfügbaren 2FA Optionen.
 
 Das Update wurde von [@FreddleSpl0it](https://github.com/FreddleSpl0it) (Patrick) entwickelt. Danke dafür :)
 
