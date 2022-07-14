@@ -48,7 +48,7 @@ theme = "LoveIt"
 	  
 [params.footer]
     enable = true
-    hugo = false
+    hugo = true
     copyright = true
     author = false
     since = 2017
@@ -85,8 +85,8 @@ theme = "LoveIt"
       enable = false
 
   [params.social]
-    GitHub = "https://github.com/mailcow/mailcow-dockerized"
-    Twitter = "https://twitter.com/mailcow_email"
+    GitHub = "mailcow/mailcow-dockerized"
+    Twitter = "mailcow_email"
     Email = "info@servercow.de"
 	
   [params.social.Telegram]
