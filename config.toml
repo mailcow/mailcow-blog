@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 title = "mailcow: dockerized - Blog"
 
 # Change the default theme to be use when building the site with Hugo
-theme = ["hugo-redirect", "LoveIt"]
+theme = "LoveIt"
 
 # whether to use robots.txt
 enableRobotsTXT = true
