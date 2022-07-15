@@ -8,7 +8,7 @@
 <meta property="og:description" content="Moohoo everyone!
 The April update is here with a bunch of new stuff for your flawless E-Mail Flow.
 This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor fixes which are as follows:
- Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5." />
+ Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here ) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://news.mailcow.email/posts/release-2022-04/" /><meta property="og:image" content="http://news.mailcow.email/images/cow_mailcow.svg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-05T10:42:00+01:00" />
@@ -21,13 +21,11 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
 <meta name="twitter:description" content="Moohoo everyone!
 The April update is here with a bunch of new stuff for your flawless E-Mail Flow.
 This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor fixes which are as follows:
- Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5."/>
+ Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here ) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5."/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-04/" /><link rel="prev" href="http://news.mailcow.email/posts/release-2022-03a/" /><link rel="next" href="http://news.mailcow.email/posts/2022-04-info/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-04/" /><link rel="prev" href="http://news.mailcow.email/posts/release-2022-03a/" /><link rel="next" href="http://news.mailcow.email/posts/2022-04-info/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -36,7 +34,7 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/news.mailcow.email\/posts\/release-2022-04\/"
-        },"genre": "posts","keywords": "2022, update, changelog, bugfix","wordcount":  232 ,
+        },"genre": "posts","keywords": "2022, update, changelog, bugfix","wordcount":  234 ,
         "url": "http:\/\/news.mailcow.email\/posts\/release-2022-04\/","datePublished": "2022-04-05T10:42:00+01:00","dateModified": "2022-04-05T11:45:27+02:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -96,8 +94,9 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DerLinkman" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="04-05-2022">04-05-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;232 words&nbsp;
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DerLinkman" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="04-05-2022">04-05-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;234 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -125,10 +124,12 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
 <h4 id="major-changes">Major Changes</h4>
 <ul>
 <li>
-<p>We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (<a href="https://github.com/inverse-inc/sogo/releases/tag/SOGo-5.5.1" title="see here" target="_blank" rel="noopener noreffer ">see here</a>) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.5.2 update! <br><strong>Note: The 5.5.2 update will be part of the 2022-04a update as soon as it is released by inverse (most likely).</strong></p>
+<p>We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (<a href="https://github.com/inverse-inc/sogo/releases/tag/SOGo-5.5.1" title="see here" target="_blank" rel="noopener noreffer">see here</a>
+) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.5.2 update! <br><strong>Note: The 5.5.2 update will be part of the 2022-04a update as soon as it is released by inverse (most likely).</strong></p>
 </li>
 <li>
-<p>We have updated Rspamd to 3.2.1. (<a href="https://rspamd.net/announce/2022/03/26/rspamd-3.2.html" title="More detailed patch notes can be found here" target="_blank" rel="noopener noreffer ">More detailed patch notes can be found here</a>).</p>
+<p>We have updated Rspamd to 3.2.1. (<a href="https://rspamd.net/announce/2022/03/26/rspamd-3.2.html" title="More detailed patch notes can be found here" target="_blank" rel="noopener noreffer">More detailed patch notes can be found here</a>
+).</p>
 </li>
 <li>
 <p>The ClamAV components in mailcow now use the official container of ClamAV itself. For this reason there is now another volume (clamd-db-vol-1) in which the signatures of ClamAV are stored during freshclam. This allows us to roll out future ClamAV versions faster and in a more space efficient way. <strong>Note:</strong> ClamAV still uses version 0.104.2. Version 0.105 will be part of the mailcow as soon as it is released.</p>
@@ -142,7 +143,8 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
 <li>New French translations.</li>
 </ul>
 <hr>
-<p>Take a look at the full release page of the Update at Github: <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-04" title="Click here" target="_blank" rel="noopener noreffer ">Click here</a></p>
+<p>Take a look at the full release page of the Update at Github: <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-04" title="Click here" target="_blank" rel="noopener noreffer">Click here</a>
+</p>
 <p>We hope you are all safe and sound.</p>
 <p>No matter where you are, take care of yourselves.</p>
 </div><div class="post-footer" id="post-footer">
@@ -171,10 +173,10 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2016 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                    </div>
-                    <br></div>
-        </div>
+        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2016 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div><br>
+                <div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div>
+            <br></div>
     </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
@@ -182,5 +184,5 @@ This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

@@ -19,9 +19,7 @@
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/de/posts/release-2022-01/" /><link rel="prev" href="http://news.mailcow.email/de/posts/log4j-dec2022/" /><link rel="next" href="http://news.mailcow.email/de/posts/mailcow-twitter/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/de/posts/release-2022-01/" /><link rel="prev" href="http://news.mailcow.email/de/posts/log4j-dec2022/" /><link rel="next" href="http://news.mailcow.email/de/posts/mailcow-twitter/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -30,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/news.mailcow.email\/de\/posts\/release-2022-01\/"
-        },"genre": "posts","keywords": "2022, update, änderungen","wordcount":  470 ,
+        },"genre": "posts","keywords": "2022, update, änderungen","wordcount":  471 ,
         "url": "http:\/\/news.mailcow.email\/de\/posts\/release-2022-01\/","datePublished": "2022-01-21T14:55:47+01:00","dateModified": "2022-02-17T10:31:12+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -89,9 +87,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Inhalt</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">📰🐄 Jan(moo)uary Update 2022 - Das U2F --> WebAuthn (2FA) Update | Änderungen</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a></span>&nbsp;<span class="post-category">enthalten in <a href="/de/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="21.01.2022">21.01.2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;470 Wörter&nbsp;
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">📰🐄 Jan(moo)uary Update 2022 - Das U2F --&gt; WebAuthn (2FA) Update | Änderungen</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="servercow.de" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
+</span>&nbsp;<span class="post-category">enthalten in <a href="/de/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="21.01.2022">21.01.2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;471 Wörter&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 Minuten&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -124,18 +123,25 @@
 Nun, wenn ihr bereits einen FIDO2-Sicherheitsschlüssel als 2FA über U2F registriert habt und das Update anwendet, werdet Ihr mit einer Meldung begrüßt, die besagt, dass der FIDO2-Schlüssel noch über U2F läuft und daher als 2FA aus dem Konto entfernt wird. <strong>Aber keine Sorge!</strong> Sobald Ihr wieder in der Admin Oberläche seit, könnt Ihr denselben Schlüssel einfach erneut registrieren, aber diesmal als WebAuthn (nicht U2F).</p>
 <p>Der Vorgang ist derselbe, sogar die Position der Schaltfläche zum Starten der Registrierung ist die gleiche, so dass Ihr in der Lage sein solltet, den Schlüssel ohne Probleme einrichten und verwenden zu können.</p>
 <p>Vielen Dank an <strong>@FreddleSpl0it</strong> für die Implementierung!</p>
-<p><a href="https://mailcow.github.io/mailcow-dockerized-docs/de/manual-guides/mailcow-UI/u_e-mailcow_ui-tfa/" title="In unserer Dokumentation findet Ihr genauere Informationen dazu." target="_blank" rel="noopener noreffer ">In unserer Dokumentation finden Sie genauere Informationen dazu</a></p>
+<p><a href="https://mailcow.github.io/mailcow-dockerized-docs/de/manual-guides/mailcow-UI/u_e-mailcow_ui-tfa/" title="In unserer Dokumentation findet Ihr genauere Informationen dazu." target="_blank" rel="noopener noreffer">In unserer Dokumentation finden Sie genauere Informationen dazu</a>
+</p>
 <h4 id="wichtige-änderungen">Wichtige Änderungen:</h4>
 <ul>
 <li>Sogo wurde auf Version 5.5.0 aktualisiert. Juhu, endlich keine ausgegrauten Schaltflächen mehr in den Untermenüs!</li>
-<li>Der log4j-Fix (in Solr) wurde nochmals verbessert. Auf Anraten des <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/2022/01/warnmeldung_cb-k21-1264_update_20.html" title="Bundesamt für Sicherheit in der Informationstechnik" target="_blank" rel="noopener noreffer ">Bundesamtes für Sicherheit in der Informationstechnik</a> haben wir die betroffene log4j-Klasse entfernt. <strong>Der Solr-Container war zu keinem Zeitpunkt aus dem Internet erreichbar</strong>.</li>
-<li>Auf Anraten des <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/TW/2022/01/warnmeldung_tw-t22-0012.html" target="_blank" rel="noopener noreffer ">Bundesamtes für Sicherheit in der Informationstechnik</a> haben wir <strong>ClamAV auf 0.103.5</strong> aktualisiert, da es <em>anfällig für einen Denial of Service Angriff</em> war.</li>
-<li>Im Olefy-Container ist der lästige Ping-Fehler (Spam von Olefy in der Konsole) nun endlich behoben! Danke an <strong>@16bitsysop</strong> für den Fix! &ndash;&gt; Fehlerbehebung <a href="https://github.com/mailcow/mailcow-dockerized/issues/4401" title="#4401" target="_blank" rel="noopener noreffer ">#4401</a></li>
-<li>Durch das Update auf Alpine 3.15 oder höher hat der acme-Container den SSL-Ordner geändert (Auch schon sporadisch bei acme-mailcow 1:79), dies wurde von <strong>@mkuron</strong> behoben. Vielen Dank dafür. &ndash;&gt; Behebung des Problems <a href="https://github.com/mailcow/mailcow-dockerized/issues/4392" title="#4392" target="_blank" rel="noopener noreffer ">#4392</a></li>
-<li>Wir haben die Fehler in Bezug auf GeoIP und netfilter behoben (oder besser gesagt <strong>@marcvorwerk</strong>) &ndash;&gt; Fehlerbehebung <a href="https://github.com/mailcow/mailcow-dockerized/issues/2668" title="#2668" target="_blank" rel="noopener noreffer ">#2668</a></li>
+<li>Der log4j-Fix (in Solr) wurde nochmals verbessert. Auf Anraten des <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/2022/01/warnmeldung_cb-k21-1264_update_20.html" title="Bundesamt für Sicherheit in der Informationstechnik" target="_blank" rel="noopener noreffer">Bundesamtes für Sicherheit in der Informationstechnik</a>
+ haben wir die betroffene log4j-Klasse entfernt. <strong>Der Solr-Container war zu keinem Zeitpunkt aus dem Internet erreichbar</strong>.</li>
+<li>Auf Anraten des <a href="https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/TW/2022/01/warnmeldung_tw-t22-0012.html" target="_blank" rel="noopener noreffer">Bundesamtes für Sicherheit in der Informationstechnik</a>
+ haben wir <strong>ClamAV auf 0.103.5</strong> aktualisiert, da es <em>anfällig für einen Denial of Service Angriff</em> war.</li>
+<li>Im Olefy-Container ist der lästige Ping-Fehler (Spam von Olefy in der Konsole) nun endlich behoben! Danke an <strong>@16bitsysop</strong> für den Fix! &ndash;&gt; Fehlerbehebung <a href="https://github.com/mailcow/mailcow-dockerized/issues/4401" title="#4401" target="_blank" rel="noopener noreffer">#4401</a>
+</li>
+<li>Durch das Update auf Alpine 3.15 oder höher hat der acme-Container den SSL-Ordner geändert (Auch schon sporadisch bei acme-mailcow 1:79), dies wurde von <strong>@mkuron</strong> behoben. Vielen Dank dafür. &ndash;&gt; Behebung des Problems <a href="https://github.com/mailcow/mailcow-dockerized/issues/4392" title="#4392" target="_blank" rel="noopener noreffer">#4392</a>
+</li>
+<li>Wir haben die Fehler in Bezug auf GeoIP und netfilter behoben (oder besser gesagt <strong>@marcvorwerk</strong>) &ndash;&gt; Fehlerbehebung <a href="https://github.com/mailcow/mailcow-dockerized/issues/2668" title="#2668" target="_blank" rel="noopener noreffer">#2668</a>
+</li>
 </ul>
 <hr>
-<p><strong>Es gab noch viel mehr!</strong> Aber das würde hier den Rahmen sprengen, werft einfach einen Blick auf den <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-01" target="_blank" rel="noopener noreffer ">Release</a>, dann seht ihr das ganze Ausmaß.</p>
+<p><strong>Es gab noch viel mehr!</strong> Aber das würde hier den Rahmen sprengen, werft einfach einen Blick auf den <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-01" target="_blank" rel="noopener noreffer">Release</a>
+, dann seht ihr das ganze Ausmaß.</p>
 <p>Nochmals vielen Dank an alle <strong>Mitwirkenden und Spender</strong>.</p>
 <p>Im Namen des Servercow/mailcow/tinc-Teams wünschen wir Ihnen (wo auch immer Ihr seit) einen angenehmen Morgen, Mittag oder Abend und <strong>bleibt gesund</strong>!</p>
 </div><div class="post-footer" id="post-footer">
@@ -164,10 +170,10 @@ Nun, wenn ihr bereits einen FIDO2-Sicherheitsschlüssel als 2FA über U2F regist
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2016 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span><div class="footer-line">Realisiert durch <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Thema - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                    </div>
-                    <br></div>
-        </div>
+        <div class="footer-container"><div class="footer-line"><a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2016 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div><br>
+                <div class="footer-line">Realisiert durch <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Thema - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div>
+            <br></div>
     </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Nach oben">
@@ -175,5 +181,5 @@ Nun, wenn ihr bereits einen FIDO2-Sicherheitsschlüssel als 2FA über U2F regist
             </a><a href="#" id="view-comments" class="fixed-button" title="Kommentare anzeigen">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"In Zwischenablage kopieren","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"In Zwischenablage kopieren","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

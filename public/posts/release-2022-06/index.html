@@ -27,9 +27,7 @@ Minor changes  ClamAV is now using version 0.105 (the latest at release time). P
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-06/" /><link rel="prev" href="http://news.mailcow.email/posts/release-2022-05d/" /><link rel="next" href="http://news.mailcow.email/posts/release-2022-07/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://news.mailcow.email/posts/release-2022-06/" /><link rel="prev" href="http://news.mailcow.email/posts/release-2022-05d/" /><link rel="next" href="http://news.mailcow.email/posts/release-2022-07/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -38,7 +36,7 @@ Minor changes  ClamAV is now using version 0.105 (the latest at release time). P
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/news.mailcow.email\/posts\/release-2022-06\/"
-        },"genre": "posts","keywords": "2022, update, changelog, bugfix","wordcount":  386 ,
+        },"genre": "posts","keywords": "2022, update, changelog, bugfix","wordcount":  387 ,
         "url": "http:\/\/news.mailcow.email\/posts\/release-2022-06\/","datePublished": "2022-06-07T12:07:10+02:00","dateModified": "2022-06-07T15:31:43+02:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -98,8 +96,9 @@ Minor changes  ClamAV is now using version 0.105 (the latest at release time). P
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🌕🐄 Moone Update 2022 - The Docker Compose v2 Update (Part I) | Changes</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DerLinkman" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="06-07-2022">06-07-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;386 words&nbsp;
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DerLinkman" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Niklas Meyer</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/updates/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Updates</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="06-07-2022">06-07-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;387 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -135,14 +134,16 @@ Minor changes  ClamAV is now using version 0.105 (the latest at release time). P
 <h3 id="docker-compose-v2-finally">Docker Compose v2 (finally)</h3>
 <p>Yep, read that right, finally the mailcow is compatible with Docker Compose v2! But why Docker Compose v2 now? Some of you might be wondering.
 Well the thing is pretty simple and quickly explained: &ldquo;Docker Compose v1 old (deprecated), Docker Compose v2 new (maintained by Docker itself)&rdquo;.</p>
-<p>The installation of Compose v2 can be taken from the modified documentation (<a href="https://mailcow.github.io/mailcow-dockerized-docs/en/i_u_m/i_u_m_install/" target="_blank" rel="noopener noreffer ">click here</a>).</p>
+<p>The installation of Compose v2 can be taken from the modified documentation (<a href="https://mailcow.github.io/mailcow-dockerized-docs/en/i_u_m/i_u_m_install/" target="_blank" rel="noopener noreffer">click here</a>
+).</p>
 <p>Docker Compose v1 will lose its official support from Docker in October 2022, but mailcow will continue to support Compose v1 until December 2022 (the 2022-12 update).</p>
 <blockquote>
 <p><em>Thats why Compose v2 Part 1 update. Psst it´s a secret</em>.</p>
 </blockquote>
 <p>Beginning with December, an update to Compose v2 <strong>is mandatory</strong>, if you want to continue using mailcow.</p>
 <p>Anything else? Oh yes! There is also an important change regarding IPv6. From now on (until December) the web interface will only be accessible via IPv4 by default.
-But don&rsquo;t worry, with the help of the <a href="https://mailcow.github.io/mailcow-dockerized-docs/en/post_installation/firststeps-ip_bindings/#ipv6-binding" target="_blank" rel="noopener noreffer ">manual</a> you can restore the accessibility.</p>
+But don&rsquo;t worry, with the help of the <a href="https://mailcow.github.io/mailcow-dockerized-docs/en/post_installation/firststeps-ip_bindings/#ipv6-binding" target="_blank" rel="noopener noreffer">manual</a>
+ you can restore the accessibility.</p>
 <p>Why it has to be done this way and not (like everything else) plug and play? Well quite simple: The two Compose versions interpret the docker-compose.yml partly a bit different. Actually, everything has remained the same and this also works wonderfully, however, with the aforementioned IPv6 binding, there were unfortunately problems to maintain this option in dual support. <br>
 <strong>From December 2022, IPv6 connectivity will then be enabled again by default (as before).</strong></p>
 <blockquote>
@@ -151,7 +152,8 @@ Answer: Yes</p>
 </blockquote>
 <hr>
 <p>Ok that&rsquo;s it for this time.</p>
-<p>If you want to read the <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-06" target="_blank" rel="noopener noreffer ">complete changelog</a> you can do that (as always) on GitHub.</p>
+<p>If you want to read the <a href="https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-06" target="_blank" rel="noopener noreffer">complete changelog</a>
+ you can do that (as always) on GitHub.</p>
 <p>Stay healthy.</p>
 <p><strong>Your mailcow Team</strong> <br>
 <em>Niklas</em></p>
@@ -181,10 +183,10 @@ Answer: Yes</p>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2016 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                    </div>
-                    <br></div>
-        </div>
+        <div class="footer-container"><div class="footer-line"><a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2016 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div><br>
+                <div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div>
+            <br></div>
     </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
@@ -192,5 +194,5 @@ Answer: Yes</p>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

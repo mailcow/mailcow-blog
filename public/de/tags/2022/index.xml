@@ -36,7 +36,7 @@ Kleinere Änderungen  ClamAV nutzt nun Version 0.105 (die neuste zum Release Zei
 wir haben gestern einen wichtigen Hinweis bezüglich einer kritischen Sicherheitslücke in der mailcow zugespielt bekommen (Danke nochmal dafür).
 Diese betrifft IMAPSYNC und verschafft zugriff auf Administrationsrechte im mailcow UI sowie der API.
 Es wird dringend empfohlen das Update so schnell wie möglich zu installieren um so eine Ausnutzung der Lücke auszuschließen.
-Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d]]></description>
+Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d Das Update entfernt keine wichtigen Funktionen aus der mailcow bzw.]]></description>
 </item>
 <item>
     <title>🌌🐮 Mooai 2022 Update - Das Tag Update | Revision C - Änderungen</title>
@@ -47,8 +47,7 @@ Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen
     <description><![CDATA[2022-05c Wir sind es wieder (nochmal)!
 Diesmal haben wir das 2022-05c Update veröffentlicht, welches ein sehr kleines Update ist.
 Es hat die API wieder ein wenig verändert. Diesmal aus Sicherheitsgründen.
-Geht rüber zu GitHub, um das vollständige Changelog zu sehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c
-Bleibt gesund
+Geht rüber zu GitHub, um das vollständige Changelog zu sehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c Bleibt gesund
 Niklas
  2022-05b Wir sind es wieder!
 Heute haben wir ein kleines API Update, das sich hauptsächlich auf die UI konzentriert.
@@ -73,7 +72,7 @@ Bitte Updated eure mailcow so schnell es geht via dem update.]]></description>
     <description><![CDATA[Moohoo zusammen!
 Das April-Update ist da, mit einer Reihe von Neuerungen für Ihren reibungslosen E-Mail-Flow.
 Diesen Monat haben wir 3 Komponenten-Updates (ClamAV, SOGo und Rspamd) und ein paar kleinere Korrekturen, die wie folgt sind:
- Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
+ Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden ) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
 </item>
 <item>
     <title>🐄💮 März Update 2022 – Revision A | Änderungen</title>
@@ -118,7 +117,7 @@ So präsentieren wir euch ab heute:
     <description><![CDATA[Moohoo an alle.
 Heute veröffentlichen wir den ersten Hotfix für das Update 2022-01.
 Das hat sich geändert:
- Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
+ Ergänzungen:  Wir haben einen Versions-Tag hinzugefügt, der sich am unteren Rand der mailcow UI befindet (Er zeigt nun den aktuellen Release-Tag an, auf dem man sich befindet!) Ist das nicht verrückt? (https://github.com/mailcow/mailcow-dockerized/pull/4437 )   Änderungen:  Die passwortlose SOGo-Authentifizierung unterstützt nun Kalendereinladungen und Kalender/Kontakt-Abonnements (https://github.com/mailcow/mailcow-dockerized/pull/4439 ) Der Autoreply-Zeitplan für SOGo wurde von 24h auf 5m geändert (https://github.]]></description>
 </item>
 </channel>
 </rss>
