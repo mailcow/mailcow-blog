@@ -2,6 +2,33 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://news.mailcow.email/</loc><lastmod>2022-07-15T12:09:01&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="de"
+                        href="http://news.mailcow.email/de/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://news.mailcow.email/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/posts/</loc><lastmod>2022-07-15T12:09:01&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="de"
+                        href="http://news.mailcow.email/de/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://news.mailcow.email/posts/"
+                    /></url><url>
+            <loc>http://news.mailcow.email/posts/welcome-new-blog/</loc><lastmod>2022-07-15T12:09:01&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="de"
+                        href="http://news.mailcow.email/de/posts/welcome-new-blog/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://news.mailcow.email/posts/welcome-new-blog/"
+                    /></url><url>
             <loc>http://news.mailcow.email/tags/2022/</loc><lastmod>2022-07-14T12:15:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="de"
@@ -37,24 +64,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="http://news.mailcow.email/tags/changelog/"
-                    /></url><url>
-            <loc>http://news.mailcow.email/</loc><lastmod>2022-07-14T12:15:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="de"
-                        href="http://news.mailcow.email/de/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="http://news.mailcow.email/"
-                    /></url><url>
-            <loc>http://news.mailcow.email/posts/</loc><lastmod>2022-07-14T12:15:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="de"
-                        href="http://news.mailcow.email/de/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="http://news.mailcow.email/posts/"
                     /></url><url>
             <loc>http://news.mailcow.email/tags/</loc><lastmod>2022-07-14T12:15:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
