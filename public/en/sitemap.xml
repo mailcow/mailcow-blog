@@ -5,7 +5,7 @@
   
   <url>
     <loc>http://news.mailcow.email/</loc>
-    <lastmod>2022-07-15T14:13:02+02:00</lastmod>
+    <lastmod>2022-07-15T15:23:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -753,6 +753,7 @@
   
   <url>
     <loc>http://news.mailcow.email/_redirects</loc>
+    <lastmod>2022-07-15T15:23:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -761,6 +762,7 @@
   
   <url>
     <loc>http://news.mailcow.email/feed/</loc>
+    <lastmod>2022-07-15T15:23:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
