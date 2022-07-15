@@ -35,7 +35,8 @@ Minor changes  ClamAV is now using version 0.105 (the latest at release time). P
     <description><![CDATA[2022-05c It´s us again again!
 This time we´ve published the 2022-05c Update which is a very small one.
 It changed the API a bit again. This time for security reasons.
-Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c Stay healthy
+Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c
+Stay healthy
 Niklas
  2022-05b It´s us again!
 Today we have a small API Fix Update which focus mainly on the UI.
@@ -50,7 +51,7 @@ As some of you reported the API Calls for Domains/Mailboxes don´t work anymore 
     <description><![CDATA[Moohoo everyone!
 The April update is here with a bunch of new stuff for your flawless E-Mail Flow.
 This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor fixes which are as follows:
- Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here ) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
+ Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
 </item>
 <item>
     <title>🐄💮 Moorch Update 2022 – Revision A | Patchnotes</title>
@@ -95,7 +96,7 @@ So we present you from today:
     <description><![CDATA[Moohoo everyone.
 Today we are releasing the first hotfix for the 2022-01 Update.
 This has changed:
- Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437 )   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439 ) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
+ Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
 </item>
 <item>
     <title>📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</title>

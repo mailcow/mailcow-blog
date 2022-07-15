@@ -33,7 +33,7 @@ Let&rsquo;s get started, shall we?
     <author>André Peters</author>
     <guid>http://news.mailcow.email/posts/mooctober2021/</guid>
     <description><![CDATA[A big thanks to Kristian Feldsam for integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
-Furthermore we introduce our new cold standby solution .
+Furthermore we introduce our new cold standby solution.
 With this new script you are able to create a fully working, 1:1, consistent copy of your running mailcow without downtime.
 Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up -d&rdquo;.]]></description>
 </item>
@@ -54,8 +54,9 @@ We are also reworking the design a bit, that&rsquo;s a WIP and will take a while
     <author>André Peters</author>
     <guid>http://news.mailcow.email/posts/xubium_recommend/</guid>
     <description><![CDATA[Dear cows,
-For organizations in Spanish-speaking countries I would recommend you check out Xubium .
- They are a Latin-American company with expertise in mailcow that works with our infrastructure and support to provide a fully managed email service to medium and small businesses.
+For organizations in Spanish-speaking countries I would recommend you check out Xubium.
+
+They are a Latin-American company with expertise in mailcow that works with our infrastructure and support to provide a fully managed email service to medium and small businesses.
 Xubium is an amazing company to work with, it has our recommendation by all means.]]></description>
 </item>
 <item>

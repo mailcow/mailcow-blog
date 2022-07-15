@@ -8,6 +8,11 @@ title = "mailcow: dockerized - Blog"
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+
 [params]
   # LoveIt theme version
   version = "0.2.X"
@@ -51,7 +56,7 @@ theme = "LoveIt"
     hugo = true
     copyright = true
     author = false
-    since = 2017
+    since = 2016
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
 	custom = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy'
 
