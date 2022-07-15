@@ -8,10 +8,10 @@
             <atom:link href="http://news.mailcow.email/de/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Willkommen auf der neuen mailcow Blogseite!</title>
-    <link>http://news.mailcow.email/de/posts/welcome-new-blog/</link>
+    <link>http://news.mailcow.email/de/posts/2022/welcome-new-blog/</link>
     <pubDate>Fri, 15 Jul 2022 12:09:01 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/welcome-new-blog/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/welcome-new-blog/</guid>
     <description><![CDATA[Einen wunderschönen Guten Tag wünschen wir euch!
 Herzlich willkommen auf der neuen Blogseite.
 Einigen von euch dürfte die Seite bereits auf Twitter bzw. auf Telegram im letzten Update Announcement über den Weg gestolpert sein, doch jetzt an der Stelle noch mal offiziell!
@@ -19,20 +19,20 @@ Gebaut mit dem schnellen und schönen Static Site Generator Hugo und dem LoveIt 
 </item>
 <item>
     <title>☀️🐄 Mooli Update 2022 - 2FA Flow Update | Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-07/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-07/</link>
     <pubDate>Thu, 14 Jul 2022 08:30:10 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-07/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-07/</guid>
     <description><![CDATA[Moohoo zusammen!
 Es ist wieder einmal Update Zeit, etwas später als bisher (darauf gehe ich später noch etwas ein) aber trotzdem vollgepackt mit einigen Änderungen:
 2FA Änderungen  Die 2FA ist nun auch für Mailbox User im UI möglich (bisher war dies den Administratoren vorbehalten). Ebenfalls ist es jetzt möglich mehrere 2FA Möglichkeiten für ein Account zu aktivieren. Hinweis: Es wird nur eine verwendet, die vom User ausgewählt wird. Es gibt ein schönes neues Menü bei der Auswahl der verfügbaren 2FA Optionen.]]></description>
 </item>
 <item>
     <title>🌕🐄 Mooni Update 2022 - Das Docker Compose v2 Update (Teil I) | Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-06/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-06/</link>
     <pubDate>Tue, 07 Jun 2022 12:07:10 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-06/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-06/</guid>
     <description><![CDATA[Moohoo zusammen!
 Heute haben wir für euch wieder ein dickes fettes Update Paket zusammengestellt, welches neben generellen Container Updates eine große Änderung mit sich bringt:
 Docker Compose v2 Unterstützung!!!
@@ -41,26 +41,26 @@ Kleinere Änderungen  ClamAV nutzt nun Version 0.105 (die neuste zum Release Zei
 </item>
 <item>
     <title>⚠️ 2022-05d Wichtiges Sicherheitsupdate! ⚠️</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-05d/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-05d/</link>
     <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-05d/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-05d/</guid>
     <description><![CDATA[Hallo zusammen,
 wir haben gestern einen wichtigen Hinweis bezüglich einer kritischen Sicherheitslücke in der mailcow zugespielt bekommen (Danke nochmal dafür).
 Diese betrifft IMAPSYNC und verschafft zugriff auf Administrationsrechte im mailcow UI sowie der API.
 Es wird dringend empfohlen das Update so schnell wie möglich zu installieren um so eine Ausnutzung der Lücke auszuschließen.
-Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d Das Update entfernt keine wichtigen Funktionen aus der mailcow bzw.]]></description>
+Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05dDas Update entfernt keine wichtigen Funktionen aus der mailcow bzw.]]></description>
 </item>
 <item>
     <title>🌌🐮 Mooai 2022 Update - Das Tag Update | Revision C - Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-05/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-05/</link>
     <pubDate>Thu, 12 May 2022 09:23:00 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-05/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-05/</guid>
     <description><![CDATA[2022-05c Wir sind es wieder (nochmal)!
 Diesmal haben wir das 2022-05c Update veröffentlicht, welches ein sehr kleines Update ist.
 Es hat die API wieder ein wenig verändert. Diesmal aus Sicherheitsgründen.
-Geht rüber zu GitHub, um das vollständige Changelog zu sehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c Bleibt gesund
+Geht rüber zu GitHub, um das vollständige Changelog zu sehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05cBleibt gesund
 Niklas
  2022-05b Wir sind es wieder!
 Heute haben wir ein kleines API Update, das sich hauptsächlich auf die UI konzentriert.
@@ -68,31 +68,31 @@ Wie einige von euch berichtet haben, funktionieren die API-Aufrufe für Domains/
 </item>
 <item>
     <title>⚠️ Wichtige Informationen über das Update 2022-04 ⚠️</title>
-    <link>http://news.mailcow.email/de/posts/2022-04-info/</link>
+    <link>http://news.mailcow.email/de/posts/2022/2022-04-info/</link>
     <pubDate>Wed, 06 Apr 2022 10:01:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/2022-04-info/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/2022-04-info/</guid>
     <description><![CDATA[Gestern haben wir das 2022-04 Update (Moopril) veröffentlicht, welches eine Änderung in der NGINX Konfiguration enthielt. Im Verlauf des selbigen Tages erhielten wir vermehrt Meldungen darüber, dass SOGo seit dem Update nicht mehr funktionieren würde, genauer gesagt der Login.
 So wurde am gestrigen Abend gegen 23:00 Uhr (Deutscher Sommerzeit) von uns ein Update veröffentlicht, welcher dieses Problem in den meisten Fällen löst.
 Bitte Updated eure mailcow so schnell es geht via dem update.]]></description>
 </item>
 <item>
     <title>🐄🐰 Moopril 2022 - ClamAV, Rspamd, SOGo Update | Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-04/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-04/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-04/</guid>
     <description><![CDATA[Moohoo zusammen!
 Das April-Update ist da, mit einer Reihe von Neuerungen für Ihren reibungslosen E-Mail-Flow.
 Diesen Monat haben wir 3 Komponenten-Updates (ClamAV, SOGo und Rspamd) und ein paar kleinere Korrekturen, die wie folgt sind:
- Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden ) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
+ Wichtige Änderungen   Wir haben SOGo im mailcow Stack auf Version 5.5.1 geupdated. Neben den SOGo Bugfixes (Hier zu finden) wurde die mailcow Datenbank Struktur etwas angepast um für das Update 5.5.2 bereit zu sein.]]></description>
 </item>
 <item>
     <title>🐄💮 März Update 2022 – Revision A | Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-03a/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-03a/</link>
     <pubDate>Thu, 17 Mar 2022 22:32:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-03a/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-03a/</guid>
     <description><![CDATA[Moohoo allerseits!
 Wir haben ein spontanes Bugfix-Update veröffentlicht, das ein paar kleinere Fehler und grafische Probleme behebt.
 Diesmal sind es nur kleine Änderungen, aber wie das Sprichwort sagt: &ldquo;Kleinvieh macht auch Mist&rdquo;.
@@ -100,20 +100,20 @@ Diesmal sind es nur kleine Änderungen, aber wie das Sprichwort sagt: &ldquo;Kle
 </item>
 <item>
     <title>🐄💮 März Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Änderungen</title>
-    <link>http://news.mailcow.email/de/posts/release-2022-03/</link>
+    <link>http://news.mailcow.email/de/posts/2022/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/release-2022-03/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/release-2022-03/</guid>
     <description><![CDATA[Moohoo zusammen, der März ist da und am Ende des Monats ist dann auch wieder Frühling. Sicherlich waren die letzten Tage für euch genauso beängstigend wie für uns.
 🇺🇦 Ukraine, wir stehen hinter euch!
 Kommen wir nun zum März Update unserer mailcow. Spoiler vorab, so voll und umfangreich ist das März Update nicht aber es sind einige nette Updates im Bezug auf die Langzeit enthalten (ich schaue dich an ClamAV und Olefy!]]></description>
 </item>
 <item>
     <title>Empfehlung des Hauses: Die Videoreihe von Raspberry Pi Cloud (YT)</title>
-    <link>http://news.mailcow.email/de/posts/de-youtube-raspberrypicloud/</link>
+    <link>http://news.mailcow.email/de/posts/2022/de-youtube-raspberrypicloud/</link>
     <pubDate>Wed, 02 Mar 2022 11:57:52 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/de-youtube-raspberrypicloud/</guid>
+    <guid>http://news.mailcow.email/de/posts/2022/de-youtube-raspberrypicloud/</guid>
     <description><![CDATA[Tach zusammen!
 Mal kein Update Log sondern eine Empfehlung unsererseits an alle, die neu in die mailcow Welt einsteigen oder ihr Wissen auffrischen wollen.
 Solltet ihr eines der Sachen mit Ja beantwortet haben wird die folgende Video Reihe für euch interessant sein:

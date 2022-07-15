@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
             <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/de/tags/memoryleak/" rel="self" type="application/rss+xml" /><item>
     <title>mailcows, die zwischen dem 25. August und dem 2. September 2021 aktualisiert wurden, sollten erneut aktualisiert werden</title>
-    <link>http://news.mailcow.email/de/posts/rspamd_memleak_sep2021/</link>
+    <link>http://news.mailcow.email/de/posts/2021/rspamd_memleak_sep2021/</link>
     <pubDate>Thu, 02 Sep 2021 20:19:57 &#43;0100</pubDate>
     <author>André Peters</author>
-    <guid>http://news.mailcow.email/de/posts/rspamd_memleak_sep2021/</guid>
+    <guid>http://news.mailcow.email/de/posts/2021/rspamd_memleak_sep2021/</guid>
     <description><![CDATA[Hallo!
 Wenn ihr eure mailcow zwischen dem 25. August und dem 2. September 2021 aktualisiert habt, seid ihr höchstwahrscheinlich auf ein Memory-Leak in den Einstellungen von Rspamd gestoßen, das gerade behoben wurde.
 Außerdem haben wir das Map Hammering mit einer weiteren Änderung im Map Generator stark reduziert.

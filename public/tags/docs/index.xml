@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
             <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/docs/" rel="self" type="application/rss+xml" /><item>
     <title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title>
-    <link>http://news.mailcow.email/posts/docs-update-2.0/</link>
+    <link>http://news.mailcow.email/posts/2022/docs-update-2.0/</link>
     <pubDate>Fri, 04 Feb 2022 14:53:25 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/docs-update-2.0/</guid>
+    <guid>http://news.mailcow.email/posts/2022/docs-update-2.0/</guid>
     <description><![CDATA[Moohoo everyone! It&rsquo;s Friday then Then Saturday, Sunday (what?)
 We have an exciting news to share with you!
 We present you the newly released mailcow: dockerized Docs 2.0!

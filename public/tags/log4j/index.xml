@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
             <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</lastBuildDate><atom:link href="http://news.mailcow.email/tags/log4j/" rel="self" type="application/rss+xml" /><item>
     <title>⚠️ Important informations about log4j exploit ⚠️</title>
-    <link>http://news.mailcow.email/posts/log4j-dec2022/</link>
+    <link>http://news.mailcow.email/posts/2021/log4j-dec2021/</link>
     <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/log4j-dec2022/</guid>
+    <guid>http://news.mailcow.email/posts/2021/log4j-dec2021/</guid>
     <description><![CDATA[Moohoo everyone! Due to the recent accidents regarding the Java library log4j we would like to inform you, that your mailcow is NOT affected directly by this.
 Yes, it is true, that the Solr Container is a Java application which is affected by the log4j security breach. BUT solr is NOT accessible from the outside of the mailcow stack!
 For those who are worried we released a Solr Hotfix which is fixing the log4j issue with the simple flag +EXTRA_ARGS+=('-Dlog4j2.]]></description>

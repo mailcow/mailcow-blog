@@ -6,20 +6,20 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
             <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 14 Jul 2022 08:30:10 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/tags/changelog/" rel="self" type="application/rss+xml" /><item>
     <title>☀️🐄 Mooly Update 2022 - TFA Flow Update | Changelog</title>
-    <link>http://news.mailcow.email/posts/release-2022-07/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-07/</link>
     <pubDate>Thu, 14 Jul 2022 08:30:10 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-07/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-07/</guid>
     <description><![CDATA[Moohoo everyone!
 It&rsquo;s update time once again, a little later than before (I&rsquo;ll get into that a bit later) but still packed with some changes:
 TFA Changes  2FA is now also possible for mailbox users in the UI (previously this was reserved for administrators). Also, it is now possible to enable multiple 2FA options for an account. Note: Only one is used, which is selected by the user. There is a nice new menu at to select the available 2FA options.]]></description>
 </item>
 <item>
     <title>🌕🐄 Moone Update 2022 - The Docker Compose v2 Update (Part I) | Changes</title>
-    <link>http://news.mailcow.email/posts/release-2022-06/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-06/</link>
     <pubDate>Tue, 07 Jun 2022 12:07:10 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-06/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-06/</guid>
     <description><![CDATA[Moohoo everybody!
 Today we have put together a big fat update package for you again, which besides general container updates brings one big change:
 Docker Compose v2 support!!!
@@ -28,14 +28,14 @@ Minor changes  ClamAV is now using version 0.105 (the latest at release time). P
 </item>
 <item>
     <title>🌌🐮 Mooay 2022 Update - The Tag Update | Revision C - Changelog</title>
-    <link>http://news.mailcow.email/posts/release-2022-05/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-05/</link>
     <pubDate>Fri, 13 May 2022 09:22:00 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-05/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-05/</guid>
     <description><![CDATA[2022-05c It´s us again again!
 This time we´ve published the 2022-05c Update which is a very small one.
 It changed the API a bit again. This time for security reasons.
-Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c Stay healthy
+Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05cStay healthy
 Niklas
  2022-05b It´s us again!
 Today we have a small API Fix Update which focus mainly on the UI.
@@ -43,21 +43,21 @@ As some of you reported the API Calls for Domains/Mailboxes don´t work anymore 
 </item>
 <item>
     <title>🐄🐰Moopril 2022 - ClamAV, Rspamd, SOGo Update | Patchnotes</title>
-    <link>http://news.mailcow.email/posts/release-2022-04/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-04/</link>
     <pubDate>Tue, 05 Apr 2022 10:42:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-04/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-04/</guid>
     <description><![CDATA[Moohoo everyone!
 The April update is here with a bunch of new stuff for your flawless E-Mail Flow.
 This month we have 3 component updates (ClamAV, SOGo and Rspamd) and a few minor fixes which are as follows:
- Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here ) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
+ Major Changes   We have updated SOGo in the mailcow stack to 5.5.1. Besides the SOGo fixes (see here) the mailcow database structure has been tweaked a bit to be ready for the upcoming 5.]]></description>
 </item>
 <item>
     <title>🐄💮 Moorch Update 2022 – Revision A | Patchnotes</title>
-    <link>http://news.mailcow.email/posts/release-2022-03a/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-03a/</link>
     <pubDate>Thu, 17 Mar 2022 22:29:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-03a/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-03a/</guid>
     <description><![CDATA[Moohoo everyone!
 We have released an impromptu bug fix update that fixes a few minor bugs and graphical issues.
 These are only minor changes this time, but as the saying goes, &ldquo;Every little bit helps&rdquo;.
@@ -65,31 +65,31 @@ These are only minor changes this time, but as the saying goes, &ldquo;Every lit
 </item>
 <item>
     <title>🐄💮 Moorch Update 2022 – ClamAV, Dovecot &amp; Olefy Update | Patchnotes</title>
-    <link>http://news.mailcow.email/posts/release-2022-03/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-03/</link>
     <pubDate>Wed, 02 Mar 2022 16:48:00 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-03/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-03/</guid>
     <description><![CDATA[Moohoo everyone, March is here and by the end of the month it will be spring again. Surely the last few days were as scary for you as they were for us.
 🇺🇦 Ukraine, we are standing with you!
 Let&rsquo;s move on to the March update of our mailcow. Spoilers ahead, the March update is not that full and extensive but there are some nice updates included in terms of long term (I&rsquo;m looking at you ClamAV and Olefy!]]></description>
 </item>
 <item>
     <title>📰🐄 Jan(moo)uary Update 2022 - Revision A (2022-01a) 🪲 | Patchnotes</title>
-    <link>http://news.mailcow.email/posts/release-2022-01a/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-01a/</link>
     <pubDate>Tue, 01 Feb 2022 15:28:32 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-01a/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-01a/</guid>
     <description><![CDATA[Moohoo everyone.
 Today we are releasing the first hotfix for the 2022-01 Update.
 This has changed:
- Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437 )   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439 ) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
+ Additions:  We´ve added a Version Tag which is located at the bottom of the mailcow UI (It now shows the current release tag you are on!) Isn´t that crazy? (https://github.com/mailcow/mailcow-dockerized/pull/4437)   Changes:  The passwordless SOGo Authentication is now supporting calender invitations and calender/contact subscriptions (https://github.com/mailcow/mailcow-dockerized/pull/4439) The Autoreply Schedule for SOGo has been changed from 24h to 5m (https://github.]]></description>
 </item>
 <item>
     <title>📰🐄 Jan(moo)uary Update 2022 - The U2F --&gt; WebAuthn (2FA) Update | Patchnotes</title>
-    <link>http://news.mailcow.email/posts/release-2022-01/</link>
+    <link>http://news.mailcow.email/posts/2022/release-2022-01/</link>
     <pubDate>Fri, 21 Jan 2022 14:55:47 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/release-2022-01/</guid>
+    <guid>http://news.mailcow.email/posts/2022/release-2022-01/</guid>
     <description><![CDATA[Moohoo everyone, Niklas here with the latest changelog for our beloved mailcow email software!
 This month there is a big chunk of changes, some of them even very important regarding 2FA, but more about that later.
 First of all we would like to thank you for your loyalty and cooperation, because without you the mailcow project wouldn&rsquo;t be where it is now ❤️
@@ -97,10 +97,10 @@ We would also like to apologize for the fact that we are only now releasing a ne
 </item>
 <item>
     <title>🐄 Moovember 2021 - Patchnotes</title>
-    <link>http://news.mailcow.email/posts/moovember2021/</link>
+    <link>http://news.mailcow.email/posts/2021/moovember2021/</link>
     <pubDate>Fri, 03 Dec 2021 09:49:47 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/posts/moovember2021/</guid>
+    <guid>http://news.mailcow.email/posts/2021/moovember2021/</guid>
     <description><![CDATA[Moohoo everyone!
 Niklas here to present you the latest news around our lovely mailcow :)
 Let&rsquo;s get started, shall we?
@@ -109,12 +109,12 @@ Let&rsquo;s get started, shall we?
 </item>
 <item>
     <title>🐄 Mooctober 2021 - the feldsam edition</title>
-    <link>http://news.mailcow.email/posts/mooctober2021/</link>
+    <link>http://news.mailcow.email/posts/2021/mooctober2021/</link>
     <pubDate>Mon, 18 Oct 2021 21:55:47 &#43;0100</pubDate>
     <author>André Peters</author>
-    <guid>http://news.mailcow.email/posts/mooctober2021/</guid>
-    <description><![CDATA[A big thanks to Kristian Feldsam for integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
-Furthermore we introduce our new cold standby solution .
+    <guid>http://news.mailcow.email/posts/2021/mooctober2021/</guid>
+    <description><![CDATA[A big thanks to Kristian Feldsamfor integrating Twig. We are closer to Bootstrap 5 than ever. That&rsquo;s a big change we hope to finish soon.
+Furthermore we introduce our new cold standby solution.
 With this new script you are able to create a fully working, 1:1, consistent copy of your running mailcow without downtime.
 Disaster recovery of a mailcow is as easy as switching IPs and running &ldquo;up -d&rdquo;.]]></description>
 </item>
