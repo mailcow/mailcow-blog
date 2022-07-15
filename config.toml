@@ -290,7 +290,8 @@ enableGitInfo = true
 	[languages.de.params]
       # site description
       description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"
-	  dateFormat = "02.01.2006"
+	    dateFormat = "02.01.2006"
+      rss = 1
         [languages.de.params.home.profile]
           enable = true
           # Gravatar Email for preferred avatar in home page
