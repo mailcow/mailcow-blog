@@ -12,7 +12,7 @@ categories: ["Updates"]
 
 Moohoo everyone!
 
-We've released an impromptu update that documents a little better the API and brings a new version of ClamAV (0.105.1).
+We've released an short update that improved the API and brings a new version of ClamAV (0.105.1).
 
 **Note:** The update to ClamAV 0.105.1 is recommended by ClamAV as a security update [(See ClamAV Update article)](https://blog.clamav.net/2022/07/clamav-01037-01041-and-01051-patch.html)
 
