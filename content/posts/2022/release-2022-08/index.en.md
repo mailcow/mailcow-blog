@@ -1,6 +1,6 @@
 ---
 title: "🌊🐄 Amoogust Update 2022 - The Nightly Build Switch Update  | Changes"
-date: 2022-09-01T08:30:10+02:00
+date: 2022-09-01T10:30:10+02:00
 draft: false
 
 author: Niklas Meyer
