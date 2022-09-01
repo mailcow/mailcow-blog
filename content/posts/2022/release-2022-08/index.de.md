@@ -1,7 +1,7 @@
 ---
 title: "🌊🐄 Aumuuhst Update 2022 - Die Nightly Builds sind los | Änderungen"
 date: 2022-09-01T10:30:10+02:00
-draft: true
+draft: false
 
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
