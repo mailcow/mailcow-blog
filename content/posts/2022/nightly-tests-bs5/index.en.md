@@ -1,7 +1,7 @@
 ---
 title: "Our new addition: The new mailcow UI (MUH-I) in Bootstrap 5"
 date: 2022-09-01T12:30:10+02:00
-draft: false
+draft: true
 
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
