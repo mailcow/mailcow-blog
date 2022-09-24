@@ -1,8 +1,6 @@
-baseURL = "http://news.mailcow.email"
+baseURL = "https://news.mailcow.email"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
-# language code
-#languageCode = "en"
 title = "mailcow: dockerized - Blog"
 
 # Change the default theme to be use when building the site with Hugo
@@ -126,7 +124,7 @@ enableGitInfo = true
     hiddenFromHomePage = false
     hiddenFromSearch = false
     twemoji = false
-    lightgallery = true
+    lightgallery = false
     fraction = true
     fontawesome = true
     linkToMarkdown = true

@@ -7,15 +7,17 @@ author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 toc: false
 
-resources:
-- name: "featured-image"
-  src: "thumb.png"
+images: ["/images/demo_thumb.png"]
+featuredImage: "/images/demo_thumb.png"
+featuredImagePreview: "/images/demo_thumb.png"
 
 ---
 
 Moohoo everyone!
 
 It´s finally time: Our new mailcow Demos are here and live for you to test!
+
+<!--more-->
 
 What does that mean now?
 

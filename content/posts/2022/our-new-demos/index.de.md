@@ -7,15 +7,17 @@ author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 toc: false
 
-resources:
-- name: "featured-image"
-  src: "thumb.png"
+images: ["/images/demo_thumb.png"]
+featuredImage: "/images/demo_thumb.png"
+featuredImagePreview: "/images/demo_thumb.png"
 
 ---
 
 Einen wunderschönen Guten Tag wünschen wir euch!
 
 Endlich ist es so weit: Die neuen Demos sind da!
+
+<!--more-->
 
 Was bedeutet das jetzt?
 
