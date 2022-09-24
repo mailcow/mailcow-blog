@@ -5,9 +5,10 @@ draft: false
 
 author: "Niklas Meyer"
 description: "Announcement for the mailcow on Twitter"
-resources:
-- name: "featured-image"
-  src: "twitter_image.png"
+
+images: ["/images/twitter_image.png"]
+featuredImage: "/images/twitter_image.png"
+featuredImagePreview: "/images/twitter_image.png"
   
 categories: ["Social Media"]
 tags: ["2022", "social media"]

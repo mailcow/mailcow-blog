@@ -7,11 +7,9 @@ author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 toc: true
 
-images: ["thumb.png"]
-
-resources:
-- name: "featured-image"
-  src: "thumb.png"
+images: ["/images/nightly_thumb.png"]
+featuredImage: "/images/nightly_thumb.png"
+featuredImagePreview: "/images/nightly_thumb.png"
 
 tags: ["2022", "nightly", "testing", "feedback"]
 categories: ["Nightly", "Beta"]

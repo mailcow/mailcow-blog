@@ -7,11 +7,9 @@ author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 toc: false
 
-images: ["thumb.jpg"]
-
-resources:
-- name: "featured-image"
-  src: "thumb.jpg"
+images: ["/images/new-blog_thumb.jpg"]
+featuredImage: "/images/new-blog_thumb.jpg"
+featuredImagePreview: "/images/new-blog_thumb.jpg"
 
 ---
 
