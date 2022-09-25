@@ -14,9 +14,10 @@ So if there was one thing that always bothered you so far, please let us know!]]
 Yeah, a August Update in September&amp;hellip; kinda sus if you ask me!
 This time there are even some changes regarding the Update sources! So stay curious.
 Let&amp;rsquo;s start quite gently for the time being:
-Stable changes (stable branch) OAuth clients and app passwords are now accepted again for Cal/CardDav connections. #4685 by @FreddleSpl0it SOGo has been updated to 5.7.1 (Complete changelog here ) receives in mailcow stack container version: mailcow/sogo:1.</description></item><item><title>☀️🐄 Mooly Update 2022 - Revision A | Changes</title><link>https://news.mailcow.email/posts/2022/release-2022-07a/</link><pubDate>Fri, 29 Jul 2022 10:32:00 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-07a/</guid><description>Moohoo everyone!
+Stable changes (stable branch) OAuth clients and app passwords are now accepted again for Cal/CardDav connections. #4685 by @FreddleSpl0it SOGo has been updated to 5.7.1 (Complete changelog here) receives in mailcow stack container version: mailcow/sogo:1.</description></item><item><title>☀️🐄 Mooly Update 2022 - Revision A | Changes</title><link>https://news.mailcow.email/posts/2022/release-2022-07a/</link><pubDate>Fri, 29 Jul 2022 10:32:00 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-07a/</guid><description>Moohoo everyone!
 We&amp;rsquo;ve released an short update that improved the API and brings a new version of ClamAV (0.105.1).
-Note: The update to ClamAV 0.105.1 is recommended by ClamAV as a security update (See ClamAV Update article) Once again summarized what changes:
+Note: The update to ClamAV 0.105.1 is recommended by ClamAV as a security update (See ClamAV Update article)
+Once again summarized what changes:
 The schema of the domain section of the API has been adjusted and improved. Automatic GitHub actions for building the latest container versions has been set up (currently not used productively).</description></item><item><title>Welcome to the new mailcow blog!</title><link>https://news.mailcow.email/posts/2022/welcome-new-blog/</link><pubDate>Fri, 15 Jul 2022 12:09:01 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/welcome-new-blog/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://news.mailcow.email/images/new-blog_thumb.jpg" referrerpolicy="no-referrer">
 &lt;/div>Happy new day to you!
@@ -32,10 +33,12 @@ But let&amp;rsquo;s start with the small stuff first:
 Minor changes ClamAV is now using version 0.105 (the latest at release time). Postfix has been updated to version 3.5.6. netfilter, acme, dockerapi, olefy, watchdog, unbound and phpfpm have been updated to Alpine Linux 3.</description></item><item><title>⚠️ 2022-05d Important Security Update! ⚠️</title><link>https://news.mailcow.email/posts/2022/release-2022-05d/</link><pubDate>Thu, 19 May 2022 16:03:56 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-05d/</guid><description>Hello all,
 Yesterday we received an important tip about a critical security vulnerability in mailcow (thanks again for that). It affects IMAPSYNC and gives access to administration rights in the mailcow UI and API.
 It is strongly recommended to install the update as soon as possible to prevent exploitation.
-As always please take a look at the GitHub Release: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d The update does not remove any important functionality from mailcow or IMAPSYNC!</description></item><item><title>🌌🐮 Mooay 2022 Update - The Tag Update | Revision C - Changelog</title><link>https://news.mailcow.email/posts/2022/release-2022-05/</link><pubDate>Fri, 13 May 2022 09:22:00 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-05/</guid><description>2022-05c It´s us again again!
+As always please take a look at the GitHub Release: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d
+The update does not remove any important functionality from mailcow or IMAPSYNC!</description></item><item><title>🌌🐮 Mooay 2022 Update - The Tag Update | Revision C - Changelog</title><link>https://news.mailcow.email/posts/2022/release-2022-05/</link><pubDate>Fri, 13 May 2022 09:22:00 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-05/</guid><description>2022-05c It´s us again again!
 This time we´ve published the 2022-05c Update which is a very small one.
 It changed the API a bit again. This time for security reasons.
-Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c Stay healthy
+Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c
+Stay healthy
 Niklas
 2022-05b It´s us again!
 Today we have a small API Fix Update which focus mainly on the UI.
