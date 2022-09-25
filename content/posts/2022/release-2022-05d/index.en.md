@@ -6,6 +6,7 @@ author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 toc: false
 
+license: ""
 
 tags: ["2022", "update", "security", "hotfix", "important"]
 categories: ["security", "hotfix"]

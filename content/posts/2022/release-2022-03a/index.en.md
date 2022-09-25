@@ -5,6 +5,8 @@ draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 
+license: ""
+
 tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
 ---

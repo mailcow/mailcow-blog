@@ -1,21 +1,20 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>mailcow: dockerized - Blog</title>
-        <link>http://news.mailcow.email/de/</link>
+        <link>https://news.mailcow.email/de/</link>
         <description>Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Fri, 15 Jul 2022 12:09:01 &#43;0200</lastBuildDate>
-            <atom:link href="http://news.mailcow.email/de/index.xml" rel="self" type="application/rss+xml" />
+            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Sat, 24 Sep 2022 12:09:01 &#43;0200</lastBuildDate>
+            <atom:link href="https://news.mailcow.email/de/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Willkommen auf der neuen mailcow Blogseite!</title>
-    <link>http://news.mailcow.email/de/posts/2022/welcome-new-blog/</link>
-    <pubDate>Fri, 15 Jul 2022 12:09:01 &#43;0200</pubDate>
+    <title>Unsere neuen Demos sind da!</title>
+    <link>https://news.mailcow.email/de/posts/2022/our-new-demos/</link>
+    <pubDate>Sat, 24 Sep 2022 12:09:01 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/2022/welcome-new-blog/</guid>
-    <description><![CDATA[Einen wunderschönen Guten Tag wünschen wir euch!
-Herzlich willkommen auf der neuen Blogseite.
-Einigen von euch dürfte die Seite bereits auf Twitter bzw. auf Telegram im letzten Update Announcement über den Weg gestolpert sein, doch jetzt an der Stelle noch mal offiziell!
-Gebaut mit dem schnellen und schönen Static Site Generator Hugo und dem LoveIt Theme kann diese Seite in puncto Aktualität mit der WordPress mithalten und sogar noch übertrumpfen.]]></description>
-</item>
-</channel>
+    <guid>https://news.mailcow.email/de/posts/2022/our-new-demos/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://news.mailcow.email/images/demo_thumb.png" referrerpolicy="no-referrer">
+            </div><p>Einen wunderschönen Guten Tag wünschen wir euch!</p>
+<p>Endlich ist es so weit: Die neuen Demos sind da!</p>]]></description>
+</item></channel>
 </rss>

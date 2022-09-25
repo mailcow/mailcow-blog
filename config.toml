@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 title = "mailcow: dockerized - Blog"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "FixIt"
 
 # whether to use robots.txt
 enableRobotsTXT = true
@@ -12,7 +12,6 @@ enableRobotsTXT = true
 enableGitInfo = true
 
 [params]
-  # LoveIt theme version
   version = "0.2.X"
   description = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕 | Official Blog Page"
   # site keywords
@@ -20,6 +19,10 @@ enableGitInfo = true
   defaultTheme = "auto"
   dateFormat = "01-02-2006"
   images = ["/images/cow_mailcow.svg"]
+  license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'
+
+  [params.cookieconsent]
+    enable = false
 
 [params.search]
   enable = false
@@ -56,7 +59,7 @@ enableGitInfo = true
     author = false
     since = 2016
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
-	custom = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy'
+	  custom = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy'
 
  [params.home]
     # LoveIt NEW | 0.2.0 amount of RSS pages
@@ -209,7 +212,7 @@ enableGitInfo = true
         weight = 3
       [[languages.en.menu.main]]
         identifier = "documentation"
-        pre = ""
+        pre = "<i class='fa fa-book'></i>"
         post = ""
         name = "Docs"
         url = "https://mailcow.github.io/mailcow-dockerized-docs/"
@@ -218,7 +221,7 @@ enableGitInfo = true
       [[languages.en.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
-        post = " Support"
+        post = "Support"
         name = ""
         url = "https://www.servercow.de/mailcow?lang=en#support"
         title = "Buy Support"
@@ -227,10 +230,38 @@ enableGitInfo = true
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
-        name = ""
+        name = "GitHub"
         url = "https://github.com/mailcow/mailcow-dockerized"
         title = "GitHub"
-        weight = 6		
+        weight = 6
+
+      [[languages.en.menu.main]]
+        identifier = "demos"
+        name = " Demos"
+        pre = "<i class='fa fa-play'></i>"
+        title = "Demos"
+        weight = 7
+        url = "https://demo.mailcow.email"    
+
+      [[languages.en.menu.main]]
+        identifier = "demo-stable"
+        pre = ""
+        post = ""
+        parent = "demos"
+        name = "Stable Demo"
+        url = "https://demo.mailcow.email"
+        title = "Stable Demo"
+        weight = 1
+
+      [[languages.en.menu.main]]
+        identifier = "demo-nightly"
+        pre = ""
+        post = ""
+        parent = "demos"
+        name = "Nightly Demo"
+        url = "https://nightly-demo.mailcow.email"
+        title = "Nightly Demo"     
+        weight = 2  		
 			  
   [languages.de]
     weight = 2
@@ -263,7 +294,7 @@ enableGitInfo = true
         weight = 3
       [[languages.de.menu.main]]
         identifier = "documentation"
-        pre = ""
+        pre = "<i class='fa fa-book'></i>"
         post = ""
         name = "Dokumentation"
         url = "https://mailcow.github.io/mailcow-dockerized-docs/de"
@@ -281,10 +312,39 @@ enableGitInfo = true
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
-        name = ""
+        name = "GitHub"
         url = "https://github.com/mailcow/mailcow-dockerized"
         title = "GitHub"
-        weight = 6		
+        weight = 6
+
+      [[languages.de.menu.main]]
+        identifier = "demos"
+        name = " Demos"
+        pre = "<i class='fa fa-play'></i>"
+        title = "Demos"
+        weight = 7
+        url = "https://demo.mailcow.email"    
+
+      [[languages.de.menu.main]]
+        identifier = "demo-stable"
+        pre = ""
+        post = ""
+        parent = "demos"
+        name = "Stabile Demo"
+        url = "https://demo.mailcow.email"
+        title = "Stabile Demo"
+        weight = 1
+
+      [[languages.de.menu.main]]
+        identifier = "demo-nightly"
+        pre = ""
+        post = ""
+        parent = "demos"
+        name = "Nightly Demo"
+        url = "https://nightly-demo.mailcow.email"
+        title = "Nightly Demo"     
+        weight = 2
+
 	[languages.de.params]
       description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"
 	    dateFormat = "02.01.2006"

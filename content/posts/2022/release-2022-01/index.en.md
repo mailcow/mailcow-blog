@@ -6,6 +6,8 @@ draft: false
 author: "Niklas Meyer"
 description: "Patchnotes for the January 2022 Update"
   
+license: ""
+
 categories: ["Updates"]
 tags: ["2022", "update", "changelog"]
 ---

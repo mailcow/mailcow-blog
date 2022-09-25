@@ -4,6 +4,8 @@ date: 2022-02-01T15:28:32+01:00
 draft: false
 author: Niklas Meyer
 
+license: ""
+
 tags: ["2022", "update", "changelog", "bugfix"]
 categories: ["Updates"]
 ---

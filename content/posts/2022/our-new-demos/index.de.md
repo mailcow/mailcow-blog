@@ -7,6 +7,8 @@ author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 toc: false
 
+license: ""
+
 images: ["/images/demo_thumb.png"]
 featuredImage: "/images/demo_thumb.png"
 featuredImagePreview: "/images/demo_thumb.png"

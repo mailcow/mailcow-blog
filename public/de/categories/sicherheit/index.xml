@@ -1,30 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Sicherheit - Kategorie - mailcow: dockerized - Blog</title>
-        <link>http://news.mailcow.email/de/categories/sicherheit/</link>
-        <description>Sicherheit - Kategorie - mailcow: dockerized - Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
-            <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="http://news.mailcow.email/de/categories/sicherheit/" rel="self" type="application/rss+xml" /><item>
+  <channel>
+    <title>Sicherheit - Kategorie - mailcow: dockerized - Blog</title>
+    <link>https://news.mailcow.email/de/categories/sicherheit/</link>
+    <description>Sicherheit - Kategorie - mailcow: dockerized - Blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>de</language><managingEditor>info@servercow.de (Moohoo)</managingEditor>
+      <webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Thu, 19 May 2022 16:03:56 &#43;0200</lastBuildDate><atom:link href="https://news.mailcow.email/de/categories/sicherheit/" rel="self" type="application/rss+xml" /><item>
     <title>⚠️ 2022-05d Wichtiges Sicherheitsupdate! ⚠️</title>
-    <link>http://news.mailcow.email/de/posts/2022/release-2022-05d/</link>
+    <link>https://news.mailcow.email/de/posts/2022/release-2022-05d/</link>
     <pubDate>Thu, 19 May 2022 16:03:56 &#43;0200</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/2022/release-2022-05d/</guid>
+    <guid>https://news.mailcow.email/de/posts/2022/release-2022-05d/</guid>
     <description><![CDATA[Hallo zusammen,
 wir haben gestern einen wichtigen Hinweis bezüglich einer kritischen Sicherheitslücke in der mailcow zugespielt bekommen (Danke nochmal dafür).
 Diese betrifft IMAPSYNC und verschafft zugriff auf Administrationsrechte im mailcow UI sowie der API.
 Es wird dringend empfohlen das Update so schnell wie möglich zu installieren um so eine Ausnutzung der Lücke auszuschließen.
-Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05dDas Update entfernt keine wichtigen Funktionen aus der mailcow bzw.]]></description>
-</item>
-<item>
+Schaut euch bitte auch wieder die GitHub Release Page an um genauere Änderungen sehen zu können: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05d]]></description>
+</item><item>
     <title>⚠️ Wichtige Informationen über log4j-Exploit ⚠️</title>
-    <link>http://news.mailcow.email/de/posts/2021/log4j-dec2021/</link>
+    <link>https://news.mailcow.email/de/posts/2021/log4j-dec2021/</link>
     <pubDate>Mon, 13 Dec 2021 08:49:44 &#43;0100</pubDate>
     <author>Niklas Meyer</author>
-    <guid>http://news.mailcow.email/de/posts/2021/log4j-dec2021/</guid>
+    <guid>https://news.mailcow.email/de/posts/2021/log4j-dec2021/</guid>
     <description><![CDATA[Moohoo an alle! Aufgrund der jüngsten Vorfälle mit der Java-Bibliothek log4j möchten wir euch mitteilen, dass eure mailcow NICHT direkt davon betroffen ist.
 Ja, es ist wahr, dass der Solr Container eine Java Anwendung ist, die von der log4j Sicherheitslücke betroffen ist. Aber Solr ist NICHT von außerhalb des mailcow-Stacks zugänglich!
 Für diejenigen, die besorgt sind, haben wir einen Solr Hotfix veröffentlicht, der das log4j-Problem mit dem einfachen Flag +EXTRA_ARGS+=('-Dlog4j2.formatMsgNoLookups=true') behebt, welches dieses Problem schließt.]]></description>
-</item>
-</channel>
+</item></channel>
 </rss>
