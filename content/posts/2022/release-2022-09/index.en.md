@@ -9,8 +9,8 @@ toc: true
 
 license: ""
 
-tags: ["2022", "update", "changelog", "bugfix","wichtig"]
-categories: ["Updates","Sicherheit"]
+tags: ["2022", "update", "changelog", "bugfix","important"]
+categories: ["Updates","Security"]
 ---
 
 **Moohoo everyone!**
