@@ -13,7 +13,7 @@ tags: ["2022", "update", "changelog", "bugfix","wichtig"]
 categories: ["Updates","Sicherheit"]
 ---
 
-**Moohoo zusammen!**
+**Moohoo everyone!**
 
 The official September update is here and brings this time unfortunately only a small update, which is not to be ignored, however.
 
