@@ -17,7 +17,7 @@ categories: ["Updates","Sicherheit"]
 
 Das offizielle September Update ist da und bringt dieses Mal leider nur ein kleines Update mit, welches aber trotzdem nicht zu unterschätzen ist.
 
-Es wird eine Sicherheitslücke, nein, keine Sorge, die bisherigen waren schlimmer, diese ist aber trotzdem nicht unwichtig geschlossen.
+Es wurde eine Sicherheitslücke geschlossen. Mehr dazu hier in dem Artikel.
 
 <!--more-->
 

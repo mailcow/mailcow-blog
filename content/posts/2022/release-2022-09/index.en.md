@@ -17,7 +17,7 @@ categories: ["Updates","Security"]
 
 The official September update is here and brings this time unfortunately only a small update, which is not to be ignored, however.
 
-A vulnerability is closed but no don't worry, the previous ones were worse, but this one is still not unimportant.
+We've addressed one minor security issue with the Swagger UI. More details in this Article.
 
 <!--more-->
 
