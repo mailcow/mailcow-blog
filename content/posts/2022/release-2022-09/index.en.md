@@ -1,5 +1,5 @@
 ---
-title: "🍂🐄 Mootember Update 2022 - Quarantäne & Swagger UI Fix Update | Änderungen"
+title: "🍂🐄 Mootember Update 2022 - Quarantine & Swagger UI Fix Update | Changes"
 date: 2022-09-27T12:30:10+02:00
 draft: false
 
