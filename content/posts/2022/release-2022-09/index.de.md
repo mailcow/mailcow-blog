@@ -1,6 +1,6 @@
 ---
 title: "🍂🐄 Mootember Update 2022 - Quarantäne & Swagger UI Fix Update - Revision A | Änderungen"
-date: 2022-09-27T12:30:10+02:00
+date: 2022-09-30T10:30:10+02:00
 draft: false
 
 author: Niklas Meyer
