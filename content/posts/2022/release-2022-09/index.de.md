@@ -1,5 +1,5 @@
 ---
-title: "🍂🐄 Mootember Update 2022 - Quarantäne & Swagger UI Fix Update | Änderungen"
+title: "🍂🐄 Mootember Update 2022 - Quarantäne & Swagger UI Fix Update - Revision A | Änderungen"
 date: 2022-09-27T12:30:10+02:00
 draft: false
 
@@ -13,13 +13,23 @@ tags: ["2022", "update", "changelog", "bugfix","wichtig"]
 categories: ["Updates","Sicherheit"]
 ---
 
+### 2022-09a (Release: 30.09.2022)
+Änderungen:
+
++ Das Twig Template System auf welches mailcow baut wurde auf Version 3.4.3 aktualisiert und schließt damit [CVE-2022-39261](https://github.com/advisories/GHSA-52m2-vc4m-jj33).<br>
+**Achtung: Diese CVE ist nicht kritisch für alle mailcow Users sondern dient lediglich der aktualität der Pakete**
+
+<!--more-->
+
+---
+
+### 2022-09 (Release: 27.09.2022)
+
 **Moohoo zusammen!**
 
 Das offizielle September Update ist da und bringt dieses Mal leider nur ein kleines Update mit, welches aber trotzdem nicht zu unterschätzen ist.
 
-Es wurde eine Sicherheitslücke geschlossen. Mehr dazu hier in dem Artikel.
-
-<!--more-->
+Es wurde eine Sicherheitslücke in mailcow geschlossen. Mehr dazu hier in dem Artikel.
 
 ### Stabile Änderungen (stable Branch)
 
