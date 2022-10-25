@@ -43,7 +43,7 @@ Submit Feedbach on [GitHub](https://github.com/mailcow/mailcow-dockerized/discus
 
 **Keep in mind: The mentioned Bootstrap 5 changes only affect the Nightly Builds (for now).**
 
-Learn here how you can obtain Nightly Builds too: https://docs.mailcow.email/de/i_u_m/i_u_m_update/#neu-nightly-updates-beziehen or use the new [Nightly Demo](https://nightly-demo.mailcow.email). 
+Learn here how you can obtain Nightly Builds too: https://docs.mailcow.email/en/i_u_m/i_u_m_update/#new-get-nightly-updates or use the new [Nightly Demo](https://nightly-demo.mailcow.email). 
 
 More information and the login data for the demo can be found here: https://docs.mailcow.email/#demos
 
