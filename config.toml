@@ -309,13 +309,21 @@ enableGitInfo = true
         title = ""
         weight = 4
       [[languages.de.menu.main]]
+        identifier = "vps"
+        pre = "<i class='fa fa-server'></i>"
+        post = ""
+        name = "VPS"
+        url = "https://www.eth-services.de/ssd-vps/"
+        title = ""
+        weight = 5
+      [[languages.de.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
         post = " Support"
         name = ""
         url = "https://www.servercow.de/mailcow#support"
         title = "Support erhalten"
-        weight = 5
+        weight = 6
       [[languages.de.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
@@ -323,14 +331,14 @@ enableGitInfo = true
         name = "GitHub"
         url = "https://github.com/mailcow/mailcow-dockerized"
         title = "GitHub"
-        weight = 6
+        weight = 7
 
       [[languages.de.menu.main]]
         identifier = "demos"
         name = " Demos"
         pre = "<i class='fa fa-play'></i>"
         title = "Demos"
-        weight = 7
+        weight = 8
         url = "https://demo.mailcow.email"    
 
       [[languages.de.menu.main]]
