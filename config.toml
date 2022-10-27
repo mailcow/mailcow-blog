@@ -211,6 +211,14 @@ enableGitInfo = true
         title = ""
         weight = 3
       [[languages.en.menu.main]]
+        identifier = "vps"
+        pre = "<i class='fa fa-server'></i>"
+        post = ""
+        name = "VPS"
+        url = "https://www.eth-services.de/ssd-vps/"
+        title = ""
+        weight = 4
+      [[languages.en.menu.main]]
         identifier = "documentation"
         pre = "<i class='fa fa-book'></i>"
         post = ""
