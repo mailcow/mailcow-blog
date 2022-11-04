@@ -2,7 +2,7 @@
 title: "[GUIDE] mailcow feat. Alpine Linux = ❤️"
 subtitle: "Ein kleiner Guide für die Installation von mailcow auf Alpine Linux"
 description: "Ein kleiner Guide für die Installation von mailcow auf Alpine Linux"
-date: 2022-11-04T11:57:52+02:00
+date: 2022-11-04T10:00:00+01:00
 draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
