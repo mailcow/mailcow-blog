@@ -25,7 +25,7 @@ Due to the <del>2022-11a</del> 2022-11b update, here are the changelogs of the <
 
 ### Stable changes (stable Branch 2022-11b)
 
-+ CalDav connections on MacOS should now work again. New SOGo image version (in the docker-compose.yml): 1.113.
++ CalDav should now work like before on MacOS again. New SOGo image version (in the docker-compose.yml): 1.113.
 + Some users could no longer use update.sh because the DNS lookup timeout was too low. This was increased from 3 to 6! <br>*Note: A reasonable and fast DNS resolution is essential for a mail server!*
 
 You can find more information and the exact PRs on GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-11b
