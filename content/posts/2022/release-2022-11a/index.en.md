@@ -1,5 +1,6 @@
 ---
-title: "🚚🐄 Moovember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision A"
+title: "🚚🐄 Moovember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision B"
+lastmod: 2022-12-13T09:30:10+02:00
 date: 2022-12-12T09:30:10+02:00
 draft: false
 
@@ -15,9 +16,28 @@ categories: ["Updates","Hotfix"]
 
 **Moohoo everyone!**
 
-Due to the 2022-11a update, here are the changelogs of the 2022-11a update and the changes of the major version (2022-11).
+Due to the <del>2022-11a</del> 2022-11b update, here are the changelogs of the <del>2022-11a</del> 2022-11b update and the changes of the major version (2022-11).
+
+> *We´ve released 2022-11b already!*
 
 <!--more-->
+
+
+### Stable changes (stable Branch 2022-11b)
+
++ CalDav connections on MacOS should now work again. New SOGo image version (in the docker-compose.yml): 1.113.
++ Some users could no longer use update.sh because the DNS lookup timeout was too low. This was increased from 3 to 6! <br>*Note: A reasonable and fast DNS resolution is essential for a mail server!*
+
+You can find more information and the exact PRs on GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-11b
+
+
+### Stable changes (stable Branch 2022-11a)
+
++ The IMAPSYNC jobs are no longer automatically deactivated if the server to be fetched is not available or the credentials are incorrect. New image version of Dovecot (in the docker-compose.yml): 1.21.
++ Translation corrections were also made.
+
+You can find more information and the exact PRs on GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-11a
+
 
 ### Stable changes (stable Branch 2022-11)
 
@@ -31,13 +51,6 @@ Due to the 2022-11a update, here are the changelogs of the 2022-11a update and t
 
 
 You can find more information and the exact PRs on GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-11
-
-### Stable changes (stable Branch 2022-11a)
-
-+ The IMAPSYNC jobs are no longer automatically deactivated if the server to be fetched is not available or the credentials are incorrect. New image version of Dovecot (in the docker-compose.yml): 1.21.
-+ Translation corrections were also made.
-
-Weitere Informationen sowie die genauen PRs findet ihr auf GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-11a
 
 ### Nightly changes (nightly Branch)
 

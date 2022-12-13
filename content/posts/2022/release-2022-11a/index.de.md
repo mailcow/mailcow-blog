@@ -1,6 +1,7 @@
 ---
-title: "🚚🐄 Muhvember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision A"
+title: "🚚🐄 Muhvember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision B"
 date: 2022-12-12T09:30:10+02:00
+lastmod: 2022-12-13T09:30:10+02:00
 draft: false
 
 author: Niklas Meyer
@@ -15,9 +16,18 @@ categories: ["Updates","Hotfix"]
 
 **Moohoo zusammen!**
 
-Aus gegebenem Anlass (dem 2022-11a Update) gibt es hier einmal die Changelogs bzw. Änderungen des besagten 2022-11a Updates, sowie die Änderungen der Major Version (2022-11).
+Aus gegebenem Anlass (dem <del>2022-11a</del> 2022-11b Update) gibt es hier einmal die Changelogs bzw. Änderungen des besagten <del>2022-11a</del> 2022-11b Updates, sowie die Änderungen der Major Version (2022-11).
+
+> *Wir haben bereits 2022-11b released!*
 
 <!--more-->
+
+### Stabile Änderungen (stable Branch 2022-11b)
+
++ CalDav-Verbindungen unter MacOS sollten nun wieder funktionieren. Neue SOGo-Image-Version (in der docker-compose.yml): 1.113.
++ Einige Benutzer konnten update.sh nicht mehr verwenden, weil der DNS-Lookup-Timeout zu niedrig war. Dieser wurde von 3 auf 6 erhöht! <br>*Hinweis: Eine vernünftige und schnelle DNS-Auflösung ist für einen Mailserver essentiell!*
+
+Weitere Informationen sowie die genauen PRs findet ihr auf GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-11b
 
 ### Stabile Änderungen (stable Branch 2022-11)
 
