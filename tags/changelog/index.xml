@@ -1,4 +1,9 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>changelog - Tag - mailcow: dockerized - Blog</title><link>https://news.mailcow.email/tags/changelog/</link><description>changelog - Tag - mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor><webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Mon, 12 Dec 2022 09:30:10 +0200</lastBuildDate><atom:link href="https://news.mailcow.email/tags/changelog/" rel="self" type="application/rss+xml"/><item><title>🚚🐄 Moovember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision B</title><link>https://news.mailcow.email/posts/2022/release-2022-11a/</link><pubDate>Mon, 12 Dec 2022 09:30:10 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-11a/</guid><description><![CDATA[<p><strong>Moohoo everyone!</strong></p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>changelog - Tag - mailcow: dockerized - Blog</title><link>https://news.mailcow.email/tags/changelog/</link><description>changelog - Tag - mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@servercow.de (Moohoo)</managingEditor><webMaster>info@servercow.de (Moohoo)</webMaster><lastBuildDate>Sat, 24 Dec 2022 09:30:10 +0200</lastBuildDate><atom:link href="https://news.mailcow.email/tags/changelog/" rel="self" type="application/rss+xml"/><item><title>🎄🐄 Moocember Update 2022 - MUH-I Update (Bootstrap 5)</title><link>https://news.mailcow.email/posts/2022/release-2022-12/</link><pubDate>Sat, 24 Dec 2022 09:30:10 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-12/</guid><description>&lt;div class="featured-image">
+&lt;img src="https://news.mailcow.email/images/2022-12/mailcow_ui_login.en.png" referrerpolicy="no-referrer">
+&lt;/div>Introduction Moohoo everyone!
+To end the chaotic year 2022 in a worthy manner, the time has finally come. The long awaited Bootstrap 5 update is finally here!
+As already mentioned in some posts, this update marks only the turning point of the mailcow UI, because the new base (Bootstrap 5) will offer us many new possibilities and scope for new features in the future.
+Because of the Bootstrap update the old UI was completely renewed and ported to the new version.</description></item><item><title>🚚🐄 Moovember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision B</title><link>https://news.mailcow.email/posts/2022/release-2022-11a/</link><pubDate>Mon, 12 Dec 2022 09:30:10 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-11a/</guid><description><![CDATA[<p><strong>Moohoo everyone!</strong></p>
 <p>Due to the <del>2022-11a</del> 2022-11b update, here are the changelogs of the <del>2022-11a</del> 2022-11b update and the changes of the major version (2022-11).</p>
 <blockquote>
 <p><em>We´ve released 2022-11b already!</em></p>
@@ -29,12 +34,4 @@ TFA Changes 2FA is now also possible for mailbox users in the UI (previously thi
 Today we have put together a big fat update package for you again, which besides general container updates brings one big change:
 Docker Compose v2 support!!!
 But let&amp;rsquo;s start with the small stuff first:
-Minor changes ClamAV is now using version 0.105 (the latest at release time). Postfix has been updated to version 3.5.6. netfilter, acme, dockerapi, olefy, watchdog, unbound and phpfpm have been updated to Alpine Linux 3.</description></item><item><title>🌌🐮 Mooay 2022 Update - The Tag Update | Revision C - Changelog</title><link>https://news.mailcow.email/posts/2022/release-2022-05/</link><pubDate>Fri, 13 May 2022 09:22:00 +0200</pubDate><author>Niklas Meyer</author><guid>https://news.mailcow.email/posts/2022/release-2022-05/</guid><description>2022-05c It´s us again again!
-This time we´ve published the 2022-05c Update which is a very small one.
-It changed the API a bit again. This time for security reasons.
-Head over to GitHub to see the full changelog: https://github.com/mailcow/mailcow-dockerized/releases/tag/2022-05c
-Stay healthy
-Niklas
-2022-05b It´s us again!
-Today we have a small API Fix Update which focus mainly on the UI.
-As some of you reported the API Calls for Domains/Mailboxes don´t work anymore if there is no Tag set.</description></item></channel></rss>
+Minor changes ClamAV is now using version 0.105 (the latest at release time). Postfix has been updated to version 3.5.6. netfilter, acme, dockerapi, olefy, watchdog, unbound and phpfpm have been updated to Alpine Linux 3.</description></item></channel></rss>
