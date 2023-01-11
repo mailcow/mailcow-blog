@@ -1,4 +1,4 @@
-baseURL = "https://news.mailcow.email"
+baseURL = "https://mailcow.email"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 title = "mailcow: dockerized - Blog"
