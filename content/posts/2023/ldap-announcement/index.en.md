@@ -21,6 +21,8 @@ The time of waiting is over and many have shared their solution with us on the c
 
 Today we finally have the pleasure to let it out into the world!
 
+<!--more-->
+
 One thing that has been wished for a very, very long time:
 
 **LDAP IS COMING TO NIGHTLY Q2 2023**.

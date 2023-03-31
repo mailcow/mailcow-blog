@@ -21,6 +21,8 @@ Die Zeit des Wartens ist vorbei und viele haben uns Ihre Lösung auf den unten a
 
 Heute dürfen wir es endlich in die Welt hinauslassen!
 
+<!--more-->
+
 Eine Sache, die sich schon sehr, sehr lange gewünscht wurde:
 
 **LDAP IS COMING TO NIGHTLY Q2 2023**
