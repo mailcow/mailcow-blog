@@ -1,5 +1,5 @@
 ---
-title: "🤔 Habt ihr diese Buchstaben gesehen? - [Noch offen]"
+title: "🤔 Habt ihr diese Buchstaben gesehen? - [Gelöst]"
 date: 2023-03-28T09:30:10+02:00
 draft: false
 

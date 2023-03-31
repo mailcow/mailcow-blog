@@ -1,5 +1,5 @@
 ---
-title: "🤔 Have you seen these letters? - [Unrevealed]"
+title: "🤔 Have you seen these letters? - [Solved]"
 date: 2023-03-28T09:30:10+02:00
 draft: false
 
