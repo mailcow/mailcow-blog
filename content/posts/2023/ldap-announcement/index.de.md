@@ -1,6 +1,6 @@
 ---
 title: "🐮🤝 LDAP ist real und kommt noch 2023"
-date: 2023-03-31T12:00:00+02:00
+date: 2023-03-31T11:00:00+02:00
 draft: false
 
 author: Niklas Meyer/DerLinkman
