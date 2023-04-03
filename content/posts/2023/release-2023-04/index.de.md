@@ -1,5 +1,5 @@
 ---
-title: "🥚🐄 Moopril Update 2023 - SOGo 5.8.2, Rspamd 3.5 und mehr"
+title: "🥚🐄 Moopril Update 2023 - SOGo 5.8.2, Rspamd 3.5 und mehr | Revision A"
 date: 2023-04-03T09:30:10+02:00
 draft: false
 
@@ -17,13 +17,21 @@ featuredImagePreview: "/images/2023/April/netfilter_incremental_de.png"
 
 ---
 
+### Update 2023-04a
+
+Wir haben gerade einen Hotfix für das 2023-04 Update veröffentlicht.
+
+Es löst das Problem mit Nextcloud, welches sich nicht auf Version 26 Updaten ließ, da Version 25 kein PHP 8.2 kann, 26 allerdings schon.
+
+---
+
+### Update 2023-04
+
 **Moohoo zusammen!**
 
 Es geht weiter mit unseren Updates für mailcow, diesmal hauptsächlich zum Beitrag der generellen Stabilität und Usability des Stacks.
 
 Legen wir los:
-
-<!--more-->
 
 - SOGo wurde auf Version 5.8.2 aktualisiert. Einige dürften einen Fehler von macOS Ventura und CalDav mitbekommen haben, dieser führte dazu, dass die Kalendar App von macOS keine SOGo Kalender entdecken konnte und darauf hin einfach probierte neue Kalender mit dem Namen am Remote Server anzulegen (was natürlich fehlschlug, da der Kalender ja bereits existierte).
 Des Weiteren sollten in dem Update auf 5.8.2 noch weitere Probleme behoben worden sein, einen vollständigen Changelog von SOGo findet ihr hier: https://github.com/Alinto/sogo/releases/tag/SOGo-5.8.1 & https://github.com/Alinto/sogo/releases/tag/SOGo-5.8.2
