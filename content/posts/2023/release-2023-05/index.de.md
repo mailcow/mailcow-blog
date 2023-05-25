@@ -29,7 +29,7 @@ Los geht's:
 - In der Benutzeransicht stimmen die angezeigten Tabs nun mit den gesetzten ACLs überein.
 - Wenn in der Benutzeransicht auf "Aktive Filter des Benutzers anzeigen" geklickt wurde, wurde statt der eingestellten Sieve-Filter eine Fehlermeldung angezeigt. Ab sofort werden hier die aktiven Sieve-Filter des Benutzers wie erwartet angezeigt.
 - Ein Darstellungsfehler, bei dem ein gelöschtes Postfach (aus dem gesendet werden konnte als anderes Postfach) noch in der Dropdown-Liste "Senden als" angezeigt wurde, wurde behoben.
-- Es wurde eine automatische Aktualisierung der Mailbox-Liste für Postfix über GitHub eingerichtet. Diese aktualisiert die Liste automatisch jeden Monat (wird dann mit neuen Updates von mailcow ausgerollt).
+- Es wurde eine automatische Aktualisierung der Access-Liste für postscreen von Postfix über GitHub eingerichtet. Diese aktualisiert die Liste automatisch jeden Monat (wird dann mit neuen Updates von mailcow ausgerollt).
 - Alte SASL Logs wurden bisher nicht korrekt aus der Datenbank entfernt. Dies ist nun der Fall.
 - Im UI wird nun unter dem Hostnamen von mailcow die verwendete Architektur angezeigt. Dies dient als Vorbereitung für die ARM64-Unterstützung (aktueller Status dazu weiter unten).
 - Einige Tippfehler und Links wurden korrigiert.
