@@ -32,7 +32,7 @@ There is **NO** workaround for this problem!
 
 - The Nextcloud script now installs Nextcloud 26.0.2 or updates to it (if desired).
 - A critical vulnerability in Dovecot was closed, which allowed unauthorized access to another mailbox via a password change. A separate CVE and POC will follow in a few days.
-- In the Dockerfiles the maintainer was changed from Andrè to tinc (The Infrastructure Company GmbH).
+- In the Dockerfiles the maintainer was changed from André to tinc (The Infrastructure Company GmbH).
 
 As always, the full changelog with the individual commits is available on GitHub:
 https://github.com/mailcow/mailcow-dockerized/releases/tag/2023-05a
