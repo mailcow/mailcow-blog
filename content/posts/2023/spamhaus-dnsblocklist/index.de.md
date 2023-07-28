@@ -38,7 +38,7 @@ Das ändert sich nun aber leider.
 
 #### Was ändert sich?
 
-Spamhaus hat zum [20.06](https://twitter.com/spamhaus/status/1671141604705333248) die Möglichkeit zum Zugriff auf besagte Listen von OVH, AWS und Hetzner Servern blockiert.
+Spamhaus hat zum [20.06](https://twitter.com/spamhaus/status/1671141604705333248) die Möglichkeit zum Zugriff auf besagte Listen von OVH, AWS und Cloudflare Servern blockiert.
 
 Dies hat zur Folge, dass die DNS Blocklisten (nur von Spamhaus, andere funktionieren weiterhin) damit nicht mehr funktionieren, wenn man als Benutzer nicht selber aktiv wird.
 

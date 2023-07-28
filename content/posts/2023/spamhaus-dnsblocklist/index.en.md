@@ -55,7 +55,7 @@ Spamhaus explains it as follows:
 
 > [...] To ensure its Terms of Use are adhered to, the Spamhaus Project will block queries from a specific IP address outside the policy. It also returns an error code. In the case of querying via an open/public resolver, i.e., OVHCloud, the error code is 127.255.255.254. [...]
 
-In other words, OVH/AWS/Hetzner's way of sending queries to Spamhaus violates the usage terms of Spamhaus's public DNS blocklists.
+In other words, OVH/AWS/Cloudflare's way of sending queries to Spamhaus violates the usage terms of Spamhaus's public DNS blocklists.
 
 *Currently, we can't say for sure whether other providers will be affected in the future. For now, we're aware of these three.*
 
