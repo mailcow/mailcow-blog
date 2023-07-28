@@ -46,9 +46,7 @@ Denn ab sofort ist es (um weiterhin von den Spamhaus DNS Blocklisten gebrauch zu
 
 mailcow kümmert sich dann um die konfiguration der neuen DQS Blocklisten, welche technisch genauso wie die ohne Account funktionieren.
 
-Wir haben dafür eine Möglichkeit in das update und generate_config Skript implementiert, welche eure öffentliche IP Adresse einem AS (Autonomen System) zuordnet und gegen einen Dienst von uns (fuzzy.mailcow.email/bad_asn.txt) prüft ob ihr betroffen seit oder nicht. Falls ja, meldet mailcow dies.
-
-Dafür wird das whois Paket auf dem Host System benötigt. Wir prüfen aber derweil eine andere Möglichkeit um auf besagtes lokales Paket verzichten zu können.
+Wir haben dafür eine Möglichkeit in das update und generate_config Skript implementiert, welche eure öffentliche IP Adresse einem AS (Autonomen System) zuordnet und gegen einen Dienst von uns (asn-check.mailcow.email) prüft ob ihr betroffen seit oder nicht. Falls ja, meldet mailcow dies.
 
 #### Warum ändert sich das und bin ich betroffen?
 

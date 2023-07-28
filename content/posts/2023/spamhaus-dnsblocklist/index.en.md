@@ -44,9 +44,7 @@ From now on, if you want to continue using the Spamhaus DNS blocklists, you'll n
 
 mailcow will take care of configuring the new DQS blocklists, which technically function the same way as the ones without an account.
 
-We've implemented a solution in the update and generate_config scripts that associates your public IP address with an Autonomous System (AS) and checks against a service we provide (fuzzy.mailcow.email/bad_asn.txt) to see if you're affected. If you are, mailcow will notify you.
-
-To perform this, the whois package is required on the host system. However, we're also exploring other possibilities to avoid relying on this specific local package.
+We've implemented a solution in the update and generate_config scripts that associates your public IP address with an Autonomous System (AS) and checks against a service we provide (asn-check.mailcow.email) to see if you're affected. If you are, mailcow will notify you.
 
 #### Why is this change happening, and am I affected?
 Spamhaus explains it as follows:
