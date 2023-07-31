@@ -28,17 +28,17 @@ Diese sind für den Hauptbetrieb prinzipiell nicht wirklich spürbar, stören un
 
 > Worum geht's fragt ihr?
 
-Lieb, dass ihr fragt! Es geht im genauen um die Hyperscan Bibliothek bzw. die Implementation von Hyperscan bzw. Vectorscan (wie es auf ARM64 heißt) für Rspamd. Besagter Hyperscan kompiliert regelmäßig Regex Einträge, welche durch den Betrieb von mailcow dynamisch erzeugt werden und zur Erkennung von Spam benötigt wird. Genauer gesagt dient Hyperscan hier als Performanceboost, da die Kompilierung der Regex Einträge somit nicht immer wieder neu passieren muss, sondern dieser kompiliert bleibt.
+Danke für die Frage! Genauer gesagt geht es um die Hyperscan Bibliothek bzw. die Implementierung von Hyperscan bzw. Vectorscan (wie es auf ARM64 heißt) für Rspamd. Besagter Hyperscan kompiliert regelmäßig Regex-Einträge, die durch den Betrieb von mailcow dynamisch erzeugt werden und zur Erkennung von Spam benötigt werden. Genauer gesagt dient Hyperscan hier als Performance-Booster, da die Kompilierung der Regex-Einträge so nicht immer wieder neu durchgeführt werden muss, sondern kompiliert bleibt.
 
 > Was ist nun das Problem?
 
-Das Problem ist nun, dass besagter Hyperscan (Vectorscan) auf ARM64 zum aktuellen Zeitpunkt nicht richtig funktioniert bzw. die Kompilierung nach einem Neustart hinfällig ist, da er diese nicht mehr laden kann. Man muss aber auch dazu sagen, dass Rspamd erst mit der aktuellen Version 3.5 nativen ARM64 Support erhalten hat und damit noch einige Fehler aufweisen lassen kann.
+Das Problem ist nun, dass der besagte Hyperscan (Vectorscan) auf ARM64 zur Zeit nicht richtig funktioniert bzw. die Kompilierung nach einem Neustart hinfällig ist, da er diese nicht mehr laden kann. Allerdings muss man dazu sagen, dass Rspamd erst mit der aktuellen Version 3.5 nativen ARM64-Support erhalten hat und daher noch einige Fehler aufweisen kann.
 
-Der Hauptgrund, warum wir das ganze zurückhalten (obwohl die eigentliche Funktionalität bereits gegeben ist und von einigen Testern [DANKE] bereits erfolgreich getestet wurde) ist der, dass es zu einigen Warnungen in der Konsole kommt, welche unerfahrenere Nutzer verwirren bzw. beängstigen kann. Ebenfalls kann durch dieses Problem eine gleichwertige Performance nicht garantiert werden.
+Der Hauptgrund, warum wir das Ganze zurückhalten (obwohl die eigentliche Funktionalität bereits vorhanden ist und von einigen Testern [DANKE] bereits erfolgreich getestet wurde) ist, dass es einige Warnungen in der Konsole gibt, die unerfahrene Benutzer verwirren oder verschrecken können. Außerdem kann aufgrund dieses Problems keine gleichwertige Leistung garantiert werden.
 
-Zusätzlich dazu kommt noch der Fakt, dass einige wichtige Kernkomponenten wie bspw. Dovecot (er insbesondere) mit dem Nightly Release von ARM64 von uns selbst kompiliert werden muss, da das Dovecot Team keinen nativen ARM64 Support anbieten wird und wir nun mal im mailcow Stack die Pakete von Ihnen direkt beziehen und nicht über das APT Repo von Debian bspw. an die Versionen gelangen wie bei Postfix bspw.
+Dazu kommt noch die Tatsache, dass einige wichtige Kernkomponenten wie z.B. Dovecot (insbesondere er) mit dem Nightly Release von ARM64 von uns selbst kompiliert werden müssen, da das Dovecot Team keinen nativen ARM64 Support anbieten wird und wir die Pakete im mailcow Stack direkt von Ihnen beziehen und nicht wie z.B. bei Postfix über das APT Repo von Debian an die Versionen kommen.
 
-Dies kann zum aktuellen Zeitpunkt ungeahnte Konsequenzen mit sich ziehen, welche mit einer größeren Testrunde geklärt bzw. beleuchtet werden müssen.
+Dies kann zum jetzigen Zeitpunkt ungeahnte Konsequenzen mit sich bringen, die mit einer größeren Testrunde geklärt bzw. beleuchtet werden müssen.
 
 Wir wollen den ARM64 Support nicht einfach "hinrotzen" nur damit wir sagen können "Hey, mailcow kann jetzt auch ARM64, schaut mal her!!!" sondern ihn in den normalen Releasecycle und die normale mailcow Architektur integrieren, sodass wir nicht zwei Repos, sondern ein einziges Repo mit demselben Inhalt für x86 und ARM64 pflegen können.
 
@@ -61,11 +61,11 @@ Und vermutlich werdet ihr damit auch nicht ganz falsch liegen, aber wir selbst m
 
 ---
 
-Wir planen solche "Ask the Developer" ähnliche Blogposts nun öfters zu bringen und euch direkter über den aktuellen Stand zu informieren.
+Wir planen solche "Ask the Developer" Blogposts öfter zu veröffentlichen und euch direkter über den aktuellen Stand zu informieren.
 
-Für alle LDAP Fans kann ich auch schonmal einen ähnlichen Post im Stile von "Ask the Developer" ankündigen. Den macht aber der gute Patrick, wenn er so weit ist euch dazu was sagen zu können.
+Für alle LDAP Fans kann ich auch schon mal einen ähnlichen Post im "Ask the Developer" Stil ankündigen. Aber das macht der gute Patrick, wenn er bereit ist, euch etwas dazu zu sagen.
 
-Ansonsten gilt, was immer gilt:
+Ansonsten gilt das, was immer gilt:
 
 Bleibt gesund und happy Mailing!
 
