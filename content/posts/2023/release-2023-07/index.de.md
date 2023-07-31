@@ -1,6 +1,6 @@
 ---
-title: "🍒 🐄 Mooly Update 2023 - Manageable CORS Settings and UI Improvements"
-date: 2023-07-28T10:48:10+02:00
+title: "🍒 🐄 Mooly Update 2023 (a) - Manageable CORS Settings and UI Improvements"
+date: 2023-07-31T10:48:10+02:00
 draft: false
 
 author: Patrick Schult/FreddleSpl0it
@@ -14,10 +14,31 @@ categories: ["Updates"]
 
 ---
 
+## 2023-07a (Release vom 31.07.2023)
+
+Es gibt einige Korrekturen für das 2023-07 Update. Die meisten Korrekturen stehen dabei in Verbindung mit den letzten Änderungen bzgl. der DNS Blocklisten des Postscreens im Postfix:
+
+#### Changelog
+* dns_blocklists.cf isn't appended to main.cf and therefore ineffective…
+* Fix Reponse Code for ASN Checks
+* [Postfix] Reimplemented option for custom dnsbls
+* [Postfix] Added dns_blocklists.cf for customizations
+* [Postfix] update postscreen_access.cidr
+* Update SOGo to 5.8.4
+* Fix spamhaus query domains (.net only)
+
+Wie immer gilt, der volle Changelog auch mit den einzelnen Commits ist für Interessenten jederzeit auf GitHub abrufbar:
+https://github.com/mailcow/mailcow-dockerized/releases/tag/2023-07a
+
+---
+
+## 2023-07 (Release vom 28.07.2023)
+
 **Moohoo zusammen!**
 
 ### Wichtig
-Vergewissert euch vor dem Update von mailcow, dass das Paket `whois` auf eurem System installiert ist.
+~~Vergewissert euch vor dem Update von mailcow, dass das Paket `whois` auf eurem System installiert ist.~~ <br>
+Es wurde eine Funktionalität eingebaut, welches das lokal installierte Paket `whois` obsolet macht.
 
 ### Neues Feature: CORS-Einstellungen verwalten
 Administratoren können jetzt CORS-Einstellungen (Cross-Origin Resource Sharing) über die Web-UI für den API-Zugang verwalten. 
