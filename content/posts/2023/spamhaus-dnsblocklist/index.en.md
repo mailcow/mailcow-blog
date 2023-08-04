@@ -36,7 +36,7 @@ Until now, these blocklists were available for use without any restrictions for 
 However, that's unfortunately changing.
 
 #### What's changing?
-On [June 20th](https://twitter.com/spamhaus/status/1671141604705333248), Spamhaus blocked access to these lists from OVH, AWS, and Hetzner servers.
+On [June 20th](https://twitter.com/spamhaus/status/1671141604705333248), Spamhaus blocked access to these lists from OVH, AWS, and Cloudflare servers.
 
 As a result, the DNS blocklists (only from Spamhaus, others still function) won't work unless users take action.
 

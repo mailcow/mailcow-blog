@@ -59,7 +59,7 @@ OVHCloud maskiert die Anfragen von Organisationen an die Public Mirrors des Proj
 
 > [...] Um sicherzustellen, dass seine Nutzungsbedingungen eingehalten werden, blockiert das Spamhaus-Projekt Anfragen von einer bestimmten IP-Adresse außerhalb der Richtlinie. Außerdem wird ein Fehlercode zurückgegeben. Bei der Abfrage über einen offenen/öffentlichen Resolver, also OVHCloud, lautet der Fehlercode 127.255.255.254  [...]
 
-Sprich verstößt OVH, AWS und Hetzner mit Ihrer Art wie Sie Anfragen an Spamhaus schicken gegen die Nutzungsbedingungen der public DNS Blocklisten von Spamhaus.
+Sprich verstößt OVH, AWS und Cloudflare mit Ihrer Art wie Sie Anfragen an Spamhaus schicken gegen die Nutzungsbedingungen der public DNS Blocklisten von Spamhaus.
 
 *Aktuell kann noch nicht gesagt werden ob es in Zukunft noch weitere Anbieter treffen wird. Aktuell wissen wir nur von den drei hier.*
 
