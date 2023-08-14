@@ -456,8 +456,8 @@ researchgate:
 
 # 056: Mastodon
 mastodon:
-  Weight: 56
-  Prefix: https://mastodon.social/
+  Weight: 4
+  Prefix: https://mailcow.social/
   Title: Mastodon
   Icon:
     Class: fab fa-mastodon fa-fw
