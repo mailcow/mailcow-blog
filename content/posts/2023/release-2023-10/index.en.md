@@ -1,5 +1,5 @@
 ---
-title: "🎃🐄 Mooctober 2023 Update | Domainwide Footer, cURL Fixes and more"
+title: "🎃🐄 Mooctober 2023 Update | Domainwide Footer, cURL Fixes and more - Revision A"
 date: 2023-10-12T11:11:32+02:00
 draft: false
 
@@ -11,6 +11,15 @@ license: ""
 
 tags: ["2023", "update", "changelog"]
 categories: ["Updates"]
+
+---
+
+## 2023-10a (Released 12th October 2023)
+
+### Changelog
+
++ We've fixed the wrongly used clamav tag inside the docker-compose.yml. Now you are really using ClamAV 1.0.3 LTS!
++ We've removed the restart action from the `depends_on` section (tied to the unbound healthcheck logic) from the docker-compose.yml. Older Versions of Docker Compose v2 would not be able to start the stack with those settings set. (Please keep your systems up to date!!!!)
 
 ---
 
