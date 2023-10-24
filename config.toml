@@ -93,6 +93,7 @@ enableGitInfo = true
   [params.social]
     GitHub = "mailcow/mailcow-dockerized"
     Twitter = "mailcow_email"
+    Mastodon = "@doncow"
     Email = "info@servercow.de"
 	
   [params.social.Telegram]
