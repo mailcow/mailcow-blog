@@ -1,5 +1,5 @@
 ---
-title: "🏮🐄 Moovember 2023 Update | Quarantäne Hotfix (Security), Rspamd 3.7.4, Synchronisationsjobs und Domain Wide Footer Fixes"
+title: "🏮🐄 Moovember 2023 Update A | Ratelimit Fixes und Domain Wide Footer Fixes"
 date: 2023-11-21T11:11:32+02:00
 draft: false
 
@@ -14,11 +14,33 @@ categories: ["Updates"]
 
 ---
 
+## 2023-11a (Release am 07.12.2023)
+
+### Changelog
+
+* [Update.sh] Fix repo change when running in forced mode by @DerLinkman in https://github.com/mailcow/mailcow-dockerized/pull/5552
+* Translations update from Weblate by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5557
+* [Web] add /api/v1/get/spam-score endpoint by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/5482
+* Update dependency nextcloud/server to v27.1.4 by @renovate in https://github.com/mailcow/mailcow-dockerized/pull/5559
+* [Web][Rspamd] domain wide footer improvements and custom mailbox attributes by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/5555
+* Detect docker compose version of form v2.x by @startnow65 in https://github.com/mailcow/mailcow-dockerized/pull/5562
+* Translations update from Weblate by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5567
+* Translations update from Weblate by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5569
+* Translations update from Weblate by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5573
+* [Postfix] update postscreen_access.cidr by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5570
+* [Rspamd] Fixed Ratelimit forced by global ratelimits by @DerLinkman in https://github.com/mailcow/mailcow-dockerized/pull/5577
+* [UI] Fixed showing of "disabled" placeholder for ratelimits in domains by @DerLinkman in https://github.com/mailcow/mailcow-dockerized/commit/550b88861f7a6dc8651659ceb894e111f49d76ab
+* Update Rspamd Image to 1.94 by @DerLinkman in https://github.com/mailcow/mailcow-dockerized/commit/03aaf4ad76898cebb5ad83cde2a7ca769410f8be
+
+---
+
+## 2023-11 (Release am 21.11.2023)
+
 **Moo hoo zusammen!**
 
 Die Weihnachtszeit fängt langsam an und schon stehen wir wieder mit einem Update vor der Tür.
 
-Vor ab gilt hier: Idealerweise updaten (wenn Quarantäne in Benutzung), da eine schwerwiegende Sicherheitslücke gepatcht ist. Eine genaue CVE Nummer folgt noch.
+Vor ab gilt hier: Idealerweise updaten (wenn Quarantäne in Benutzung), da eine schwerwiegende Sicherheitslücke gepatcht ist.
 
 <!--more-->
 
