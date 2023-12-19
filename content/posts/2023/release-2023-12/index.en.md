@@ -16,7 +16,7 @@ categories: ["Updates"]
 
 ## 2023-12 (Release 19th December 2023)
 
-**Moo hoo zusammen!**
+**Moo hoo everyone!**
 
 We have some new Netfilter features for you before the holidays. 
 In addition, the watchdog can now send notifications via webhooks. To do this, simply configure the variables `WATCHDOG_NOTIFY_WEBHOOK` and `WATCHDOG_NOTIFY_WEBHOOK_BODY` in `mailcow.conf` accordingly.
