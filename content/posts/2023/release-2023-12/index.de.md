@@ -14,6 +14,18 @@ categories: ["Updates"]
 
 ---
 
+## 2023-12a (Release am 29.12.2023)
+
+### Changelog
+
+* chore(deps): update dependency nextcloud/server to v28.0.1 by @renovate in https://github.com/mailcow/mailcow-dockerized/pull/5614
+* Translations update from Weblate by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5617
+* [Postfix] Do not remove X-Mailer header by @feldsam in https://github.com/mailcow/mailcow-dockerized/pull/5504
+* Translations update from Weblate by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/5622
+* [Postfix] set smtpd_forbid_bare_newline = yes 
+
+---
+
 ## 2023-12 (Release am 19.12.2023)
 
 **Moo hoo zusammen!**
