@@ -3,214 +3,161 @@
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # === init ===
-[configurationError]
-other = "" # waitting for translation
-
-[compatibilityError]
-other = "" # waitting for translation
-
-[RCVersionWarn]
-other = "" # waitting for translation
-
-[devEnvWarn]
-other = "" # waitting for translation
-
-[quicklyUpgrade]
-other = "" # waitting for translation
+[init]
+configurationError = "Erreur de configuration\nVous n'avez pas configuré la version de FixIt correctement. Voir https://fixit.lruihao.cn/documentation/basics/#theme-configuration"
+compatibilityError = "Erreur de compatibilité ({{ .From }} -> {{ .To }}):\nVous avez une mise à jour incompatible. Voir https://github.com/hugo-fixit/FixIt/releases"
+RCVersionWarn = "Vous utilisez une version de développement de FixIt. Veuillez considérer l'utilisation d'une version stable.\nVoir https://github.com/hugo-fixit/FixIt/releases"
+devEnvWarn = "L'environnement actuel est \"développement\". Le \"système de commentaires\", le \"CDN\" et la \"prise d'empreinte\" seront désactivés."
+quicklyUpgrade = "La mise à jour rapide utilise la commande: "
 # === init ===
 
 # === baseof ===
-[backToTop]
-other = "Retour en Haut"
-
-[viewComments]
-other = "Afficher les Commentaires"
-
-[noscript]
-other = "" # waitting for translation
+[baseof]
+backToTop = "Retour en Haut"
+viewComments = "Afficher les Commentaires"
+noscript = "Le thème FixIt fonctionne mieux quand JavaScript est activé."
 # === baseof ===
 
-# === Post ===
-[posts]
-other = "Posts"
-# === Post ===
-
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
-other = "Tous {{ .Some }}"
-
-[totalwordCount]
-one = "" # waitting for translation
-other = "" # waitting for translation
-
-[tag]
-other = "Balise"
-
-[tags]
-other = "Balises"
+other = "Tous les {{ .Some }}"
 
 [category]
 other = "Catégorie"
 
 [categories]
 other = "Catégories"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
+
+[tag]
+other = "Tag"
+
+[tags]
+other = "Tags"
+
+[posts]
+other = "Posts"
 # === Taxonomy ===
 
 # === Section ===
-[recentlyUpdated]
-other = "Récemment Modifié"
+[section]
+recentlyUpdated = "Récemment Modifié"
+
+[section.totalWordCount]
+one = "Nombre de mots: 1"
+other = "Nombre de mots: {{ .Count }}"
+
+[section.archiveCounter]
+one = ""
+other = ""
 # === Section ===
 
 # === Pagination ===
-[more]
-other = "Plus"
+[pagination]
+more = "Plus"
 # === Pagination ===
 
 # === partials/header.html ===
-[selectLanguage]
-other = "Choisir la langue"
-
-[noMoretTranslations]
-other = "Plus de traductions"
-
-[switchTheme]
-other = "Changer de Thème"
+[header]
+selectLanguage = "Choisir la langue"
+noMoretTranslations = "Plus de traductions"
+switchTheme = "Changer de Thème"
 # === partials/header.html ===
 
 # === partials/footer.html ===
-[poweredBySome]
-other = "Propulsé par {{ .Hugo }} | Thème - {{ .Theme }}"
-
-[siteUV]
-other = "Total de visiteurs"
-
-[sitePV]
-other = "Total de visites"
-
-[siteRunning]
-other = "Site en cours d'exécution ..."
+[footer]
+poweredBySome = "Propulsé par {{ .Hugo }} | Thème - {{ .Theme }}"
+siteUV = "Total de visiteurs"
+sitePV = "Total de visites"
+siteRunning = "Site en cours d'exécution ..."
 # === partials/footer.html ===
 
 # === partials/comment.html ===
-[valineLang]
-other = "en" # Français non pris en charge par Valine
-
-[valinePlaceholder]
-other = "Votre commentaire ..."
-
-[facebookLanguageCode]
-other = "fr"
+[comment]
+valineLang = "en" # French not supported by Valine
+valinePlaceholder = "Votre commentaire ..."
+facebookLanguageCode = "fr"
 # === partials/comment.html ===
 
 # === partials/assets.html ===
-[search]
-other = "Chercher"
-
-[searchPlaceholder]
-other = "Rechercher des titres, des contenus..."
-
-[clear]
-other = "Clair"
-
-[cancel]
-other = "Annuler"
-
-[noResultsFound]
-other = "Aucun résultat trouvé"
-
-[lunrLanguageCode]
-other = "fr"
-
-[lunrLanguageLib]
-other = "lib/lunr/lunr.fr.js"
-
-[copyToClipboard]
-other = "Copier dans le presse-papiers"
-
-[editLockTitle]
-other = "Verrouiller le bloc de code modifiable"
-
-[editUnLockTitle]
-other = "Déverrouiller le bloc de code modifiable"
-
-[cookieconsentMessage]
-other = "Ce site Web utilise des Cookies pour améliorer votre expérience."
-
-[cookieconsentDismiss]
-other = "Se mettre d'accord"
-
-[cookieconsentLink]
-other = "Apprendre encore plus"
+[assets]
+search = "Chercher"
+searchPlaceholder = "Rechercher des titres, des contenus..."
+clear = "Effacer"
+cancel = "Annuler"
+noResultsFound = "Aucun résultat trouvé"
+copyToClipboard = "Copier dans le presse-papiers"
+editLockTitle = "Verrouiller le bloc de code modifiable"
+editUnLockTitle = "Déverrouiller le bloc de code modifiable"
+cookieconsentMessage = "Ce site Web utilise des Cookies pour améliorer votre expérience."
+cookieconsentDismiss = "J'ai compris !"
+cookieconsentLink = "En apprendre plus"
 # === partials/assets.html ===
 
 # === partials/plugin/share.html ===
 [shareOn]
-other = "Partager sur"
+other = "Partager via"
 # === partials/plugin/share.html ===
 
 # === posts/single.html ===
-[contents]
-other = "Contenu"
-[repost]
-other = "" # waitting for translation
+[single]
+contents = "Contenus"
+pin = ""
+repost = "Reposter"
+publishedOnDate = "publié le {{ .Date }}"
+views = "vues"
+comments = "commentaires"
+author = "Auteur"
+updatedOnDate = "Mis à jour le {{ .Date }}"
+readMarkdown = "Ouvrir le Markdown"
+viewSource = ""
+editThisPage = "Modifier cette page"
+reportIssue = ""
+back = "Retour"
+home = "Accueil"
+readMore = "En savoir plus"
+expirationReminder = "Cet article a été mis à jour pour la dernière fois le {{ .Date }}, son contenu est peut-être obsolète."
+encryptedAbstract = "Cet article a été chiffré, son contenu n'est donc pas lisible!"
+encryptedMessage = "Entrer le mot de passe"
+password = "Mot de passe"
+encryptyAgain = "Chiffrer à nouveau"
+relatedContent = "Contenu lié"
 
-[publishedOnDate]
-other = "publié le {{ .Date }}"
+[single.includedIn]
+categories = "inclus dans {{ .Categories }}"
+collections = "inclus dans {{ .Collections }}"
+both = "inclus dans {{ .Categories }} et {{ .Collections }}"
 
-[includedInCategories]
-other = "inclus dans {{ .Categories }}"
-
-[wordCount]
-one = "Un mot"
+[single.wordCount]
+one = "1 mot"
 other = "{{ .Count }} mots"
 
-[readingTime]
-one = "Une minute"
+[single.fuzzyWordCount]
+other = "environ {{ .Count }} mots"
+
+[single.readingTime]
+one = "1 minute"
 other = "{{ .Count }} minutes"
 
-[views]
-other = "vues"
-
-[comments]
-other = "commentaires"
-
-[author]
-other = "Auteur"
-
-[updatedOnDate]
-other = "Mis à jour le {{ .Date }}"
-
-[readMarkdown]
-other = "Lire Markdown"
-
-[editThisPage]
-other = "Modifier cette page"
-
-[back]
-other = "Retour"
-
-[home]
-other = "Accueil"
-
-[readMore]
-other = "En savoir plus"
-
-[encryptedAbstract]
-other = "" # waitting for translation
-
-[encryptedMessage]
-other = "" # waitting for translation
-
-[password]
-other = "Mot de passe"
-
-[encryptyAgain]
-other = "" # waitting for translation
+[single.reward]
+donate = "Faire un don"
+wechatpay = "WeChat Pay"
+alipay = "Alipay"
+paypal = "PayPal"
+bitcoin = "Bitcoin"
 # === posts/single.html ===
 
 # === 404.html ===
 [pageNotFound]
-other = "Page non trouvée"
+other = "Page introuvable"
 
 [pageNotFoundText]
 other = "Désolé, la page recherchée n'existe pas."
@@ -225,50 +172,24 @@ other = "Vous n'êtes pas connecté à Internet, seules les pages mises en cache
 # === offline ===
 
 # === shortcodes/admonition.html ===
-[note]
-other = "Remarque"
-
-[abstract]
-other = "Abstrait"
-
-[info]
-other = "Info"
-
-[tip]
-other = "Astuces"
-
-[success]
-other = "Succès"
-
-[question]
-other = "Question"
-
-[warning]
-other = "Avertissement"
-
-[failure]
-other = "Échec"
-
-[danger]
-other = "Danger"
-
-[bug]
-other = "Bug"
-
-[example]
-other = "Exemple"
-
-[quote]
-other = "Citation"
+[admonition]
+note = "Remarque"
+abstract = "Résumé"
+info = "Info"
+tip = "Astuce"
+success = "Succès"
+question = "Question"
+warning = "Avertissement"
+failure = "Échec"
+danger = "Danger"
+bug = "Bug"
+example = "Exemple"
+quote = "Citation"
 # === shortcodes/admonition.html ===
 
 # === shortcodes/version.html ===
-[new]
-other = "NOUVEAU"
-
-[changed]
-other = "CHANGE"
-
-[deleted]
-other = "EFFACE"
+[version]
+new = "NOUVEAU"
+changed = "MODIFIÉ"
+deleted = "SUPPRIMÉ"
 # === shortcodes/version.html ===

@@ -19,11 +19,11 @@
 {{- end -}}
 
 <link rel="canonical" href="{{ .Permalink }}" />
-{{- if .PrevInSection -}}
-  <link rel="prev" href="{{ .PrevInSection.Permalink }}" />
+{{- if .Prev -}}
+  <link rel="prev" href="{{ .Prev.Permalink }}" />
 {{- end -}}
-{{- if .NextInSection -}}
-  <link rel="next" href="{{ .NextInSection.Permalink }}" />
+{{- if .Next -}}
+  <link rel="next" href="{{ .Next.Permalink }}" />
 {{- end -}}
 
 {{- with .OutputFormats.Get "RSS" -}}
@@ -32,17 +32,17 @@
 {{- end -}}
 
 {{- /* style.min.css */ -}}
-{{- $style := dict "Source" "css/style.scss" "Fingerprint" $fingerprint -}}
-{{- $options := dict "targetPath" "css/style.min.css" "enableSourceMap" true -}}
-{{- $style = dict "Context" . "ToCSS" $options | merge $style -}}
-{{- partial "plugin/style.html" $style -}}
+{{- $options := dict "Source" "css/style.scss" "Fingerprint" $fingerprint -}}
+{{- $toCSS := dict "targetPath" "css/style.min.css" "enableSourceMap" true -}}
+{{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
+{{- partial "plugin/style.html" $options -}}
 
 {{- /* Font Awesome */ -}}
 {{- $source := $cdn.fontawesomeFreeCSS | default "lib/fontawesome-free/all.min.css" -}}
-{{- $style := dict "Source" $source "Fingerprint" $fingerprint -}}
-{{- partial "plugin/style.html" $style -}}
+{{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
+{{- partial "plugin/style.html" $options -}}
 
 {{- /* Animate.css */ -}}
 {{- $source := $cdn.animateCSS | default "lib/animate/animate.min.css" -}}
-{{- $style := dict "Source" $source "Fingerprint" $fingerprint -}}
-{{- partial "plugin/style.html" $style -}}
+{{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
+{{- partial "plugin/style.html" $options -}}

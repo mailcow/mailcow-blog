@@ -1,17 +1,18 @@
+# CONTRIBUTING
+
 ## How to contribute to this project
 
 First, fork this repository by clicking the fork button.
 
 Next, clone your forked repo.
 
-```
-git clone https://github.com/example/FixIt.git
-cd FixIt
+```bash
+git clone --recursive https://github.com/hugo-fixit/FixIt.git && cd FixIt
 ```
 
 Then, install the dev dependencies.
 
-```
+```bash
 npm install
 ```
 
@@ -20,22 +21,13 @@ And now you are ready to go!
 Here are some useful commands.
 
 ```bash
-# build theme.js with babel
-npm run babel
-# build theme.js and then build the static site
-npm run build
 # run a local debugging server with watch
 npm run server
 # run a local debugging server with watch in production environment
 npm run server:production
-# build theme.js and then run a local debugging server
-npm run start
-# build theme.js and then run a local debugging server in production environment
-npm run start:production
-
 ```
 
-Finally, create a new pull request at https://github.com/hugo-fixit/FixIt/pulls to submit your contribution 🎉
+Finally, create a new pull request at <https://github.com/hugo-fixit/FixIt/pulls> to submit your contribution 🎉
 
 ## Git standard for developers
 
@@ -44,7 +36,8 @@ Finally, create a new pull request at https://github.com/hugo-fixit/FixIt/pulls 
 | Branch | Description |
 | :-- | :-- |
 | master | _The branch open to the public and release versions_ |
-| RC branch | _The development branch of the next version, e.g. v0.2.12-RC_ |
+| dev | _The development branch of the next version_ |
+| RC branch | _The release candidate branch of the next version, e.g. v0.2.12-RC_ |
 | single feature | _The branch to enhancements or fixes_ |
 
 ### Merge events
@@ -68,7 +61,7 @@ example:
 
 #### Emoji
 
-- https://gitmoji.dev
+- <https://gitmoji.dev>
 - [vscode plugin](https://github.com/maixiaojie/git-emoji-zh.git)
 - utools plugin `GitEmoji`
 

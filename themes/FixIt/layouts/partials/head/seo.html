@@ -32,7 +32,7 @@
     {{- with .Site.LanguageCode -}}
       "inLanguage": "{{ . }}",
     {{- end -}}
-    {{- with .Site.Author.name -}}
+    {{- with .Site.Params.author.name -}}
       "author": {
         "@type": "Person",
         "name": {{ . | safeHTML }}
@@ -42,7 +42,7 @@
       "description": {{ . | safeHTML }},
     {{- end -}}
     {{- $image := .Site.Params.seo.image -}}
-    {{- with dict "Path" $image "Resources" .Resources | partial "function/resource.html" -}}
+    {{- with dict "Path" $image | partial "function/resource.html" -}}
       "image": {
         "@type": "ImageObject",
         "url": "{{ .Permalink }}",
@@ -55,7 +55,7 @@
       {{- end -}}
     {{- end -}}
     {{- with .Site.Params.seo.thumbnailUrl -}}
-      {{- with dict "Path" . "Resources" $.Resources | partial "function/resource.html" -}}
+      {{- with dict "Path" . | partial "function/resource.html" -}}
         "thumbnailUrl": "{{ .Permalink }}",
       {{- else -}}
         "thumbnailUrl": "{{ . | absURL }}",
@@ -70,6 +70,14 @@
 
 {{- /* Page SEO */ -}}
 {{- else if .IsPage -}}
+  {{- $authorName := .Site.Params.author.name | default (T "single.author") -}}
+  {{- with .Params.author -}}
+    {{- if reflect.IsMap . -}}
+      {{- $authorName = cond (isset . "name") .name $authorName -}}
+    {{- else -}}
+      {{- $authorName = . -}}
+    {{- end -}}
+  {{- end -}}
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -96,7 +104,7 @@
       "image": [
         {{- range $index, $value := . -}}
           {{- if gt $index 0 }},{{ end -}}
-          {{- with dict "Path" $value "Resources" $.Resources | partial "function/resource.html" -}}
+          {{- with dict "Path" $value | partial "function/resource.html" -}}
             {
               "@type": "ImageObject",
               "url": "{{ .Permalink }}",
@@ -128,13 +136,13 @@
     {{- with .Site.Copyright -}}
       "license": {{ . | safeHTML }},
     {{- end -}}
-    {{- $publisher := .Params.author | default .Site.Author.name | default (T "author") | dict "name" -}}
+    {{- $publisher := $authorName | dict "name" -}}
     {{- $publisher = $params.seo.publisher | default dict | merge $publisher -}}
     "publisher": {
       "@type": "Organization",
       "name": {{ $publisher.name | safeHTML }}
       {{- $logo := $publisher.logoUrl -}}
-      {{- with dict "Path" $logo "Resources" .Resources | partial "function/resource.html" -}}
+      {{- with dict "Path" $logo | partial "function/resource.html" -}}
         ,"logo": {
           "@type": "ImageObject",
           "url": "{{ .Permalink }}",
@@ -147,7 +155,7 @@
         {{- end -}}
       {{- end -}}
     },
-    {{- with .Params.author | default .Site.Author.name | default (T "author") -}}
+    {{- with $authorName -}}
       "author": {
         "@type": "Person",
         "name": {{ . | safeHTML }}

@@ -1,4 +1,10 @@
-{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+{{- /* TODO remove this template */ -}}
+{{- warnf "The `type:friends` in front matter is deprecated. Use `layout:friends` instead.\n" -}}
+{{- warnf "Front matter 参数 `type:friends` 已弃用。请改用 `layout:friends`。" -}}
+{{- define "title" -}}
+  {{- .Title -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+{{ end -}}
 
 {{- define "content" -}}
 {{- $params := .Scratch.Get "params" -}}
@@ -6,19 +12,17 @@
     <div class="header">
       {{- /* Title */ -}}
       <h1 class="single-title animate__animated animate__pulse animate__faster">{{- .Title -}}</h1>
-
       {{- /* Subtitle */ -}}
       {{- with $params.subtitle -}}<p class="single-subtitle animate__animated animate__fadeIn">{{ . }}</p>{{- end -}}
     </div>
 
     {{- /* Friend links */ -}}
-    {{- $loading := resources.Get "svg/loading.svg" | minify -}}
     <script src="//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js" async defer></script>
     <div class="friend-links">
       {{ range $index, $friend := .Site.Data.friends }}
         <a class="friend-link" title="{{ $friend.description }}" href="{{ $friend.url | safeURL }}" rel="external noopener noreferrer" target="_blank">
           {{ if $friend.avatar }}
-            <img class="friend-avatar lazyload" src="{{ $loading.RelPermalink }}" data-src="{{ $friend.avatar }}" alt="{{ $friend.nickname }}" />
+            {{- dict "Src" $friend.avatar "Alt" $friend.nickname "Class" "friend-avatar" | partial "plugin/image.html" -}}
           {{ else }}
             <svg class="friend-avatar" aria-hidden="true">
               <use xlink:href="#icon-{{ add 1 $index }}"></use>

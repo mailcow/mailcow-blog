@@ -1,47 +1,42 @@
 # Translations for Italian
 # Traduzioni per l'italiano
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
+# TODO Some fields are waiting for your translation
 
 # === init ===
-[configurationError]
-other = "" # waitting for translation
-
-[compatibilityError]
-other = "" # waitting for translation
-
-[RCVersionWarn]
-other = "" # waitting for translation
-
-[devEnvWarn]
-other = "" # waitting for translation
-
-[quicklyUpgrade]
-other = "" # waitting for translation
+[init]
+configurationError = ""
+compatibilityError = ""
+RCVersionWarn = ""
+devEnvWarn = ""
+quicklyUpgrade = ""
 # === init ===
 
 # === baseof ===
-[backToTop]
-other = "Torna all'inizio"
-
-[viewComments]
-other = "Vedi commenti"
-
-[noscript]
-other = "" # waitting for translation
+[baseof]
+backToTop = "Torna all'inizio"
+viewComments = "Vedi commenti"
+noscript = ""
 # === baseof ===
-
-# === Post ===
-[posts]
-other = "Articoli"
-# === Post ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Tutti {{ .Some }}"
 
-[totalwordCount]
-one = "" # waitting for translation
-other = "" # waitting for translation
+[category]
+other = "Categoria"
+
+[categories]
+other = "Categorie"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
 
 [tag]
 other = "Etichetta"
@@ -49,98 +44,63 @@ other = "Etichetta"
 [tags]
 other = "Etichette"
 
-[category]
-other = "Categoria"
-
-[categories]
-other = "Categorie"
+[posts]
+other = "Articoli"
 # === Taxonomy ===
 
 # === Section ===
-[recentlyUpdated]
-other = "Aggiornati di recente"
+[section]
+recentlyUpdated = "Aggiornati di recente"
+
+[section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
+one = ""
+other = ""
 # === Section ===
 
 # === Pagination ===
-[more]
-other = "Più"
+[pagination]
+more = "Più"
 # === Pagination ===
 
 # === partials/header.html ===
-[selectLanguage]
-other = "Scegliere la lingua"
-
-[noMoretTranslations]
-other = "Non ci sono altre traduzioni"
-
-[switchTheme]
-other = "Cambiare il tema"
+[header]
+selectLanguage = "Scegliere la lingua"
+noMoretTranslations = "Non ci sono altre traduzioni"
+switchTheme = "Cambiare il tema"
 # === partials/header.html ===
 
 # === partials/footer.html ===
-[poweredBySome]
-other = "Realizzato da {{ .Hugo }} | Tema - {{ .Theme }}"
-
-[siteUV]
-other = "Visitatori totali"
-
-[sitePV]
-other = "Visite totali"
-
-[siteRunning]
-other = "Sito in esecuzione ..."
+[footer]
+poweredBySome = "Realizzato da {{ .Hugo }} | Tema - {{ .Theme }}"
+siteUV = "Visitatori totali"
+sitePV = "Visite totali"
+siteRunning = "Sito in esecuzione ..."
 # === partials/footer.html ===
 
 # === partials/comment.html ===
-[valineLang]
-other = "en" # Valine non supporta l'italiano
-
-[valinePlaceholder]
-other = "Il tuo commento ..."
-
-[facebookLanguageCode]
-other = "it"
+[comment]
+valineLang = "en" # Valine non supporta l'italiano
+valinePlaceholder = "Il tuo commento ..."
+facebookLanguageCode = "it"
 # === partials/comment.html ===
 
 # === partials/assets.html ===
-[search]
-other = "Cerca"
-
-[searchPlaceholder]
-other = "Cerca il titolo o il contenuto dell'articolo ..."
-
-[clear]
-other = "Chiaro"
-
-[cancel]
-other = "Annulla"
-
-[noResultsFound]
-other = "Nessun risultato trovato"
-
-[lunrLanguageCode]
-other = "it"
-
-[lunrLanguageLib]
-other = "lib/lunr/lunr.it.js"
-
-[copyToClipboard]
-other = "Copia negli appunti"
-
-[editLockTitle]
-other = "Blocca blocco di codice modificabile"
-
-[editUnLockTitle]
-other = "Sblocca il blocco di codice modificabile"
-
-[cookieconsentMessage]
-other = "Questo sito Web utilizza i Cookies per migliorare la tua esperienza."
-
-[cookieconsentDismiss]
-other = "Essere d'accordo"
-
-[cookieconsentLink]
-other = "Per saperne di più"
+[assets]
+search = "Cerca"
+searchPlaceholder = "Cerca il titolo o il contenuto dell'articolo ..."
+clear = "Chiaro"
+cancel = "Annulla"
+noResultsFound = "Nessun risultato trovato"
+copyToClipboard = "Copia negli appunti"
+editLockTitle = "Blocca blocco di codice modificabile"
+editUnLockTitle = "Sblocca il blocco di codice modificabile"
+cookieconsentMessage = "Questo sito Web utilizza i Cookies per migliorare la tua esperienza."
+cookieconsentDismiss = "Essere d'accordo"
+cookieconsentLink = "Per saperne di più"
 # === partials/assets.html ===
 
 # === partials/plugin/share.html ===
@@ -149,66 +109,51 @@ other = "Condividi su"
 # === partials/plugin/share.html ===
 
 # === posts/single.html ===
-[contents]
-other = "Contenuti"
-[repost]
-other = "" # waitting for translation
+[single]
+contents = "Contenuti"
+pin = ""
+repost = ""
+publishedOnDate = "pubblicato su {{ .Date }}"
+views = "visualizzazioni"
+comments = "commenti"
+author = "Autore"
+updatedOnDate = "Aggiornato il {{ .Date }}"
+readMarkdown = "Leggi Markdown"
+viewSource = ""
+editThisPage = "Modifica questa pagina"
+reportIssue = ""
+back = "Indietro"
+home = "Home"
+readMore = "Leggi di più"
+expirationReminder = "Questo articolo è stato aggiornato l'ultima volta il {{ .Date }}, il contenuto potrebbe non essere aggiornato."
+encryptedAbstract = ""
+encryptedMessage = ""
+password = "Password"
+encryptyAgain = ""
+relatedContent = "Contenuti correlati"
 
-[publishedOnDate]
-other = "pubblicato su {{ .Date }}"
+[single.includedIn]
+categories = "incluso in {{ .Categories }}"
+collections = "incluso in {{ .Collections }}"
+both = "incluso in {{ .Categories }} e {{ .Collections }}"
 
-[includedInCategories]
-other = "incluso in {{ .Categories }}"
-
-[wordCount]
+[single.wordCount]
 one = "Una parola"
 other = "{{ .Count }} parole"
 
-[readingTime]
+[single.fuzzyWordCount]
+other = "circa {{ .Count }} parole"
+
+[single.readingTime]
 one = "Un minuto"
 other = "{{ .Count }} minuti"
 
-[views]
-other = "visualizzazioni"
-
-[comments]
-other = "commenti"
-
-[author]
-other = "Autore"
-
-[updatedOnDate]
-other = "Aggiornato il {{ .Date }}"
-
-[readMarkdown]
-other = "Leggi Markdown"
-
-[editThisPage]
-other = "Modifica questa pagina"
-
-[back]
-other = "Indietro"
-
-[home]
-other = "Home"
-
-[readMore]
-other = "Leggi di più"
-
-[expirationReminder]
-other = "Questo articolo è stato aggiornato l'ultima volta il {{ .Date }}, il contenuto potrebbe non essere aggiornato."
-
-[encryptedAbstract]
-other = "" # waitting for translation
-
-[encryptedMessage]
-other = "" # waitting for translation
-
-[password]
-other = "Password"
-
-[encryptyAgain]
-other = "" # waitting for translation
+[single.reward]
+donate = ""
+wechatpay = ""
+alipay = ""
+paypal = ""
+bitcoin = ""
 # === posts/single.html ===
 
 # === 404.html ===
@@ -228,50 +173,24 @@ other = "Non sei connesso a Internet, saranno disponibili solo le pagine memoriz
 # === offline ===
 
 # === shortcodes/admonition.html ===
-[note]
-other = "Note"
-
-[abstract]
-other = "Sommario"
-
-[info]
-other = "Info"
-
-[tip]
-other = "Suggerimenti"
-
-[success]
-other = "Successo"
-
-[question]
-other = "Domande"
-
-[warning]
-other = "Avvertimento"
-
-[failure]
-other = "Fallimento"
-
-[danger]
-other = "Pericolo"
-
-[bug]
-other = "Bug"
-
-[example]
-other = "Esempio"
-
-[quote]
-other = "Citazione"
+[admonition]
+note = "Note"
+abstract = "Sommario"
+info = "Info"
+tip = "Suggerimenti"
+success = "Successo"
+question = "Domande"
+warning = "Avvertimento"
+failure = "Fallimento"
+danger = "Pericolo"
+bug = "Bug"
+example = "Esempio"
+quote = "Citazione"
 # === shortcodes/admonition.html ===
 
 # === shortcodes/version.html ===
-[new]
-other = "NUOVO"
-
-[changed]
-other = "CAMBIATO"
-
-[deleted]
-other = "CANCELLATO"
+[version]
+new = "NUOVO"
+changed = "CAMBIATO"
+deleted = "CANCELLATO"
 # === shortcodes/version.html ===

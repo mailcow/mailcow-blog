@@ -11,11 +11,12 @@
   {{- $options = dict "Width" (.Get "width") | merge $options -}}
   {{- $options = .Get "linked" | ne false | dict "Linked" | merge $options -}}
   {{- $options = dict "Rel" (.Get "rel") | merge $options -}}
+  {{- $options = dict "Loading" (.Get "loading") | merge $options -}}
 {{- else -}}
   {{- $options = cond $caption true false | dict "Linked" | merge $options -}}
 {{- end -}}
 
-{{- $options = dict "Resources" .Page.Resources | merge $options -}}
+{{- $options = dict "Responsive" true | merge $options -}}
 
 {{- with $caption -}}
   <figure{{ with cond $.IsNamedParams ($.Get "class") "" }} class="{{ . }}"{{ end }}>

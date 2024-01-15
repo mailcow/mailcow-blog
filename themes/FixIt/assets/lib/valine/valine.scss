@@ -30,6 +30,9 @@ $code-background-color-dark: #272C34 !default;
 }
 
 .v[data-class=v] {
+  .vcount {
+    z-index: 60;
+  }
   .vcards .vcard .vcontent.expand {
     &::before, &::after {
       z-index: 50;
@@ -43,7 +46,7 @@ $code-background-color-dark: #272C34 !default;
   blockquote {
     border-color: $border-color;
 
-    [data-theme=dark] & {
+    [data-theme='dark'] & {
       border-color: $border-color-dark;
     }
   }
@@ -56,14 +59,9 @@ $code-background-color-dark: #272C34 !default;
     color: $code-color;
     background: $code-background-color;
 
-    [data-theme=dark] & {
+    [data-theme='dark'] & {
       color: $code-color-dark;
       background: $code-background-color-dark;
     }
-  }
-
-  .emoji, .vemoji {
-    max-width: 1.5em;
-    vertical-align: text-bottom;
   }
 }

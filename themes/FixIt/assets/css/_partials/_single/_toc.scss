@@ -9,14 +9,16 @@
     font-size: $toc-content-font-size;
 
     ul {
-      text-indent: -0.8rem;
-      padding-left: 0.8rem;
+      text-indent: -0.8em;
+      padding-left: 0.8em;
       list-style: none;
 
       a:first-child::before {
         content: '|';
         font-weight: bolder;
-        margin-right: 0.5rem;
+        margin-right: 0.5em;
+        position: relative;
+        bottom: 2px;
         color: $single-link-color;
 
         [data-theme='dark'] & {
@@ -25,7 +27,24 @@
       }
 
       ul {
-        padding-left: 1.5rem;
+        padding-left: 1em;
+      }
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 2.25em;
+
+      ol {
+        padding-left: 1.25em;
+      }
+
+      li:has(> a:hover)::marker {
+        color: $single-link-color;
+
+        [data-theme='dark'] & {
+          color: $single-link-color-dark;
+        }
       }
     }
   }
@@ -50,23 +69,28 @@
 #toc-auto {
   display: block;
   position: sticky;
-  top: $header-height + 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @include overflow-wrap(break-word);
+  top: calc(#{$header-height} + var(--#{$prefix}breadcrumb-height));
   box-sizing: border-box;
   visibility: hidden;
-
+  @include overflow-wrap(break-word);
   @include blur;
+  @extend .print-d-none;
+
+  [data-header-desktop='normal'] & {
+    --#{$prefix}scroll-mt: #{$global-scroll-margin-top};
+  }
 
   .toc-title {
-    margin: 0.5rem 0;
+    margin-block: 0 0.5em;
     cursor: pointer;
+    @include user-select(none);
 
     &::before {
       content: '|';
       font-weight: bolder;
-      margin-right: 0.5rem;
+      margin-right: 0.5em;
+      position: relative;
+      bottom: 2px;
       color: $global-border-color;
 
       [data-theme='dark'] & {
@@ -87,8 +111,13 @@
   .toc-content {
     overflow-y: scroll;
     max-height: calc(100vh - #{2*$header-height});
+    
+    &::-webkit-scrollbar {
+      width: 0;
+    }
 
-    &.always-active ul {
+    &.always-active ul,
+    &.always-active ol {
       display: block;
     }
 
@@ -96,6 +125,29 @@
       margin: 0;
     }
 
+    li.has-active {
+      &::marker {
+        color: $single-link-color;
+
+        [data-theme='dark'] & {
+          color: $single-link-color-dark;
+        }
+      }
+
+      &:has(> .active)::marker {
+        font-weight: bold;
+      }
+
+      > a {
+        color: $single-link-color;
+
+        [data-theme='dark'] & {
+          color: $single-link-color-dark;
+        }
+      }
+    }
+
+    // for unordered list automatically collapsed
     ul {
       ul {
         display: none;
@@ -104,17 +156,8 @@
       .has-active > ul {
         display: block;
       }
-    }
 
-    a.active {
-      font-weight: bold;
-      color: $single-link-color;
-
-      [data-theme='dark'] & {
-        color: $single-link-color-dark;
-      }
-
-      &::before {
+      a.active::before {
         color: $single-link-hover-color;
 
         [data-theme='dark'] & {
@@ -122,12 +165,27 @@
         }
       }
     }
+
+    // for ordered list automatically collapsed
+    ol {
+      ol {
+        display: none;
+      }
+
+      .has-active > ol {
+        display: block;
+      }
+    }
+
+    a.active {
+      font-weight: bold;
+    }
   }
 }
 
 #toc-static {
   display: none;
-  margin: 0.8rem 0;
+  margin: 0.8em 0;
 
   &[data-kept='true'] {
     display: block;
@@ -137,7 +195,7 @@
     display: flex;
     justify-content: space-between;
     line-height: 2em;
-    padding: 0 0.75rem;
+    padding: 0 0.75em;
     background: darken($code-background-color, 3%);
 
     [data-theme='dark'] & {
@@ -148,9 +206,33 @@
   .toc-content {
     background-color: $code-background-color;
 
-    > nav > ul {
-      margin: 0;
-      padding: 0.4rem 1rem 0.4rem 1.8rem;
+    > nav {
+      > ul {
+        margin: 0;
+        padding: 0.4em 1em 0.4em 1.8em;
+
+        a:hover {
+          font-weight: bold;
+
+          &::before {
+            color: $single-link-hover-color;
+  
+            [data-theme='dark'] & {
+              color: $single-link-hover-color-dark;
+            }
+          }
+        }
+      }
+      
+      > ol {
+        margin: 0;
+        padding: 0.4em 1em 0.4em 2.25em;
+
+        li:has(> a:hover)::marker,
+        a:hover {
+          font-weight: bold;
+        }
+      }
     }
 
     [data-theme='dark'] & {

@@ -1,22 +1,23 @@
 @keyframes octocat-wave {
   0%,
   100% {
-    transform: rotate(0);
+    @include transform(rotate(0));
   }
   20%,
   60% {
-    transform: rotate(-25deg);
+    @include transform(rotate(-25deg));
   }
   40%,
   80% {
-    transform: rotate(10deg);
+    @include transform(rotate(10deg));
   }
 }
 
 .github-corner {
   position: fixed;
   top: 0;
-  z-index: 150;
+  @include z-index(2);
+  @extend .print-d-none;
 
   :hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
@@ -37,7 +38,7 @@
     left: 0;
 
     svg {
-      transform: scale(-1, 1);
+      @include transform(scale(-1, 1));
     }
   }
   &.right {

@@ -100,6 +100,12 @@ pre {
         cursor: pointer;
       }
 
+      .ellipses,
+      .edit,
+      .copy {
+        @extend .print-d-none;
+      }
+
       .code-title {
         width: 100%;
         padding: 0.4rem;
@@ -107,6 +113,12 @@ pre {
         .arrow {
           padding: 0 0.2rem;
           @include transition(transform 0.2s ease);
+        }
+
+        .title-inner {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
 
@@ -181,9 +193,11 @@ pre {
       .lntd:first-child {
         min-width: 1.6rem;
         text-align: right;
+        position: sticky;
+        left: 0;
 
         pre {
-          padding-right: 0;
+          @include user-select(none);
         }
       }
       // code content

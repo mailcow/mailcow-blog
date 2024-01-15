@@ -1,9 +1,13 @@
 .post-footer {
-  margin-top: 3rem;
+  margin: 2rem 0;
+
+  &~.post-reward {
+    margin-block: -2rem 0;
+  }
 
   .post-info {
     border-bottom: 1px solid $global-border-color;
-    padding: 1rem 0 0.3rem;
+    padding: 0.3rem 0;
 
     [data-theme='dark'] & {
       border-bottom: 1px solid $global-border-color-dark;
@@ -49,6 +53,7 @@
       }
 
       .post-info-share {
+        @extend .print-d-none;
         a * {
           vertical-align: text-bottom;
         }
@@ -57,10 +62,14 @@
   }
 
   .post-info-more {
-    padding: 0.3rem 0 1rem;
+    padding: 0.3rem 0;
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
+
+    section:last-child {
+      @extend .print-d-none;
+    }
   }
 
   .post-tags {
@@ -69,36 +78,39 @@
     * {
       display: inline;
     }
+
+    @include link(true, true);
+
+    .post-tag:not(:last-child)::after {
+      content: ',';
+      margin-right: 0.25rem;
+    }
   }
 
   .post-nav {
-    &::before,
-    &::after {
-      content: ' ';
-      display: table;
-    }
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-block: 0.5rem;
+    @extend .print-d-none;
 
-    & a.prev,
-    & a.next {
+    .post-nav-item {
+      flex: 1;
       font-size: 1rem;
       font-weight: 600;
       @include transition(all 0.3s ease-out);
-    }
 
-    & a.prev {
-      float: left;
-    }
+      &[rel='next'] {
+        text-align: right;
+      }
 
-    & a.prev:hover {
-      @include transform(translateX(-4px));
-    }
+      &[rel='prev']:hover {
+        @include transform(translateX(-4px));
+      }
 
-    & a.next {
-      float: right;
-    }
-
-    & a.next:hover {
-      @include transform(translateX(4px));
+      &[rel='next']:hover {
+        @include transform(translateX(4px));
+      }
     }
   }
 }

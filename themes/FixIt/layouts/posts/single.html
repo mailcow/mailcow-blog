@@ -1,35 +1,29 @@
-{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+{{- define "title" -}}
+  {{- .Title -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+{{- end -}}
 
 {{- define "content" -}}
   {{- $params := .Scratch.Get "params" -}}
   {{- $toc := .Scratch.Get "toc" -}}
+  {{- $tocEmpty := eq .TableOfContents `<nav id="TableOfContents"></nav>` -}}
 
-  <aside class="toc" id="toc-auto">
-    {{- /* Auto TOC */ -}}
-    {{- $tocEmpty := eq .TableOfContents `<nav id="TableOfContents"></nav>` -}}
-    {{- if (ne $toc.enable false) | and (ne $tocEmpty true) -}}
-      <h2 class="toc-title{{ with $params.password }} d-none{{ end }}">
-        {{- T "contents" -}}&nbsp;
-        {{- dict "Class" "toc-icon fa-solid fa-angle-down fa-fw" | partial "plugin/icon.html" -}}
-      </h2>
-      <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}{{ with $params.password }} d-none{{ end }}" id="toc-content-auto"></div>
-    {{- end -}}
-  </aside>
-
-  <aside class="aside-custom">
-    <!-- put aside for later use -->
-    {{- partial "custom/aside.html" . -}}
+  <aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="{{ T "collections" }}">
+    {{- /* Collection List */ -}}
+    {{- partial "single/collection-list.html" . -}}
+     {{- /* Custom part for aside */ -}}
+    {{- partial (.Scratch.Get "customFilePath").aside . -}}
   </aside>
 
   <article class="page single">
     <div class="header">
       {{- /* Title */ -}}
       <h1 class="single-title animate__animated animate__flipInX">
-        {{ $repost := $params.repost | default dict }}
+        {{- $repost := $params.repost | default dict -}}
         {{- with $repost -}}
           {{- if eq .Enable true -}}
             {{- $icon := dict "Class" "fa-solid fa-share fa-fw" -}}
-            {{- $title := cond (hasPrefix .Url "http") (printf "%v -> %v" (T "repost") .Url ) (T "repost") -}}
+            {{- $title := cond (hasPrefix .Url "http") (printf "%v -> %v" (T "single.repost") .Url ) (T "single.repost") -}}
             {{- if hasPrefix .Url "http" -}}
               {{ dict "Destination" .Url "Icon" $icon "Class" "icon-repost" "Title" $title | partial "plugin/link.html" -}}
             {{- else -}}
@@ -48,32 +42,36 @@
     <div class="post-meta">
       <div class="post-meta-line">
         {{- partial "single/post-author.html" . -}}
-
-        {{- $categories := slice -}}
-        {{- range .Params.categories -}}
-          {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
-          {{- $categories = $categories | append (printf `<a href="%v">%v %v</a>` $category.RelPermalink (dict "Class" "fa-regular fa-folder fa-fw" | partial "plugin/icon.html") $category.Title) -}}
-        {{- end -}}
-        {{- with delimit $categories "&ensp;" }}
-          <span class="post-category">
-            {{- dict "Categories" . | T "includedInCategories" | safeHTML -}}
-          </span>
-        {{- end -}}
+        {{- partial "single/post-included-in.html" . -}}
       </div>
+      {{- /* TODO add disclaimer or space between meta and content */ -}}
       <div class="post-meta-line">
-        {{- with .Site.Params.dateformat | default "2006-01-02" | .PublishDate.Format -}}
-          <span title={{ "2006-01-02 15:04:05" | $.PublishDate.Format }}>
-            {{- dict "Class" "fa-regular fa-calendar-alt fa-fw" | partial "plugin/icon.html" -}}&nbsp;
+        {{- with .PublishDate | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
+          <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.PublishDate.Format) | T "single.publishedOnDate" }}">
+            {{- dict "Class" "fa-solid fa-calendar-days fa-fw me-1" | partial "plugin/icon.html" -}}
             {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
           </span>&nbsp;
         {{- end -}}
-        <span>
-          {{- dict "Class" "fa-solid fa-pencil-alt fa-fw" | partial "plugin/icon.html" }} {{ T "wordCount" .WordCount -}}
-        </span>&nbsp;
-        {{- /* NO_SPACING */ -}}
-        <span>
-          {{- dict "Class" "fa-regular fa-clock fa-fw" | partial "plugin/icon.html" }} {{ T "readingTime" .ReadingTime -}}
-        </span>&nbsp;
+        {{- if ne .Lastmod.Unix .PublishDate.Unix }}
+          {{- with .Lastmod | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
+            <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.Lastmod.Format) | T "single.updatedOnDate" }}">
+              {{- dict "Class" "fa-regular fa-calendar-check fa-fw me-1" | partial "plugin/icon.html" -}}
+              {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
+            </span>&nbsp;
+          {{- end -}}
+        {{- end -}}
+        {{- if $params.wordCount -}}
+          <span title="{{ T "single.wordCount" .WordCount }}">
+            {{- dict "Class" "fa-solid fa-pencil-alt fa-fw me-1" | partial "plugin/icon.html" -}}
+            {{- T "single.fuzzyWordCount" .FuzzyWordCount -}}
+          </span>&nbsp;
+        {{- end -}}
+        {{- if $params.readingTime -}}
+          <span>
+            {{- dict "Class" "fa-regular fa-clock fa-fw me-1" | partial "plugin/icon.html" -}}
+            {{- T "single.readingTime" .ReadingTime -}}
+          </span>&nbsp;
+        {{- end -}}
 
         {{- /* If the article expires, close the comment or not */ -}}
         {{- $expirationReminder := $params.expirationReminder | default dict -}}
@@ -81,57 +79,56 @@
           $expirationReminder.enable
           | and (gt (div (sub now.Unix .Lastmod.Unix) 86400) ($expirationReminder.warning | default 180))
           | and $expirationReminder.closeComment -}}
-          {{- .Scratch.Set "comment" (dict "enable" false) -}}
+          {{- .Scratch.Set "commentExpired" true -}}
         {{- end -}}
         {{- $comment := .Scratch.Get "comment" | default dict -}}
-        {{- $visitorIcon := dict "Class" "fa-regular fa-eye fa-fw" | partial "plugin/icon.html" -}}
-        {{- $commentIcon := dict "Class" "fa-regular fa-comments fa-fw" | partial "plugin/icon.html" -}}
+        {{- $visitorIcon := dict "Class" "fa-regular fa-eye fa-fw me-1" | partial "plugin/icon.html" -}}
+        {{- $commentIcon := dict "Class" "fa-regular fa-comments fa-fw me-1" | partial "plugin/icon.html" -}}
         {{- /* Visitor Count */ -}}
         {{- if $comment.enable -}}
           {{- if $comment.artalk.enable -}}
             <span class="comment-visitors" data-flag-title="{{ .Title }}">
-              {{ $visitorIcon }}&nbsp;<span id="{{ .RelPermalink }}" class="artalk-visitor-count">-</span>&nbsp;{{ T "views" }}
+              {{ $visitorIcon }}<span class="artalk-visitor-count" data-page-key="{{ .RelPermalink }}">-</span>&nbsp;{{ T "single.views" }}
             </span>&nbsp;
           {{- else if ($comment.valine.enable | and $comment.valine.visitor) -}}
-            {{- /* Warning: waline v2 will not be compatible with valine */ -}}  
             <span id="{{ .RelPermalink }}" class="leancloud_visitors comment-visitors" data-flag-title="{{ .Title }}">
-              {{ $visitorIcon }}&nbsp;<span class="leancloud-visitors-count">-</span>&nbsp;{{ T "views" }}
+              {{ $visitorIcon }}<span class="leancloud-visitors-count">-</span>&nbsp;{{ T "single.views" }}
             </span>&nbsp;
           {{- else if $comment.waline.enable | and $comment.waline.pageview -}}
             <span class="comment-visitors" data-flag-title="{{ .Title }}">
-              {{ $visitorIcon }}&nbsp;<span data-path="{{ .RelPermalink }}" class="waline-pageview-count">-</span>&nbsp;{{ T "views" }}
+              {{ $visitorIcon }}<span data-path="{{ .RelPermalink }}" class="waline-pageview-count">-</span>&nbsp;{{ T "single.views" }}
             </span>&nbsp;
           {{- else if $comment.twikoo.enable | and $comment.twikoo.visitor -}}
             <span id="{{ .RelPermalink }}" class="comment-visitors" data-flag-title="{{ .Title }}">
-              {{ $visitorIcon }}&nbsp;<span id="twikoo_visitors">-</span>&nbsp;{{ T "views" }}
+              {{ $visitorIcon }}<span id="twikoo_visitors">-</span>&nbsp;{{ T "single.views" }}
             </span>&nbsp;
           {{- else if .Site.Params.ibruce.enable | and .Site.Params.ibruce.enablePost -}}
             <span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="{{ .Title }}">
-              {{ $visitorIcon }}&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "views" }}
+              {{ $visitorIcon }}<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "single.views" }}
             </span>&nbsp;
           {{- end -}}
         {{- else if .Site.Params.ibruce.enable | and .Site.Params.ibruce.enablePost -}}
           <span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="{{ .Title }}">
-            {{ $visitorIcon }}&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "views" }}
+            {{ $visitorIcon }}<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "single.views" }}
           </span>&nbsp;
         {{- end -}}
         {{- /* Comment Count */ -}}
         {{- if $comment.enable -}}
           {{- if $comment.artalk.enable -}}
             <span class="comment-count" data-flag-title="{{ .Title }}">
-              {{ $commentIcon }}&nbsp;<span data-xid="{{ .RelPermalink }}" class="artalk-comment-count">-</span>&nbsp;{{ T "comments" }}
+              {{ $commentIcon }}<span class="artalk-comment-count" data-page-key="{{ .RelPermalink }}">-</span>&nbsp;{{ T "single.comments" }}
             </span>&nbsp;
           {{- else if $comment.valine.enable | and $comment.valine.commentCount -}}
             <span class="comment-count" data-flag-title="{{ .Title }}">
-              {{ $commentIcon }}&nbsp;<span data-xid="{{ .RelPermalink }}" class="valine-comment-count">-</span>&nbsp;{{ T "comments" }}
+              {{ $commentIcon }}<span data-xid="{{ .RelPermalink }}" class="valine-comment-count">-</span>&nbsp;{{ T "single.comments" }}
             </span>&nbsp;
           {{- else if $comment.waline.enable | and $comment.waline.comment -}}
             <span class="comment-count" data-flag-title="{{ .Title }}">
-              {{ $commentIcon }}&nbsp;<span data-path="{{ .RelPermalink }}" class="waline-comment-count">-</span>&nbsp;{{ T "comments" }}
+              {{ $commentIcon }}<span data-path="{{ .RelPermalink }}" class="waline-comment-count">-</span>&nbsp;{{ T "single.comments" }}
             </span>&nbsp;
           {{- else if $comment.twikoo.enable | and $comment.twikoo.commentCount -}}
             <span id="{{ .RelPermalink }}" class="comment-count" data-flag-title="{{ .Title }}">
-              {{ $commentIcon }}&nbsp;<span id="twikoo-comment-count">-</span>&nbsp;{{ T "comments" }}
+              {{ $commentIcon }}<span id="twikoo-comment-count">-</span>&nbsp;{{ T "single.comments" }}
             </span>&nbsp;
           {{- end -}}
         {{- end -}}
@@ -145,15 +142,15 @@
     {{- end -}}
     {{- with $image -}}
       <div class="featured-image">
-        {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
+        {{- dict "Src" . "Title" $.Description | partial "plugin/image.html" -}}
       </div>
     {{- end -}}
 
     {{- /* Static TOC */ -}}
     {{- if (ne $toc.enable false) | and (ne $tocEmpty true) -}}
-      <div class="details toc{{ with $params.password }} d-none{{ end }}" id="toc-static" data-kept="{{ if $toc.keepStatic }}true{{ else }}false{{ end }}">
+      <div class="details toc{{ with $params.password }} encrypted-hidden{{ end }}" id="toc-static" data-kept="{{ if $toc.keepStatic }}true{{ else }}false{{ end }}">
         <div class="details-summary toc-title">
-          <span>{{ T "contents" }}</span>
+          <span>{{ T "single.contents" }}</span>
           <span>{{ dict "Class" "details-icon fa-solid fa-angle-right" | partial "plugin/icon.html" }}</span>
         </div>
         <div class="details-content toc-content" id="toc-content-static">
@@ -174,25 +171,53 @@
         (substr $base64EncodeContent $saltLen)
       -}}
     {{- end -}}
-    <div
-      class="content"
-      id="content"
-      {{ with $params.password }}data-password="{{ md5 $params.password }}"{{ end }}
-      {{ with $params.password }}data-content="{{ $content }}"{{ end }}
+    <div class="content" id="content"
+      {{- with $params.endFlag }} data-end-flag="{{ . }}"{{- end -}}
+      {{- with $params.password }} data-password="{{ md5 . }}"{{- end -}}
+      {{- with $params.password }} data-content="{{ $content }}"{{- end -}}
     >
       {{- if not $params.password -}}
         {{- /* Expiration Reminder */ -}}
         {{- partial "single/expiration-reminder.html" . -}}
         {{- $content -}}
-      {{- else -}}
-        {{- partial "single/fixit-decryptor.html" . -}}
       {{- end -}}
     </div>
+
+    {{- /* Related Content */ -}}
+    {{- partial "single/related.html" . -}}
+
+    {{- /* Reward before Footer */ -}}
+    {{- $reward := .Scratch.Get "reward" -}}
+    {{- if eq $reward.position "before" -}}
+      {{- partial "single/reward.html" . -}}
+    {{- end -}}
+
+    {{- /* Collection Navigation */ -}}
+    {{- partial "single/collection-nav.html" . -}}
+
+    {{- /* FixIt Decryptor */ -}}
+    {{- partial "single/fixit-decryptor.html" . -}}
 
     {{- /* Footer */ -}}
     {{- partial "single/footer.html" . -}}
 
+    {{- /* Reward after Footer */ -}}
+    {{- if eq $reward.position "after" -}}
+      {{- partial "single/reward.html" . -}}
+    {{- end -}}
+
     {{- /* Comment */ -}}
     {{- partial "single/comment.html" . -}}
   </article>
+
+  <aside class="toc" id="toc-auto" aria-label="{{ T "single.contents" }}">
+    {{- /* Auto TOC */ -}}
+    {{- if (ne $toc.enable false) | and (ne $tocEmpty true) -}}
+      <h2 class="toc-title{{ with $params.password }} encrypted-hidden{{ end }}">
+        {{- T "single.contents" -}}&nbsp;
+        {{- dict "Class" "toc-icon fa-solid fa-angle-down fa-fw" | partial "plugin/icon.html" -}}
+      </h2>
+      <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}{{ with $params.password }} encrypted-hidden{{ end }}" id="toc-content-auto"></div>
+    {{- end -}}
+  </aside>
 {{- end -}}

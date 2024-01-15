@@ -1,3 +1,4 @@
-#comments {
-  padding: 8rem 0 2rem;
+>#comments {
+  padding: 2rem 0;
+  @extend .print-d-none;
 }

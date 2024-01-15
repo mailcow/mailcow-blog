@@ -6,7 +6,7 @@
   {{- else -}}
     {{- $src := .Source -}}
     {{- $integrity := .Integrity -}}
-    {{- if (urls.Parse $src).Host | not -}}
+    {{- if $src | and (not (urls.Parse $src).Host) -}}
       {{- $resource := resources.Get $src -}}
       {{- with .Template -}}
         {{- $resource = $resource | resources.ExecuteAsTemplate . $.Context -}}
@@ -14,14 +14,16 @@
       {{- if .Minify -}}
         {{- $resource = $resource | minify -}}
       {{- end -}}
+      {{- with .Build -}}
+        {{- $resource = $resource | js.Build . -}}
+      {{- end -}}
       {{- with .Fingerprint -}}
         {{- $resource = $resource | fingerprint . -}}
         {{- $integrity = $resource.Data.Integrity -}}
       {{- end -}}
-      {{- with .Build -}}
-        {{- $resource = $resource | js.Build . -}}
+      {{- with $resource.RelPermalink -}}
+        {{- $src = $resource.RelPermalink -}}
       {{- end -}}
-      {{- $src = $resource.RelPermalink -}}
     {{- end -}}
     {{- $attrs := printf `src="%v"` $src -}}
     {{- if .Crossorigin -}}

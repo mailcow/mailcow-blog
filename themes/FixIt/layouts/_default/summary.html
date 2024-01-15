@@ -12,44 +12,39 @@
   {{- with $image -}}
     <div class="featured-image-preview">
       <a href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
-        {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
+        {{- dict "Src" . "Title" $.Description "Alt" $.Title "Resources" $.Resources | partial "plugin/image.html" -}}
       </a>
     </div>
   {{- end -}}
 
   {{- /* Title */ -}}
-  <h1 class="single-title" itemprop="name headline">
-    {{ $repost := $params.repost | default dict }}
+  <h2 class="single-title" itemprop="name headline">
+    {{- with $params.weight -}}
+      {{- $icon := dict "Class" "fa-solid fa-thumbtack fa-fw" -}}
+      <span title="{{ T "single.pin" }}" class="icon-pin">{{- $icon | partial "plugin/icon.html" -}}</span>
+    {{- end -}}
+    {{- $repost := $params.repost | default dict -}}
     {{- with $repost -}}
       {{- if eq .Enable true -}}
         {{- $icon := dict "Class" "fa-solid fa-share fa-fw" -}}
-        {{- $title := cond (hasPrefix .Url "http") (printf "%v -> %v" (T "repost") .Url ) (T "repost") -}}
+        {{- $title := cond (hasPrefix .Url "http") (printf "%v -> %v" (T "single.repost") .Url ) (T "single.repost") -}}
         <span title="{{ $title }}" class="icon-repost">{{- $icon | partial "plugin/icon.html" -}}</span>
       {{- end -}}
     {{- end -}}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h1>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  </h2>
 
   {{- /* Meta */ -}}
   <div class="post-meta">
     {{- partial "single/post-author.html" . -}}
 
-    {{- with .Site.Params.dateFormat | default "2006-01-02" | .PublishDate.Format -}}
+    {{- with .PublishDate | dateFormat (.Site.Params.dateFormat | default "2006-01-02") -}}
       &nbsp;<span class="post-publish" title='{{ "2006-01-02 15:04:05" | $.PublishDate.Format }}'>
-        {{- printf `<time datetime="%v">%v</time>` . . | dict "Date" | T "publishedOnDate" | safeHTML -}}
+        {{- printf `<time datetime="%v">%v</time>` . . | dict "Date" | T "single.publishedOnDate" | safeHTML -}}
       </span>
     {{- end -}}
 
-    {{- $categories := slice -}}
-    {{- range .Params.categories -}}
-      {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
-      {{- $categories = $categories | append (printf `<a href="%v">%v %v</a>` $category.RelPermalink (dict "Class" "fa-regular fa-folder fa-fw" | partial "plugin/icon.html") $category.Title) -}}
-    {{- end -}}
-    {{- with delimit $categories "&ensp;" -}}
-      &nbsp;<span class="post-category">
-        {{- dict "Categories" . | T "includedInCategories" | safeHTML -}}
-      </span>
-    {{- end -}}
+    {{- partial "single/post-included-in.html" . -}}
   </div>
 
   {{- /* Summary content */ -}}
@@ -63,14 +58,13 @@
 
   {{- /* Footer */ -}}
   <div class="post-footer">
-    <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
-    {{- with .Params.tags -}}
+    <a href="{{ .RelPermalink }}">{{ T "single.readMore" }}</a>
+    {{- $tagTerms := .GetTerms "tags" -}}
+    {{- if $tagTerms -}}
       <div class="post-tags">
-        {{- dict "Class" "fa-solid fa-tags fa-fw" | partial "plugin/icon.html" -}}&nbsp;
-        {{- range $index, $value := . -}}
-          {{- if gt $index 0 }},&nbsp;{{ end -}}
-          {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
-          <a href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
+        {{- dict "Class" "fa-solid fa-tags fa-fw me-1" | partial "plugin/icon.html" -}}
+        {{- range $tagTerms -}}
+          <a href='{{ partial "function/escapeurl.html" .RelPermalink }}' class="post-tag">{{ .LinkTitle }}</a>
         {{- end -}}
       </div>
     {{- end -}}
