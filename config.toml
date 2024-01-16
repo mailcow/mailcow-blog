@@ -61,9 +61,15 @@ enableGitInfo = true
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
 	  custom = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy'
 
+    [params.footer.powered]
+      enable = true
+      hugoLogo = true
+      themeLogo = true
+
+
  [params.home]
     # LoveIt NEW | 0.2.0 amount of RSS pages
-    rss = 1
+    rss = 5
     # Home page profile
     [params.home.profile]
       enable = true
@@ -93,7 +99,7 @@ enableGitInfo = true
   [params.social]
     GitHub = "mailcow/mailcow-dockerized"
     Twitter = "mailcow_email"
-    Mastodon = "@doncow"
+    Mastodon = "@doncow@mailcow.social"
     Email = "info@servercow.de"
 	
   [params.social.Telegram]
@@ -104,13 +110,14 @@ enableGitInfo = true
     # prefix of your social link
     prefix = "https://t.me/"
     # content hovering on the icon
-    title = "Telegram (Support)"
+    title = "Telegram (Community Support)"
 	
   [params.social.telegram-offtopic]
     # weight when arranging icons (the greater the weight, the later the icon is positioned)
     weight = 7
     # your social ID
     id = "mailcowOffTopic"
+    title = "Telegram (Offtopic)"
 
   [params.social.community]
     # weight when arranging icons (the greater the weight, the later the icon is positioned)
@@ -211,14 +218,7 @@ enableGitInfo = true
         url = "/categories/"
         title = ""
         weight = 3
-      [[languages.en.menu.main]]
-        identifier = "vps"
-        pre = "<i class='fa fa-server'></i>"
-        post = ""
-        name = "VPS"
-        url = "https://www.eth-services.de/ssd-vps/"
-        title = ""
-        weight = 4
+
       [[languages.en.menu.main]]
         identifier = "documentation"
         pre = "<i class='fa fa-book'></i>"
@@ -227,6 +227,25 @@ enableGitInfo = true
         url = "https://mailcow.github.io/mailcow-dockerized-docs/"
         title = ""
         weight = 4
+
+      [[languages.en.menu.main]]
+        identifier = "vps"
+        name = " VPS"
+        pre = "<i class='fa fa-server'></i>"
+        title = "VPS"
+        url = "https://mailcow.email"
+        weight = 5 
+
+      [[languages.en.menu.main]]
+        identifier = "eth-services"
+        pre = "<i>🇩🇪</i> "
+        post = ""
+        parent = "vps"
+        name = "ETH-Services"
+        url = "https://eth-services.de"
+        title = "ETH-Services"
+        weight = 1
+    
       [[languages.en.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
@@ -234,7 +253,7 @@ enableGitInfo = true
         name = ""
         url = "https://www.servercow.de/mailcow?lang=en#support"
         title = "Buy Support"
-        weight = 5
+        weight = 6
       [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
@@ -254,7 +273,7 @@ enableGitInfo = true
 
       [[languages.en.menu.main]]
         identifier = "demo-stable"
-        pre = ""
+        pre = "✅ "
         post = ""
         parent = "demos"
         name = "Stable Demo"
@@ -264,7 +283,7 @@ enableGitInfo = true
 
       [[languages.en.menu.main]]
         identifier = "demo-nightly"
-        pre = ""
+        pre = "🛠️ "
         post = ""
         parent = "demos"
         name = "Nightly Demo"
@@ -309,14 +328,25 @@ enableGitInfo = true
         url = "https://mailcow.github.io/mailcow-dockerized-docs/de"
         title = ""
         weight = 4
+
       [[languages.de.menu.main]]
         identifier = "vps"
+        name = " VPS"
         pre = "<i class='fa fa-server'></i>"
+        title = "VPS"
+        url = "https://mailcow.email"
+        weight = 5 
+
+      [[languages.de.menu.main]]
+        identifier = "eth-services"
+        pre = "<i>🇩🇪</i> "
         post = ""
-        name = "VPS"
-        url = "https://www.eth-services.de/ssd-vps/"
-        title = ""
-        weight = 5
+        parent = "vps"
+        name = "ETH-Services"
+        url = "https://eth-services.de"
+        title = "ETH-Services"
+        weight = 1        
+
       [[languages.de.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
@@ -344,7 +374,7 @@ enableGitInfo = true
 
       [[languages.de.menu.main]]
         identifier = "demo-stable"
-        pre = ""
+        pre = "✅ "
         post = ""
         parent = "demos"
         name = "Stabile Demo"
@@ -354,7 +384,7 @@ enableGitInfo = true
 
       [[languages.de.menu.main]]
         identifier = "demo-nightly"
-        pre = ""
+        pre = "🛠️ "
         post = ""
         parent = "demos"
         name = "Nightly Demo"
@@ -367,11 +397,11 @@ enableGitInfo = true
 	    dateFormat = "02.01.2006"
         [languages.de.params.home]
           # LoveIt NEW | 0.2.0 amount of RSS pages
-          rss = 1
+          rss = 5
         [languages.de.params.home.profile]
           enable = true
           # Gravatar Email for preferred avatar in home page
-          gravatarEmail = ""
+          #gravatarEmail = "info@servercow.de"
           # URL of avatar shown in home page
           avatarURL = "/images/cow_mailcow.svg"
           # title shown in home page (HTML format is supported)
@@ -394,6 +424,10 @@ enableGitInfo = true
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
 	custom = '<a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz'
 
+  [languages.de.params.footer.powered]
+  enable = true
+  hugoLogo = true
+  themeLogo = true
 
 [privacy]
   [privacy.youtube]
