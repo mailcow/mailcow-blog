@@ -46,7 +46,23 @@ telegram:
   Icon:
     Class: fa-brands fa-telegram-plane fa-fw
 
-# 007: Medium
+# 007: telegram-offtopic
+telegram-offtopic:
+  Weight: 7
+  Prefix: https://t.me/
+  Title: Telegram
+  Icon:
+    Class: fa-solid fa-comment
+
+# 008: community
+community:
+  Weight: 12
+  Url: https://community.mailcow.email
+  Title: Community (Forum)
+  Icon:
+    Class: fa-solid fa-user-group
+
+# 009: Medium
 medium:
   Weight: 7
   Prefix: https://medium.com/
@@ -54,7 +70,7 @@ medium:
   Icon:
     Class: fa-brands fa-medium fa-fw
 
-# 008: GitLab
+# 010: GitLab
 gitlab:
   Weight: 8
   Prefix: https://gitlab.com/
