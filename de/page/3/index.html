@@ -1,38 +1,315 @@
-<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=de><head><meta name=generator content="Hugo 0.121.1"><meta name=theme content="FixIt v0.2.16"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=2"><meta name=robots content="noodp"><title>mailcow: dockerized - Blog</title><meta name=author content="Moohoo">
-<meta name=author-link content="servercow.de"><meta name=description content="Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"><meta name=keywords content="mailcow,Docker,Postfix,Dovecot,GitHub,tinc,E-Mail,SOGo"><meta itemprop=name content="mailcow: dockerized - Blog"><meta itemprop=description content="Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"><meta property="og:title" content="mailcow: dockerized - Blog"><meta property="og:description" content="Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"><meta property="og:type" content="website"><meta property="og:url" content="https://mailcow.email/de/"><meta property="og:image" content="https://mailcow.email/images/cow_mailcow.svg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://mailcow.email/images/cow_mailcow.svg"><meta name=twitter:title content="mailcow: dockerized - Blog"><meta name=twitter:description content="Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"><meta name=twitter:site content="@mailcow_email"><meta name=application-name content="FixIt"><meta name=apple-mobile-web-app-title content="FixIt"><meta name=theme-color data-light=#f8f8f8 data-dark=#252627 content="#f8f8f8"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://mailcow.email/de/><link rel=alternate href=/de/index.xml type=application/rss+xml title="mailcow: dockerized - Blog"><link rel=feed href=/de/index.xml type=application/rss+xml title="mailcow: dockerized - Blog"><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","url":"https:\/\/mailcow.email\/de\/","inLanguage":"de","author":{"@type":"Person","name":"Moohoo"},"description":"Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog","name":"mailcow: dockerized - Blog"}</script></head><body data-header-desktop=fixed data-header-mobile=fixed><script>(window.localStorage?.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("data-theme","dark")</script><div class=wrapper><header class="desktop animate__faster" id=header-desktop><div class=header-wrapper><div class=header-title><a href=/de/ title="mailcow: dockerized - Blog"><img class="lazyload logo" src=/svg/loading.min.svg data-src=/images/cow_mailcow.svg data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x" data-sizes=auto alt="mailcow: dockerized - Blog" title="mailcow: dockerized - Blog"><span class=header-title-text>mailcow: dockerized - Blog</span><span class=header-title-post>📰</span></a><span class=header-subtitle></span></div><nav><ul class=menu><li class=menu-item><a class=menu-link href=/de/posts/>Beiträge</a></li><li class=menu-item><a class=menu-link href=/de/tags/>Tags</a></li><li class=menu-item><a class=menu-link href=/de/categories/>Kategorien</a></li><li class=menu-item><a class=menu-link href=https://mailcow.github.io/mailcow-dockerized-docs/de rel="noopener noreferrer" target=_blank><i class='fa fa-book'></i> Dokumentation</a></li><li class=menu-item><a class=menu-link href=https://www.eth-services.de/ssd-vps/ rel="noopener noreferrer" target=_blank><i class='fa fa-server'></i> VPS</a></li><li class=menu-item><a class=menu-link href=https://www.servercow.de/mailcow#support title="Support erhalten" rel="noopener noreferrer" target=_blank><i class='fas fa-band-aid'></i> Support</a></li><li class=menu-item><a class=menu-link href=https://github.com/mailcow/mailcow-dockerized title=GitHub rel="noopener noreferrer" target=_blank><i class='fab fa-github fa-fw'></i> GitHub</a></li><li class="menu-item has-children"><a class=menu-link href=https://demo.mailcow.email title=Demos rel="noopener noreferrer" target=_blank><i class='fa fa-play'></i> Demos</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden=true></i><ul class=sub-menu><li class=menu-item><a class=menu-link href=https://demo.mailcow.email title="Stabile Demo" rel="noopener noreferrer" target=_blank>Stabile Demo</a></li><li class=menu-item><a class=menu-link href=https://nightly-demo.mailcow.email title="Nightly Demo" rel="noopener noreferrer" target=_blank>Nightly Demo</a></li></ul></li><li class="menu-item delimiter"></li><li class="menu-item language"><span role=button aria-label="Sprache wählen" title="Sprache wählen">Deutsch<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden=true></i></span><ul class=sub-menu><li class=menu-item><a href=/ class=menu-link title=English>English</a></li></ul></li><li class="menu-item theme-switch" title="Darstellung ändern"><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></li></ul></nav></div></header><header class="mobile animate__faster" id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/de/ title="mailcow: dockerized - Blog"><img class="lazyload logo" src=/svg/loading.min.svg data-src=/images/cow_mailcow.svg data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x" data-sizes=auto alt=/images/cow_mailcow.svg title=/images/cow_mailcow.svg><span class=header-title-text>mailcow: dockerized - Blog</span><span class=header-title-post>📰</span></a><span class=header-subtitle></span></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><nav><ul class=menu id=menu-mobile><li class=menu-item><a class=menu-link href=/de/posts/>Beiträge</a></li><li class=menu-item><a class=menu-link href=/de/tags/>Tags</a></li><li class=menu-item><a class=menu-link href=/de/categories/>Kategorien</a></li><li class=menu-item><a class=menu-link href=https://mailcow.github.io/mailcow-dockerized-docs/de rel="noopener noreferrer" target=_blank><i class='fa fa-book'></i> Dokumentation</a></li><li class=menu-item><a class=menu-link href=https://www.eth-services.de/ssd-vps/ rel="noopener noreferrer" target=_blank><i class='fa fa-server'></i> VPS</a></li><li class=menu-item><a class=menu-link href=https://www.servercow.de/mailcow#support title="Support erhalten" rel="noopener noreferrer" target=_blank><i class='fas fa-band-aid'></i> Support</a></li><li class=menu-item><a class=menu-link href=https://github.com/mailcow/mailcow-dockerized title=GitHub rel="noopener noreferrer" target=_blank><i class='fab fa-github fa-fw'></i> GitHub</a></li><li class=menu-item><span class=nested-item><a class=menu-link href=https://demo.mailcow.email title=Demos rel="noopener noreferrer" target=_blank><i class='fa fa-play'></i> Demos</a>
-<i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden=true></i></span><ul class=sub-menu><li class=menu-item><a class=menu-link href=https://demo.mailcow.email title="Stabile Demo" rel="noopener noreferrer" target=_blank>Stabile Demo</a></li><li class=menu-item><a class=menu-link href=https://nightly-demo.mailcow.email title="Nightly Demo" rel="noopener noreferrer" target=_blank>Nightly Demo</a></li></ul></li><li class="menu-item theme-switch" title="Darstellung ändern"><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></li><li class="menu-item language"><span role=button aria-label="Sprache wählen" title="Sprache wählen">Deutsch<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden=true></i>
-</span><select class=language-select onchange="location=this.value"><option value=/>English</option><option value=/de/ selected disabled>Deutsch</option></select></li></ul></nav></div></header><main class=container data-page-style=normal><div class="page home posts"><div class=home-profile><div class=home-avatar><a href=/de/posts/ title=Beiträge><img class=lazyload src=/svg/loading.min.svg data-src=/images/cow_mailcow.svg data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x" data-sizes=auto alt=Moohoo title=Moohoo></a></div><h1 class=home-title>Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕</h1><h2 class=home-subtitle>Neuigkeiten und Infos</h2><div class=links><a href=https://github.com/mailcow/mailcow-dockerized title=GitHub target=_blank rel="external nofollow noopener noreferrer me"><i class="fab fa-github fa-fw" aria-hidden=true></i>
-</a><a href=https://twitter.com/mailcow_email title=Twitter target=_blank rel="external nofollow noopener noreferrer me"><i class="fab fa-twitter fa-fw" aria-hidden=true></i>
-</a><a href=https://mailcow.social/@doncow title=Mastodon target=_blank rel="external nofollow noopener noreferrer me"><i class="fab fa-mastodon fa-fw" aria-hidden=true></i>
-</a><a href=https://t.me/mailcow title="Telegram (Support)" target=_blank rel="external nofollow noopener noreferrer me"><i class="fab fa-telegram-plane fa-fw" aria-hidden=true></i>
-</a><a href=https://t.me/mailcowOffTopic title=Telegram target=_blank rel="external nofollow noopener noreferrer me"><i class="fa-solid fa-comment" aria-hidden=true></i>
-</a><a href=https://community.mailcow.email title="Community (Forum)" target=_blank rel="external nofollow noopener noreferrer me"><i class="fa-solid fa-user-group" aria-hidden=true></i>
-</a><a href=mailto:info@servercow.de title=Email rel=me><i class="far fa-envelope fa-fw" aria-hidden=true></i>
-</a><a href=/de/index.xml title="RSS Feed" target=_blank rel="external nofollow noopener noreferrer me"><i class="fas fa-rss fa-fw" aria-hidden=true></i></a></div></div><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-11a/>🚚🐄 Muhvember Update 2022 - Sogo 5.8.0, Rspamd 3.4.0 and PHP 8.1 Update | Revision B</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-12-12 09:30:10'>veröffentlicht an <time datetime=12.12.2022>12.12.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a>&ensp;<a href=/de/categories/hotfix/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Hotfix</a></span></div><div class=content><p><strong>Moohoo zusammen!</strong></p><p>Aus gegebenem Anlass (dem <del>2022-11a</del> 2022-11b Update) gibt es hier einmal die Changelogs bzw. Änderungen des besagten <del>2022-11a</del> 2022-11b Updates, sowie die Änderungen der Major Version (2022-11).</p><blockquote><p><em>Wir haben bereits 2022-11b released!</em></p></blockquote></div><div class=post-footer><a href=/de/posts/2022/release-2022-11a/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a>,&nbsp;<a href=/de/tags/bugfix/>bugfix</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview><a href=/de/posts/2022/mailcow-feat-alpine/ aria-label="[GUIDE] mailcow feat. Alpine Linux = ❤️"><img class=lazyload src=/svg/loading.min.svg data-src=/images/mailcow-feat-alpine_preview.jpg data-srcset="/images/mailcow-feat-alpine_preview.jpg, /images/mailcow-feat-alpine_preview.jpg 1.5x, /images/mailcow-feat-alpine_preview.jpg 2x" data-sizes=auto alt=/images/mailcow-feat-alpine_preview.jpg title="Ein kleiner Guide für die Installation von mailcow auf Alpine Linux"></a></div><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/mailcow-feat-alpine/>[GUIDE] mailcow feat. Alpine Linux = ❤️</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-11-04 10:00:00'>veröffentlicht an <time datetime=04.11.2022>04.11.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/guides/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Guides</a></span></div><div class=content>Ein kleiner Guide für die Installation von mailcow auf Alpine Linux</div><div class=post-footer><a href=/de/posts/2022/mailcow-feat-alpine/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/alpine/>Alpine</a>,&nbsp;<a href=/de/tags/installation/>Installation</a>,&nbsp;<a href=/de/tags/tutorial/>Tutorial</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-10a/>⚠️ 2022-10a | Kritisches Update zur Stabilität ⚠️</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-10-26 09:30:10'>veröffentlicht an <time datetime=26.10.2022>26.10.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a>&ensp;<a href=/de/categories/hotfix/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Hotfix</a></span></div><div class=content><p><strong>Moohoo zusammen!</strong></p><p>Gestern (am 25.10.2022) haben wir das 2022-10 Update released. Dieses enthält bei einigen (nicht vielen) einen Kritischen Fehler mit dem Spamfiltering, welcher dafür sorgt, dass keine E-Mails mehr raus bzw. reinkommen können.</p><p>Wir bitten euch deshalb dringenst dazu eure mailcow Installation welche mit dem 2022-10 Update versorgt ist erneut zu updaten!!</p></div><div class=post-footer><a href=/de/posts/2022/release-2022-10a/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a>,&nbsp;<a href=/de/tags/bugfix/>bugfix</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-10/>🌰🐄 Muhktober Update 2022 - Übersetzungs Überarbeitung + Multithreaded Backup/Restore Skript Update</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-10-25 10:30:10'>veröffentlicht an <time datetime=25.10.2022>25.10.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a></span></div><div class=content><p><strong>Moohoo zusammen!</strong></p><p>Wir bewegen uns in großen Schritten Richtung Jahresende und obwohl das Bootstrap 5 UI Update noch etwas länger auf sich warten lässt (Danke für eure Geduld übrigens!) gibt es auch heute wieder ein kleineres aber feines mailcow Update für euch.</p></div><div class=post-footer><a href=/de/posts/2022/release-2022-10/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-09/>🍂🐄 Mootember Update 2022 - Quarantäne & Swagger UI Fix Update - Revision A | Änderungen</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-09-30 10:30:10'>veröffentlicht an <time datetime=30.09.2022>30.09.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a>&ensp;<a href=/de/categories/sicherheit/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Sicherheit</a></span></div><div class=content><h3 id=2022-09a-release-30092022>2022-09a (Release: 30.09.2022)</h3><p>Änderungen:</p><ul><li>Das Twig Template System auf welches mailcow baut wurde auf Version 3.4.3 aktualisiert und schließt damit <a href=https://github.com/advisories/GHSA-52m2-vc4m-jj33 target=_blank rel="external nofollow noopener noreferrer">CVE-2022-39261</a>.<br><strong>Achtung: Diese CVE ist nicht kritisch für alle mailcow Users sondern dient lediglich der aktualität der Pakete</strong></li></ul></div><div class=post-footer><a href=/de/posts/2022/release-2022-09/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a>,&nbsp;<a href=/de/tags/bugfix/>bugfix</a>,&nbsp;<a href=/de/tags/wichtig/>wichtig</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview><a href=/de/posts/2022/our-new-demos/ aria-label="Unsere neuen Demos sind da!"><img class=lazyload src=/svg/loading.min.svg data-src=/images/demo_thumb.png data-srcset="/images/demo_thumb.png, /images/demo_thumb.png 1.5x, /images/demo_thumb.png 2x" data-sizes=auto alt=/images/demo_thumb.png title=/images/demo_thumb.png></a></div><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/our-new-demos/>Unsere neuen Demos sind da!</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-09-24 12:09:01'>veröffentlicht an <time datetime=24.09.2022>24.09.2022</time></span></div><div class=content><p>Einen wunderschönen Guten Tag wünschen wir euch!</p><p>Endlich ist es so weit: Die neuen Demos sind da!</p></div><div class=post-footer><a href=/de/posts/2022/our-new-demos/>Mehr lesen</a></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-08b/>🌊🐄 Aumuuhst Update 2022 - Die Nightly Builds sind los (Revision B) | Änderungen</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-09-08 10:30:10'>veröffentlicht an <time datetime=08.09.2022>08.09.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a></span></div><div class=content>Moohoo zusammen!
-Ein kleines, aber wichtiges Update für bzw. gegen die aktuellen SOGo Sieve/Mail-Sendungs-Probleme ist hier!
-Wir haben unzählige Meldungen dazu erhalten und mit dem Update einen Fix implementiert, welcher das Problem hoffentlich für alle löst.
-Für die, die es interessiert: Es hängt vermutlich mit der in SOGo 5.7.1 eingeführten IPv6-Unterstützung und der internen IPv6-Konnektivität der Docker Container zusammen, welche Konnektivitäts Probleme mit SOGo ausgelöst haben.
-Ja&mldr; wie dem auch sei, dieser Fehler sollte nun behoben worden sein.</div><div class=post-footer><a href=/de/posts/2022/release-2022-08b/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a>,&nbsp;<a href=/de/tags/bugfix/>bugfix</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview><a href=/de/posts/2022/nightly-tests-bs5/ aria-label="Unser Neuzugang: Die neue mailcow UI (MUH-I) in Bootstrap 5"><img class=lazyload src=/svg/loading.min.svg data-src=/images/nightly_thumb.png data-srcset="/images/nightly_thumb.png, /images/nightly_thumb.png 1.5x, /images/nightly_thumb.png 2x" data-sizes=auto alt=/images/nightly_thumb.png title=/images/nightly_thumb.png></a></div><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/nightly-tests-bs5/>Unser Neuzugang: Die neue mailcow UI (MUH-I) in Bootstrap 5</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-09-02 09:30:10'>veröffentlicht an <time datetime=02.09.2022>02.09.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/nightly/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Nightly</a>&ensp;<a href=/de/categories/beta/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Beta</a></span></div><div class=content>Lange genug hat es gedauert, aber hier ist sie endlich: Die neue mailcow UI!
-Aktuell aber noch exklusiv in den Nightly Builds, weil wir die UI noch optimieren wollen.
-Und genau da kommt Ihr ins Spiel! Denn wir wollen die UI so userfreundlich wie nur möglich gestalten und damit nicht nur das Framework, sondern auch die Usability verbessern.
-Wenn es also eine Sache gab, die dich bisher immer tierisch gestört hat, dann raus damit!</div><div class=post-footer><a href=/de/posts/2022/nightly-tests-bs5/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/nightly/>nightly</a>,&nbsp;<a href=/de/tags/testing/>testing</a>,&nbsp;<a href=/de/tags/feedback/>feedback</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-08/>🌊🐄 Aumuuhst Update 2022 - Die Nightly Builds sind los | Änderungen</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-09-01 10:30:10'>veröffentlicht an <time datetime=01.09.2022>01.09.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a></span></div><div class=content>Moohoo zusammen!
-Ihr seit zu spät! Das August Update kommt aber im September11einself!!!!
-Ja&mldr; was soll ich darauf sagen? Das ist richtig. Aber immerhin sind wir trotzdem wieder zurück, oder?
-Diesmal ändert sich auch sogar einiges bezüglich den Updates an sich! Bleibt also gespannt.
-Fangen wir erst mal recht sachte an:
-Stabile Änderungen (stable Branch) OAuth Clients und App-Passwörter werden nun wieder akzeptiert bei Cal/CardDav Verbindungen. #4685 von @FreddleSpl0it SOGo wurde auf 5.</div><div class=post-footer><a href=/de/posts/2022/release-2022-08/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a>,&nbsp;<a href=/de/tags/bugfix/>bugfix</a></div></div></article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/de/posts/2022/release-2022-07a/>☀️🐄 Mooli Update 2022 - Revision A | Änderungen</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/DerLinkman title=Autor target=_blank rel="external nofollow noopener noreferrer author" class=author><i class="fa-solid fa-user-circle" aria-hidden=true></i>
-Niklas Meyer</a></span>&nbsp;<span class=post-publish title='2022-07-29 10:32:00'>veröffentlicht an <time datetime=29.07.2022>29.07.2022</time></span>&nbsp;<span class=post-category>enthalten in <a href=/de/categories/updates/><i class="fa-regular fa-folder fa-fw" aria-hidden=true></i> Updates</a></span></div><div class=content>Moohoo allerseits!
-Wir haben ein spontanes Update veröffentlicht, das ein wenig die API besser dokumentiert und eine neue Version von ClamAV (0.105.1) mitbringt.
-Hinweis: Das Update auf ClamAV 0.105.1 wird von ClamAV als Sicherheitsupdate empfohlen (Siehe Artikel zum ClamAV Update)
-Noch einmal zusammen gefasst, was sich ändert:
-Das Schemata der Domain Sektion der API wurde angepasst und verbessert. Automatische GitHub Aktionen zum Bau der neusten Container Versionen wurde eingerichtet (aktuell nicht produktiv genutzt) Die Maximale Key Länge der Web UI wurde auf 1023 Bits erhöht (vorher 255 Bits) ClamAV wurde auf Version 0.</div><div class=post-footer><a href=/de/posts/2022/release-2022-07a/>Mehr lesen</a><div class=post-tags><i class="fa-solid fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/de/tags/2022/>2022</a>,&nbsp;<a href=/de/tags/update/>update</a>,&nbsp;<a href=/de/tags/changelog/>changelog</a>,&nbsp;<a href=/de/tags/bugfix/>bugfix</a></div></div></article><ul class=pagination><li class=page-item><span class=page-link><a href=/de/>1</a></span></li><li class=page-item><span class=page-link><a href=/de/page/2/>2</a></span></li><li class="page-item active"><span class=page-link><a href=/de/page/3/>3</a></span></li><li class=page-item><span class=page-link><a href=/de/page/4/>4</a></span></li><li class=page-item><span class=page-link><a href=/de/page/5/>5</a></span></li><li class=page-item><span class=page-link><a href=/de/page/6/>6</a></span></li></ul></div></main><footer class=footer><div class=footer-container><div class="footer-line custom"><a href=/de/imprint/>Impressum</a> | <a href=/de/policy/>Datenschutz</div><div class="footer-line powered">Realisiert durch <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreferrer" title="Hugo 0.121.1">Hugo</a> | Thema - <a href=https://github.com/hugo-fixit/FixIt target=_blank rel=external title="FixIt v0.2.16"><img class=fixit-icon src=/fixit.min.svg alt="FixIt logo">&nbsp;FixIt</a></div><div class="footer-line copyright" itemscope itemtype=http://schema.org/CreativeWork><i class="fa-regular fa-copyright fa-fw" aria-hidden=true></i>
-<span itemprop=copyrightYear>2016 - 2023</span><span class="license footer-divider"><a rel="license external nofollow noopener noreffer" href=https://tinc.gmbh?kontakt target=_blank>The Infrastructure Company GmbH</a></span></div><div class="footer-line statistics"></div></div></footer></div><div class=widgets><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role=button aria-label="Nach oben"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden=true></i><span class="variant-numeric d-none">0%</span></div></div><div id=mask></div><noscript><div class=noscript-warning>Theme FixIt works best with JavaScript enabled.</div></noscript></div><link rel=stylesheet href=/lib/katex/katex.min.css><script src=/lib/lazysizes/lazysizes.min.js async defer></script><script src=/lib/katex/katex.min.js defer></script><script src=/lib/katex/auto-render.min.js defer></script><script src=/lib/katex/copy-tex.min.js defer></script><script src=/lib/katex/mhchem.min.js defer></script><script>window.config={code:{copyTitle:"In Zwischenablage kopieren",editLockTitle:"Bearbeitbaren Codeblock sperren",editUnLockTitle:"Bearbeiten des Codeblocks entsperren",editable:!0,maxShownLines:10},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1}}</script><script src=/js/theme.min.js defer></script></body></html>
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="de">
+  <head>
+	<meta name="generator" content="Hugo 0.104.0" />
+    
+      <meta name="theme" content='FixIt v0.2.16'>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>mailcow: dockerized - Blog</title><meta name="author" content="Moohoo">
+<meta name="author-link" content="servercow.de">
+<meta name="description" content="Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog" /><meta name="keywords" content='mailcow, Docker, Postfix, Dovecot, GitHub, tinc, E-Mail, SOGo' /><meta itemprop="name" content="mailcow: dockerized - Blog">
+<meta itemprop="description" content="Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog"><meta property="og:title" content="mailcow: dockerized - Blog" />
+<meta property="og:description" content="Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://news.mailcow.email/de/" /><meta property="og:image" content="https://news.mailcow.email/images/cow_mailcow.svg"/><meta property="og:site_name" content="mailcow: dockerized - Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://news.mailcow.email/images/cow_mailcow.svg"/>
+
+<meta name="twitter:title" content="mailcow: dockerized - Blog"/>
+<meta name="twitter:description" content="Der E-Mail Server mit dem &#39;moo&#39; – 🐮 &#43; 🐋 = 💕 | Offizieller Blog"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://news.mailcow.email/de/" /><link rel="alternate" href="/de/index.xml" type="application/rss+xml" title="mailcow: dockerized - Blog">
+  <link rel="feed" href="/de/index.xml" type="application/rss+xml" title="mailcow: dockerized - Blog"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https:\/\/news.mailcow.email\/de\/","inLanguage": "de","author": {
+        "@type": "Person",
+        "name": "Moohoo"
+      },"description": "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog","name": "mailcow: dockerized - Blog"
+  }
+  </script></head>
+  <body data-header-desktop="fixed" data-header-mobile="fixed"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/de/" title="mailcow: dockerized - Blog"><img
+    class="lazyload logo"
+    src="/svg/loading.min.svg"
+    data-src="/images/cow_mailcow.svg"
+    data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x"
+    data-sizes="auto"
+    alt="mailcow: dockerized - Blog"
+    title="mailcow: dockerized - Blog"/><span class="header-title-text">mailcow: dockerized - Blog</span><span class="header-title-post">📰</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/de/posts/"
+                
+                
+              >Beiträge</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/de/tags/"
+                
+                
+              >Tags</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/de/categories/"
+                
+                
+              >Kategorien</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://mailcow.github.io/mailcow-dockerized-docs/de"
+                
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fa fa-book'></i> Dokumentation</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://www.servercow.de/mailcow#support"
+                title="Support erhalten"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fas fa-band-aid'></i>   Support</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://github.com/mailcow/mailcow-dockerized"
+                title="GitHub"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fab fa-github fa-fw'></i> GitHub</a></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="https://demo.mailcow.email"
+                title="Demos"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fa fa-play'></i>  Demos</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="https://demo.mailcow.email"
+                          title="Stabile Demo"
+                          rel="noopener noreferrer" target="_blank"
+                        >Stabile Demo</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="https://nightly-demo.mailcow.email"
+                          title="Nightly Demo"
+                          rel="noopener noreferrer" target="_blank"
+                        >Nightly Demo</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item language">
+            <span role="button" aria-label="Sprache wählen" title="Sprache wählen">Deutsch<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </span>
+            <ul class="sub-menu"><li class="menu-item">
+                      <a href="/" class="menu-link" title="English">English</a>
+                    </li></ul>
+          </li><li class="menu-item theme-switch" title="Darstellung ändern">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/de/" title="mailcow: dockerized - Blog"><img
+    class="lazyload logo"
+    src="/svg/loading.min.svg"
+    data-src="/images/cow_mailcow.svg"
+    data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x"
+    data-sizes="auto"
+    alt="/images/cow_mailcow.svg"
+    title="/images/cow_mailcow.svg"/><span class="header-title-text">mailcow: dockerized - Blog</span><span class="header-title-post">📰</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/de/posts/"
+                  
+                  
+                >Beiträge</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/de/tags/"
+                  
+                  
+                >Tags</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/de/categories/"
+                  
+                  
+                >Kategorien</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://mailcow.github.io/mailcow-dockerized-docs/de"
+                  
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fa fa-book'></i> Dokumentation</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://www.servercow.de/mailcow#support"
+                  title="Support erhalten"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fas fa-band-aid'></i>   Support</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://github.com/mailcow/mailcow-dockerized"
+                  title="GitHub"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fab fa-github fa-fw'></i> GitHub</a></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="https://demo.mailcow.email"
+                    title="Demos"
+                    rel="noopener noreferrer" target="_blank"
+                  ><i class='fa fa-play'></i>  Demos</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="https://demo.mailcow.email"
+                          title="Stabile Demo"
+                          rel="noopener noreferrer" target="_blank"
+                        >Stabile Demo</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="https://nightly-demo.mailcow.email"
+                          title="Nightly Demo"
+                          rel="noopener noreferrer" target="_blank"
+                        >Nightly Demo</a>
+                      </li></ul></li><li class="menu-item theme-switch" title="Darstellung ändern">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language">
+            <span role="button" aria-label="Sprache wählen" title="Sprache wählen">Deutsch<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </span>
+            <select class="language-select" onchange="location = this.value;"><option value="/">English</option><option value="/de/" selected disabled>Deutsch</option></select>
+          </li></ul>
+    </nav>
+  </div>
+</header><main class="container" data-page-style="normal"><div class="page home posts"><div class="home-profile"><div class="home-avatar"><a href="/de/posts/" title="Beiträge"><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/images/cow_mailcow.svg"
+    data-srcset="/images/cow_mailcow.svg, /images/cow_mailcow.svg 1.5x, /images/cow_mailcow.svg 2x"
+    data-sizes="auto"
+    alt="Moohoo"
+    title="Moohoo"/></a></div><h1 class="home-title">Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕</h1><h2 class="home-subtitle">Neuigkeiten und Infos</h2><div class="links"><a href="https://github.com/mailcow/mailcow-dockerized" title="GitHub"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i>
+    </a><a href="https://twitter.com/mailcow_email" title="Twitter"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i>
+    </a><a href="https://t.me/mailcow" title="Telegram (Support)"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fab fa-telegram-plane fa-fw" aria-hidden="true"></i>
+    </a><a href="https://t.me/mailcowOffTopic" title="Telegram"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-solid fa-comment" aria-hidden="true"></i>
+    </a><a href="https://community.mailcow.email" title="Community (Forum)"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-solid fa-user-group" aria-hidden="true"></i>
+    </a><a href="mailto:info@servercow.de" title="Email" rel=" me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i>
+    </a><a href="/de/index.xml" title="RSS Feed"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i>
+    </a></div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+    <a href="/de/posts/2021/moovember2021/">🐄 Moovember 2021 - Änderungen</a>
+  </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/DerLinkman" title="Autor"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Niklas Meyer</a></span>&nbsp;<span class="post-publish" title='2021-12-03 09:49:47'>veröffentlicht an <time datetime="03.12.2021">03.12.2021</time></span>&nbsp;<span class="post-category">enthalten in <a href="/de/categories/updates/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Updates</a></span></div><div class="content">Moohoo allerseits!
+Niklas hier, um euch die neuesten Nachrichten rund um unsere liebe mailcow zu präsentieren :)
+Dann wollen wir mal loslegen, ja?
+Wichtige Änderungen ab November 2021 für den mailcow Stack: SOGo Aktualisierung auf 5.3.0 Dovecot Aktualisierung auf 2.3.17 ClamAV Aktualisierung auf 0.103.4 [Web] Automatisch generierte App-Passwörter für Apple-Konfigurationsprofile Bitte denken Sie daran, Ihren Mailcow-Stack zu aktualisieren, um eine stabile Umgebung zu gewährleisten.
+Alle Änderungen ab November 2021 für den mailcow-Stack (neueste bis älteste): 30.</div><div class="post-footer">
+    <a href="/de/posts/2021/moovember2021/">Mehr lesen</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/update/">update</a>,&nbsp;<a href="/de/tags/changelog/">changelog</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+    <a href="/de/posts/2021/mooctober2021/">🐄 Mooctober 2021 - Die Feldsam Edition</a>
+  </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/andryyy" title="Autor"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    André Peters</a></span>&nbsp;<span class="post-publish" title='2021-10-18 21:55:47'>veröffentlicht an <time datetime="18.10.2021">18.10.2021</time></span>&nbsp;<span class="post-category">enthalten in <a href="/de/categories/updates/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Updates</a></span></div><div class="content">Ein großes Dankeschön an Kristian Feldsam für die Integration von Twig. Wir sind näher an Bootstrap 5 als je zuvor. Das ist eine große Änderung, die wir hoffentlich bald abschließen können.
+Außerdem stellen wir unsere neue cold standby Lösung vor.
+Mit diesem neuen Skript seid ihr in der Lage, eine voll funktionsfähige, 1:1, konsistente Kopie eurer laufenden mailcow ohne Ausfallzeit zu erstellen.
+Disaster Recovery einer Mailcow ist so einfach wie das Wechseln der IPs und das Ausführen von &ldquo;up -d&rdquo;.</div><div class="post-footer">
+    <a href="/de/posts/2021/mooctober2021/">Mehr lesen</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/update/">update</a>,&nbsp;<a href="/de/tags/changelog/">changelog</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+    <a href="/de/posts/2021/moore_october21/">more, moore, moooore</a>
+  </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/andryyy" title="Autor"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    André Peters</a></span>&nbsp;<span class="post-publish" title='2021-10-01 21:55:47'>veröffentlicht an <time datetime="01.10.2021">01.10.2021</time></span></div><div class="content">Mädchen, Jungs und mailcows,
+Die Entwicklung steht nicht still, wir haben nur Schwierigkeiten, die vielen Anfragen von neuen Kunden zu bearbeiten. Kombiniert mit Krankheitsfällen, Urlaub und dem üblichen Geschäft sind wir wirklich im Stress.
+Wir sind auch dabei, das Design ein wenig zu überarbeiten, das ist ein WIP und wird noch eine Weile dauern. Die ersten neuen Drucke werden wahrscheinlich auf unseren neuen Autos @ tinc zu sehen sein. Wir sind sehr aufgeregt!</div><div class="post-footer">
+    <a href="/de/posts/2021/moore_october21/">Mehr lesen</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+    <a href="/de/posts/2021/rspamd_memleak_sep2021/">mailcows, die zwischen dem 25. August und dem 2. September 2021 aktualisiert wurden, sollten erneut aktualisiert werden</a>
+  </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/andryyy" title="Autor"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    André Peters</a></span>&nbsp;<span class="post-publish" title='2021-09-02 20:19:57'>veröffentlicht an <time datetime="02.09.2021">02.09.2021</time></span></div><div class="content">Hallo!
+Wenn ihr eure mailcow zwischen dem 25. August und dem 2. September 2021 aktualisiert habt, seid ihr höchstwahrscheinlich auf ein Memory-Leak in den Einstellungen von Rspamd gestoßen, das gerade behoben wurde.
+Außerdem haben wir das Map Hammering mit einer weiteren Änderung im Map Generator stark reduziert.
+Zeit für ein Update!
+André</div><div class="post-footer">
+    <a href="/de/posts/2021/rspamd_memleak_sep2021/">Mehr lesen</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/bugfix/">bugfix</a>,&nbsp;<a href="/de/tags/memoryleak/">memoryleak</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+    <a href="/de/posts/2021/mailcow_housing_external/">Wo hause ich eine mailcow?</a>
+  </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/andryyy" title="Autor"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    André Peters</a></span>&nbsp;<span class="post-publish" title='2021-07-29 13:03:00'>veröffentlicht an <time datetime="29.07.2021">29.07.2021</time></span></div><div class="content">Da die Frage immer wieder aufkommt und es schwierig ist ein für den Mailserverbetrieb geeignetes ASN zu finden, kann ich heute ruhigen Gewissens Lennarts ETH-Services empfehlen.
+Lennart ist selber in der mailcow Community aktiv und kennt die Kniffe zum Betrieb eines Mailservers.
+Für einen reibungslosen Betrieb einer mailcow empfehle ich den VPS Gianfar.
+Es ist eine aufrichtige, nicht bezahlte und gut gemeinte Empfehlung.
+Zusammen mit unserem mailcow Support steht dem Betrieb nichts mehr im Weg.</div><div class="post-footer">
+    <a href="/de/posts/2021/mailcow_housing_external/">Mehr lesen</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/empfehlungen/">empfehlungen</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+    <a href="/de/posts/2021/heise_ct_10-2021/">Heise, c&#39;t 10/2021 - mailcow</a>
+  </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/andryyy" title="Autor"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    André Peters</a></span>&nbsp;<span class="post-publish" title='2021-04-24 10:20:47'>veröffentlicht an <time datetime="24.04.2021">24.04.2021</time></span></div><div class="content">Heise hat einen Artikel über die Kuh verfasst, wir sind unendlich dankbar. :)
+Es war auch für uns eine Überraschung!
+https://www.heise.de/ratgeber/Mailcow-Mailserver-einrichten-und-Spam-arm-betreiben-6021810.html
+Ich wünsche euch ein schönes Wochenende.
+André</div><div class="post-footer">
+    <a href="/de/posts/2021/heise_ct_10-2021/">Mehr lesen</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/de/tags/2021/">2021</a>,&nbsp;<a href="/de/tags/recommendations/">recommendations</a></div></div>
+</article>
+<ul class="pagination"><li class="page-item">
+          <span class="page-link">
+            <a href="/de/">1</a>
+          </span>
+        </li><li class="page-item">
+          <span class="page-link">
+            <a href="/de/page/2/">2</a>
+          </span>
+        </li><li class="page-item active">
+          <span class="page-link">
+            <a href="/de/page/3/">3</a>
+          </span>
+        </li></ul></div></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line custom"><a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz</div><div class="footer-line powered">Realisiert durch <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.104.0">Hugo</a> | Thema - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.16"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2016 - 2022</span><span class="license footer-divider"><a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Nach oben"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"In Zwischenablage kopieren","editLockTitle":"Bearbeitbaren Codeblock sperren","editUnLockTitle":"Bearbeiten des Codeblocks entsperren","editable":true,"maxShownLines":10},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
