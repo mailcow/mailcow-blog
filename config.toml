@@ -139,6 +139,7 @@ enableGitInfo = true
     fraction = true
     fontawesome = true
     linkToMarkdown = true
+    authorAvatar = true
     [params.page.toc]
       enable = true
       keepStatic = false
