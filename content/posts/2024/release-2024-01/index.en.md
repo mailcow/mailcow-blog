@@ -17,6 +17,16 @@ featuredImagePreview: "/images/2024/January/release-arm64.jpg"
 
 ---
 
+## 2024-01a (Release: 18th January 2024)
+
+### Changelog
+
++ The timeout for the unbound health check has been increased from 10 to 30 seconds. On some systems, the extended checks resulted in an unhealthy status even though they were OK.
+
+---
+
+## 2024-01 (Release: 17th January 2024)
+
 **Moohoo** everyone!
 
 We hope you had a good start into the young 2024. As already announced in advance on social media (X/Twitter: [@mailcow_email](https://x.com/mailcow_email), Mastodon: [@doncow@mailcow.social](https://mailcow.social/@doncow)), the long-awaited ARM64 or Multiarch update is finally being released today which we have been working on for a long time with ups and downs.
