@@ -1,6 +1,6 @@
 ---
-title: "🦾6️⃣4️⃣ 🐄 Janmooary 2024 Update | The Multiarch (x86 + ARM64) & Performance Update"
-date: 2024-01-17T11:19:02+02:00
+title: "🦾6️⃣4️⃣ 🐄 Janmooary 2024 Update | The Multiarch (x86 + ARM64) & Performance Update - Revision B"
+date: 2024-01-22T11:19:02+02:00
 draft: false
 
 author: Niklas Meyer/DerLinkman
@@ -14,6 +14,19 @@ categories: ["Updates"]
 
 featuredImage: "/images/2024/January/release-arm64.jpg"
 featuredImagePreview: "/images/2024/January/release-arm64.jpg"
+
+---
+
+## 2024-01b (Release: 22th January 2024)
+
++ We have downgraded the containers affected by a cURL submodule bug (phpfpm, unbound, watchdog & acme) in their Alpine version from 3.19 to 3.18. This should eliminate the need for the workaround ([see](https://twitter.com/mailcow_email/status/1747880630317101556)). We will (probably) revert to Alpine 3.19 in these containers in the 2024-02 update (assuming the bug is fixed then)
++ It is now possible to deactivate or skip the unbound health checks. Background (primary) is the geo blocking of some countries (e.g. China) which prohibit access via DNS to GitHub, but the check is based on it. A new mailcow variable was set for this (`SKIP_UNBOUND_HEALTHCHECK`)
+
+    {{< admonition type=danger title="Danger">}} 
+**We do not recommend setting this value, as the health check problems that are important for correct accessibility to the Internet**
+    {{< /admonition >}}
+
++ Fixed a bug that affected the watchdog webhooks, which caused the webhooks not to be formatted correctly and no information was displayed on the respective platform.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "🦾6️⃣4️⃣ 🐄 Janmuhary 2024 Update | Das Multiarch (x86 + ARM64) & Performance Update"
-date: 2024-01-17T11:19:02+02:00
+date: 2024-01-22T11:19:02+02:00
 draft: false
 
 author: Niklas Meyer/DerLinkman
@@ -17,9 +17,20 @@ featuredImagePreview: "/images/2024/January/release-arm64.jpg"
 
 ---
 
-## 2024-01a (Release vom 18.01.2024)
+## 2024-01b (Release vom 22.01.2024)
 
-### Changelog
++ Wir haben die von einem cURL Submodul Bug geplagten Container (phpfpm, unbound, watchdog & acme) in ihrer Alpine Version von 3.19 auf 3.18 downgraded. Dies sollte die Notwendigkeit des Workarounds ([siehe hier](https://twitter.com/mailcow_email/status/1747880630317101556)) obsolet machen. Wir werden auf Alpine 3.19 in diesen Containern (wahrscheinlich) im 2024-02 Update zurück kommen (vorausgesetzt der Bug ist dann behoben).
++ Es ist nun möglich die Unbound Healthchecks zu deaktivieren bzw. zu überspringen. Hintergrund (Primär) ist das Geo Blocking von einigen Ländern (China bspw.) welche den Zugriff via DNS auf GitHub untersagen, der Check allerdings darauf aufbaut. Dafür wurde eine neue mailcow Variable gesetzt (`SKIP_UNBOUND_HEALTHCHECK`) 
+
+    {{< admonition type=danger title="Vorsicht">}} 
+**Wir empfehlen diesen Wert nicht zu setzen, da der Healthcheck Probleme die für die korrekte Erreichbarkeit ins Internet wichtig ist**
+    {{< /admonition >}}
+
++ Es wurde ein Bug gefixt, welcher die Watchdog Webhooks betrifft, welcher dafür sorgte, dass die Webhooks nicht korrekt Formatiert wurden und keine Informationen auf der jeweiligen Plattform angezeigt wurden.
+
+---
+
+## 2024-01a (Release vom 18.01.2024)
 
 + Der Timeout für den Unbound Healthcheck wurde von 10 auf 30 Sekunden erhöht. Bei einigen Systemen kam es durch die erweiterten Checks zu einem Status Unhealthy obwohl diese in Ordnung waren.
 
