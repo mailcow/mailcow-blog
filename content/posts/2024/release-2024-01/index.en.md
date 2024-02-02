@@ -1,6 +1,6 @@
 ---
-title: "🦾6️⃣4️⃣ 🐄 Janmooary 2024 Update | The Multiarch (x86 + ARM64) & Performance Update - Revision B"
-date: 2024-01-22T11:19:02+02:00
+title: "🦾6️⃣4️⃣ 🐄 Janmooary 2024 Update | The Multiarch (x86 + ARM64) & Performance Update - Revision C"
+date: 2024-02-02T11:19:02+02:00
 draft: false
 
 author: Niklas Meyer/DerLinkman
@@ -9,11 +9,45 @@ toc: true
 
 license: ""
 
-tags: ["2024", "update", "changelog", "ARM64", "major"]
+tags: ["2024", "update", "changelog", "ARM64", "major", "security"]
 categories: ["Updates"]
 
 featuredImage: "/images/2024/January/release-arm64.jpg"
 featuredImagePreview: "/images/2024/January/release-arm64.jpg"
+
+---
+
+## 2024-01c (Release: 2nd February 2024)
+
+{{< admonition type=warning title="Important" open=true >}}
+
+This update includes a security fix, so we highly recommend that all users upgrade to this latest version to ensure the security of their systems. Users who are unable to update and share their system with potential attackers on the same network, such as with some hosting providers, should apply the following iptables/nftables rule:
+
+<!--more-->
+
+iptables:
+
+```
+iptables -I DOCKER-USER ! -i br-mailcow -o br-mailcow -p tcp -m multiport --dport 3306,6379,8983,12345 -j DROP
+```
+
+nftables:
+```
+nft insert rule ip "filter" "DOCKER-USER" iifname != "br-mailcow" oifname "br-mailcow" tcp dport {3306, 6379, 8983, 12345} counter packets 0 bytes 0 drop
+```
+
+{{< /admonition >}}
+
+What else changed:
+
++ Fixed a SOGo bug that caused the ACL "Authenticated users" to no longer be displayed.
++ The postscreen access list has been updated.
+
+A CVE has already been assigned for the new security fix.
+
+The last security fix has the CVE 2024-23824. Here is the page again: https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-45rv-3c5p-w4h7
+
+We have also requested a CVE for the new vulnerability, but you can read the report here: https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-gmpj-5xcm-xxx6
 
 ---
 

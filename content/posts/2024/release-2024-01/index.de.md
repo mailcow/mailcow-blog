@@ -1,6 +1,6 @@
 ---
-title: "🦾6️⃣4️⃣ 🐄 Janmuhary 2024 Update | Das Multiarch (x86 + ARM64) & Performance Update - Revision B"
-date: 2024-01-22T11:19:02+02:00
+title: "🦾6️⃣4️⃣ 🐄 Janmuhary 2024 Update | Das Multiarch (x86 + ARM64) & Performance Update - Revision C"
+date: 2024-02-02T11:19:02+02:00
 draft: false
 
 author: Niklas Meyer/DerLinkman
@@ -9,11 +9,44 @@ toc: true
 
 license: ""
 
-tags: ["2024", "update", "changelog", "ARM64", "major"]
+tags: ["2024", "update", "changelog", "ARM64", "major", "sicherheit"]
 categories: ["Updates"]
 
 featuredImage: "/images/2024/January/release-arm64.jpg"
 featuredImagePreview: "/images/2024/January/release-arm64.jpg"
+
+---
+
+## 2024-01c (Release vom 02.02.2024)
+
+{{< admonition type=warning title="Wichtig" open=true >}}
+
+Dieses Update enthält eine Sicherheitsbehebung, so dass wir allen Benutzern dringend empfehlen, auf diese neueste Version zu aktualisieren, um die Sicherheit ihrer Systeme zu gewährleisten. Benutzer, die nicht aktualisieren können und ihr System mit potenziellen Angreifern im selben Netzwerk teilen, wie z. B. bei einigen Hosting-Anbietern, sollten die folgende iptables/nftables-Regel anwenden:
+
+<!--more-->
+
+iptables:
+```
+iptables -I DOCKER-USER ! -i br-mailcow -o br-mailcow -p tcp -m multiport --dport 3306,6379,8983,12345 -j DROP
+```
+
+nftables:
+```
+nft insert rule ip "filter" "DOCKER-USER" iifname != "br-mailcow" oifname "br-mailcow" tcp dport {3306, 6379, 8983, 12345} counter packets 0 bytes 0 drop
+```
+
+{{< /admonition >}}
+
+Was sich sonst noch so getan hat:
+
++ Es wurde ein SOGo Bug gefixt, welcher die ACL "Authentifizierte Benutzer" nicht mehr angezeigt hatte.
++ Die Postscreen Access Liste wurde aktualisiert.
+
+Für den neuen Sicherheitsfix wurde bereits eine CVE vergeben.
+
+Der letzte Sicherheitsfix hat die CVE 2024-23824. Hier noch einmal die Seite dazu: https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-45rv-3c5p-w4h7
+
+Für die neue Sicherheitslücke haben wir ebenfalls eine CVE beantragt, den Report könnt ihr aber hier lesen: https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-gmpj-5xcm-xxx6
 
 ---
 
@@ -41,8 +74,6 @@ featuredImagePreview: "/images/2024/January/release-arm64.jpg"
 **Moohoo** Alle zusammen!
 
 Wir hoffen ihr hattet einen guten Start in das noch junge 2024. Wie bereits im vorfeld auf Social Media (X/Twitter: [@mailcow_email](https://x.com/mailcow_email), Mastodon: [@doncow@mailcow.social](https://mailcow.social/@doncow)) angekündigt erscheint heute endlich das lang ersehnte ARM64 bzw. Multiarch Update worauf wir langezeit mit höhen und tiefen hingearbeitet haben.
-
-<!--more-->
 
 Um die Frage direkt im vorfeld zu klären: Ändern tut sich für alle bestehenden mailcow Installationen nichts (zumindest nicht geplant). Dieses Update läuft ebenfalls wie alle bisherigen Updates ab ohne manuelle Anpassungen eurerseits. mailcow bleibt im Umfang genauso wie bisher auch, nur, dass wir ab heute auch eine neue Nutzerschaft willkommen heißen können: **die ARM64 User**.
 
