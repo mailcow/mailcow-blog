@@ -1,6 +1,6 @@
 ---
-title: "🦾6️⃣4️⃣ 🐄 Janmuhary 2024 Update | Das Multiarch (x86 + ARM64) & Performance Update - Revision C"
-date: 2024-02-02T11:19:02+02:00
+title: "🦾6️⃣4️⃣ 🐄 Janmuhary 2024 Update | Das Multiarch (x86 + ARM64) & Performance Update - Revision E"
+date: 2024-02-08T11:19:02+02:00
 draft: false
 
 author: Niklas Meyer/DerLinkman
@@ -14,6 +14,37 @@ categories: ["Updates"]
 
 featuredImage: "/images/2024/January/release-arm64.jpg"
 featuredImagePreview: "/images/2024/January/release-arm64.jpg"
+
+---
+
+
+## 2024-01e (Release vom 08.02.2024)
+
+**Netfilter-Verbesserungen**
+
++ Behobene Isolationsregel für iptables: Ein Problem in Bezug auf die Isolationsregel von mailcow in iptables wurde behoben. Dank der Beiträge von @FreddleSpl0it und @tomudding. [PR #5700](https://github.com/mailcow/mailcow-dockerized/pull/5700)
+
++ Entspanntere IP-Überprüfung in NFTables.py: Eine entspanntere IP-Überprüfung in NFTables.py wurde eingestellt, um die Kompatibilität zu verbessern. Vielen Dank an @amorfo77 für den Beitrag. [PR #5711](https://github.com/mailcow/mailcow-dockerized/pull/5711)
+
+**SOGo-Korrekturen**
+
++ Behobener SOGo-Absturz auf älteren Kernels: Ein SOGo-Absturz, der auf Kernels älter als 5.10.0-X auftrat, wurde behoben. Danke an @DerLinkman für die Behebung. [Commit](https://github.com/mailcow/mailcow-dockerized/commit/5a9702771cba4fedbc79331e92ff757f734df58e)
+
+**Dovecot-Verbesserung**
+
++ Falsche Zeitzone in Logs behoben: Ein Problem mit der falschen Zeitzone in den Dovecot Logs wurde behoben. Der Dank geht an @DerLinkman für die Behebung. [Commit](https://github.com/mailcow/mailcow-dockerized/commit/d08ccbce789880eb81ebebca48d440637ab36983)
+
+**Unbound-Updates**
+
++ Erhöhtes Intervall für Healthchecks: Das Intervall für Healthchecks wurde auf 30 Sekunden in Unbound angepasst, was die externen Anfragen reduzieren sollte. Beitrag von @DerLinkman. [Commit](https://github.com/mailcow/mailcow-dockerized/commit/63bb8e8cefb4afebd50f12a485f6af5d12c98125)
+
++ Entfernte Netcat-Überprüfungen: Netcat-Überprüfungen wurden aus den Unbound Healthchecks entfernt, um den Prozess zu optimieren. Dank an @DerLinkman. [Commit](https://github.com/mailcow/mailcow-dockerized/commit/63426c3cd023922a6e3c5f3aa40c4cc95f1d9fe1)
+
+Für einen umfassenden Überblick über alle Änderungen verweisen wir auf den [Changelog bei Github](https://github.com/mailcow/mailcow-dockerized/compare/2024-01d...2024-01e)
+
+Mittlerweile (am 06.02.2024 um genau zu sein) hat Docker auch endlich den Patch für die von uns in einem früheren Blogpost angekündigte IPv6 Problematik veröffentlicht. Damit entfällt die Sonderroutine bei Docker Versionen ab 25.0.3 endlich wieder.
+
+Ebenfalls ist uns auch die "Problematik" mit SOGo und der Fehlermeldung im Editor bekannt. Dahingehend haben wir bereits Kontakt aufgenommen, so dass wir (wenn es implementiert wurde) die mit dem 2024-01e ausgelieferte SOGo Version einfach drüber patchen, mit dem Fix. So entsteht nicht erneut ein Subrelease, wie dieser hier.
 
 ---
 
