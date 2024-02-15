@@ -1,7 +1,7 @@
 ---
 title: "🐥🐄 Febmooary 2024 Update | ClamAV Security Update"
 date: 2024-02-15T10:53:22+02:00
-draft: true
+draft: false
 
 author: Patrick Schult/FreddleSpl0it
 authorLink: "https://github.com/FreddleSpl0it"
