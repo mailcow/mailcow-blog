@@ -12,7 +12,7 @@ Parkstrasse 42\
 Phone: +49 2154-9304 600\
 info@tinc.gmbh\
 www.tinc.gmbh\
-CEO: Martin Vogt\
+CEO: Martin Vogt, Gero Reschke\
 Register entry: Entry in the commercial register\
 Register court: Local court Krefeld (Germany)\
 Registration number: HRB 15904\

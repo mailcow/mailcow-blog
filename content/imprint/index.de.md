@@ -13,7 +13,7 @@ Parkstrasse 42\
 Telefon: 02154-9304 600\
 info@tinc.gmbh\
 www.tinc.gmbh\
-Geschäftsführer: Martin Vogt\
+Geschäftsführer: Martin Vogt, Gero Reschke\
 Registereintrag: Eintragung im Handelsregister\
 Registergericht: Amtsgericht Krefeld\
 Registernummer: HRB 15904\
