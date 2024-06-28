@@ -14,6 +14,11 @@ categories: ["Updates"]
 
 ---
 
+## 2024-06a (Release vom 27.06.2024)
+
++ Rollback der kaputten Übersetzungen
++ Fehlerhafter cURL Request innerhalb des PHP-FPM Containers behoben, erzeugt durch einen c-ares Fehler im Container
+
 ## 2024-06 (Release vom 27.06.2024)
 
 **Moohoo** alle zusammen!

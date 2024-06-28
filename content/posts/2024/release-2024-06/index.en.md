@@ -1,5 +1,5 @@
 ---
-title: "🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1"
+title: "🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision A"
 date: 2024-06-27T09:30:00+02:00
 draft: false
 
@@ -13,6 +13,12 @@ tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
 
 ---
+
+## 2024-06a (Release on 27.06.2024)
+
++ Rolledback broken Translation links
++ Fixed broken Curl Request at some Hosts inside PHP-FPM Container due to c-ares change
+
 
 ## 2024-06 (Release on 27.06.2024)
 
@@ -48,7 +54,7 @@ This means that all Solr indexes will no longer be compatible, and a complete FT
 
 To avoid chaos in December, we have already provided the option to switch to the new FTS engine now, allowing for a reindex of the FTS indexes over the next few months.
 
-Learn more about how to activate the new engine in advance here in the updated documentation: https://docs.mailcow.email/de/manual-guides/Dovecot/u_e-dovecot-fts/#fts-flatcurve-experimentell-seit-2024-06
+Learn more about how to activate the new engine in advance here in the updated documentation: https://docs.mailcow.email/manual-guides/Dovecot/u_e-dovecot-fts/#fts-flatcurve-experimental-since-2024-06
 
 {{< /admonition >}}
 
