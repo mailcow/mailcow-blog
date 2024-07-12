@@ -1,10 +1,17 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Updates - Category - mailcow: dockerized - Blog</title><link>https://mailcow.email/categories/updates/</link><description>Updates - Category | mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 Jun 2024 09:30:00 +0200</lastBuildDate><atom:link href="https://mailcow.email/categories/updates/" rel="self" type="application/rss+xml"/><item><title>🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision A</title><link>https://mailcow.email/posts/2024/release-2024-06/</link><pubDate>Thu, 27 Jun 2024 09:30:00 +0200</pubDate><author>Author</author><guid>https://mailcow.email/posts/2024/release-2024-06/</guid><description><![CDATA[<h2 id="2024-06a-release-on-27062024" class="heading-element">
-  <a href="#2024-06a-release-on-27062024" class="heading-mark"></a>2024-06a (Release on 27.06.2024)</h2><ul>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Updates - Category - mailcow: dockerized - Blog</title><link>https://mailcow.email/categories/updates/</link><description>Updates - Category | mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 Jun 2024 09:30:00 +0200</lastBuildDate><atom:link href="https://mailcow.email/categories/updates/" rel="self" type="application/rss+xml"/><item><title>🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision A</title><link>https://mailcow.email/posts/2024/release-2024-06/</link><pubDate>Thu, 27 Jun 2024 09:30:00 +0200</pubDate><author>Author</author><guid>https://mailcow.email/posts/2024/release-2024-06/</guid><description><![CDATA[<h2 id="2024-06b-release-on-12th-juli-2024" class="heading-element">
+  <a href="#2024-06b-release-on-12th-juli-2024" class="heading-mark"></a>2024-06b (Release on 12th Juli 2024)</h2><ul>
+<li>Improved regular expression in the backup/restore script, it should now support numbers like 10, 20, etc.</li>
+<li>The PHP container has been built based on Debian 12. This should (please&hellip; the bug is really annoying&hellip;) finally fix the issues some of you had regarding blank mailcow UI or incorrect container values within the UI (etc.). We are still working on identifying the problem in the Alpine container so that we can use the Alpine base again in the long term (due to the smaller container size).</li>
+<li>The WIP warning for ARM64 versions has been removed from the web UI. It is now (actually from the beginning&hellip;) stable! Thanks to everyone using it!</li>
+<li>Postfix&rsquo;s Postscreen access list has been updated as of July 1, 2024.</li>
+</ul>
+<h2 id="2024-06a-release-on-27th-june-2024" class="heading-element">
+  <a href="#2024-06a-release-on-27th-june-2024" class="heading-mark"></a>2024-06a (Release on 27th June 2024)</h2><ul>
 <li>Rolledback broken Translation links</li>
 <li>Fixed broken Curl Request at some Hosts inside PHP-FPM Container due to c-ares change</li>
 </ul>
-<h2 id="2024-06-release-on-27062024" class="heading-element">
-  <a href="#2024-06-release-on-27062024" class="heading-mark"></a>2024-06 (Release on 27.06.2024)</h2><p><strong>Moohoo</strong> everyone!</p>
+<h2 id="2024-06-release-on-27th-june-2024" class="heading-element">
+  <a href="#2024-06-release-on-27th-june-2024" class="heading-mark"></a>2024-06 (Release on 27th June 2024)</h2><p><strong>Moohoo</strong> everyone!</p>
 <p>After our <a href="https://mailcow.email/de/posts/2024/development-change/"target="_blank" rel="external nofollow noopener noreferrer">statement</a>, it&rsquo;s time to bring you an update again.</p>
 <p>This time with some additional information:</p>
 <h3 id="-critical-changes" class="heading-element">
