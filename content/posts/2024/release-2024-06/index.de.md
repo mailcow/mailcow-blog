@@ -1,5 +1,5 @@
 ---
-title: "🌙🐄 Mooni Update 2024 | Flatcurve Update Phase 1 - Revision B"
+title: "🌙🐄 Mooni Update 2024 | Flatcurve Update Phase 1 - Revision C"
 date: 2024-06-27T09:30:00+02:00
 draft: false
 
@@ -13,6 +13,11 @@ tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
 
 ---
+
+## 2024-06c (Release vom 12.07.2024)
+
++ Wir haben und nach einigem hin und her (sorry dafür...) nun doch dazu entschieden, den betroffenen PHP Container auf einer Version die lauffähig (ja die gab es :D) war zu belassen, so lange bis wir nach tieferen Tests bestätigen können, dass es mit einem gepatchten Alpine endlich funktioniert... solange bleibt der Container zunächst "freezed". Der neue Container sorgte bei allen Roundcube usern dazu, dass besagtes nicht mehr funktionierte. Schuld waren hier die Berechtigungen. Da wir nicht ausschließen können, dass nicht noch mehr dadurch bei Third Party Apps kaputt gehen könnte haben wir die Version schließlich zurückgenommen.
++ Wir haben einen Fehler in der UI gelöst, welcher das Versions Modal nicht mehr korrekt geöffnet hat. Es wurde zwar geöffnet allerdings wurde man auch direkt zur Release Seite weitergeleitet, was damit besagtes Modal unnötig macht... 
 
 ## 2024-06b (Release vom 12.07.2024)
 + Regulärer Ausdruck im Backup/Restore Skript verbessert, sollte nun Zahlen wie 10, 20 usw. unterstützen.

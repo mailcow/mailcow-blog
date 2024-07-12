@@ -1,5 +1,5 @@
 ---
-title: "🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision B"
+title: "🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision C"
 date: 2024-06-27T09:30:00+02:00
 draft: false
 
@@ -14,7 +14,11 @@ categories: ["Updates"]
 
 ---
 
-## 2024-06b (Release on 12th Juli 2024)
+## 2024-06c (Release on 12th July 2024)
++ After some back and forth (sorry about that...), we have decided to keep the affected PHP container on a working version (yes, there was one :D) until we can confirm through deeper tests that it finally works with a patched Alpine... until then, the container will remain "frozen." The new container caused Roundcube users to experience issues, mainly due to permissions. Since we cannot rule out that this might break more third-party apps, we have reverted the version.
++ We fixed an error in the UI where the version modal was not opening correctly. Although it did open, it redirected you to the release page directly, making the modal unnecessary...
+
+## 2024-06b (Release on 12th July 2024)
 + Improved regular expression in the backup/restore script, it should now support numbers like 10, 20, etc.
 + The PHP container has been built based on Debian 12. This should (please... the bug is really annoying...) finally fix the issues some of you had regarding blank mailcow UI or incorrect container values within the UI (etc.). We are still working on identifying the problem in the Alpine container so that we can use the Alpine base again in the long term (due to the smaller container size).
 + The WIP warning for ARM64 versions has been removed from the web UI. It is now (actually from the beginning...) stable! Thanks to everyone using it!
