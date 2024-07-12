@@ -1,5 +1,5 @@
 ---
-title: "🌙🐄 Mooni Update 2024 | Flatcurve Update Phase 1"
+title: "🌙🐄 Mooni Update 2024 | Flatcurve Update Phase 1 - Revision B"
 date: 2024-06-27T09:30:00+02:00
 draft: false
 
@@ -13,6 +13,12 @@ tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
 
 ---
+
+## 2024-06b (Release vom 12.07.2024)
++ Regulärer Ausdruck im Backup/Restore Skript verbessert, sollte nun Zahlen wie 10, 20 usw. unterstützen.
++ Der PHP Container wurde auf Basis von Debian 12 gebaut. Dies (sollte, bitte... der Bug ist echt nervig...) endlich die Probleme die einige von euch hatten bzgl. Blanker mailcow UI oder fehlerhaften Container Werten innerhalb der Ui (etc.) beheben. Wir sind aber nach wie vor dran, das Problem im Alpine Container zu identifizieren, damit wir langfristig wieder die Alpine Basis nutzen können (Aufgrund der kleineren Container Größe).
++ In der Web UI wurde die WIP Warnung für die ARM64 Versionen entfernt. Ist mittlerweile (eigentlich schon von Anfang an...) stabil! Danke an alle, die das nutzen!
++ Postfix's Postcreen Access List wurde aktualisiert auf Stand 1. Juli 2024.
 
 ## 2024-06a (Release vom 27.06.2024)
 

@@ -14,13 +14,19 @@ categories: ["Updates"]
 
 ---
 
-## 2024-06a (Release on 27.06.2024)
+## 2024-06b (Release on 12th Juli 2024)
++ Improved regular expression in the backup/restore script, it should now support numbers like 10, 20, etc.
++ The PHP container has been built based on Debian 12. This should (please... the bug is really annoying...) finally fix the issues some of you had regarding blank mailcow UI or incorrect container values within the UI (etc.). We are still working on identifying the problem in the Alpine container so that we can use the Alpine base again in the long term (due to the smaller container size).
++ The WIP warning for ARM64 versions has been removed from the web UI. It is now (actually from the beginning...) stable! Thanks to everyone using it!
++ Postfix's Postscreen access list has been updated as of July 1, 2024.
+
+## 2024-06a (Release on 27th June 2024)
 
 + Rolledback broken Translation links
 + Fixed broken Curl Request at some Hosts inside PHP-FPM Container due to c-ares change
 
 
-## 2024-06 (Release on 27.06.2024)
+## 2024-06 (Release on 27th June 2024)
 
 **Moohoo** everyone!
 
