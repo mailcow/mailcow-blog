@@ -1,5 +1,5 @@
 ---
-title: "🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision A"
+title: "🌙🐄 Moone Update 2024 | Flatcurve Update Phase 1 - Revision B"
 date: 2024-06-27T09:30:00+02:00
 draft: false
 
