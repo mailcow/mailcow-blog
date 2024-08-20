@@ -1,4 +1,28 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Updates - Kategorie - mailcow: dockerized - Blog</title><link>https://mailcow.email/de/categories/updates/</link><description>Updates - Kategorie | mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>de</language><lastBuildDate>Thu, 15 Aug 2024 14:30:00 +0200</lastBuildDate><atom:link href="https://mailcow.email/de/categories/updates/" rel="self" type="application/rss+xml"/><item><title>🕶️🐄 Moogust Update 2024 | Passwort vergessen?, SOGo 5.11, Rspamd 3.9.1 und mehr</title><link>https://mailcow.email/de/posts/2024/release-2024-08/</link><pubDate>Thu, 15 Aug 2024 14:30:00 +0200</pubDate><author>Autor</author><guid>https://mailcow.email/de/posts/2024/release-2024-08/</guid><description><![CDATA[<p><strong>Moohoo</strong> alle zusammen!</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Updates - Kategorie - mailcow: dockerized - Blog</title><link>https://mailcow.email/de/categories/updates/</link><description>Updates - Kategorie | mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>de</language><lastBuildDate>Thu, 15 Aug 2024 14:30:00 +0200</lastBuildDate><atom:link href="https://mailcow.email/de/categories/updates/" rel="self" type="application/rss+xml"/><item><title>🕶️🐄 Moogust Update 2024 | Passwort vergessen?, SOGo 5.11, Rspamd 3.9.1 und mehr | Revision A</title><link>https://mailcow.email/de/posts/2024/release-2024-08/</link><pubDate>Thu, 15 Aug 2024 14:30:00 +0200</pubDate><author>Autor</author><guid>https://mailcow.email/de/posts/2024/release-2024-08/</guid><description><![CDATA[<h1 id="2024-08a-released-am-20082024" class="heading-element">
+  <a href="#2024-08a-released-am-20082024" class="heading-mark"></a>2024-08a (Released am 20.08.2024)</h1><h3 id="dovecot-auf-23211-aktualisiert" class="heading-element">
+  <a href="#dovecot-auf-23211-aktualisiert" class="heading-mark"></a>Dovecot auf 2.3.21.1 aktualisiert</h3><div class="details admonition warning open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Achtung<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><p>Dieser Release enthält Patches für Dovecot (Version 2.3.21.1), welche zwei Sicherheitslücken innerhalb von Dovecot schließen.</p>
+<p><strong>Eine Installation wird dringend empfohlen!</strong></p>
+<p>Siehe Release Notes Dovecot: <a href="https://github.com/dovecot/core/blob/release-2.3.21/NEWS"target="_blank" rel="external nofollow noopener noreferrer">https://github.com/dovecot/core/blob/release-2.3.21/NEWS</a></p>
+</div>
+    </div>
+  </div>
+<h3 id="sonstige-änderungen" class="heading-element">
+  <a href="#sonstige-%c3%a4nderungen" class="heading-mark"></a>Sonstige Änderungen</h3><ul>
+<li>Es wurden Fehler beim Parsen der Docker-Versionsnummer im <code>generate-config.sh</code> sowie im <code>update.sh</code>-Skript behoben.</li>
+<li>Einige Dockerfiles wurden refactored (hat keine Auswirkung auf den Betrieb, dient nur der zukünftigen Weiterentwicklung).</li>
+<li>Für Dovecot wurde eine Exit Condition eingebaut, die den Download von sa-rules betrifft. Bisher war es so, dass der Download erfolgreich sein musste, da Dovecot anderenfalls nicht startete. Nun ist es so, dass der Download nach einigen Versuchen abgebrochen wird, Dovecot aber trotzdem startet.</li>
+<li>In Docker-Containern, die das Tool <code>mysqladmin</code> verwendet haben, wurde auf das neuere Tool <code>mariadb-admin</code> mit derselben Funktion gewechselt, um zukünftige Kompatibilitätsprobleme vorzubeugen.</li>
+<li>In den Bash-Skripten werden einige Bash-Variablen nun korrekt behandelt (Quoting), und einige seltsame nicht-UTF-8-Zeichen wurden ersetzt.</li>
+<li>Durch das Rspamd-Update auf 3.9.1 wurde die UTF-8-Dekodierung in den Pushover- sowie den Quarantäne-Systemen beschädigt, was bei Emojis im Header zu unerwarteten Ergebnissen führen konnte. Dies wurde behoben.</li>
+</ul>
+<hr>
+<h1 id="2024-08-released-am-15082024" class="heading-element">
+  <a href="#2024-08-released-am-15082024" class="heading-mark"></a>2024-08 (Released am 15.08.2024)</h1><p><strong>Moohoo</strong> alle zusammen!</p>
 <p>Der August ist da, und auch mailcow beschert euch ein größeres Update für den (hoffentlich bei euch nicht zu heißen) August.</p>
 <p>Dieses Mal sind einige größere Änderungen mit an Bord, die wir euch hiermit vorstellen wollen:</p>]]></description></item><item><title>🔥🐄 Mooly Update 2024 | Sicherheitsupdate</title><link>https://mailcow.email/de/posts/2024/release-2024-07/</link><pubDate>Mon, 05 Aug 2024 09:08:00 +0200</pubDate><author>Autor</author><guid>https://mailcow.email/de/posts/2024/release-2024-07/</guid><description>2024-07 (Release vom 05.08.2024)Moohoo Alle zusammen!
 Mit dem Mooly Update werden drei Sicherheitslücken in der mailcow geschlossen.
