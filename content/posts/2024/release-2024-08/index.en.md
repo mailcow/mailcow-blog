@@ -1,5 +1,5 @@
 ---
-title: "🕶️🐄 Moogust Update 2024 | Forgot Password?, SOGo 5.11, Rspamd 3.9.1 and More"
+title: "🕶️🐄 Moogust Update 2024 | Forgot Password?, SOGo 5.11, Rspamd 3.9.1 and More | Revision A"
 date: 2024-08-15T14:30:00+02:00
 draft: false
 
@@ -13,6 +13,29 @@ tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
 
 ---
+
+# 2024-08a (Released on 20th August 2024)
+
+### Dovecot updated to 2.3.21.1
+{{< admonition type=warning title="Warning" open=true >}}
+This release includes patches for Dovecot (version 2.3.21.1) that address two security vulnerabilities within Dovecot.
+
+**Installation is strongly recommended!**
+
+See Dovecot Release Notes: [https://github.com/dovecot/core/blob/release-2.3.21/NEWS](https://github.com/dovecot/core/blob/release-2.3.21/NEWS)
+{{< /admonition >}}
+
+### Other Changes
+- Fixed issues with parsing the Docker version number in the `generate-config.sh` and `update.sh` scripts.
+- Some Dockerfiles were refactored (this has no impact on operations, it only serves for future development).
+- An exit condition was added to Dovecot concerning the download of sa-rules. Previously, the download had to be successful; otherwise, Dovecot would not start. Now, if the download fails after several attempts, Dovecot will still start.
+- In Docker containers that used the `mysqladmin` tool, the tool has been replaced with the newer `mariadb-admin` with the same functionality to prevent future compatibility issues.
+- Several Bash variables in the scripts are now handled correctly (quoting), and some strange non-UTF-8 characters have been replaced.
+- Due to the Rspamd update to 3.9.1, UTF-8 decoding in the Pushover and quarantine systems was broken, which could have led to unexpected results when emojis were in the header. This has been fixed.
+
+---
+
+# 2024-08 (Released on 15th August 2024)
 
 **Moohoo** everyone!
 

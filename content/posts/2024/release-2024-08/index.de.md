@@ -1,5 +1,5 @@
 ---
-title: "🕶️🐄 Moogust Update 2024 | Passwort vergessen?, SOGo 5.11, Rspamd 3.9.1 und mehr"
+title: "🕶️🐄 Moogust Update 2024 | Passwort vergessen?, SOGo 5.11, Rspamd 3.9.1 und mehr | Revision A"
 date: 2024-08-15T14:30:00+02:00
 draft: false
 
@@ -13,6 +13,30 @@ tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
 
 ---
+
+# 2024-08a (Released am 20.08.2024)
+
+### Dovecot auf 2.3.21.1 aktualisiert
+{{< admonition type=warning title="Achtung" open=true >}}
+Dieser Release enthält Patches für Dovecot (Version 2.3.21.1), welche zwei Sicherheitslücken innerhalb von Dovecot schließen.
+
+**Eine Installation wird dringend empfohlen!**
+
+Siehe Release Notes Dovecot: [https://github.com/dovecot/core/blob/release-2.3.21/NEWS](https://github.com/dovecot/core/blob/release-2.3.21/NEWS)
+{{< /admonition >}}
+
+### Sonstige Änderungen
+- Es wurden Fehler beim Parsen der Docker-Versionsnummer im `generate-config.sh` sowie im `update.sh`-Skript behoben.
+- Einige Dockerfiles wurden refactored (hat keine Auswirkung auf den Betrieb, dient nur der zukünftigen Weiterentwicklung).
+- Für Dovecot wurde eine Exit Condition eingebaut, die den Download von sa-rules betrifft. Bisher war es so, dass der Download erfolgreich sein musste, da Dovecot anderenfalls nicht startete. Nun ist es so, dass der Download nach einigen Versuchen abgebrochen wird, Dovecot aber trotzdem startet.
+- In Docker-Containern, die das Tool `mysqladmin` verwendet haben, wurde auf das neuere Tool `mariadb-admin` mit derselben Funktion gewechselt, um zukünftige Kompatibilitätsprobleme vorzubeugen.
+- In den Bash-Skripten werden einige Bash-Variablen nun korrekt behandelt (Quoting), und einige seltsame nicht-UTF-8-Zeichen wurden ersetzt.
+- Durch das Rspamd-Update auf 3.9.1 wurde die UTF-8-Dekodierung in den Pushover- sowie den Quarantäne-Systemen beschädigt, was bei Emojis im Header zu unerwarteten Ergebnissen führen konnte. Dies wurde behoben.
+
+---
+
+
+# 2024-08 (Released am 15.08.2024)
 
 **Moohoo** alle zusammen!
 
