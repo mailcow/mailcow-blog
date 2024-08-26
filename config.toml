@@ -292,6 +292,34 @@ enableGitInfo = true
         title = "Nightly Demo"     
         weight = 2  		
 			  
+      [[languages.en.menu.main]]
+        identifier = "sponsor"
+        name = " Sponsor the Project"
+        pre = "<i class='fa fa-heart'></i>"
+        title = "Sponsoring"
+        weight = 8
+        url = "https://mailcow.email"    
+
+      [[languages.en.menu.main]]
+        identifier = "sponsor-sal"
+        pre = "❤️ "
+        post = ""
+        parent = "sponsor"
+        name = "Buy a Stay Awesome License"
+        url = "https://www.servercow.de/mailcow?lang=en#sal"
+        title = "Buy a SAL (One Time Payment)"
+        weight = 1
+
+      [[languages.en.menu.main]]
+        identifier = "demo-nightly"
+        pre = "🧡 "
+        post = ""
+        parent = "sponsor"
+        name = "Sponsor us directly on GitHub"
+        url = "https://github.com/sponsors/mailcow"
+        title = "Sponsor mailcow on GitHub"     
+        weight = 2  		
+
   [languages.de]
     weight = 2
     title = "mailcow: dockerized - Blog"
@@ -392,6 +420,34 @@ enableGitInfo = true
         url = "https://nightly-demo.mailcow.email"
         title = "Nightly Demo"     
         weight = 2
+
+      [[languages.de.menu.main]]
+        identifier = "sponsor"
+        name = " Sponsere das Projekt"
+        pre = "<i class='fa fa-heart'></i>"
+        title = "Sponsoring"
+        weight = 8
+        url = "https://mailcow.email"    
+
+      [[languages.de.menu.main]]
+        identifier = "sponsor-sal"
+        pre = "❤️ "
+        post = ""
+        parent = "sponsor"
+        name = "Kaufe eine SAL"
+        url = "https://www.servercow.de/mailcow#sal"
+        title = "Kaufe eine Stay Awesome License (Einmalzahlung)"
+        weight = 1
+
+      [[languages.de.menu.main]]
+        identifier = "demo-nightly"
+        pre = "🧡 "
+        post = ""
+        parent = "sponsor"
+        name = "Sponsere uns auf GitHub"
+        url = "https://github.com/sponsors/mailcow"
+        title = "Sponsere uns direkt auf GitHub"     
+        weight = 2  
 
 	[languages.de.params]
       description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"
