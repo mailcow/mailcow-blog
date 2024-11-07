@@ -1,6 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Docs - Tag - mailcow: dockerized - Blog</title><link>https://mailcow.email/tags/docs/</link><description>Docs - Tag | mailcow: dockerized - Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 04 Feb 2022 14:53:25 +0100</lastBuildDate><atom:link href="https://mailcow.email/tags/docs/" rel="self" type="application/rss+xml"/><item><title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title><link>https://mailcow.email/posts/2022/docs-update-2.0/</link><pubDate>Fri, 04 Feb 2022 14:53:25 +0100</pubDate><author>Author</author><guid>https://mailcow.email/posts/2022/docs-update-2.0/</guid><description>Moohoo everyone! It&amp;rsquo;s Friday then Then Saturday, Sunday (what?)
-We have an exciting news to share with you!
-We present you the newly released mailcow: dockerized Docs 2.0!
-Not much may have changed at first glance (you would think) but under the hood a lot has changed!
-So we present you from today:
-Multi-language support (English and German are supported and updated by Servercow itself ) Light-/Darkmode New organized structure (interesting for contributors) All in all a remake of the existing docs.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs - Tag - mailcow: dockerized - Blog</title><link>https://mailcow.email/tags/docs/</link><description>The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕 | Official Blog Page</description><generator>Hugo 0.138.0 &amp; FixIt v0.3.14</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 14:43:06 +0100</lastBuildDate><atom:link href="https://mailcow.email/tags/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>📘New: The mailcow Docs now also speak German! 📘 - mailcow Docs 2.0 Release Notes</title><link>https://mailcow.email/posts/2022/docs-update-2.0/</link><pubDate>Fri, 04 Feb 2022 14:53:25 +0100</pubDate><guid>https://mailcow.email/posts/2022/docs-update-2.0/</guid><category domain="https://mailcow.email/categories/documentation/">Documentation</category><category domain="https://mailcow.email/categories/updates/">Updates</category><description>&lt;p>Moohoo everyone!
+&lt;em>It&amp;rsquo;s Friday then Then Saturday, Sunday (what?)&lt;/em>&lt;/p>
+&lt;p>We have an exciting news to share with you!&lt;/p>
+&lt;p>We present you the newly released &lt;strong>mailcow: dockerized Docs 2.0&lt;/strong>!&lt;/p>
+&lt;p>Not much may have changed at first glance (you would think) but under the hood a lot has changed!&lt;/p>
+&lt;p>So we present you from today:&lt;/p>
+&lt;ul>
+&lt;li>Multi-language support (English and German are supported and updated by Servercow itself )&lt;/li>
+&lt;li>Light-/Darkmode&lt;/li>
+&lt;li>New organized structure (interesting for contributors)&lt;/li>
+&lt;/ul>
+&lt;p>All in all a remake of the existing docs.&lt;/p></description></item></channel></rss>
