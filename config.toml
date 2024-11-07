@@ -148,6 +148,12 @@ enableGitInfo = true
       copy = true
       maxShownLines = 10
 
+[params.feed]
+  # The number of posts to include in the feed. If set to -1, all posts.
+  limit = 5
+  # whether to show the full text content in feed.
+  fullText = false
+
 [author]
   name = "Moohoo"
   email = "info@servercow.de"
