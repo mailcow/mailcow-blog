@@ -1,5 +1,5 @@
 ---
-title: "🏮🐄 Moovember | Mailbox Rename, SOGo 5.11.1, Rspamd 3.10.2, and More"
+title: "🏮🐄 Moovember | Mailbox Rename, SOGo 5.11.1, Rspamd 3.10.2, and More | Revision A"
 date: 2024-11-07T12:00:00+02:00
 draft: false
 
@@ -11,6 +11,26 @@ license: ""
 
 tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
+
+---
+
+# 2024-11a Update (Released on November 12, 2024)
+
+### Updates
+
+- **SOGo**: Updated to version 5.11.2, including security updates.<br>
+ ➡️ [PR #6156](https://github.com/mailcow/mailcow-dockerized/pull/6156)
+
+- **PHP-FPM**: Ensures actual, consistent use of the fixed DNS lookup module for cURL within the container + workaround for a broken debug page affecting some users.<br>
+ ➡️ [PR #6159](https://github.com/mailcow/mailcow-dockerized/pull/6159)
+
+### Improvements
+
+- **update.sh**: If an old `dns_blocklists.cf` exists, users will be **prompted once** to delete it to allow proper regeneration.<br>
+ ➡️ [PR #6154](https://github.com/mailcow/mailcow-dockerized/pull/6154)
+
+- **Language**: Improved Chinese translations.<br>
+ ➡️ [PR #6151](https://github.com/mailcow/mailcow-dockerized/pull/6151)
 
 ---
 
