@@ -1,5 +1,5 @@
 ---
-title: "🏮🐄 Moovember | Mailbox Rename, SOGo 5.11.1, Rspamd 3.10.2 und mehr | Revision A"
+title: "🏮🐄 Moovember | Mailbox Rename, SOGo 5.11.1, Rspamd 3.10.2 und mehr | Revision B"
 date: 2024-11-07T12:00:00+02:00
 draft: false
 
@@ -11,6 +11,21 @@ license: ""
 
 tags: ["2024", "update", "changelog"]
 categories: ["Updates"]
+
+---
+
+# 2024-11b Update (Released am 15. November 2024)
+
+### Korrekturen
+
+- **mysql**: Bei neuen mailcow Installationen, welche die neuste MariaDB 10.5 (standard) verwendet haben, hat ein zu geringer `thread_stack` Wert dazu geführt, dass die mailcow Datenbank nicht erstellt wurde. Wir haben den Wert daher auf 192k angehoben (von vorher 128k).<br>
+➡️ [PR #6172](https://github.com/mailcow/mailcow-dockerized/pull/6172)
+
+- **SOGo**: Bei einem Passwort Reset (ausgelöst durch den User selber via Passwort vergessen?) wird nun auch direkt das neue Passwort im SOGo gesetzt.<br>
+➡️ [PR #6164](https://github.com/mailcow/mailcow-dockerized/pull/6164)
+
+- **Mailbox Rename**: Die Mailbox wird nun auch bei Cluster Systemen (keine Anleitung, kein Support!!!) korrekt umbenannt, überall...<br>
+➡️ [PR #6165](https://github.com/mailcow/mailcow-dockerized/pull/6165)
 
 ---
 
