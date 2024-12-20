@@ -73,7 +73,7 @@ Dafür ein riesengroßes Dankeschön!
 
 ## Community-Helden
 
-Wir möchten uns auch bei allen bedanken, die sich die Zeit nehmen und **kostenfrei** und komplett **freiwillig** der Community helfen – insbesondere in unserer [Telegram-Gruppe](https://t.me/mailcow) und unserem [Community-Forum](https://community.mailcow.email)! 
+Wir möchten uns auch bei allen bedanken, die sich die Zeit nehmen, **kostenfrei** und komplett **freiwillig** der Community helfen – insbesondere in unserer [Telegram-Gruppe](https://t.me/mailcow) und unserem [Community-Forum](https://community.mailcow.email)! 
 
 Besonders bedanken möchten wir uns bei diesen Usern:
 
