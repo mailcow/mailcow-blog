@@ -1,6 +1,6 @@
 ---
 title: "⚡🐄 Janmooary 2025 Update | The Update which changed the Full-text search (and which kicked out Nextcloud)"
-date: 2025-01-23T10:00:00+02:00
+date: 2025-02-04T14:40:00+02:00
 draft: false
 
 author: The Infrastructure Company GmbH
@@ -10,6 +10,38 @@ license: ""
 
 tags: ["2025", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2025-01a (Release: 4th February 2025)
+
+**Nginx Fixes**
+
++ Fixes "invalid password" triggering when opening `/rspamd` [Issue #6275](https://github.com/mailcow/mailcow-dockerized/issues/6275)
+
++ Invert SKIP container condition for SOGo and Rspamd [commit 97890b71f1f328fe3c9a101a6eece7e3bdb954e6](https://github.com/mailcow/mailcow-dockerized/pull/6291/commits/97890b71f1f328fe3c9a101a6eece7e3bdb954e6)
+
++ Add environment variable to enable redirection of HTTP Connections to HTTPS (see [docs](https://docs.mailcow.email/manual-guides/u_e-80_to_443/)) [commit e645f931dc04c8b8754927d90275a2e77a03931d](https://github.com/mailcow/mailcow-dockerized/pull/6291/commits/e645f931dc04c8b8754927d90275a2e77a03931d)
+
++ Use separate Vhosts for additional server names [PR #6290](https://github.com/mailcow/mailcow-dockerized/pull/6290)
+
+**Security fix**
+
+This update includes a security fix for the password reset feature. To exploit this vulnerability, the password reset feature must be enabled by administrators, and the victim must have a configured password reset email. Additionally, the attacker would need to know valid email addresses and depend on certain user interaction.
+A CVE will be published next week and can be found here: [Security Advisories](https://github.com/mailcow/mailcow-dockerized/security/advisories?state=published).
+
+**Postfix**
+
++ Remove discontinued Nixspam DNSBL [PR #6260](https://github.com/mailcow/mailcow-dockerized/pull/6260)
+
++ Added master.pid removal and startsecs to supervisord [PR #6284](https://github.com/mailcow/mailcow-dockerized/pull/6284)
+
+**Clamd Update**
+
++ Update to 1.4.2 + build from source instead using alpine packages [commit 60a2270d1e7d0985901378bea83295b3df6bf127](https://github.com/mailcow/mailcow-dockerized/pull/6291/commits/60a2270d1e7d0985901378bea83295b3df6bf127)
+
+
+For a comprehensive view of all changes, refer to the [Changelog on Github](https://github.com/mailcow/mailcow-dockerized/compare/2025-01...2025-01a)
 
 ---
 
