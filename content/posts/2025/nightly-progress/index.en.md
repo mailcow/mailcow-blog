@@ -1,5 +1,5 @@
 ---
-title: "🌙🐄 LDAP/OIDC Status Update - Wir haben es nicht vergessen. Wir haben nur... viel getestet!"
+title: "🌙🐄 LDAP/OIDC Status Update - We didn’t forget. We were just... testing!"
 date: 2025-02-07T15:50:00+02:00
 draft: false
 
