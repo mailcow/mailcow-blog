@@ -13,6 +13,25 @@ categories: ["Updates"]
 
 ---
 
+# 2025-03a (Release: 27th March 2025)
+
+## Bug Fixes
+
+* [Nginx] Move conf.d include before SNI vhosts by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6411
+* [Web] Use absolute paths for flag SVGs by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6410
+* [Web] Check if mailbox is active before renaming by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6409
+* [Swagger] Fix type property for /api/v1/add/bcc endpoint by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6408
+* [Web] Fix oauth2 redirect after user login by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6407
+* [Web] Fix SOGo access after Passwordless auth by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6406
+* fix(ui): Swap translations for oversized dropdown by @marvinruder in https://github.com/mailcow/mailcow-dockerized/pull/6402
+
+## Full Changelog
+https://github.com/mailcow/mailcow-dockerized/compare/2025-03...2025-03a
+
+---
+
+# 2025-03 (Release: 25th March 2025)
+
 **Moohoo everyone,**
 
 We are happy to announce the release of **mailcow: dockerized 2025-03**!
