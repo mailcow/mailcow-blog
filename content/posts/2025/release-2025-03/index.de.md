@@ -13,6 +13,25 @@ categories: ["Updates"]
 
 ---
 
+# 2025-03b (Release vom 07.04.2025)
+
+## Changelog
+
+* [SOGo] Update to 5.12.0
+* [Postfix] update postscreen_access.cidr by @milkmaker in https://github.com/mailcow/mailcow-dockerized/pull/6443
+* Fix sasl_logs by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6450
+* [Web] Fix transport routing test by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6451
+* [Netfilter] Downgrade to 1.61 by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6438
+* Fix tiny typo by @sardaukar in https://github.com/mailcow/mailcow-dockerized/pull/6426
+* [SOGo] Use JS for mailcow logout by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6439
+* [Dovecot] Increase Timeout for HTTP Login Request by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6422
+* [Web] Improve clarity of LDAP SSL/TLS settings by @FreddleSpl0it in https://github.com/mailcow/mailcow-dockerized/pull/6460
+
+## Full Changelog
+https://github.com/mailcow/mailcow-dockerized/compare/2025-03a...2025-03b
+
+---
+
 # 2025-03a (Release vom 27.03.2025)
 
 ## Bug Fixes
