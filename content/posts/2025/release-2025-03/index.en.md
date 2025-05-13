@@ -79,7 +79,8 @@ Administrators can define whether a user should be redirected to the mailcow UI 
 
 ## Other Notable Changes
 
-All Alpine-based images have been updated to Alpine 3.21.
+- All Alpine-based images have been updated to Alpine 3.21.
+- 2FA protected mailboxes will need an app password for authentication with mail protocols.
 
 ## New Feature
 

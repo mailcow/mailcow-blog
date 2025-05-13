@@ -80,7 +80,8 @@ Administrator können festlegen, ob Benutzer nach dem Login zur mailcow-UI oder 
 
 ## Weitere wichtige Änderungen  
 
-Alle Alpine-basierten Images wurden auf Alpine 3.21 aktualisiert.
+- Alle Alpine-basierten Images wurden auf Alpine 3.21 aktualisiert.
+- 2FA-geschützte Postfächer benötigen ein App-Passwort für die Authentifizierung mit Mail-Protokollen.
 
 ## Neue Funktion
 
