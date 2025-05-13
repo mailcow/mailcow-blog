@@ -1,3 +1,6 @@
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = https://github.com/mailcow/FixIt.git
+[submodule "themes/cmpt-translate"]
+	path = themes/cmpt-translate
+	url = https://github.com/hugo-fixit/cmpt-translate.git

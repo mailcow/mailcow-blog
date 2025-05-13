@@ -4,7 +4,10 @@ defaultContentLanguage = "en"
 title = "mailcow: dockerized - Blog"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "FixIt"
+theme = [
+  "FixIt",
+  "cmpt-translate"
+]
 
 # whether to use robots.txt
 enableRobotsTXT = true
@@ -15,14 +18,35 @@ enableGitInfo = true
   version = "0.2.X"
   description = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕 | Official Blog Page"
   # site keywords
-  keywords = ["mailcow", "Docker", "Postfix", "Dovecot", "GitHub", "tinc", "E-Mail", "SOGo"]
+  keywords = ["mailcow", "Docker", "Postfix", "Dovecot", "GitHub", "tinc", "E-Mail", "SOGo", "Rspamd"]
   defaultTheme = "auto"
   dateFormat = "01-02-2006"
   images = ["/images/cow_mailcow.svg"]
   license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'
 
-  [params.cookieconsent]
-    enable = false
+
+[params.customPartials]
+head = []
+menuDesktop = [ "inject/translate-menu-desktop.html", ]
+menuMobile = [ "inject/translate-menu-mobile.html", ]
+profile = []
+aside = []
+comment = []
+footer = []
+widgets = []
+assets = [ "inject/cmpt-translate.html"]
+postFooterBefore = []
+postFooterAfter = []
+
+[params.autoTranslate]
+enable = true
+service = 'client.edge'
+languages = ["arabic","chinese_simplified","chinese_traditional","czech", "danish", "dutch","finnish", "french","greek","hindi","italian","japanese","korean","polish","portuguese", "russian","romanian","slovene","spanish","swedish","turkish","ukrainian"]
+detectLocalLanguage = true
+ignoreText = ["The Infrastructure Company GmbH", "Servercow", "mailcow", "ETH-Services", "GitHub Pages"]
+
+[params.cookieconsent]
+  enable = false
 
 [params.search]
   enable = false
@@ -59,7 +83,7 @@ enableGitInfo = true
     author = false
     since = 2016
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
-	  custom = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy'
+    icp = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</a>'
 
     [params.footer.powered]
       enable = true
@@ -237,22 +261,12 @@ enableGitInfo = true
 
       [[languages.en.menu.main]]
         identifier = "vps"
-        name = " VPS"
+        name = " Verified VPS Providers"
         pre = "<i class='fa fa-server'></i>"
-        title = "VPS"
-        url = "https://mailcow.email"
-        weight = 5 
+        title = "Verified VPS Providers"
+        url = "vps/"
+        weight = 5
 
-      [[languages.en.menu.main]]
-        identifier = "eth-services"
-        pre = "<i>🇩🇪</i> "
-        post = ""
-        parent = "vps"
-        name = "ETH-Services"
-        url = "https://eth-services.de"
-        title = "ETH-Services"
-        weight = 1
-    
       [[languages.en.menu.main]]
         identifier = "support"
         pre = "<i class='fas fa-band-aid'></i>"
@@ -380,7 +394,17 @@ enableGitInfo = true
         name = "ETH-Services"
         url = "https://eth-services.de"
         title = "ETH-Services"
-        weight = 1        
+        weight = 1
+
+      [[languages.de.menu.main]]
+        identifier = "nuxoa"
+        pre = "<i>🇩🇪</i> "
+        post = ""
+        parent = "vps"
+        name = "NUXOA GmbH"
+        url = "https://nuxoa.de/linux-server/"
+        title = "NUXOA GmbH"
+        weight = 2  
 
       [[languages.de.menu.main]]
         identifier = "support"
@@ -485,7 +509,7 @@ enableGitInfo = true
     author = false
     since = 2016
     license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
-	custom = '<a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz'
+	  icp = '<a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz'
 
   [languages.de.params.footer.powered]
   enable = true
