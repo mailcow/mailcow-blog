@@ -1,96 +1,59 @@
 ---
-title: "Datenschutz"
-date: 2022-02-16T11:44:35+01:00
+title: "Datenschutzerklärung"
+date: 2025-05-13T00:00:00+01:00
 draft: false
+
+author: The Infrastructure Company GmbH
+toc: true
 ---
 
-Vertragsanlage gemäß Auftragsverarbeitung nach Datenschutz-Grundverordnung (EU-DSGVO)
-In Ihrem Servercow-Profil kann ein Vertrag jederzeit durch Sie erstellt, gelöscht und verändert werden.
-Bei Fragen stehen wir Ihnen selbstverständlich zur Verfügung.
+*Stand: 13. Mai 2025*
 
-Hinweise zur Datenvorhaltung auf dieser Website
-Zugriffe auf diese Website werden über einen Tag gespeichert, um bösartige Aufrufe zu filtern und entsprechende IP-Adressen zu blockieren.
-Weiterhin dient der zurückgegebene Status-Code dem internen Monitoring.
-Zum Protokoll gehört die IP-Adresse des Besuchers, die Uhrzeit des Aufrufes, der Request sowie der zurückgegebene HTTP-Status:
-`1.2.3.4 - - [25/Mar/2018:12:02:21 +0200] "GET / HTTP/1.1" 200`
+## 1. Einleitung und Überblick
+Diese Datenschutzerklärung informiert Sie gemäß Art. 13 und 14 DSGVO über die Verarbeitung personenbezogener Daten bei der Nutzung unseres News-Blogs, der über GitHub Pages gehostet wird.
 
-#### § 1 Allgemeines
-Ihre personenbezogenen Daten (z.B. Anrede, Name, Anschrift, E-Mail-Adresse, Telefonnummer, Bankverbindung, Kreditkartennummer) werden von uns nur gemäß den Bestimmungen des deutschen Datenschutzrechts und des Datenschutzrechts der Europäischen Union (EU) verarbeitet. Die nachfolgenden Vorschriften informieren Sie über Art, Umfang und Zweck der Erhebung, Verarbeitung und Nutzung personenbezogener Daten. Diese Datenschutzerklärung bezieht sich nur auf unsere Websites. Falls Sie über Links auf unseren Seiten auf andere Seiten weitergeleitet werden, informieren Sie sich bitte dort über den jeweiligen Umgang mit Ihren Daten.
-#### § 2 Informationen über Cookies
-- (1) Zur Optimierung unseres Internetauftritts setzen wir Cookies ein. Es handelt sich dabei um kleine Textdateien, die vorübergehend im Arbeitsspeicher Ihres Computers gespeichert werden.    Diese Cookies werden nach dem Schließen des Browsers wieder gelöscht, ausgenommen sind Langzeit-Cookies zum Login am Kundencenter.
-- (2) Das Speichern von Cookies können Sie verhindern, indem Sie in Ihren Browser-Einstellungen "Cookies blockieren" wählen. Dies kann aber eine Funktionseinschränkung unserer Angebote zur Folge haben.
-#### § 3 Rechte der betroffenen Person
-Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d. DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
-##### 1. Auskunftsrecht
-Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.
-Liegt eine solche Verarbeitung vor, können Sie von dem Verantwortlichen über folgende Informationen Auskunft verlangen:
-- (1) die Zwecke, zu denen die personenbezogenen Daten verarbeitet werden;
-- (2) die Kategorien von personenbezogenen Daten, welche verarbeitet werden;
-- (3) die Empfänger bzw. die Kategorien von Empfängern, gegenüber denen die Sie betreffenden personenbezogenen Daten offengelegt wurden oder noch offengelegt werden;
-- (4) die geplante Dauer der Speicherung der Sie betreffenden personenbezogenen Daten oder, falls konkrete Angaben hierzu nicht möglich sind, Kriterien für die Festlegung der Speicherdauer;
-- (5) das Bestehen eines Rechts auf Berichtigung oder Löschung der Sie betreffenden personenbezogenen Daten, eines Rechts auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung;
-- (6) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde;
-- (7) alle verfügbaren Informationen über die Herkunft der Daten, wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden;
-- (8) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Art. 22 Abs. 1 und 4 DSGVO und – zumindest in diesen Fällen – aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person.
-Ihnen steht das Recht zu, Auskunft darüber zu verlangen, ob die Sie betreffenden personenbezogenen Daten in ein Drittland oder an eine internationale Organisation übermittelt werden. In diesem Zusammenhang können Sie verlangen, über die geeigneten Garantien gem. Art. 46 DSGVO im Zusammenhang mit der Übermittlung unterrichtet zu werden.
-##### 2. Recht auf Berichtigung
-Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen, unrichtig oder unvollständig sind. Der Verantwortliche hat die Berichtigung unverzüglich vorzunehmen.
-##### 3. Recht auf Einschränkung der Verarbeitung
-Unter den folgenden Voraussetzungen können Sie die Einschränkung der Verarbeitung der Sie betreffenden personenbezogenen Daten verlangen:
-- (1) wenn Sie die Richtigkeit der Sie betreffenden personenbezogenen für eine Dauer bestreiten, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen;
-- (2) die Verarbeitung unrechtmäßig ist und Sie die Löschung der personenbezogenen Daten ablehnen und stattdessen die Einschränkung der Nutzung der personenbezogenen Daten verlangen;
-- (3) der Verantwortliche die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger benötigt, Sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, oder
-- (4) wenn Sie Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 DSGVO eingelegt haben und noch nicht feststeht, ob die berechtigten Gründe des Verantwortlichen gegenüber Ihren Gründen überwiegen.
-Wurde die Verarbeitung der Sie betreffenden personenbezogenen Daten eingeschränkt, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Union oder eines Mitgliedstaats verarbeitet werden.
-Wurde die Einschränkung der Verarbeitung nach den oben genannten Voraussetzungen eingeschränkt, werden Sie von dem Verantwortlichen unterrichtet bevor die Einschränkung aufgehoben wird.
-##### 4. Recht auf Löschung
-a) Löschungspflicht
-Sie können von dem Verantwortlichen verlangen, dass die Sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, und der Verantwortliche ist verpflichtet, diese Daten unverzüglich zu löschen, sofern einer der folgenden Gründe zutrifft:
-- (1) Die Sie betreffenden personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig.
-- (2) Sie widerrufen Ihre Einwilligung, auf die sich die Verarbeitung gem. Art. 6 Abs. 1 lit. a oder Art. 9 Abs. 2 lit. a DSGVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.
-- (3) Sie legen gem. Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder Sie legen gem. Art. 21 Abs. 2 DSGVO Widerspruch gegen die Verarbeitung ein.
-- (4) Die Sie betreffenden personenbezogenen Daten wurden unrechtmäßig verarbeitet.
-- (5) Die Löschung der Sie betreffenden personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt.
-- (6) Die Sie betreffenden personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.
-b) Information an Dritte
-Hat der Verantwortliche die Sie betreffenden personenbezogenen Daten öffentlich gemacht und ist er gem. Art. 17 Abs. 1 DSGVO zu deren Löschung verpflichtet, so trifft er unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um für die Datenverarbeitung Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu informieren, dass Sie als betroffene Person von ihnen die Löschung aller Links zu diesen personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt haben.
-c) Ausnahmen
-Das Recht auf Löschung besteht nicht, soweit die Verarbeitung erforderlich ist
-- (1) zur Ausübung des Rechts auf freie Meinungsäußerung und Information;
-- (2) zur Erfüllung einer rechtlichen Verpflichtung, die die Verarbeitung nach dem Recht der Union oder der Mitgliedstaaten, dem der Verantwortliche unterliegt, erfordert, oder zur Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde;
-- (3) aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit gemäß Art. 9 Abs. 2 lit. h und i sowie Art. 9 Abs. 3 DSGVO;
-- (4) für im öffentlichen Interesse liegende Archivzwecke, wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gem. Art. 89 Abs. 1 DSGVO, soweit das unter Abschnitt a) genannte Recht voraussichtlich die Verwirklichung der Ziele dieser Verarbeitung unmöglich macht oder ernsthaft beeinträchtigt, oder
-- (5) zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
-##### 5. Recht auf Unterrichtung
-Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung gegenüber dem Verantwortlichen geltend gemacht, ist dieser verpflichtet, allen Empfängern, denen die Sie betreffenden personenbezogenen Daten offengelegt wurden, diese Berichtigung oder Löschung der Daten oder Einschränkung der Verarbeitung mitzuteilen, es sei denn, dies erweist sich als unmöglich oder ist mit einem unverhältnismäßigen Aufwand verbunden.
-Ihnen steht gegenüber dem Verantwortlichen das Recht zu, über diese Empfänger unterrichtet zu werden.
-##### 6. Recht auf Datenübertragbarkeit
-Sie haben das Recht, die Sie betreffenden personenbezogenen Daten, die Sie dem Verantwortlichen bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Außerdem haben Sie das Recht diese Daten einem anderen Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern
-- (1) die Verarbeitung auf einer Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gem. Art. 6 Abs. 1 lit. b DSGVO beruht und
-- (2) die Verarbeitung mithilfe automatisierter Verfahren erfolgt.
-In Ausübung dieses Rechts haben Sie ferner das Recht, zu erwirken, dass die Sie betreffenden personenbezogenen Daten direkt von einem Verantwortlichen einem anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist. Freiheiten und Rechte anderer Personen dürfen hierdurch nicht beeinträchtigt werden.
-Das Recht auf Datenübertragbarkeit gilt nicht für eine Verarbeitung personenbezogener Daten, die für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde.
-##### 7. Widerspruchsrecht
-Sie haben das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.
-Der Verantwortliche verarbeitet die Sie betreffenden personenbezogenen Daten nicht mehr, es sei denn, er kann zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
-Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht.
-Widersprechen Sie der Verarbeitung für Zwecke der Direktwerbung, so werden die Sie betreffenden personenbezogenen Daten nicht mehr für diese Zwecke verarbeitet.
-Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft – ungeachtet der Richtlinie 2002/58/EG – Ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.
-##### 8. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung
-Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
-##### 9. Automatisierte Entscheidung im Einzelfall einschließlich Profiling
-Sie haben das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt. Dies gilt nicht, wenn die Entscheidung
-- (1) für den Abschluss oder die Erfüllung eines Vertrags zwischen Ihnen und dem Verantwortlichen erforderlich ist,
-- (2) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung Ihrer Rechte und Freiheiten sowie Ihrer berechtigten Interessen enthalten oder
-- (3) mit Ihrer ausdrücklichen Einwilligung erfolgt.
-Allerdings dürfen diese Entscheidungen nicht auf besonderen Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Abs. 2 lit. a oder g gilt und angemessene Maßnahmen zum Schutz der Rechte und Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden.
-Hinsichtlich der in (1) und (3) genannten Fälle trifft der Verantwortliche angemessene Maßnahmen, um die Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.
-##### 10. Recht auf Beschwerde bei einer Aufsichtsbehörde
-Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt.
-Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den Beschwerdeführer über den Stand und die Ergebnisse der Beschwerde einschließlich der Möglichkeit eines gerichtlichen Rechtsbehelfs nach Art. 78 DSGVO.
-##### 11. Kontaktformular
-Die Daten des Kontaktformulars werden verschlüsselt über die internen Mail-Systeme an info@servercow.de übermittelt. Wenn Sie uns per Kontaktformular Anfragen senden, werden Ihre dort eingegebenen Daten mitsamt Ihren Kontaktdaten für die Bearbeitung der Anfrage bei uns verarbeitet und gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung an Dritte weiter. Die Anfragen, inklusive der darin enthaltenen personenbezogenen Daten, werden regelmäßig gelöscht, solange die Anfrage ohne weitere Geschäftsbeziehung verblieb.
-##### 12. SAL-gebundene Überprüfungen (Checks)
-(12) Bei der Ausführung eines Checks durch "watchdog-mailcow" in Verbindung mit einer SAL werden keine Daten über den sich verbindenden Server oder den Betreiber gespeichert oder anderweitig aufbereitet oder ausgewertet.
+## 2. Verantwortlicher
+**The Infrastructure Company GmbH**  
+Gero Reschke  
+Parkstraße 42, 47877 Willich  
+E-Mail: [datenschutz@tinc.gmbh](mailto:datenschutz@tinc.gmbh)  
+Telefon: +49 2154 9304600  
+Impressum: [https://tinc.gmbh](https://tinc.gmbh)
 
-Verantwortlicher für die Datenverarbeitung ist der Geschäftsbetreiber.
+## 3. Hosting und Datenverarbeitung durch GitHub
+Unsere Website wird durch **GitHub Pages**, ein Angebot der GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA, gehostet.
+
+Beim Aufruf unserer Seiten werden automatisch folgende Daten durch GitHub verarbeitet und temporär gespeichert:
+- IP-Adresse des Endgeräts,
+- Datum und Uhrzeit des Zugriffs,
+- verwendeter Browsertyp und Betriebssystem,
+- Referrer-URL,
+- aufgerufene Seiten/Dateien.
+
+Diese Daten werden zur technischen Bereitstellung der Website benötigt, zur Abwehr von Gefahren und zur Optimierung des Angebots. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
+
+## 4. Datenübermittlung in Drittländer
+GitHub hat seinen Hauptsitz in den USA. Eine Datenverarbeitung in den USA ist damit möglich. GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert. Weitere Informationen: [https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
+
+## 5. Keine eigene Datenerhebung durch uns
+Wir selbst erheben über den Blog keine personenbezogenen Daten, da keine Kommentarfunktion, keine Kontaktformulare, keine Registrierung oder sonstige Interaktionen angeboten werden.
+
+## 6. Speicherdauer
+Server-Logfiles werden gemäß Angaben von GitHub in der Regel für 14 Tage gespeichert. Darüber hinaus speichern wir keine personenbezogenen Daten.
+
+## 7. Ihre Rechte
+Sie haben das Recht auf:
+- Auskunft über gespeicherte Daten (Art. 15 DSGVO),
+- Berichtigung (Art. 16 DSGVO),
+- Löschung (Art. 17 DSGVO),
+- Einschränkung der Verarbeitung (Art. 18 DSGVO),
+- Widerspruch gegen die Verarbeitung (Art. 21 DSGVO),
+- Datenübertragbarkeit (Art. 20 DSGVO),
+- Beschwerde bei einer Aufsichtsbehörde (z. B. bei der Landesbeauftragten für Datenschutz NRW).
+
+## 8. TLS-Verschlüsselung
+Unsere Website ist per TLS verschlüsselt (HTTPS). Dadurch sind Daten, die zwischen Ihrem Browser und unserem Server ausgetauscht werden, vor dem Zugriff Dritter geschützt.
+
+---
+
+**Hinweis:** Diese Datenschutzerklärung kann sich ändern, wenn gesetzliche oder technische Änderungen dies erfordern. Die jeweils aktuelle Fassung finden Sie stets auf unserem Blog.
