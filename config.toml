@@ -380,31 +380,11 @@ ignoreText = ["The Infrastructure Company GmbH", "Servercow", "mailcow", "ETH-Se
 
       [[languages.de.menu.main]]
         identifier = "vps"
-        name = " VPS"
+        name = " Verifizierte VPS-Server"
         pre = "<i class='fa fa-server'></i>"
-        title = "VPS"
-        url = "https://mailcow.email"
+        title = "Verifizierte VPS-Server"
+        url = "vps/"
         weight = 5 
-
-      [[languages.de.menu.main]]
-        identifier = "eth-services"
-        pre = "<i>🇩🇪</i> "
-        post = ""
-        parent = "vps"
-        name = "ETH-Services"
-        url = "https://eth-services.de"
-        title = "ETH-Services"
-        weight = 1
-
-      [[languages.de.menu.main]]
-        identifier = "nuxoa"
-        pre = "<i>🇩🇪</i> "
-        post = ""
-        parent = "vps"
-        name = "NUXOA GmbH"
-        url = "https://nuxoa.de/linux-server/"
-        title = "NUXOA GmbH"
-        weight = 2  
 
       [[languages.de.menu.main]]
         identifier = "support"
