@@ -331,7 +331,7 @@ ignoreText = ["The Infrastructure Company GmbH", "Servercow", "mailcow", "ETH-Se
         weight = 1
 
       [[languages.en.menu.main]]
-        identifier = "demo-nightly"
+        identifier = "sponsor-gh"
         pre = "🧡 "
         post = ""
         parent = "sponsor"
@@ -394,6 +394,7 @@ ignoreText = ["The Infrastructure Company GmbH", "Servercow", "mailcow", "ETH-Se
         url = "https://www.servercow.de/mailcow#support"
         title = "Support erhalten"
         weight = 6
+        
       [[languages.de.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
@@ -436,7 +437,7 @@ ignoreText = ["The Infrastructure Company GmbH", "Servercow", "mailcow", "ETH-Se
         name = " Sponsere das Projekt"
         pre = "<i class='fa fa-heart'></i>"
         title = "Sponsoring"
-        weight = 8
+        weight = 9
         url = "https://mailcow.email"    
 
       [[languages.de.menu.main]]
@@ -450,7 +451,7 @@ ignoreText = ["The Infrastructure Company GmbH", "Servercow", "mailcow", "ETH-Se
         weight = 1
 
       [[languages.de.menu.main]]
-        identifier = "demo-nightly"
+        identifier = "sponsor-gh"
         pre = "🧡 "
         post = ""
         parent = "sponsor"
