@@ -31,6 +31,20 @@ The problem: **Exim on the host also occupies port 25**.
 
 As a result, the postfix-mailcow container cannot start properly and cannot send or receive emails.
 
+## Before the Upgrade
+
+Pin the Exim versions to prevent their installation during the upgrade, saving you the trouble of removing them later.
+
+```bash
+sudo tee /etc/apt/preferences.d/block-exim > /dev/null <<EOF
+Package: exim4*
+Pin: release *
+Pin-Priority: -1
+EOF
+```
+
+Thanks to the community for this addition!
+
 ## Performing the Upgrade
 
 {{< admonition success >}}
