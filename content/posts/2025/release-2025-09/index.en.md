@@ -1,5 +1,5 @@
 ---
-title: "🍂🐄 Mootember Update 2025 | MTA-STS Support, SOGo 5.12.3, Rspamd 3.12.1, and More"
+title: "🍂🐄 Mootember Update 2025 | MTA-STS Support, SOGo 5.12.3, Rspamd 3.12.1, and More - Revision A"
 date: 2025-09-10T11:30:00+02:00
 draft: false
 
@@ -13,6 +13,17 @@ categories: ["Updates"]
 
 ---
 
+
+# 2025-09a (Revision A Release from 10th September 2025)
+
+This update fixes crashes in the `create_cold_standby` script and prevents running the `update` / `generate-config` scripts from a directory that is not the mailcow root.
+
+It also improves detection and handling of the newly introduced IPv6 controller and now correctly recognizes Docker versions greater than 28 (reducing required `daemon.json` settings).
+
+Full changelog:
+https://github.com/mailcow/mailcow-dockerized/releases/tag/2025-09a
+
+---
 
 # 2025-09 (Release: 10th September 2025)
 
