@@ -21,12 +21,12 @@ categories: ["Updates"]
 We're excited to bring you the **2025-09 Update**!  
 This release delivers **new features, component updates, and the usual round of bug fixes**.  
 
-{{% admonition type="warning" title="Important" open=true >}}  
+{{< admonition type=warning title="Important" open=true >}}  
 mailcow now requires `jq` to be installed on the host system in order to operate with the redesigned IPv6 controller.  
 If it's missing, please install it **before** running the update, this tool is mandatory and will not be removed in a future release.  
-{{% /admonition %}}
+{{< /admonition >}}
 
-{{% admonition type="warning" title="Important" open=true >}}  
+{{< admonition type=warning title="Important" open=true >}}  
 This update introduces a brand-new container: **`postfix-tlspol-mailcow`**,  which adds outbound **MTA-STS support** to Postfix.    
 
 After updating, verify that the new container is running correctly by  reviewing the logs:  
@@ -39,7 +39,7 @@ If you encounter **CPU Problems** or **continuous restarts**, rebuild the image 
 docker build -t ghcr.io/mailcow/postfix-tlspol:1.0 data/Dockerfiles/postfix-tlspol
 docker compose up -d
 ```  
-{{% /admonition %}}
+{{< /admonition >}}
 
 
 ## Features

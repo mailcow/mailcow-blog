@@ -24,7 +24,7 @@ Dieses Release bringt **neue Features, aktualisierte Komponenten und natürlich 
 {{< admonition type=warning title="Wichtig" open=true >}}  
 mailcow erfordert nun die Installation von `jq` auf dem Host-System, um mit dem neu gestalteten IPv6-Controller zu funktionieren.  
 Falls es fehlt, installiere es bitte **vor** der Ausführung des Updates. Dieses Tool ist verpflichtend und wird in zukünftigen Versionen nicht entfernt werden.  
-{{% /admonition %}}
+{{< /admonition >}}
 
 {{< admonition type=warning title="Wichtig" open=true >}}  
 Dieses Update bringt einen brandneuen Container mit: **`postfix-tlspol-mailcow`**, der  ausgehenden **MTA-STS-Support** zu Postfix hinzufügt.  
@@ -39,7 +39,7 @@ Sollten **CPU-Probleme oder fortlaufende Neustarts** auftreten, baut das Image m
 docker build -t ghcr.io/mailcow/postfix-tlspol:1.0 data/Dockerfiles/postfix-tlspol
 docker compose up -d
 ```  
-{{% /admonition %}}
+{{< /admonition >}}
 
 
 ## Features
