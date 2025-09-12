@@ -13,6 +13,20 @@ categories: ["Updates"]
 
 ---
 
+# 2025-09b (Revision B Release from 12th September 2025)
+
+This update fixes startup issues with the NGINX container that occurred when `ENABLE_IPV6=true` was set in the `mailcow.conf`.
+
+## Bug Fixes
+- [NGINX] Disable IPv6 support in Nginx configuration ➡️ [PR #6736](https://github.com/mailcow/mailcow-dockerized/pull/6736)
+- [SOGo] Drop deprecated sogo_update_password sql trigger if it still exists ➡️ [PR #6727](https://github.com/mailcow/mailcow-dockerized/pull/6727)
+- [Web] remove unused bcc dest column from alias table ➡️ [PR #6726](https://github.com/mailcow/mailcow-dockerized/pull/6726)
+- [Core] ipv6_controller improvement + fix modules handling ➡️ [PR #6722](https://github.com/mailcow/mailcow-dockerized/pull/6722)
+
+## Full Changelog
+https://github.com/mailcow/mailcow-dockerized/compare/2025-07...2025-09b
+
+---
 
 # 2025-09a (Revision A Release from 10th September 2025)
 
