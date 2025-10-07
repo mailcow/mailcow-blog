@@ -13,6 +13,46 @@ categories: ["Updates"]
 
 ---
 
+# 2025-09c (Revision C Release from 7th October 2025)
+
+## Changes
+- [SOGo][Web] SOGo URL Encryption support ➡️ [PR #6758](https://github.com/mailcow/mailcow-dockerized/pull/6758)
+- [Nginx] do not invert ENABLE_IPV6 ➡️ [PR #6762](https://github.com/mailcow/mailcow-dockerized/pull/6762)
+- [Web] Remove Port from HTTP_HOST ➡️ [PR #6760](https://github.com/mailcow/mailcow-dockerized/pull/6760)
+- [Web] Allow wildcard subdomains for MTA-STS ➡️ [PR #6759](https://github.com/mailcow/mailcow-dockerized/pull/6759)
+- [Web] set cookie SameSite attribute to Lax ➡️ [PR #6766](https://github.com/mailcow/mailcow-dockerized/pull/6766)
+- [Web] Rename PHP Cookie to MCSESSID ➡️ [PR #6767](https://github.com/mailcow/mailcow-dockerized/pull/6767)
+- Update GitHub's issue template ➡️ [PR #6772](https://github.com/mailcow/mailcow-dockerized/pull/6772)
+- Clearer message to install required tool, e.g. jq ➡️ [PR #6764](https://github.com/mailcow/mailcow-dockerized/pull/6764)
+- Make domain description field readonly when no ACL ➡️ [PR #6789](https://github.com/mailcow/mailcow-dockerized/pull/6789)
+- Show "Never" by default if no last-modified date saved ➡️ [PR #6788](https://github.com/mailcow/mailcow-dockerized/pull/6788)
+- Hide relayhosts when ACL does not allow ➡️ [PR #6787](https://github.com/mailcow/mailcow-dockerized/pull/6787)
+- Fix several SQL statements ➡️ [PR #6786](https://github.com/mailcow/mailcow-dockerized/pull/6786)
+- Fixed wrong footer escaping for certain characters ➡️ [PR #6782](https://github.com/mailcow/mailcow-dockerized/pull/6782)
+- Rename password fields for AppPasswords same way for consistency ➡️ [PR #6781](https://github.com/mailcow/mailcow-dockerized/pull/6781)
+- Fixed password complexity check for AppPasswords creation/edit ➡️ [PR #6780](https://github.com/mailcow/mailcow-dockerized/pull/6780)
+- Remove debug console.log calls ➡️ [PR #6779](https://github.com/mailcow/mailcow-dockerized/pull/6779)
+- Enable HTTPS redirect by default on new setups ➡️ [PR #6777](https://github.com/mailcow/mailcow-dockerized/pull/6777)
+- [Helpers] Fix cold-standby digits in compose project names and inclusion of docker-compose.override.yml ➡️ [PR #6800](https://github.com/mailcow/mailcow-dockerized/pull/6800)
+- Fix enabling of ipv6 when updating ➡️ [PR #6791](https://github.com/mailcow/mailcow-dockerized/pull/6791)
+- Update variable name for prometheus-exporter security token ➡️ [PR #6776](https://github.com/mailcow/mailcow-dockerized/pull/6776)
+- Fixed typo in lang de-de ➡️ [PR #6765](https://github.com/mailcow/mailcow-dockerized/pull/6765)
+- Fix typos in config by ➡️ [PR #6792](https://github.com/mailcow/mailcow-dockerized/pull/6792)
+- chore(deps): update actions/stale action to v10.1.0 ➡️ [PR #6806](https://github.com/mailcow/mailcow-dockerized/pull/6806)
+- [Postfix] update postscreen_access.cidr ➡️ [PR #6801](https://github.com/mailcow/mailcow-dockerized/pull/6801)
+- Translations update from Weblate ➡️ [PR #6771](https://github.com/mailcow/mailcow-dockerized/pull/6771)
+- Translations update from Weblate ➡️ [PR #6794](https://github.com/mailcow/mailcow-dockerized/pull/6794)
+- Translations update from Weblate ➡️ [PR #6785](https://github.com/mailcow/mailcow-dockerized/pull/6785)
+- Translations update from Weblate ➡️ [PR #6790](https://github.com/mailcow/mailcow-dockerized/pull/6790)
+- Translations update from Weblate ➡️ [PR #6793](https://github.com/mailcow/mailcow-dockerized/pull/6793)
+- Translations update from Weblate ➡️ [PR #6743](https://github.com/mailcow/mailcow-dockerized/pull/6743)
+- Translations update from Weblate ➡️ [PR #6749](https://github.com/mailcow/mailcow-dockerized/pull/6749)
+
+## Full Changelog
+https://github.com/mailcow/mailcow-dockerized/compare/2025-09b...2025-09c
+
+---
+
 # 2025-09b (Revision B Release from 12th September 2025)
 
 This update fixes startup issues with the NGINX container that occurred when `ENABLE_IPV6=true` was set in the `mailcow.conf`.
