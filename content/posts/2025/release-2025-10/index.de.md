@@ -1,6 +1,6 @@
 ---
 title: "🎃🐄 Mooctober 2025 Update | Rspamd 3.13.2 and Redis Security Update"
-date: 2025-10-15T10:00:00+02:00
+date: 2025-10-15T08:55:00+02:00
 draft: false
 
 author: The Infrastructure Company GmbH
