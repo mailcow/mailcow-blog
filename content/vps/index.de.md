@@ -16,12 +16,14 @@ Nachfolgend eine nach Ländern sortierte Übersicht:
 
 ---
 
-### 🇩🇪 Deutschland
+## Europa
+
+### Deutschland
 
 **netcup GmbH**  
 - **Standort:** Nürnberg  
 - **Architektur:** x86 / ARM64  
-- **IPv6-Support:** ✅  
+- **IPv6-Support:** ✅  (Nativ)
 - **Netzqualität:** Gut bis sehr gut  
 - **Zielgruppe:** Privatanwender, Entwickler und kleine Unternehmen mit Fokus auf kosteneffiziente Lösungen  
 - **Webseite:** [https://www.netcup.de](https://www.netcup.de)
@@ -29,15 +31,16 @@ Nachfolgend eine nach Ländern sortierte Übersicht:
 **Hetzner Online GmbH**  
 - **Standort:** Falkenstein / Nürnberg  
 - **Architektur:** x86 / ARM64  
-- **IPv6-Support:** ✅  
+- **IPv6-Support:** ✅  (Nativ)
 - **Netzqualität:** Gut bis sehr gut  
 - **Zielgruppe:** Entwickler, Start-ups und Unternehmen, die skalierbare Cloud-Lösungen mit dedizierten Ressourcen benötigen  
 - **Webseite:** [https://www.hetzner.com](https://www.hetzner.com)
+- **Besonderheiten:** E-Mail Ports (465, 25) sind standardmäßig blockiert. Diese können jedoch auf Anfrage freigeschaltet werden.
 
 **ETH-Services**  
 - **Standort:** Frankfurt  
 - **Architektur:** x86  
-- **IPv6-Support:** ✅  
+- **IPv6-Support:** ✅ (Nativ) 
 - **Netzqualität:** Sehr gut  
 - **Zielgruppe:** Privatanwender, Entwickler und kleine Unternehmen, die preiswerte VPS-Lösungen mit solider Leistung suchen  
 - **Webseite:** [https://eth-services.de](https://eth-services.de)
@@ -45,15 +48,31 @@ Nachfolgend eine nach Ländern sortierte Übersicht:
 **NUXOA GmbH**  
 - **Standort:** Frankfurt  
 - **Architektur:** x86  
-- **IPv6-Support:** ✅  
+- **IPv6-Support:** ✅ (Nativ)
 - **Netzqualität:** Sehr gut  
 - **Zielgruppe:** Unternehmen mit hohen Anforderungen an Verfügbarkeit, Sicherheit und professionellen Support  
 - **Webseite:** [https://nuxoa.de/linux-server/](https://nuxoa.de/linux-server/)
+
+
+## Südamerika
+### Brasilien
+
+**ServerSP**
+ - **Firmen Standort:** Brasilien
+ - **Server Standort:** Miami, Florida (USA)
+ - **Architektur:** x86
+ - **IPv6-Support:** ✅ (Nativ)
+ - **Netzqualität:** Sehr gut
+ - **Zielgruppe:** Unternehmen und Entwickler, die zuverlässige und skalierbare VPS-Lösungen mit globaler Reichweite suchen
+ - **Webseite**: [https://www.serversp.com](https://www.serversp.com)
+ - **Besonderheiten:** E-Mail Ports (465, 25) sind standardmäßig blockiert. Diese können jedoch auf Anfrage freigeschaltet werden.
+
+
 
 ---
 
 ## Empfehlungen einreichen
 
-Wir sind laufend auf der Suche nach weiteren empfehlenswerten Serveranbietern – bevorzugt mit IPv6-Unterstützung, stabiler Netzwerkanbindung und einem guten Ruf, auch außerhalb Deutschlands.
+Wir sind laufend auf der Suche nach weiteren empfehlenswerten Serveranbietern – bevorzugt mit IPv6-Unterstützung, stabiler Netzwerkanbindung und einem guten Ruf, primär außerhalb Deutschlands.
 
 👉 **Melde dich bei uns**, wenn du einen Anbieter kennst, der in diese Liste aufgenommen werden sollte!
