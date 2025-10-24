@@ -13,7 +13,27 @@ categories: ["Updates"]
 
 ---
 
-# 2025-10 (Release: 15th October 2025)
+## 2025-10a (Release: 24th October 2025)
+
+**Moohoo again!**
+
+We're back with a quick follow-up to the October update — version **2025-10a**!  
+
+### What's Changed
+
+* [PHP] Disable PHP `opcache.jit` ➡️ [PR #6847](https://github.com/mailcow/mailcow-dockerized/pull/6847)
+* [Translations] Add Vietnamese language ➡️ [PR #6854](https://github.com/mailcow/mailcow-dockerized/pull/6854)
+* [Translations] Update from Weblate ➡️ [PR #6861](https://github.com/mailcow/mailcow-dockerized/pull/6861)
+* [DevOps] Update `devops-infra/action-pull-request` to v1 ➡️ [PR #6840](https://github.com/mailcow/mailcow-dockerized/pull/6840)
+* [DevOps] Update `devops-infra/action-pull-request` to v1.0.2 ➡️ [PR #6850](https://github.com/mailcow/mailcow-dockerized/pull/6850)
+* [Base Image] Update Alpine Docker tag to v3.22 ➡️ [PR #6417](https://github.com/mailcow/mailcow-dockerized/pull/6417)
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2025-10...2025-10a](https://github.com/mailcow/mailcow-dockerized/compare/2025-10...2025-10a)
+
+---
+
+## 2025-10 (Release: 15th October 2025)
 
 **Moohoo everyone!**
 
