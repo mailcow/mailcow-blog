@@ -1,5 +1,5 @@
 ---
-title: "🎄🐮 Moozember 2025 | Ein weiteres Bugfix-Update"
+title: "🎄🐮 Moozember 2025 | Ein weiteres Bugfix-Update - Revision A"
 date: 2025-12-09T08:55:00+02:00
 draft: false
 
@@ -13,12 +13,6 @@ categories: ["Updates"]
 
 ---
 
-## 2025-12 (Veröffentlichung: 9. Dezember 2025)
-
-**Moohoo zusammen!**
-
-Wir freuen uns, euch das **2025-12 Update** zu präsentieren!  
-Dieses Release konzentriert sich auf Fehlerbehebungen und kleinere Verbesserungen, um eure mailcow-Erfahrung zu optimieren.
 
 {{< admonition warning >}}
 Wenn ihr Docker Compose v5 verwendet, stellt bitte sicher, dass ihr zuerst diese kleinen Korrekturen anwendet, um zu verhindern, dass das update.sh-Skript fehlschlägt:
@@ -32,6 +26,26 @@ Ohne dies wird euch das Update-Skript mitteilen, dass eure Docker Compose-Versio
 
 Dies liegt an einem kleinen Tippfehler in der Versionsprüfung, der zwar behoben wurde, aber möglicherweise manuell angewendet werden muss, wenn ihr bereits Docker Compose v5 nutzt.
 {{< /admonition >}}
+
+## 2025-12a (Veröffentlichung: 12. Dezember 2025)
+
+### Behobene Probleme und Verbesserungen
+
+- Ein doppelter beziehungsweise im Klartext ausgegebener Login Hinweis wird nicht mehr erzeugt, wodurch die Darstellung wieder korrekt ist.
+- Die zuvor angepasste Cron Syntax für den Download der sa-rules wurde in ofelia rückgängig gemacht, da sie unerwartete Nebenwirkungen verursacht hatte.
+- Das Backup System lädt nun das benötigte Image vor, um sicherzustellen, dass immer die aktuellste verfügbare Version verwendet wird.
+- Die Passwortprüfung unterstützt jetzt den Hash Algorithmus PBKDF2-SHA512, wodurch insbesondere Umgebungen mit FreeIPA eine verbesserte Kompatibilität erhalten.
+
+Wie immer könnt ihr das vollständige Changelog auf GitHub einsehen: https://github.com/mailcow/mailcow-dockerized/releases/tag/2025-12a
+
+---
+
+## 2025-12 (Veröffentlichung: 9. Dezember 2025)
+
+**Moohoo zusammen!**
+
+Wir freuen uns, euch das **2025-12 Update** zu präsentieren!  
+Dieses Release konzentriert sich auf Fehlerbehebungen und kleinere Verbesserungen, um eure mailcow-Erfahrung zu optimieren.
 
 ### 🌐 Neue Sprachen & Übersetzungsaktualisierungen
 

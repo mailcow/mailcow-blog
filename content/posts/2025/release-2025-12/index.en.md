@@ -1,5 +1,5 @@
 ---
-title: "🎄🐮 Moocember 2025 | Just another bugfix update"
+title: "🎄🐮 Moocember 2025 | Just another bugfix update - Revision A"
 date: 2025-12-09T08:55:00+02:00
 draft: false
 
@@ -13,13 +13,6 @@ categories: ["Updates"]
 
 ---
 
-## 2025-12 (Release: 9th December 2025)
-
-**Moohoo everyone!**
-
-We're excited to bring you the **2025-12 Update**!  
-This release focuses on bug fixes and minor improvements to enhance your mailcow experience.
-
 {{< admonition warning >}}
 If you are using Docker Compose v5, please make sure that you first apply these small fixes in order to prevent the update.sh script from failing:
 
@@ -32,6 +25,26 @@ Without this, the update script will tell you, that your docker compose version 
 
 This is due to a small typo in the version check that has been fixed but may need to be applied manually if you are on Docker Compose v5 already.
 {{< /admonition >}}
+
+## 2025-12a (Release: 12th December 2025)
+
+### Fixed Issues and Improvements
+
+- A duplicate or plaintext login notice is no longer generated, restoring correct display.
+- The previously adjusted cron syntax for sa-rules download has been reverted in ofelia due to unexpected side effects.
+- The backup system now pre-pulls the required image to ensure the latest available version is always used.
+- Password verification now supports the PBKDF2-SHA512 hash algorithm, providing improved compatibility especially for FreeIPA environments.
+
+As always, you can see the full changelog on GitHub: https://github.com/mailcow/mailcow-dockerized/releases/tag/2025-12a
+
+---
+
+## 2025-12 (Release: 9th December 2025)
+
+**Moohoo everyone!**
+
+We're excited to bring you the **2025-12 Update**!  
+This release focuses on bug fixes and minor improvements to enhance your mailcow experience.
 
 ### 🌐 New Languages & Translation Updates
 
