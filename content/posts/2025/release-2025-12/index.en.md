@@ -17,7 +17,7 @@ categories: ["Updates"]
 If you are using Docker Compose v5, please make sure that you first apply these small fixes in order to prevent the update.sh script from failing:
 
 ```bash
-git fetch origin/master
+git fetch
 git checkout origin/master update.sh
 ```
 
