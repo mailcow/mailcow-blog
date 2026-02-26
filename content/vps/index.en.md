@@ -53,6 +53,14 @@ Below is an overview sorted by country:
 - **Target audience:** Companies with high requirements for availability, security and professional support  
 - **Website:** [https://nuxoa.de/linux-server/](https://nuxoa.de/linux-server/)
 
+**IP-Projects GmbH & Co.KG**
+- **Location:** Frankfurt
+- **Architecture:** x86
+- **IPv6 support:** ✅ (Native)
+- **Network quality:** Very good
+- **Target audience:** Companies and private individuals seeking reliable and scalable VPS solutions with global reach
+- **Website:** [https://www.ip-projects.de/de/virtual-server/rootserver](https://www.ip-projects.de/de/virtual-server/rootserver)
+
 ## South America
 ### Brazil
 
