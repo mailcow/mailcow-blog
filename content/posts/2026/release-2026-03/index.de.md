@@ -1,5 +1,5 @@
 ---
-title: "🍀🐮 Moorch 2026 | forced 2FA, DNS-01, SOGo & Rspamd Updates"
+title: "🍀🐮 Moorch 2026 | forced 2FA, DNS-01, SOGo & Rspamd Updates - Revision A"
 date: 2026-03-10T08:00:00+02:00
 draft: false
 
@@ -10,6 +10,23 @@ license: ""
 
 tags: ["2026", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2026-03a (Veröffentlichung: 13. März 2026)
+
+### Behobene Probleme und Verbesserungen
+
+Dieses kleine Update behebt Probleme im Zusammenhang mit LDAP- und Keycloak-Authentifizierung sowie Fehler mit dem neuen ACME DNS-01-Challenge-Feature.
+
+* [Web] Fix LDAP/Keycloak login TypeError - missing JSON decode for attributes by @FreddleSpl0it ➡️ [PR #7123](https://github.com/mailcow/mailcow-dockerized/pull/7123)
+* [ACME] Fix wildcard certificate conflict with MAILCOW_HOSTNAME by @FreddleSpl0it ➡️ [PR #7124](https://github.com/mailcow/mailcow-dockerized/pull/7124)
+* [ACME] Skip autodiscover/mta-sts subdomains covered by wildcard certificates by @FreddleSpl0it ➡️ [PR #7134](https://github.com/mailcow/mailcow-dockerized/pull/7134)
+* Fix theme localStorage collision with rspamd UI by @rezzorix ➡️ [PR #7121](https://github.com/mailcow/mailcow-dockerized/pull/7121)
+* Translations update from Weblate by @milkmaker ➡️ [PR #7130](https://github.com/mailcow/mailcow-dockerized/pull/7130)
+
+
+Wie immer könnt ihr das vollständige Changelog auf GitHub einsehen: [2026-03a Release](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-03a)
 
 ---
 
