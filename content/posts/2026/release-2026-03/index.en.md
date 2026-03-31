@@ -1,5 +1,5 @@
 ---
-title: "🍀🐮 Moorch 2026 | forced 2FA, DNS-01, SOGo & Rspamd Updates - Revision A"
+title: "🍀🐮 Moorch 2026 | forced 2FA, DNS-01, SOGo & Rspamd Updates - Revision B"
 date: 2026-03-10T08:00:00+02:00
 draft: false
 
@@ -10,6 +10,20 @@ license: ""
 
 tags: ["2026", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2026-03b (Release: 31st March 2026)
+
+### Bug Fixes
+
+This important update addresses several security-related issues. **We strongly recommend updating to this version.**
+
+**Important Note:** Associated CVE identifiers will be published separately at a later date.
+
+* [Web][Dovecot] Improve input validation and escaping by @FreddleSpl0it ➡️ [PR #7173](https://github.com/mailcow/mailcow-dockerized/pull/7173)
+
+As always, you can view the complete changelog on GitHub: [2026-03b Release](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-03b)
 
 ---
 
