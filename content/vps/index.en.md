@@ -78,6 +78,8 @@ Below is an overview sorted by country:
 
 ## Submit recommendations
 
-We are continuously looking for additional recommended server providers — preferably with IPv6 support, stable network connectivity and a good reputation, primarily outside Germany.
+<!-- We are continuously looking for additional recommended server providers — preferably with IPv6 support, stable network connectivity and a good reputation, primarily outside Germany.
 
-👉 **Get in touch with us** if you know of a provider that should be added to this list!
+👉 **Get in touch with us** if you know of a provider that should be added to this list! -->
+
+Currently, we are not accepting any further recommendations for VPS providers. We will regularly update the list as new providers are reviewed and deemed recommended.

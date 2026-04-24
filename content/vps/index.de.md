@@ -80,6 +80,8 @@ Nachfolgend eine nach Ländern sortierte Übersicht:
 
 ## Empfehlungen einreichen
 
-Wir sind laufend auf der Suche nach weiteren empfehlenswerten Serveranbietern – bevorzugt mit IPv6-Unterstützung, stabiler Netzwerkanbindung und einem guten Ruf, primär außerhalb Deutschlands.
+<!-- Wir sind laufend auf der Suche nach weiteren empfehlenswerten Serveranbietern – bevorzugt mit IPv6-Unterstützung, stabiler Netzwerkanbindung und einem guten Ruf, primär außerhalb Deutschlands.
 
-👉 **Melde dich bei uns**, wenn du einen Anbieter kennst, der in diese Liste aufgenommen werden sollte!
+👉 **Melde dich bei uns**, wenn du einen Anbieter kennst, der in diese Liste aufgenommen werden sollte! -->
+
+Derzeit nehmen wir keine weiteren Empfehlungen für VPS-Server-Anbieter an. Wir werden die Liste regelmäßig aktualisieren, wenn neue Anbieter geprüft und als empfehlenswert eingestuft werden.
