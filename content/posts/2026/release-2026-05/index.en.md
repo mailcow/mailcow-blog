@@ -1,5 +1,5 @@
 ---
-title: "🐝🐮 Mooay 2026 | Just another security update"
+title: "🐝🐮 Mooay 2026 | Just another security update - Revision A"
 date: 2026-05-12T08:00:00+02:00
 draft: false
 
@@ -10,6 +10,21 @@ license: ""
 
 tags: ["2026", "update", "changelog"]
 categories: ["Updates"]
+
+---
+
+## 2026-05a (Release: 13th May 2026)
+
+### Bug Fixes
+
+This update bumps **SOGo to version 5.12.8** and thereby addresses **4 security issues**. Further details can be found in the [SOGo release notes](https://www.sogo.nu/news/2026/sogo-v5128-released.html).
+
+**We strongly recommend updating to this version.**
+
+* [SOGo] Update to 5.12.8 by @FreddleSpl0it ➡️ [PR #7226](https://github.com/mailcow/mailcow-dockerized/pull/7226)
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-05...2026-05a](https://github.com/mailcow/mailcow-dockerized/compare/2026-05...2026-05a)
 
 ---
 
