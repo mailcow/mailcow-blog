@@ -61,6 +61,15 @@ Below is an overview sorted by country:
 - **Target audience:** Companies and private individuals seeking reliable and scalable VPS solutions with global reach
 - **Website:** [https://www.ip-projects.de/de/virtual-server/rootserver](https://www.ip-projects.de/de/virtual-server/rootserver)
 
+**servinga GmbH**
+- **Company location:** Frankfurt am Main, Germany
+- **Server locations:** Frankfurt (Germany), Rotterdam (Netherlands), Manchester (United Kingdom), Stockholm (Sweden), Canton of Zug (Switzerland), Bucharest (Romania), Tallinn (Estonia), Barcelona (Spain), Dallas, TX (USA)
+- **Architecture:** x86
+- **IPv6 support:** ✅ (Native)
+- **Network quality:** Very good
+- **Target audience:** Developers, small and medium businesses, and large enterprises with high data throughput needs
+- **Website:** [https://servinga.com/de/cloud/vps-server/](https://servinga.com/de/cloud/vps-server/)
+
 ## South America
 ### Brazil
 
