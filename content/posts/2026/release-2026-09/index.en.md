@@ -1,6 +1,6 @@
 ---
 title: "🍂🐮 Mootember 2026 | Unbound 1.26.1, SOGo 5.12.11 & Redis 7.4.11"
-date: 2026-09-21T10:45:00+02:00
+date: 2026-10-06T12:45:00+02:00
 draft: false
 
 author: The Infrastructure Company GmbH
@@ -10,6 +10,27 @@ license: ""
 
 tags: ["2026", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2026-09a (Release: 6th October 2026)
+
+This revision update bumps **Rspamd to 4.2.1**, addressing multiple issues in Rspamd. It also fixes several issues with the **domain wide footer**: attachments could get lost in certain mails, and links and images in 7bit mails as well as attachments sent from SOGo could get corrupted. On top of that, **postfix-tlspol** is bumped to **1.14.0**.
+
+
+### Updates
+
+* [Rspamd] Update to 4.2.1 by @FreddleSpl0it ➡️ [PR #7505](https://github.com/mailcow/mailcow-dockerized/pull/7505)
+* [postfix-tlspol] bump to v1.14.0 by @oidipos ➡️ [PR #7484](https://github.com/mailcow/mailcow-dockerized/pull/7484)
+* [Postfix] update postscreen_access.cidr by @milkmaker ➡️ [PR #7494](https://github.com/mailcow/mailcow-dockerized/pull/7494)
+
+### Bug Fixes
+
+* Fixed typo (changing RESOVLER to RESOLVER). by @ralfbergs ➡️ [PR #7504](https://github.com/mailcow/mailcow-dockerized/pull/7504)
+
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-09...2026-09a](https://github.com/mailcow/mailcow-dockerized/compare/2026-09...2026-09a)
 
 ---
 
