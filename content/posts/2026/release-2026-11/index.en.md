@@ -1,6 +1,6 @@
 ---
 title: "🍂🐮 Moovember 2026 | Feature & Security Update: Mailbox Groups, imapsync Rework & SOGo 5.12.13"
-date: 2026-11-19T00:30:00+01:00
+date: 2026-11-19T17:50:00+01:00
 draft: false
 
 author: The Infrastructure Company GmbH
@@ -10,6 +10,20 @@ license: ""
 
 tags: ["2026", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2026-11b (Release: 19th November 2026)
+
+This revision update brings **PHP 8.2.36**, which fixes several **security issues** in PHP. The issues rated critical don't affect mailcow in its default configuration, but we recommend updating anyway.
+
+### Updates & Security
+
+* [PHP] Update to 8.2.36 by @FreddleSpl0it ➡️ [Commit e349058](https://github.com/mailcow/mailcow-dockerized/commit/e34905807f4f614ed71b00e0c0775fdc728db6ba)
+* Translations update from Weblate by @milkmaker ➡️ [PR #7674](https://github.com/mailcow/mailcow-dockerized/pull/7674)
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-11a...2026-11b](https://github.com/mailcow/mailcow-dockerized/compare/2026-11a...2026-11b)
 
 ---
 
