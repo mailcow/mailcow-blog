@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "title" .Title) }}
+<section class="section section-tight">
+  <div class="container">
+    <div class="filter-chips filter-chips-lg">
+      {{- range .Data.Terms.ByCount }}
+      <a class="chip chip-link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <span class="count">{{ .Count }}</span></a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}

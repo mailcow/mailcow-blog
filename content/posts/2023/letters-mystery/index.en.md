@@ -10,7 +10,7 @@ lightgallery: true
 
 license: ""
 
-tags: ["2023", "community", "challenge"]
+tags: ["Community"]
 categories: ["News"]
 
 featuredImage: "/images/2023/March/mystery-letters.png"

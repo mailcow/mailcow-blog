@@ -2,7 +2,7 @@
 title: "Quick Guide: Upgrading Debian 12 to Debian 13 for mailcow Servers"
 date: 2025-08-19
 draft: false
-tags: ["Debian", "Upgrade", "mailcow", "Exim", "Postfix"]
+tags: ["Postfix", "Debian", "Upgrade"]
 categories: ["Guides"]
 author: The Infrastructure Company GmbH
 toc: true

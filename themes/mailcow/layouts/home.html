@@ -1,0 +1,116 @@
+{{ define "main" }}
+{{- $g := partial "post-groups.html" . -}}
+{{- $lang := site.Language.Lang -}}
+{{- $latest := index $g.releases 0 -}}
+{{- $versions := partial "versions.html" $latest -}}
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="eyebrow"><span class="dot"></span>{{ i18n "heroEyebrow" }}</div>
+      <h1>{{ i18n "heroTitle" }}</h1>
+      <p class="lead">{{ i18n "heroLead" }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="{{ site.Params.install }}">{{ partial "icon.html" "rocket" }}{{ i18n "getStarted" }}</a>
+        <a class="btn btn-outline btn-lg" href="{{ site.Params.links.demo }}">{{ partial "icon.html" "play" }}{{ i18n "liveDemo" }}</a>
+        <a class="btn btn-ghost btn-lg" href="{{ site.Params.links.github }}">{{ partial "icon.html" "brand-github" }}{{ i18n "viewOnGitHub" }}</a>
+      </div>
+      <div class="hero-notes">
+      <a class="hero-note" href="{{ site.Params.servercow }}" target="_blank" rel="noopener">{{ partial "icon.html" "life-buoy" }}<span>{{ i18n "managedNote" }} <strong>{{ i18n "managedNoteLink" }}</strong></span>{{ partial "icon.html" "arrow-up-right" }}</a>
+      {{- with site.GetPage "/vps" }}
+      <a class="hero-note hero-note-brown" href="{{ .RelPermalink }}">{{ partial "icon.html" "server" }}<span>{{ i18n "vpsHint" }} <strong>{{ i18n "vpsLink" }}</strong></span>{{ partial "icon.html" "arrow-right" }}</a>
+      {{- end }}
+      </div>
+    </div>
+
+    {{- with $latest }}
+    <aside class="card release-card" aria-label="{{ i18n "latestRelease" }}">
+      <div class="card-header">
+        <span>{{ partial "icon.html" "package" }}{{ i18n "latestRelease" }}</span>
+        <span class="badge badge-green">{{ i18n "stable" }}</span>
+      </div>
+      <div class="card-body">
+        <div class="release-version">{{ index $versions 0 }}</div>
+        <div class="release-date">{{ partial "icon.html" "calendar" }}{{ partial "date.html" .Date }}</div>
+        <a class="release-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- if gt (len $versions) 1 }}
+        <div class="chips">{{ range $versions }}{{ partial "version-chip.html" . }}{{ end }}</div>
+        {{- end }}
+        <div class="update-hint">
+          <span>{{ i18n "updateHint" }}</span>
+          <div class="cmd"><code>./update.sh</code><button class="copy-btn" type="button" data-copy="./update.sh" aria-label="{{ i18n "copy" }}">{{ partial "icon.html" "copy" }}</button></div>
+        </div>
+        <a class="btn btn-primary btn-block" href="{{ .RelPermalink }}">{{ i18n "releaseNotes" }}{{ partial "icon.html" "arrow-right" }}</a>
+      </div>
+    </aside>
+    {{- end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container news-grid">
+    <div>
+      <div class="section-head">
+        <h2>{{ i18n "latestNews" }}</h2>
+        {{ with site.GetPage "/news" }}<a class="link-arrow" href="{{ .RelPermalink }}">{{ i18n "allNews" }}{{ partial "icon.html" "arrow-right" }}</a>{{ end }}
+      </div>
+      <div class="post-list">
+        {{ range first 3 $g.news }}{{ partial "post-card.html" (dict "page" . "compact" true) }}{{ end }}
+      </div>
+    </div>
+    <div>
+      <div class="section-head">
+        <h2>{{ i18n "recentReleases" }}</h2>
+        {{ with site.GetPage "/releases" }}<a class="link-arrow" href="{{ .RelPermalink }}">{{ i18n "allReleases" }}{{ partial "icon.html" "arrow-right" }}</a>{{ end }}
+      </div>
+      <div class="card release-list">
+        {{ range first 6 $g.releases }}{{ partial "release-row.html" . }}{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- with site.Data.roadmap }}
+<section class="section section-band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{{ i18n "roadmap" }}</h2>
+        <p class="section-lead">{{ i18n "roadmapLead" }}</p>
+      </div>
+      {{ with site.GetPage "/roadmap" }}<a class="link-arrow" href="{{ .RelPermalink }}">{{ i18n "fullRoadmap" }}{{ partial "icon.html" "arrow-right" }}</a>{{ end }}
+    </div>
+    {{- $rmPage := "" }}{{ with site.GetPage "/roadmap" }}{{ $rmPage = .RelPermalink }}{{ end }}
+    <div class="rm-board">
+      {{- range slice "planned" "progress" "nightly" }}
+      {{ partial "roadmap-column.html" (dict "status" . "limit" 3 "more" $rmPage) }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{- with site.Data.components }}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{{ i18n "insideTitle" }}</h2>
+        <p class="section-lead">{{ i18n "insideLead" }}</p>
+      </div>
+    </div>
+    <ul class="component-grid">
+      {{- range . }}
+      <li class="component"><span class="component-name">{{ .name }}</span><span class="component-role">{{ index .role $lang | default .role.en }}</span></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
+<section class="section section-band">
+  <div class="container">
+    {{ partial "support-project.html" . }}
+  </div>
+</section>
+{{ end }}

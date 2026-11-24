@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "ARM64"]
+tags: ["ARM64", "Nightly"]
 categories: ["News"]
 
 ---

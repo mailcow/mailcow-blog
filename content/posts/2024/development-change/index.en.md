@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2024", "news"]
+tags: ["Community"]
 categories: ["News"]
 
 ---

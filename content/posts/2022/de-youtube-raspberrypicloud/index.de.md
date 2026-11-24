@@ -9,6 +9,8 @@ toc: false
 resources:
 - name: "featured-image-preview"
   src: "thumb.jpg"
+categories: ["News"]
+tags: ["Community"]
 ---
 
 **Tach zusammen!**

@@ -13,6 +13,8 @@ images: ["/images/demo_thumb.png"]
 featuredImage: "/images/demo_thumb.png"
 featuredImagePreview: "/images/demo_thumb.png"
 
+categories: ["News"]
+tags: ["Demo"]
 ---
 
 Einen wunderschönen Guten Tag wünschen wir euch!

@@ -1,0 +1,60 @@
+{{- $vps := site.GetPage "/vps" -}}
+{{- $imprint := site.GetPage "/imprint" -}}
+{{- $policy := site.GetPage "/policy" -}}
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="{{ site.Home.RelPermalink }}">
+        <img src="{{ site.Params.logo | relURL }}" alt="" width="38" height="36">
+        <span class="brand-text"><span class="brand-name">mailcow</span><span class="brand-sub">: dockerized</span></span>
+      </a>
+      <p>{{ i18n "heroTitle" }} – 🐮 + 🐋 = 💕</p>
+      <div class="social">
+        <a href="{{ site.Params.links.github }}" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "icon.html" "brand-github" }}</a>
+        <a href="{{ site.Params.links.mastodon }}" target="_blank" rel="me noopener" aria-label="Mastodon">{{ partial "icon.html" "brand-mastodon" }}</a>
+        <a href="{{ site.Params.links.telegram }}" target="_blank" rel="noopener" aria-label="Telegram">{{ partial "icon.html" "brand-telegram" }}</a>
+        <a href="{{ site.Params.links.x }}" target="_blank" rel="noopener" aria-label="X">{{ partial "icon.html" "brand-x" }}</a>
+        {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}" aria-label="{{ i18n "rssFeed" }}">{{ partial "icon.html" "rss" }}</a>{{ end }}
+      </div>
+    </div>
+    <div class="footer-col">
+      <h2>{{ i18n "project" }}</h2>
+      <ul>
+        <li><a href="{{ site.Params.docs }}">{{ i18n "documentation" }}</a></li>
+        {{ with site.GetPage "/news" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+        {{ with site.GetPage "/releases" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+        {{ with site.GetPage "/roadmap" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+        {{ with site.GetPage "/posts" }}<li><a href="{{ .RelPermalink }}">{{ i18n "archive" }}</a></li>{{ end }}
+        {{ with $vps }}<li><a href="{{ .RelPermalink }}">{{ i18n "verifiedVps" }}</a></li>{{ end }}
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2>{{ i18n "community" }}</h2>
+      <ul>
+        <li><a href="{{ site.Params.links.demo }}">{{ i18n "liveDemo" }}</a></li>
+        <li><a href="{{ site.Params.links.nightlyDemo }}">{{ i18n "nightlyDemo" }}</a></li>
+        <li><a href="{{ site.Params.links.issues }}">GitHub Issues</a></li>
+        <li><a href="{{ site.Params.links.forum }}">Forum</a></li>
+        <li><a href="{{ site.Params.links.telegram }}">Telegram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2>{{ i18n "supportTitle" }}</h2>
+      <ul>
+        <li><a href="{{ site.Params.managed }}">{{ i18n "managedTitle" }}</a></li>
+        <li><a href="{{ site.Params.support }}">{{ i18n "supportPkgTitle" }}</a></li>
+        <li><a href="{{ site.Params.sal }}">{{ i18n "supportSal" }}</a></li>
+        <li><a href="{{ site.Params.links.sponsors }}">{{ i18n "supportSponsor" }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© {{ site.Params.since }}–{{ now.Year }} <a href="{{ site.Params.copyrightLink }}">{{ site.Params.copyright }}</a></span>
+      <span class="footer-legal">
+        {{ with $imprint }}<a href="{{ .RelPermalink }}">{{ i18n "imprint" }}</a>{{ end }}
+        {{ with $policy }}<a href="{{ .RelPermalink }}">{{ i18n "privacy" }}</a>{{ end }}
+      </span>
+    </div>
+  </div>
+</footer>

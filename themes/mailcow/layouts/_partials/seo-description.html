@@ -1,0 +1,16 @@
+{{- $d := "" -}}
+{{- if .IsHome -}}
+  {{- $d = i18n "seoHomeDescription" -}}
+{{- else if .Description -}}
+  {{- $d = .Description -}}
+{{- else if eq .Kind "term" -}}
+  {{- $d = i18n (cond (eq .Data.Plural "categories") "categoryDescription" "termDescription") .Title -}}
+{{- else if and .IsPage (partial "is-release.html" .) -}}
+  {{- $title := replaceRE `^(?:[\p{So}\p{Sk}\x{FE0F}\x{200D}]|\s)+` "" .Title -}}
+  {{- $d = i18n "releaseDescription" (dict "Versions" (delimit (partial "versions.html" .) ", ") "Title" $title) -}}
+{{- else if .IsPage -}}
+  {{- $d = replaceRE `^\s*Moo+hoo[^.!?]*[.!?]\s*` "" (.Summary | plainify | htmlUnescape) -}}
+{{- else -}}
+  {{- $d = i18n "seoHomeDescription" -}}
+{{- end -}}
+{{- return (trim ($d | plainify | htmlUnescape) " \n" | truncate 160) -}}

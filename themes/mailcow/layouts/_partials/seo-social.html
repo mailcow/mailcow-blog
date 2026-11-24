@@ -1,0 +1,27 @@
+{{- $p := .page -}}
+{{- $isArticle := and $p.IsPage (eq $p.Section "posts") }}
+{{- $mod := cond ($p.Lastmod.Before $p.Date) $p.Date $p.Lastmod }}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:type" content="{{ if $isArticle }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ cond $p.IsHome .title $p.Title }}">
+<meta property="og:description" content="{{ .description }}">
+<meta property="og:url" content="{{ .url }}">
+<meta property="og:image" content="{{ .image }}">
+<meta property="og:locale" content="{{ partial "og-locale.html" site.Language.LanguageCode }}">
+{{- range $p.Translations }}
+<meta property="og:locale:alternate" content="{{ partial "og-locale.html" .Language.LanguageCode }}">
+{{- end }}
+{{- if $isArticle }}
+<meta property="article:published_time" content="{{ $p.Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ $mod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- range $p.Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+{{- with site.Params.twitter }}
+<meta name="twitter:site" content="{{ . }}">
+{{- end }}
+<meta name="twitter:title" content="{{ cond $p.IsHome .title $p.Title }}">
+<meta name="twitter:description" content="{{ .description }}">
+<meta name="twitter:image" content="{{ .image }}">

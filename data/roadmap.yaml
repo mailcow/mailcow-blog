@@ -1,0 +1,132 @@
+# Roadmap shown on /roadmap/ and on the start page, in columns by status.
+# status: planned | progress | nightly | released
+# release, issue, pr, docs and area (released items) are optional
+
+updated: "2026-11-24"
+
+items:
+  - status: planned
+    title: { en: Dovecot 2.4, de: Dovecot 2.4 }
+    description:
+      en: Move the IMAP and POP3 server to Dovecot 2.4.
+      de: Umstieg des IMAP- und POP3-Servers auf Dovecot 2.4.
+  - status: progress
+    release: "2026-12"
+    title: { en: PHP 8.5, de: PHP 8.5 }
+    description:
+      en: The web interface moves to PHP 8.5.
+      de: Die Weboberfläche wechselt auf PHP 8.5.
+  - status: planned
+    title: { en: MariaDB 11, de: MariaDB 11 }
+    description:
+      en: Update the bundled database to MariaDB 11.
+      de: Update der mitgelieferten Datenbank auf MariaDB 11.
+  - status: progress
+    release: "2026-12"
+    title: { en: ECDSA certificates, de: ECDSA-Zertifikate }
+    description:
+      en: ECDSA certificates alongside RSA for smaller handshakes and modern clients.
+      de: ECDSA-Zertifikate zusätzlich zu RSA für kleinere Handshakes und moderne Clients.
+    issue: 2426
+
+  - status: nightly
+    title: { en: Granular backups with restic snapshots, de: Granulare Backups mit restic-Snapshots }
+    description:
+      en: Encrypted, scheduled backups to S3, SFTP or REST, and restores of single domains or mailboxes.
+      de: Verschlüsselte, geplante Backups nach S3, SFTP oder REST und Restore einzelner Domains oder Postfächer.
+  - status: nightly
+    title: { en: Retention in the UI, de: Aufbewahrung (Retention) in der UI }
+    description:
+      en: Delete messages automatically by folder and age, with a simulation mode before anything is removed.
+      de: Mails automatisch nach Ordner und Alter löschen, mit Simulationsmodus vor dem ersten Löschen.
+  - status: nightly
+    title: { en: Improved archive integration, de: Optimierte Archiv-Anbindung }
+    description:
+      en: Journal every incoming and outgoing message to an external archive such as Piler.
+      de: Alle ein- und ausgehenden Mails per Journal an ein externes Archiv wie Piler übergeben.
+
+  - status: planned
+    title: { en: External database, de: Externe Datenbank anbindbar }
+    description:
+      en: Use an existing MariaDB or MySQL server instead of the bundled container.
+      de: Einen vorhandenen MariaDB- oder MySQL-Server statt des mitgelieferten Containers nutzen.
+  - status: planned
+    title: { en: External ClamAV, de: Externer ClamAV anbindbar }
+    description:
+      en: Connect an existing ClamAV instead of the bundled one.
+      de: Einen vorhandenen ClamAV statt des mitgelieferten anbinden.
+  - status: planned
+    title: { en: Compose profiles instead of SKIP_*, de: Compose-Profiles statt SKIP_* }
+    description:
+      en: Docker Compose profiles replace the SKIP_* switches in mailcow.conf.
+      de: Docker-Compose-Profiles ersetzen die SKIP_*-Schalter in mailcow.conf.
+
+  - status: planned
+    title: { en: JMAP, de: JMAP }
+    description:
+      en: Support for the JMAP protocol.
+      de: Unterstützung für das JMAP-Protokoll.
+  - status: planned
+    title: { en: API for domain admins and users, de: API für Domain-Admins und Benutzer }
+    description:
+      en: API access not only for admins, but also for domain admins and users.
+      de: API-Zugriff nicht nur für Admins, sondern auch für Domain-Admins und Benutzer.
+  - status: planned
+    title: { en: mailcow CLI tool, de: mailcow-CLI-Tool }
+    description:
+      en: Manage mailcow from the command line.
+      de: mailcow über die Kommandozeile verwalten.
+
+  - status: nightly
+    title: { en: Mail policies, de: Mail-Policies }
+    description:
+      en: Who may send where and receive from where, per mailbox, group or domain with allow and block lists.
+      de: Wer darf wohin senden und von wo empfangen, pro Postfach, Gruppe oder Domain mit Erlaubt- und Sperrlisten.
+
+  - status: planned
+    title: { en: Cluster with shared FS (Commercial Feature), de: Cluster mit Shared FS (kommerzielles Feature) }
+    description:
+      en: Several nodes instead of a single machine.
+      de: Mehrere Knoten statt einer Maschine.
+
+  # Recently released
+  - status: released
+    area: Web
+    release: "2026-11"
+    title:
+      en: Mailbox groups & shared mailboxes
+      de: Postfach-Gruppen & geteilte Postfächer
+    description:
+      en: Groups with a shared address, send-as rights, shared folders and identity provider sync.
+      de: Gruppen mit gemeinsamer Adresse, Send-as-Rechten, geteilten Ordnern und Identity-Provider-Sync.
+    pr: 7566
+  - status: released
+    area: Dovecot
+    release: "2026-11"
+    title:
+      en: imapsync rework
+      de: imapsync-Rework
+    description:
+      en: Reusable sync sources, OAuth2 sign-in for providers such as Microsoft 365, and a new Python runner.
+      de: Wiederverwendbare Sync-Quellen, OAuth2-Anmeldung z. B. für Microsoft 365 und ein neuer Python-Runner.
+    pr: 7546
+  - status: released
+    area: Web
+    release: "2026-11"
+    title:
+      en: Multiple API keys
+      de: Mehrere API-Keys
+    description:
+      en: Any number of API keys with their own permissions, plus locked service keys from mailcow.conf.
+      de: Beliebig viele API-Keys mit eigenen Rechten, dazu gesperrte Service-Keys aus mailcow.conf.
+    pr: 7547
+  - status: released
+    area: Netfilter
+    release: "2026-11"
+    title:
+      en: Netfilter rework
+      de: Netfilter-Rework
+    description:
+      en: More robust bans without restart loops; identity provider outages no longer count as failed logins.
+      de: Robustere Sperren ohne Neustart-Schleifen; Ausfälle des Identity Providers zählen nicht mehr als Fehlversuche.
+    pr: 7567

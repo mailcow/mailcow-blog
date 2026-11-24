@@ -1,0 +1,17 @@
+{{- $compact := .compact -}}
+{{- with .page -}}
+{{- $page := . -}}
+{{- $img := cond $compact "" (partial "post-image.html" .) -}}
+{{- $cat := index (.Params.categories | default (slice "News")) 0 -}}
+{{- $cls := partial "category-class.html" $cat -}}
+<article class="card post-card accent-{{ $cls }}">
+  {{- with $img }}
+  <a class="post-card-media" href="{{ $page.RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ . }}" alt="" loading="lazy"></a>
+  {{- end }}
+  <div class="card-body">
+    <div class="post-meta"><span class="badge badge-{{ $cls }}">{{ $cat }}</span>{{ partial "date.html" .Date }}</div>
+    <h3 class="post-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="post-card-summary">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 170 }}{{ end }}</p>
+  </div>
+</article>
+{{- end -}}

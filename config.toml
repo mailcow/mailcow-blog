@@ -1,163 +1,44 @@
 baseURL = "https://mailcow.email"
-# [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
-title = "mailcow: dockerized - Blog"
+title = "mailcow: dockerized"
+theme = "mailcow"
 
-# Change the default theme to be use when building the site with Hugo
-theme = ["FixIt"]
-
-# whether to use robots.txt
 enableRobotsTXT = true
-# whether to use git commit log
 enableGitInfo = true
+capitalizeListTitles = false
+
+[pagination]
+  pagerSize = 12
+
+[services.rss]
+  limit = 20
 
 [params]
-  version = "0.2.X"
-  description = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕 | Official Blog Page"
-  # site keywords
+  description = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕 | Official project page and blog"
   keywords = ["mailcow", "Docker", "Postfix", "Dovecot", "GitHub", "tinc", "E-Mail", "SOGo", "Rspamd"]
-  defaultTheme = "auto"
-  dateFormat = "01-02-2006"
-  images = ["/images/cow_mailcow.svg"]
-  license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'
+  images = ["/images/og-default.png"]
+  logo = "/images/cow_mailcow.svg"
+  since = 2016
+  copyright = "The Infrastructure Company GmbH"
+  copyrightLink = "https://tinc.gmbh?kontakt"
+  repo = "https://github.com/mailcow/mailcow-blog"
+  twitter = "@mailcow_email"
 
-[params.cookieconsent]
-  enable = false
-
-[params.search]
-  enable = false
-  type = "lunr"
-  contentLength = 4000
-  placeholder = ""
-  maxResultLength = 10
-  snippetLength = 30
-  highlightTag = "em"
-  absoluteURL = false
-  
-  [params.header]
-    # desktop header mode ("fixed", "normal", "auto")
-    desktopMode = "fixed"
-    # mobile header mode ("fixed", "normal", "auto")
-    mobileMode = "fixed"
-    # LoveIt NEW | 0.2.0 Header title config
-    [params.header.title]
-      # URL of the LOGO
-      logo = "/images/cow_mailcow.svg"
-      # title name
-      name = "mailcow: dockerized - Blog"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
-      # you can add extra information after the name (HTML format is supported), such as icons
-      post = "📰"
-      # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
-      typeit = false
-	  
-[params.footer]
-    enable = true
-    hugo = true
-    copyright = true
-    author = false
-    since = 2016
-    license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
-    icp = '<a href="/imprint/">Imprint</a> | <a href="/policy/">Privacy Policy</a>'
-
-    [params.footer.powered]
-      enable = true
-      hugoLogo = true
-      themeLogo = true
-
-
- [params.home]
-    # LoveIt NEW | 0.2.0 amount of RSS pages
-    rss = 5
-    # Home page profile
-    [params.home.profile]
-      enable = true
-      # URL of avatar shown in home page
-      avatarURL = "/images/cow_mailcow.svg"
-      title = "The mailserver suite with the 'moo' – 🐮 + 🐋 = 💕"
-      # subtitle shown in home page
-      subtitle = "News and Infos"
-      # whether to use typeit animation for subtitle
-      typeit = false
-      # whether to show social links
-      social = true
-      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
-      disclaimer = ""
-    # Home page posts
-    [params.home.posts]
-      enable = true
-      # special amount of posts in each home posts page
-      paginate = 10
-      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
-      # default behavior when you don't set "hiddenFromHomePage" in front matter
-      defaultHiddenFromHomePage = false
-	
-    [params.page.share]
-      enable = false
-
-  [params.social]
-    GitHub = "mailcow/mailcow-dockerized"
-    Twitter = "mailcow_email"
-    Mastodon = "@doncow@mailcow.social"
-    Email = "info@servercow.de"
-	
-  [params.social.Telegram]
-    # weight when arranging icons (the greater the weight, the later the icon is positioned)
-    weight = 0
-    # your social ID
-    id = "mailcow"
-    # prefix of your social link
-    prefix = "https://t.me/"
-    # content hovering on the icon
-    title = "Telegram (Community Support)"
-	
-  [params.social.telegram-offtopic]
-    # weight when arranging icons (the greater the weight, the later the icon is positioned)
-    weight = 7
-    # your social ID
-    id = "mailcowOffTopic"
-    title = "Telegram (Offtopic)"
-
-  [params.social.community]
-    # weight when arranging icons (the greater the weight, the later the icon is positioned)
-    weight = 12
-    # content hovering on the icon
-    title = "Community (Forum)"	
-
-  [params.social.rss]
-    # weight when arranging icons (the greater the weight, the later the icon is positioned)
-    weight = 64
-    # content hovering on the icon
-    title = "RSS Feed"	    
-	
- [params.page]
-    hiddenFromHomePage = false
-    hiddenFromSearch = false
-    twemoji = false
-    lightgallery = false
-    fraction = true
-    fontawesome = true
-    linkToMarkdown = true
-    authorAvatar = true
-    [params.page.toc]
-      enable = true
-      keepStatic = false
-      auto = true
-    [params.page.code]
-      copy = true
-      maxShownLines = 10
-
-[params.feed]
-  # The number of posts to include in the feed. If set to -1, all posts.
-  limit = 5
-  # whether to show the full text content in feed.
-  fullText = false
+  [params.links]
+    github = "https://github.com/mailcow/mailcow-dockerized"
+    demo = "https://demo.mailcow.email"
+    nightlyDemo = "https://nightly-demo.mailcow.email"
+    forum = "https://community.mailcow.email"
+    telegram = "https://t.me/mailcow"
+    telegramOfftopic = "https://t.me/mailcowOffTopic"
+    mastodon = "https://mailcow.social/@doncow"
+    x = "https://x.com/mailcow_email"
+    sponsors = "https://github.com/sponsors/mailcow"
+    issues = "https://github.com/mailcow/mailcow-dockerized/issues"
 
 [author]
-  name = "Moohoo"
+  name = "The Infrastructure Company GmbH"
   email = "info@servercow.de"
-  link = "servercow.de"
 
 [sitemap]
   changefreq = "weekly"
@@ -165,15 +46,11 @@ enableGitInfo = true
   priority = 0.5
 
 [markup]
-  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
     codeFences = true
-    guessSyntax = true
-    lineNos = true
-    lineNumbersInTable = true
-    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    guessSyntax = false
+    lineNos = false
     noClasses = false
-  # Goldmark is from Hugo 0.60 the default library used for Markdown
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -184,296 +61,296 @@ enableGitInfo = true
       taskList = true
       typographer = true
     [markup.goldmark.renderer]
-      # whether to use HTML tags directly in the document
       unsafe = true
-  # Table Of Contents settings
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 6
-
-[languages]
-  [languages.en]
-    weight = 1
-    title = "mailcow: dockerized - Blog"
-    languageCode = "en"
-    languageName = "English"
-   [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "posts"
-        # you can add extra information before the name (HTML format is supported), such as icons
-        pre = ""
-        # you can add extra information after the name (HTML format is supported), such as icons
-        post = ""
-        name = "Posts"
-        url = "/posts/"
-        # title will be shown when you hover on this menu link.
-        title = ""
-        weight = 1
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
-        weight = 2
-      [[languages.en.menu.main]]
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-        weight = 3
-
-      [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = "<i class='fa fa-book'></i>"
-        post = ""
-        name = "Docs"
-        url = "https://mailcow.github.io/mailcow-dockerized-docs/"
-        title = ""
-        weight = 4
-
-      [[languages.en.menu.main]]
-        identifier = "vps"
-        name = " Verified VPS Providers"
-        pre = "<i class='fa fa-server'></i>"
-        title = "Verified VPS Providers"
-        url = "vps/"
-        weight = 5
-
-      [[languages.en.menu.main]]
-        identifier = "support"
-        pre = "<i class='fas fa-band-aid'></i>"
-        post = "Support"
-        name = ""
-        url = "https://www.servercow.de/mailcow?lang=en#support"
-        title = "Buy Support"
-        weight = 6
-      [[languages.en.menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = "GitHub"
-        url = "https://github.com/mailcow/mailcow-dockerized"
-        title = "GitHub"
-        weight = 6
-
-      [[languages.en.menu.main]]
-        identifier = "demos"
-        name = " Demos"
-        pre = "<i class='fa fa-play'></i>"
-        title = "Demos"
-        weight = 7
-        url = "https://demo.mailcow.email"    
-
-      [[languages.en.menu.main]]
-        identifier = "demo-stable"
-        pre = "✅ "
-        post = ""
-        parent = "demos"
-        name = "Stable Demo"
-        url = "https://demo.mailcow.email"
-        title = "Stable Demo"
-        weight = 1
-
-      [[languages.en.menu.main]]
-        identifier = "demo-nightly"
-        pre = "🛠️ "
-        post = ""
-        parent = "demos"
-        name = "Nightly Demo"
-        url = "https://nightly-demo.mailcow.email"
-        title = "Nightly Demo"     
-        weight = 2  		
-			  
-      [[languages.en.menu.main]]
-        identifier = "sponsor"
-        name = " Sponsor the Project"
-        pre = "<i class='fa fa-heart'></i>"
-        title = "Sponsoring"
-        weight = 8
-        url = "https://mailcow.email"    
-
-      [[languages.en.menu.main]]
-        identifier = "sponsor-sal"
-        pre = "❤️ "
-        post = ""
-        parent = "sponsor"
-        name = "Buy a Stay Awesome License"
-        url = "https://www.servercow.de/mailcow?lang=en#sal"
-        title = "Buy a SAL (One Time Payment)"
-        weight = 1
-
-      [[languages.en.menu.main]]
-        identifier = "sponsor-gh"
-        pre = "🧡 "
-        post = ""
-        parent = "sponsor"
-        name = "Sponsor us directly on GitHub"
-        url = "https://github.com/sponsors/mailcow"
-        title = "Sponsor mailcow on GitHub"     
-        weight = 2  		
-
-  [languages.de]
-    weight = 2
-    title = "mailcow: dockerized - Blog"
-    languageCode = "de"
-    languageName = "Deutsch"
-      [[languages.de.menu.main]]
-        identifier = "posts"
-        pre = ""
-        post = ""
-        name = "Beiträge"
-        url = "/posts/"
-        title = ""
-        weight = 1
-      [[languages.de.menu.main]]
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
-        weight = 2
-      [[languages.de.menu.main]]
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Kategorien"
-        url = "/categories/"
-        title = ""
-        weight = 3
-      [[languages.de.menu.main]]
-        identifier = "documentation"
-        pre = "<i class='fa fa-book'></i>"
-        post = ""
-        name = "Dokumentation"
-        url = "https://mailcow.github.io/mailcow-dockerized-docs/de"
-        title = ""
-        weight = 4
-
-      [[languages.de.menu.main]]
-        identifier = "vps"
-        name = " Verifizierte VPS-Server"
-        pre = "<i class='fa fa-server'></i>"
-        title = "Verifizierte VPS-Server"
-        url = "vps/"
-        weight = 5 
-
-      [[languages.de.menu.main]]
-        identifier = "support"
-        pre = "<i class='fas fa-band-aid'></i>"
-        post = " Support"
-        name = ""
-        url = "https://www.servercow.de/mailcow#support"
-        title = "Support erhalten"
-        weight = 6
-        
-      [[languages.de.menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = "GitHub"
-        url = "https://github.com/mailcow/mailcow-dockerized"
-        title = "GitHub"
-        weight = 7
-
-      [[languages.de.menu.main]]
-        identifier = "demos"
-        name = " Demos"
-        pre = "<i class='fa fa-play'></i>"
-        title = "Demos"
-        weight = 8
-        url = "https://demo.mailcow.email"    
-
-      [[languages.de.menu.main]]
-        identifier = "demo-stable"
-        pre = "✅ "
-        post = ""
-        parent = "demos"
-        name = "Stabile Demo"
-        url = "https://demo.mailcow.email"
-        title = "Stabile Demo"
-        weight = 1
-
-      [[languages.de.menu.main]]
-        identifier = "demo-nightly"
-        pre = "🛠️ "
-        post = ""
-        parent = "demos"
-        name = "Nightly Demo"
-        url = "https://nightly-demo.mailcow.email"
-        title = "Nightly Demo"     
-        weight = 2
-
-      [[languages.de.menu.main]]
-        identifier = "sponsor"
-        name = " Sponsere das Projekt"
-        pre = "<i class='fa fa-heart'></i>"
-        title = "Sponsoring"
-        weight = 9
-        url = "https://mailcow.email"    
-
-      [[languages.de.menu.main]]
-        identifier = "sponsor-sal"
-        pre = "❤️ "
-        post = ""
-        parent = "sponsor"
-        name = "Kaufe eine SAL"
-        url = "https://www.servercow.de/mailcow#sal"
-        title = "Kaufe eine Stay Awesome License (Einmalzahlung)"
-        weight = 1
-
-      [[languages.de.menu.main]]
-        identifier = "sponsor-gh"
-        pre = "🧡 "
-        post = ""
-        parent = "sponsor"
-        name = "Sponsere uns auf GitHub"
-        url = "https://github.com/sponsors/mailcow"
-        title = "Sponsere uns direkt auf GitHub"     
-        weight = 2  
-
-	[languages.de.params]
-      description = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizieller Blog"
-	    dateFormat = "02.01.2006"
-        [languages.de.params.home]
-          # LoveIt NEW | 0.2.0 amount of RSS pages
-          rss = 5
-        [languages.de.params.home.profile]
-          enable = true
-          # Gravatar Email for preferred avatar in home page
-          #gravatarEmail = "info@servercow.de"
-          # URL of avatar shown in home page
-          avatarURL = "/images/cow_mailcow.svg"
-          # title shown in home page (HTML format is supported)
-          title = "Der E-Mail Server mit dem 'moo' – 🐮 + 🐋 = 💕"
-          # subtitle shown in home page
-          subtitle = "Neuigkeiten und Infos"
-          # whether to use typeit animation for subtitle
-          typeit = false
-          # whether to show social links
-          social = true
-          # disclaimer (HTML format is supported)
-          disclaimer = ""
-	
-	[languages.de.params.footer]
-    enable = true
-    hugo = true
-    copyright = true
-    author = false
-    since = 2016
-    license = '<a rel="license external nofollow noopener noreffer" href="https://tinc.gmbh?kontakt" target="_blank">The Infrastructure Company GmbH</a>'	  
-	  icp = '<a href="/de/imprint/">Impressum</a> | <a href="/de/policy/">Datenschutz'
-
-  [languages.de.params.footer.powered]
-  enable = true
-  hugoLogo = true
-  themeLogo = true
+    endLevel = 3
 
 [privacy]
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageCode = "en"
+    languageName = "English"
+    [languages.en.params]
+      dateFormat = "January 2, 2006"
+      dateFormatShort = "Jan 2, 2006"
+      docs = "https://docs.mailcow.email/"
+      install = "https://docs.mailcow.email/getstarted/install/"
+      servercow = "https://servercow.de/en/mailcow/"
+      managed = "https://cp.servercow.de/product/managed-mailcow"
+      support = "https://servercow.de/en/mailcow/#help"
+      sal = "https://cp.servercow.de/product/mailcow-stay-awesome-lizenz-sal"
+      quote = "https://servercow.de/en/mailcow/mailcow-angebot/"
+    [[languages.en.menu.main]]
+      identifier = "news"
+      name = "News"
+      pageRef = "/news"
+      weight = 1
+    [[languages.en.menu.main]]
+      identifier = "releases"
+      name = "Releases"
+      pageRef = "/releases"
+      weight = 2
+    [[languages.en.menu.main]]
+      identifier = "roadmap"
+      name = "Roadmap"
+      pageRef = "/roadmap"
+      weight = 3
+    [[languages.en.menu.main]]
+      identifier = "products"
+      name = "Products"
+      weight = 4
+    [[languages.en.menu.main]]
+      identifier = "managed"
+      parent = "products"
+      name = "managed mailcow"
+      url = "https://cp.servercow.de/product/managed-mailcow"
+      weight = 1
+      params = { group = "From the developers", icon = "server", description = "Your own mailcow server, run by the mailcow team" }
+    [[languages.en.menu.main]]
+      identifier = "support"
+      parent = "products"
+      name = "Support packages"
+      url = "https://servercow.de/en/mailcow/#help"
+      weight = 2
+      params = { group = "From the developers", icon = "life-buoy", description = "Help directly from the developers" }
+    [[languages.en.menu.main]]
+      identifier = "support-1"
+      parent = "support"
+      name = "Ticket"
+      url = "https://cp.servercow.de/product/mailcow-support-ticket-support-paket-1"
+      weight = 1
+      params = { level = 1 }
+    [[languages.en.menu.main]]
+      identifier = "support-2"
+      parent = "support"
+      name = "Phone"
+      url = "https://cp.servercow.de/product/mailcow-support-telefon-support-paket-2"
+      weight = 2
+      params = { level = 2 }
+    [[languages.en.menu.main]]
+      identifier = "support-3"
+      parent = "support"
+      name = "Remote"
+      url = "https://cp.servercow.de/product/mailcow-support-remote-support-paket-3"
+      weight = 3
+      params = { level = 3 }
+    [[languages.en.menu.main]]
+      identifier = "support-4"
+      parent = "support"
+      name = "Emergency"
+      url = "https://cp.servercow.de/product/mailcow-support-notfall-support-paket-4"
+      weight = 4
+      params = { level = 4 }
+    [[languages.en.menu.main]]
+      identifier = "archive"
+      parent = "products"
+      name = "Dedicated Piler"
+      url = "https://cp.servercow.de/product/dedicated-piler"
+      weight = 3
+      params = { group = "From the developers", icon = "archive", description = "Your own Mailpiler as a mail archive" }
+    [[languages.en.menu.main]]
+      identifier = "backupcow"
+      parent = "products"
+      name = "BackupcowMX"
+      url = "https://cp.servercow.de/product/backupcowmx"
+      weight = 4
+      params = { group = "From the developers", icon = "mail-check", description = "Backup MX that accepts mail while your mailcow is down" }
+    [[languages.en.menu.main]]
+      identifier = "vps"
+      parent = "products"
+      name = "Verified VPS providers"
+      pageRef = "/vps"
+      weight = 5
+      params = { group = "Do it yourself", icon = "server-cog", description = "Servers we tested for running mailcow" }
+    [[languages.en.menu.main]]
+      identifier = "install"
+      parent = "products"
+      name = "Installation guide"
+      url = "https://docs.mailcow.email/getstarted/install/"
+      weight = 6
+      params = { group = "Do it yourself", icon = "book-open", description = "Install mailcow on your own server" }
+    [[languages.en.menu.main]]
+      identifier = "sal"
+      parent = "products"
+      name = "Stay Awesome License"
+      url = "https://cp.servercow.de/product/mailcow-stay-awesome-lizenz-sal"
+      weight = 7
+      params = { group = "Support the project", icon = "heart", description = "Voluntary contribution, 100% goes into mailcow" }
+    [[languages.en.menu.main]]
+      identifier = "sponsors"
+      parent = "products"
+      name = "GitHub Sponsors"
+      url = "https://github.com/sponsors/mailcow"
+      weight = 8
+      params = { group = "Support the project", icon = "brand-github", description = "Sponsor mailcow monthly or once on GitHub" }
+    [[languages.en.menu.main]]
+      identifier = "docs"
+      name = "Docs"
+      url = "https://docs.mailcow.email/"
+      weight = 6
+    [[languages.en.menu.main]]
+      identifier = "demo"
+      name = "Demo"
+      weight = 5
+    [[languages.en.menu.main]]
+      identifier = "demo-stable"
+      parent = "demo"
+      name = "Stable demo"
+      url = "https://demo.mailcow.email"
+      weight = 1
+      params = { icon = "circle-check", description = "The current stable release" }
+    [[languages.en.menu.main]]
+      identifier = "demo-nightly"
+      parent = "demo"
+      name = "Nightly demo"
+      url = "https://nightly-demo.mailcow.email"
+      weight = 2
+      params = { icon = "flask-conical", description = "Newest features from the nightly branch" }
+
+  [languages.de]
+    weight = 2
+    languageCode = "de"
+    languageName = "Deutsch"
+    [languages.de.params]
+      dateFormat = "2. January 2006"
+      dateFormatShort = "02.01.2006"
+      description = "Der E-Mail-Server mit dem 'moo' – 🐮 + 🐋 = 💕 | Offizielle Projektseite und Blog"
+      docs = "https://docs.mailcow.email/de/"
+      install = "https://docs.mailcow.email/de/getstarted/install/"
+      servercow = "https://servercow.de/mailcow/"
+      managed = "https://cp.servercow.de/product/managed-mailcow"
+      support = "https://servercow.de/mailcow/#help"
+      sal = "https://cp.servercow.de/product/mailcow-stay-awesome-lizenz-sal"
+      quote = "https://servercow.de/mailcow/mailcow-angebot/"
+    [[languages.de.menu.main]]
+      identifier = "news"
+      name = "Neuigkeiten"
+      pageRef = "/news"
+      weight = 1
+    [[languages.de.menu.main]]
+      identifier = "releases"
+      name = "Releases"
+      pageRef = "/releases"
+      weight = 2
+    [[languages.de.menu.main]]
+      identifier = "roadmap"
+      name = "Roadmap"
+      pageRef = "/roadmap"
+      weight = 3
+    [[languages.de.menu.main]]
+      identifier = "products"
+      name = "Produkte"
+      weight = 4
+    [[languages.de.menu.main]]
+      identifier = "managed"
+      parent = "products"
+      name = "managed mailcow"
+      url = "https://cp.servercow.de/product/managed-mailcow"
+      weight = 1
+      params = { group = "Von den Entwicklern", icon = "server", description = "Dein eigener mailcow-Server, betrieben vom mailcow-Team" }
+    [[languages.de.menu.main]]
+      identifier = "support"
+      parent = "products"
+      name = "Support-Pakete"
+      url = "https://servercow.de/mailcow/#help"
+      weight = 2
+      params = { group = "Von den Entwicklern", icon = "life-buoy", description = "Hilfe direkt von den Entwicklern" }
+    [[languages.de.menu.main]]
+      identifier = "support-1"
+      parent = "support"
+      name = "Ticket"
+      url = "https://cp.servercow.de/product/mailcow-support-ticket-support-paket-1"
+      weight = 1
+      params = { level = 1 }
+    [[languages.de.menu.main]]
+      identifier = "support-2"
+      parent = "support"
+      name = "Telefon"
+      url = "https://cp.servercow.de/product/mailcow-support-telefon-support-paket-2"
+      weight = 2
+      params = { level = 2 }
+    [[languages.de.menu.main]]
+      identifier = "support-3"
+      parent = "support"
+      name = "Remote"
+      url = "https://cp.servercow.de/product/mailcow-support-remote-support-paket-3"
+      weight = 3
+      params = { level = 3 }
+    [[languages.de.menu.main]]
+      identifier = "support-4"
+      parent = "support"
+      name = "Notfall"
+      url = "https://cp.servercow.de/product/mailcow-support-notfall-support-paket-4"
+      weight = 4
+      params = { level = 4 }
+    [[languages.de.menu.main]]
+      identifier = "archive"
+      parent = "products"
+      name = "Dedicated Piler"
+      url = "https://cp.servercow.de/product/dedicated-piler"
+      weight = 3
+      params = { group = "Von den Entwicklern", icon = "archive", description = "Dein eigener Mailpiler als E-Mail-Archiv" }
+    [[languages.de.menu.main]]
+      identifier = "backupcow"
+      parent = "products"
+      name = "BackupcowMX"
+      url = "https://cp.servercow.de/product/backupcowmx"
+      weight = 4
+      params = { group = "Von den Entwicklern", icon = "mail-check", description = "Backup-MX, der Mails annimmt, wenn deine mailcow ausfällt" }
+    [[languages.de.menu.main]]
+      identifier = "vps"
+      parent = "products"
+      name = "Verifizierte VPS-Anbieter"
+      pageRef = "/vps"
+      weight = 5
+      params = { group = "Selbst betreiben", icon = "server-cog", description = "Von uns geprüfte Server für den Betrieb von mailcow" }
+    [[languages.de.menu.main]]
+      identifier = "install"
+      parent = "products"
+      name = "Installationsanleitung"
+      url = "https://docs.mailcow.email/de/getstarted/install/"
+      weight = 6
+      params = { group = "Selbst betreiben", icon = "book-open", description = "mailcow auf dem eigenen Server installieren" }
+    [[languages.de.menu.main]]
+      identifier = "sal"
+      parent = "products"
+      name = "Stay Awesome License"
+      url = "https://cp.servercow.de/product/mailcow-stay-awesome-lizenz-sal"
+      weight = 7
+      params = { group = "Projekt unterstützen", icon = "heart", description = "Freiwilliger Beitrag, 100 % fließen in mailcow" }
+    [[languages.de.menu.main]]
+      identifier = "sponsors"
+      parent = "products"
+      name = "GitHub Sponsors"
+      url = "https://github.com/sponsors/mailcow"
+      weight = 8
+      params = { group = "Projekt unterstützen", icon = "brand-github", description = "mailcow monatlich oder einmalig auf GitHub unterstützen" }
+    [[languages.de.menu.main]]
+      identifier = "docs"
+      name = "Doku"
+      url = "https://docs.mailcow.email/de/"
+      weight = 6
+    [[languages.de.menu.main]]
+      identifier = "demo"
+      name = "Demo"
+      weight = 5
+    [[languages.de.menu.main]]
+      identifier = "demo-stable"
+      parent = "demo"
+      name = "Stable Demo"
+      url = "https://demo.mailcow.email"
+      weight = 1
+      params = { icon = "circle-check", description = "Das aktuelle stabile Release" }
+    [[languages.de.menu.main]]
+      identifier = "demo-nightly"
+      parent = "demo"
+      name = "Nightly Demo"
+      url = "https://nightly-demo.mailcow.email"
+      weight = 2
+      params = { icon = "flask-conical", description = "Neueste Features aus dem Nightly-Branch" }

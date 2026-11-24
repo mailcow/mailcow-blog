@@ -10,8 +10,8 @@ toc: true
 
 license: ""
 
-tags: ["2022", "update", "changelog", "bugfix"]
-categories: ["Updates","Hotfix"]
+tags: ["Hotfix", "Bugfix", "Rspamd", "SOGo", "PHP"]
+categories: ["Updates"]
 ---
 
 **Moohoo zusammen!**

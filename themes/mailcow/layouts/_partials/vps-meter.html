@@ -1,0 +1,7 @@
+{{- $n := cond (eq . "very-good") 5 4 -}}
+{{- $label := cond (eq . "very-good") (i18n "netVeryGood") (i18n "netGoodVeryGood") -}}
+<div class="vps-net" title="{{ i18n "vpsNetwork" }}: {{ $label }}">
+  <span class="meter" aria-hidden="true">{{ range seq 5 }}<i{{ if le . $n }} class="on"{{ end }}></i>{{ end }}</span>
+  <span class="vps-net-label">{{ $label }}</span>
+</div>
+{{- /**/ -}}

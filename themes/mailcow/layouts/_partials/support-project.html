@@ -1,0 +1,29 @@
+<div class="sp">
+  <div class="sp-intro">
+    <img class="sp-cow" src="{{ site.Params.logo | relURL }}" alt="" width="96" height="92" loading="lazy">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>{{ i18n "spEyebrow" }}</div>
+      <h2>{{ i18n "projectSupportTitle" }}</h2>
+      <p>{{ i18n "projectSupportLead" }}</p>
+    </div>
+  </div>
+  <div class="sp-options">
+    <a class="sp-option sp-sal" href="{{ site.Params.sal }}" target="_blank" rel="noopener">
+      <span class="sp-option-icon">{{ partial "icon.html" "heart" }}</span>
+      <span class="sp-option-body">
+        <span class="sp-option-title">{{ i18n "supportSal" }}</span>
+        <span class="sp-option-text">{{ i18n "supportSalText" }}</span>
+        <span class="btn btn-green btn-sm">{{ i18n "salCta" }}{{ partial "icon.html" "arrow-up-right" }}</span>
+      </span>
+    </a>
+    <a class="sp-option" href="{{ site.Params.links.sponsors }}" target="_blank" rel="noopener">
+      <span class="sp-option-icon">{{ partial "icon.html" "brand-github" }}</span>
+      <span class="sp-option-body">
+        <span class="sp-option-title">{{ i18n "supportSponsor" }}</span>
+        <span class="sp-option-text">{{ i18n "supportSponsorText" }}</span>
+        <span class="btn btn-outline btn-sm">{{ i18n "sponsorCta" }}{{ partial "icon.html" "arrow-up-right" }}</span>
+      </span>
+    </a>
+  </div>
+  <p class="sp-share">{{ partial "icon.html" "users" }}<span>{{ i18n "spreadWord" }} <a href="{{ site.Params.links.forum }}" target="_blank" rel="noopener">Forum</a> {{ i18n "orOn" }} <a href="{{ site.Params.links.telegram }}" target="_blank" rel="noopener">Telegram</a>.</span></p>
+</div>

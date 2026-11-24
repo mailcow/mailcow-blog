@@ -1,0 +1,122 @@
+# Verified VPS providers, rendered by the vps-providers shortcode on /vps/.
+# network: very-good | good-very-good, mailPorts: open | on-request
+
+countries:
+  DE: { en: Germany, de: Deutschland }
+  NL: { en: Netherlands, de: Niederlande }
+  GB: { en: United Kingdom, de: Vereinigtes Königreich }
+  SE: { en: Sweden, de: Schweden }
+  CH: { en: Switzerland, de: Schweiz }
+  RO: { en: Romania, de: Rumänien }
+  EE: { en: Estonia, de: Estland }
+  ES: { en: Spain, de: Spanien }
+  US: { en: USA, de: USA }
+  BR: { en: Brazil, de: Brasilien }
+
+regions:
+  - id: europe
+    name: { en: Europe, de: Europa }
+    providers:
+      - name: netcup GmbH
+        country: DE
+        locations:
+          - { city: Nuremberg, city_de: Nürnberg, country: DE }
+        arch: [x86, ARM64]
+        ipv6: native
+        network: good-very-good
+        mailPorts: open
+        url: https://www.netcup.de
+        audience:
+          en: Private users, developers and small businesses focused on cost-efficient solutions.
+          de: Privatanwender, Entwickler und kleine Unternehmen mit Fokus auf kosteneffiziente Lösungen.
+
+      - name: Hetzner Online GmbH
+        country: DE
+        locations:
+          - { city: Falkenstein, country: DE }
+          - { city: Nuremberg, city_de: Nürnberg, country: DE }
+        arch: [x86, ARM64]
+        ipv6: native
+        network: good-very-good
+        mailPorts: on-request
+        url: https://www.hetzner.com
+        audience:
+          en: Developers, start-ups and companies needing scalable cloud solutions with dedicated resources.
+          de: Entwickler, Start-ups und Unternehmen, die skalierbare Cloud-Lösungen mit dedizierten Ressourcen benötigen.
+
+      - name: ETH-Services
+        country: DE
+        locations:
+          - { city: Frankfurt, country: DE }
+        arch: [x86]
+        ipv6: native
+        network: very-good
+        mailPorts: open
+        url: https://eth-services.de
+        audience:
+          en: Private users, developers and small businesses seeking affordable VPS solutions with solid performance.
+          de: Privatanwender, Entwickler und kleine Unternehmen, die preiswerte VPS-Lösungen mit solider Leistung suchen.
+
+      - name: NUXOA GmbH
+        country: DE
+        locations:
+          - { city: Frankfurt, country: DE }
+        arch: [x86]
+        ipv6: native
+        network: very-good
+        mailPorts: open
+        url: https://nuxoa.de/linux-server/
+        audience:
+          en: Companies with high requirements for availability, security and professional support.
+          de: Unternehmen mit hohen Anforderungen an Verfügbarkeit, Sicherheit und professionellen Support.
+
+      - name: IP-Projects GmbH & Co.KG
+        country: DE
+        locations:
+          - { city: Frankfurt, country: DE }
+        arch: [x86]
+        ipv6: native
+        network: very-good
+        mailPorts: open
+        url: https://www.ip-projects.de/de/virtual-server/rootserver
+        audience:
+          en: Companies and private individuals seeking reliable and scalable VPS solutions with global reach.
+          de: Unternehmen und Privatpersonen, die zuverlässige und skalierbare VPS-Lösungen mit globaler Reichweite suchen.
+
+      - name: servinga GmbH
+        country: DE
+        hq: { en: Frankfurt am Main, de: Frankfurt am Main }
+        locations:
+          - { city: Frankfurt, country: DE }
+          - { city: Rotterdam, country: NL }
+          - { city: Manchester, country: GB }
+          - { city: Stockholm, country: SE }
+          - { city: Canton of Zug, city_de: Kanton Zug, country: CH }
+          - { city: Bucharest, city_de: Bukarest, country: RO }
+          - { city: Tallinn, country: EE }
+          - { city: Barcelona, country: ES }
+          - { city: "Dallas, TX", country: US }
+        arch: [x86]
+        ipv6: native
+        network: very-good
+        mailPorts: open
+        url: https://servinga.com/de/cloud/vps-server/
+        audience:
+          en: Developers, small and medium businesses, and large enterprises with high data throughput needs.
+          de: Entwickler, kleine und mittlere Unternehmen sowie große Unternehmen mit hohem Datenaufkommen.
+
+  - id: south-america
+    name: { en: South America, de: Südamerika }
+    providers:
+      - name: ServerSP
+        country: BR
+        locations:
+          - { city: "Miami, FL", country: US }
+        arch: [x86]
+        ipv6: native
+        network: very-good
+        mailPorts: on-request
+        url: https://www.serversp.com
+        audience:
+          en: Companies and developers seeking reliable and scalable VPS solutions with global reach.
+          de: Unternehmen und Entwickler, die zuverlässige und skalierbare VPS-Lösungen mit globaler Reichweite suchen.

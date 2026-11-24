@@ -8,7 +8,7 @@ toc: true
 
 license: ""
 
-tags: ["2026", "update", "changelog", "major"]
+tags: ["Major", "SOGo", "Redis", "Unbound"]
 categories: ["Updates"]
 
 ---

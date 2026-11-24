@@ -1,0 +1,4 @@
+{{- $t := . -}}{{- $fmt := site.Params.dateFormat | default "January 2, 2006" -}}
+{{- if reflect.IsMap . }}{{ $t = .date }}{{ if .short }}{{ $fmt = site.Params.dateFormatShort | default $fmt }}{{ end }}{{ end -}}
+<time datetime="{{ $t.Format "2006-01-02" }}">{{ time.Format $fmt $t }}</time>
+{{- /**/ -}}

@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "nightly", "ldap", "single sign on", "sso", "keycloak", "authentik", "identity provider", "oidc"]
+tags: ["Identity Provider", "LDAP", "OIDC", "Keycloak", "authentik", "Nightly"]
 categories: ["News"]
 
 ---

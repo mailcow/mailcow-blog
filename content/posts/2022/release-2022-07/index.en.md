@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2022", "update", "changelog", "bugfix"]
+tags: ["Bugfix", "2FA"]
 categories: ["Updates"]
 ---
 

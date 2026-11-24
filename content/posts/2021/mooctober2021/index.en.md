@@ -8,7 +8,7 @@ authorLink: "https://github.com/andryyy"
 description: "Patchnotes for the October 2021 Update"
   
 categories: ["Updates"]
-tags: ["2021", "update", "changelog"]
+tags: []
 ---
 
 A big thanks to [Kristian Feldsam](https://feldhost.net "Kristian Feldsam") for integrating Twig. We are closer to Bootstrap 5 than ever. That's a big change we hope to finish soon.

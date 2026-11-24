@@ -1,0 +1,23 @@
+{{- $type := "" -}}{{- $title := "" -}}{{- $open := true -}}
+{{- if .IsNamedParams -}}
+  {{- $type = .Get "type" -}}{{- $title = .Get "title" -}}
+  {{- with .Get "open" }}{{ $open = not (in (slice false "false") .) }}{{ end -}}
+{{- else -}}
+  {{- $type = .Get 0 -}}{{- $title = .Get 1 -}}
+  {{- with .Get 2 }}{{ $open = ne . "false" }}{{ end -}}
+{{- end -}}
+{{- $type = $type | default "note" -}}
+{{- $icons := dict "note" "pencil" "abstract" "list" "info" "info" "tip" "lightbulb" "success" "circle-check" "question" "circle-help" "warning" "triangle-alert" "failure" "octagon-alert" "danger" "octagon-alert" "bug" "bug" "example" "list" "quote" "quote" -}}
+{{- $title = $title | default (i18n (printf "adm_%s" $type)) | default (humanize $type) -}}
+{{- $body := .Inner | .Page.RenderString (dict "display" "block") -}}
+{{- if $open }}
+<div class="admonition admonition-{{ $type }}">
+  <div class="admonition-title">{{ partial "icon.html" (index $icons $type | default "info") }}<span>{{ $title | .Page.RenderString }}</span></div>
+  <div class="admonition-body">{{ $body }}</div>
+</div>
+{{- else }}
+<details class="admonition admonition-{{ $type }}">
+  <summary class="admonition-title">{{ partial "icon.html" (index $icons $type | default "info") }}<span>{{ $title | .Page.RenderString }}</span></summary>
+  <div class="admonition-body">{{ $body }}</div>
+</details>
+{{- end }}

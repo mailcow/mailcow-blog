@@ -1,0 +1,48 @@
+{{- $lang := site.Language.Lang -}}
+{{- $d := site.Data.vps -}}
+{{- $all := slice }}{{ range $d.regions }}{{ range .providers }}{{ $all = $all | append . }}{{ end }}{{ end -}}
+{{- $cc := slice }}{{ range $all }}{{ range .locations }}{{ $cc = $cc | append .country }}{{ end }}{{ end }}{{ $cc = uniq $cc -}}
+{{- $ipv6 := where $all "ipv6" "native" -}}
+<div class="vps">
+  <div class="vps-stats">
+    <div class="vps-stat"><span class="vps-stat-value">{{ len $all }}</span><span class="vps-stat-label">{{ i18n "vpsProviders" }}</span></div>
+    <div class="vps-stat"><span class="vps-stat-value">{{ len $cc }}</span><span class="vps-stat-label">{{ i18n "vpsCountries" }}</span></div>
+    <div class="vps-stat"><span class="vps-stat-value">{{ if eq (len $ipv6) (len $all) }}{{ partial "icon.html" "check" }}{{ else }}{{ len $ipv6 }}/{{ len $all }}{{ end }}</span><span class="vps-stat-label">{{ i18n "vpsIpv6All" }}<small>{{ i18n "vpsIpv6AllText" }}</small></span></div>
+    <div class="vps-stat"><span class="vps-stat-value">{{ partial "icon.html" "shield-check" }}</span><span class="vps-stat-label">{{ i18n "vpsTested" }}<small>{{ i18n "vpsTestedText" }}</small></span></div>
+  </div>
+
+  {{- range $d.regions }}
+  <section class="vps-region">
+    <h2 id="{{ .id }}">{{ index .name $lang | default .name.en }}<span class="count">{{ len .providers }}</span></h2>
+    <div class="vps-grid">
+      {{- range .providers }}
+      {{ partial "vps-card.html" (dict "p" . "countries" $d.countries) }}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  <section class="vps-compare">
+    <h2 id="compare">{{ partial "icon.html" "table" }}{{ i18n "vpsCompare" }}</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>{{ i18n "vpsProvider" }}</th><th>{{ i18n "vpsDataCenters" }}</th><th>{{ i18n "vpsArch" }}</th><th>IPv6</th><th>{{ i18n "vpsNetwork" }}</th><th>{{ i18n "vpsMailPorts" }}</th></tr>
+        </thead>
+        <tbody>
+          {{- range $all }}
+          {{- $locs := .locations }}
+          <tr>
+            <td><a href="#{{ anchorize .name }}">{{ .name }}</a></td>
+            <td>{{ if gt (len $locs) 2 }}{{ i18n "vpsLocationsN" (len $locs) }}{{ else }}{{ range $i, $l := $locs }}{{ if $i }}, {{ end }}{{ if and (eq $lang "de") $l.city_de }}{{ $l.city_de }}{{ else }}{{ $l.city }}{{ end }}{{ end }}{{ end }}</td>
+            <td>{{ delimit .arch " / " }}</td>
+            <td>{{ if eq .ipv6 "native" }}<span class="vps-ok">{{ partial "icon.html" "check" }}{{ i18n "native" }}</span>{{ else }}{{ .ipv6 }}{{ end }}</td>
+            <td>{{ partial "vps-meter.html" .network }}</td>
+            <td>{{ if eq .mailPorts "on-request" }}<span class="vps-warn">{{ partial "icon.html" "triangle-alert" }}{{ i18n "vpsPortsOnRequestShort" }}</span>{{ else }}<span class="vps-ok">{{ partial "icon.html" "check" }}{{ i18n "vpsPortsOpen" }}</span>{{ end }}</td>
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

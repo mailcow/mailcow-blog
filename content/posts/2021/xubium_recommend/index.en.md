@@ -6,7 +6,8 @@ draft: false
 author: "André Peters"
 authorLink: "https://github.com/andryyy"
   
-tags: ["2021", "recommendations"]
+tags: ["Community"]
+categories: ["News"]
 ---
 
 Dear cows,

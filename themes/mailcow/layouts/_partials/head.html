@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $pager := partial "pager.html" . -}}
+{{- $pageNum := 1 }}{{ $canonical := .Permalink -}}
+{{- with $pager }}{{ $pageNum = .PageNumber }}{{ if gt .PageNumber 1 }}{{ $canonical = .URL | absURL }}{{ end }}{{ end -}}
+{{- $title := "" -}}
+{{- if .IsHome }}{{ $title = i18n "seoHomeTitle" -}}
+{{- else if .Params.seoTitle }}{{ $title = .Params.seoTitle -}}
+{{- else }}{{ $title = printf "%s%s · %s" (replaceRE `^(?:[\p{So}\p{Sk}\x{FE0F}\x{200D}]|\s)+` "" .Title) (cond (gt $pageNum 1) (printf " · %s" (i18n "pageN" $pageNum)) "") site.Title }}{{ end -}}
+{{- $desc := partial "seo-description.html" . -}}
+{{- if gt $pageNum 1 }}{{ $desc = printf "%s (%s)" $desc (i18n "pageN" $pageNum) }}{{ end -}}
+{{- $image := partial "seo-image.html" . }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+{{- if or (eq .Kind "404") .Params.noindex }}
+<meta name="robots" content="noindex">
+{{- end }}
+{{- if ne .Kind "404" }}
+<link rel="canonical" href="{{ $canonical }}">
+{{- end }}
+{{- if and .IsTranslated (eq $pageNum 1) (ne .Kind "404") }}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{- end }}
+{{- range where .AllTranslations "Language.Lang" site.Sites.Default.Language.Lang }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+{{- end }}
+{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">{{ end }}
+<meta name="theme-color" content="#6F5D49">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<link rel="preload" href="{{ "fonts/poppins-v24-latin_latin-ext-regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/roboto-slab-v36-cyrillic_greek_latin-500.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{ $css := slice (resources.Get "css/main.css") (resources.Get "css/chroma.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+{{ partial "seo-social.html" (dict "page" . "title" $title "description" $desc "image" $image "url" $canonical) }}
+{{ partial "seo-schema.html" (dict "page" . "description" $desc "image" $image) }}

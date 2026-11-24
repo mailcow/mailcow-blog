@@ -1,0 +1,5 @@
+name = "mailcow"
+license = "GPL-3.0"
+description = "Theme for mailcow.email, based on the servercow design used in the mailcow UI"
+homepage = "https://github.com/mailcow/mailcow-blog"
+min_version = "0.147.0"

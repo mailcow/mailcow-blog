@@ -8,7 +8,7 @@ toc: true
 
 license: ""
 
-tags: ["2026", "update", "changelog", "major"]
+tags: ["Security", "Major", "SOGo", "imapsync"]
 categories: ["Updates"]
 
 ---

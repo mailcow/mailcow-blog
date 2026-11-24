@@ -10,7 +10,7 @@ lightgallery: true
 
 license: ""
 
-tags: ["2023", "LDAP"]
+tags: ["LDAP"]
 categories: ["News"]
 
 ---

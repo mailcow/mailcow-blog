@@ -9,8 +9,8 @@ toc: true
 
 license: ""
 
-tags: ["2024", "faq", "news", "status", "ldap"]
-categories: ["What's up?", "News"]
+tags: ["LDAP", "Nightly"]
+categories: ["News"]
 
 ---
 

@@ -10,7 +10,7 @@ lightgallery: true
 
 license: ""
 
-tags: ["2022", "update", "changelog"]
+tags: ["UI"]
 categories: ["Updates"]
 
 featuredImage: "/images/2022-12/mailcow_ui_login.en.png"

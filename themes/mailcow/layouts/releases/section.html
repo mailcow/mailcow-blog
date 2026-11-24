@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{- $g := partial "post-groups.html" . -}}
+{{ partial "page-hero.html" (dict "title" .Title "description" .Description) }}
+<section class="section section-tight">
+  <div class="container narrow">
+    {{- range $g.releases.GroupByDate "2006" }}
+    <div class="year-group">
+      <h2 class="year-title">{{ .Key }}</h2>
+      <div class="card release-list">
+        {{ range .Pages }}{{ partial "release-row.html" . }}{{ end }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

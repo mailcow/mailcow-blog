@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "eyebrow" .Parent.Title "title" .Title) }}
+<section class="section section-tight">
+  <div class="container">
+    {{- $p := .Paginate .Pages }}
+    <div class="card-grid">
+      {{ range $p.Pages }}{{ partial "post-card.html" (dict "page" . "compact" false) }}{{ end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
+</section>
+{{ end }}

@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "ARM64"]
+tags: ["ARM64"]
 categories: ["News"]
 
 featuredImage: "/images/2023/May/arm64_announcement.jpg"

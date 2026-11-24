@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "update", "changelog", "ARM64", "Performance"]
+tags: ["ARM64"]
 categories: ["Updates"]
 
 ---

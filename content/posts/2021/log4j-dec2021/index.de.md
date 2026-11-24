@@ -6,7 +6,7 @@ draft: false
 author: "Niklas Meyer"
   
 categories: ["Sicherheit"]
-tags: ["2021", "bugfix", "log4j"]
+tags: ["Security", "log4j"]
 ---
 
 **Moohoo an alle!** \

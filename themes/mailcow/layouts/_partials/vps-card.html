@@ -1,0 +1,33 @@
+{{- $lang := site.Language.Lang -}}
+{{- $p := .p -}}
+{{- $cn := index .countries $p.country -}}
+{{- $host := replaceRE `^https?://(www\.)?([^/]+).*$` "$2" $p.url -}}
+{{- $net := cond (eq $p.network "very-good") 5 4 -}}
+<article class="card vps-card" id="{{ anchorize $p.name }}">
+  <header class="vps-card-head">
+    <div class="vps-title">
+      <h3>{{ $p.name }}</h3>
+      <div class="vps-origin">{{ partial "icon.html" "building-2" }}<span class="cc">{{ $p.country }}</span>{{ index $cn $lang | default $cn.en }}{{ with $p.hq }} · {{ index . $lang | default .en }}{{ end }}</div>
+    </div>
+    {{ partial "vps-meter.html" $p.network }}
+  </header>
+  <dl class="vps-specs">
+    <div class="vps-spec vps-spec-wide">
+      <dt>{{ partial "icon.html" "map-pin" }}{{ i18n "vpsDataCenters" }}</dt>
+      <dd class="vps-locations">{{ range $p.locations }}<span class="loc"><span class="cc">{{ .country }}</span>{{ if and (eq $lang "de") .city_de }}{{ .city_de }}{{ else }}{{ .city }}{{ end }}</span>{{ end }}</dd>
+    </div>
+    <div class="vps-spec">
+      <dt>{{ partial "icon.html" "cpu" }}{{ i18n "vpsArch" }}</dt>
+      <dd>{{ range $p.arch }}<span class="chip">{{ . }}</span>{{ end }}</dd>
+    </div>
+    <div class="vps-spec">
+      <dt>{{ partial "icon.html" "network" }}IPv6</dt>
+      <dd>{{ if eq $p.ipv6 "native" }}<span class="vps-ok">{{ partial "icon.html" "check" }}{{ i18n "native" }}</span>{{ else }}{{ $p.ipv6 }}{{ end }}</dd>
+    </div>
+  </dl>
+  <p class="vps-audience"><span class="vps-label">{{ i18n "vpsIdealFor" }}</span>{{ index $p.audience $lang | default $p.audience.en }}</p>
+  {{- if eq $p.mailPorts "on-request" }}
+  <p class="vps-note">{{ partial "icon.html" "triangle-alert" }}<span>{{ i18n "vpsPortsOnRequest" }}</span></p>
+  {{- end }}
+  <a class="btn btn-outline btn-block vps-link" href="{{ $p.url }}" target="_blank" rel="noopener">{{ i18n "vpsVisit" }}<span class="vps-host">{{ $host }}</span>{{ partial "icon.html" "arrow-up-right" }}</a>
+</article>

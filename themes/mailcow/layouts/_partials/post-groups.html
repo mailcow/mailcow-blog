@@ -1,0 +1,4 @@
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $releases := where $posts "Params.categories" "intersect" (slice "Updates") -}}
+{{- $news := complement $releases $posts -}}
+{{- return dict "posts" $posts "releases" $releases "news" $news -}}

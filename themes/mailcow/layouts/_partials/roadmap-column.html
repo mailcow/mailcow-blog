@@ -1,0 +1,9 @@
+{{- $items := where site.Data.roadmap.items "status" .status -}}
+{{- $st := partial "roadmap-status.html" .status -}}
+{{- $limit := .limit | default 100 -}}
+<section class="rm-col st-{{ .status }}">
+  <header class="rm-col-head">{{ partial "icon.html" $st.icon }}<span>{{ $st.label }}</span><span class="count">{{ len $items }}</span></header>
+  <ul class="rm-items">{{ range first $limit $items }}{{ partial "roadmap-row.html" . }}{{ end }}</ul>
+  {{- $rest := sub (len $items) $limit }}
+  {{- if gt $rest 0 }}{{ with .more }}<a class="rm-more" href="{{ . }}">{{ i18n "rmMore" $rest }}{{ partial "icon.html" "arrow-right" }}</a>{{ end }}{{ end }}
+</section>

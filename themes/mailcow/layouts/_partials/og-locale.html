@@ -1,0 +1,3 @@
+{{- $c := replace . "-" "_" -}}
+{{- if not (strings.Contains $c "_") }}{{ $c = index (dict "de" "de_DE" "en" "en_US") $c | default $c }}{{ end -}}
+{{- return $c -}}

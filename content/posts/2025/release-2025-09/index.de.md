@@ -8,7 +8,7 @@ toc: true
 
 license: ""
 
-tags: ["2025", "update", "changelog"]
+tags: ["Rspamd", "SOGo", "MTA-STS"]
 categories: ["Updates"]
 
 ---

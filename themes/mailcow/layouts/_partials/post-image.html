@@ -1,0 +1,7 @@
+{{- $src := .Params.featuredImagePreview | default .Params.featuredImage -}}
+{{- $url := "" -}}
+{{- with $src -}}
+  {{- if or (hasPrefix . "/") (hasPrefix . "http") }}{{ $url = . | relURL }}
+  {{- else }}{{ with $.Resources.Get . }}{{ $url = .RelPermalink }}{{ end }}{{ end -}}
+{{- end -}}
+{{- return $url -}}

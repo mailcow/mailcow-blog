@@ -8,7 +8,7 @@ toc: true
 
 license: ""
 
-tags: ["2025", "update", "changelog", "major"]
+tags: ["Major", "Full-text search"]
 categories: ["Updates"]
 
 ---
