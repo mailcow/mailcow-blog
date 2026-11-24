@@ -1,0 +1,8 @@
+{{- $v := slice -}}
+{{- range .Fragments.Identifiers -}}
+  {{- with findRE `^\d{4}-\d{2}[a-z]?` . 1 }}{{ $v = $v | append (index . 0) }}{{ end -}}
+{{- end -}}
+{{- if not $v -}}
+  {{- with .File }}{{ with findRE `\d{4}-\d{2}[a-z]?$` .ContentBaseName 1 }}{{ $v = slice (index . 0) }}{{ end }}{{ end -}}
+{{- end -}}
+{{- return (sort (uniq $v) "value" "desc") -}}

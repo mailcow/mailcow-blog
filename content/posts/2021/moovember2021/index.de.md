@@ -8,7 +8,7 @@ authorLink: "https://github.com/DerLinkman"
 description: "Änderungen des November 2021 der mailcow"
   
 categories: ["Updates"]
-tags: ["2021", "update", "changelog"]
+tags: []
 ---
 
 **Moohoo allerseits!**

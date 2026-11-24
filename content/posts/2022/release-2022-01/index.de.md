@@ -9,7 +9,7 @@ description: "Patchnotes für das Januar 2022 Update"
 license: ""
 
 categories: ["Updates"]
-tags: ["2022", "update", "änderungen"]
+tags: ["2FA"]
 ---
 
 **Moohoo** an alle, Niklas hier mit dem neuesten Changelog für unsere geliebte mailcow E-Mail-Software!

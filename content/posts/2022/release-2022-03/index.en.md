@@ -7,7 +7,7 @@ authorLink: "https://github.com/DerLinkman"
 
 license: ""
 
-tags: ["2022", "update", "changelog", "bugfix"]
+tags: ["Bugfix", "Dovecot", "ClamAV", "Olefy"]
 categories: ["Updates"]
 ---
 

@@ -9,8 +9,8 @@ toc: true
 
 license: ""
 
-tags: ["2022", "update", "changelog", "bugfix","important"]
-categories: ["Updates","Security"]
+tags: ["Security", "Bugfix"]
+categories: ["Updates"]
 ---
 
 ### 2022-09a (Release: 30th September 2022)

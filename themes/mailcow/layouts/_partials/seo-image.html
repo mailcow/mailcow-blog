@@ -1,0 +1,4 @@
+{{- $img := partial "post-image.html" . -}}
+{{- if not $img }}{{ with .Params.images }}{{ $img = index . 0 | relURL }}{{ end }}{{ end -}}
+{{- if not $img }}{{ $img = "images/og-default.png" | relURL }}{{ end -}}
+{{- return ($img | absURL) -}}

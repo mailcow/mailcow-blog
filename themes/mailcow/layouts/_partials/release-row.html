@@ -1,0 +1,9 @@
+{{- $versions := partial "versions.html" . -}}
+<div class="release-row">
+  <span class="release-row-date">{{ partial "date.html" (dict "date" .Date "short" true) }}</span>
+  <span class="release-row-main">
+    <span class="chips">{{ range $versions }}{{ partial "version-chip.html" . }}{{ end }}{{ if partial "is-security.html" . }}<span class="badge badge-danger">{{ partial "icon.html" "shield-alert" }}{{ i18n "security" }}</span>{{ end }}</span>
+    <a class="release-row-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </span>
+  {{ partial "icon.html" "chevron-right" }}
+</div>

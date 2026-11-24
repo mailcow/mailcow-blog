@@ -10,8 +10,8 @@ images: ["/images/twitter_image.png"]
 featuredImage: "/images/twitter_image.png"
 featuredImagePreview: "/images/twitter_image.png"
   
-categories: ["Social Media"]
-tags: ["2022", "social media"]
+categories: ["News"]
+tags: ["Community"]
 ---
 
 **Moohoo everyone!**

@@ -6,7 +6,8 @@ draft: false
 author: "André Peters"
 authorLink: "https://github.com/andryyy"
   
-tags: ["2021", "bugfix", "memoryleak"]
+tags: ["Bugfix", "Rspamd"]
+categories: ["News"]
 ---
 
 Hi,

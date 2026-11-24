@@ -8,7 +8,7 @@ authorLink: "https://github.com/DerLinkman"
 description: "Patchnotes for the November 2021 Update"
   
 categories: ["Updates"]
-tags: ["2021", "update", "changelog"]
+tags: []
 ---
 
 **Moohoo everyone!**

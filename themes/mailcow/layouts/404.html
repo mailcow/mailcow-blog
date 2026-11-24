@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="section not-found">
+  <div class="container narrow">
+    <img src="{{ site.Params.logo | relURL }}" alt="" width="120" height="114">
+    <h1>{{ i18n "notFoundTitle" }}</h1>
+    <p class="lead">{{ i18n "notFoundText" }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ site.Home.RelPermalink }}">{{ i18n "backHome" }}</a>
+      {{ with site.GetPage "/posts" }}<a class="btn btn-outline" href="{{ .RelPermalink }}">{{ i18n "archive" }}</a>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

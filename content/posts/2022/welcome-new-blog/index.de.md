@@ -13,6 +13,8 @@ images: ["/images/new-blog_thumb.jpg"]
 featuredImage: "/images/new-blog_thumb.jpg"
 featuredImagePreview: "/images/new-blog_thumb.jpg"
 
+categories: ["News"]
+tags: ["Community"]
 ---
 
 Einen wunderschönen Guten Tag wünschen wir euch!

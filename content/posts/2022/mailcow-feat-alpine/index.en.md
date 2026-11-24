@@ -15,7 +15,7 @@ featuredImage: "/images/mailcow-feat-alpine.jpg"
 featuredImagePreview: "/images/mailcow-feat-alpine_preview.jpg"
 
 categories: ["Guides"]
-tags: ["Alpine", "Installation", "Tutorial"]
+tags: ["Alpine", "Installation"]
 ---
 
 <!--more-->

@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{- $g := partial "post-groups.html" . -}}
+{{- $cats := dict -}}
+{{- range $g.news }}{{ range .Params.categories }}{{ $cats = merge $cats (dict . (add (index $cats . | default 0) 1)) }}{{ end }}{{ end -}}
+{{ partial "page-hero.html" (dict "title" .Title "description" .Description) }}
+<section class="section section-tight">
+  <div class="container">
+    <div class="filter-chips">
+      {{- range $name, $count := $cats }}
+      {{- with site.GetPage (printf "/categories/%s" (urlize $name)) }}
+      <a class="chip chip-link" href="{{ .RelPermalink }}">{{ $name }} <span class="count">{{ $count }}</span></a>
+      {{- end }}
+      {{- end }}
+    </div>
+    {{- $p := .Paginate $g.news }}
+    <div class="card-grid">
+      {{ range $p.Pages }}{{ partial "post-card.html" (dict "page" . "compact" false) }}{{ end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
+</section>
+{{ end }}

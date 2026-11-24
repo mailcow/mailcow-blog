@@ -1,0 +1,3 @@
+{{- $s := in (.Params.tags | default slice) "Security" -}}
+{{- range .Params.categories }}{{ if in (slice "Security" "Sicherheit") . }}{{ $s = true }}{{ end }}{{ end -}}
+{{- return $s -}}

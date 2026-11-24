@@ -9,8 +9,8 @@ toc: true
 
 license: ""
 
-tags: ["2023", "update", "changelog", "security", "hotfix", "important"]
-categories: ["Updates", "Hotfix"]
+tags: ["Security", "Hotfix"]
+categories: ["Updates"]
 
 ---
 

@@ -11,8 +11,8 @@ images: ["/images/nightly_thumb.png"]
 featuredImage: "/images/nightly_thumb.png"
 featuredImagePreview: "/images/nightly_thumb.png"
 
-tags: ["2022", "nightly", "testing", "feedback"]
-categories: ["Nightly", "Beta"]
+tags: ["UI", "Nightly"]
+categories: ["News"]
 ---
 
 Lange genug hat es gedauert, aber hier ist sie endlich: Die neue mailcow UI!

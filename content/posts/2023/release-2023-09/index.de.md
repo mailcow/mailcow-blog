@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "update", "changelog", "SOGo", "hotfix"]
+tags: ["Hotfix", "SOGo"]
 categories: ["Updates"]
 
 ---

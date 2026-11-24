@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{- $isPost := eq .Section "posts" -}}
+{{- $isRelease := partial "is-release.html" . -}}
+{{- $parent := "" }}{{ if $isPost }}{{ $parent = site.GetPage (cond $isRelease "/releases" "/news") }}{{ end -}}
+{{- $img := partial "post-image.html" . -}}
+{{- $showToc := and (ne .Params.toc false) (gt (len .Fragments.Identifiers) 2) -}}
+<article class="article">
+  <header class="article-header">
+    <div class="container">
+      {{- with $parent }}
+      <nav class="breadcrumb"><a href="{{ site.Home.RelPermalink }}">mailcow</a>{{ partial "icon.html" "chevron-right" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a></nav>
+      {{- end }}
+      {{- if $isPost }}
+      <div class="article-badges">
+        {{- if $isRelease }}
+          {{ range partial "versions.html" . }}{{ partial "version-chip.html" . }}{{ end }}
+          {{ if partial "is-security.html" . }}<span class="badge badge-danger">{{ partial "icon.html" "shield-alert" }}{{ i18n "security" }}</span>{{ end }}
+        {{- else }}
+          {{ range .Params.categories }}<span class="badge badge-{{ partial "category-class.html" . }}">{{ . }}</span>{{ end }}
+        {{- end }}
+      </div>
+      {{- end }}
+      <h1>{{ .Title }}</h1>
+      {{- if not $isPost }}{{ with .Description }}
+      <p class="lead">{{ . }}</p>
+      {{- end }}{{ end }}
+      {{- if $isPost }}
+      <div class="article-meta">
+        <span>{{ partial "icon.html" "calendar" }}{{ partial "date.html" .Date }}</span>
+        <span>{{ partial "icon.html" "clock" }}{{ i18n "minRead" .ReadingTime }}</span>
+        {{ with .Params.author }}<span>{{ partial "icon.html" "users" }}{{ with $.Params.authorLink }}<a href="{{ . }}">{{ $.Params.author }}</a>{{ else }}{{ . }}{{ end }}</span>{{ end }}
+      </div>
+      {{- end }}
+    </div>
+  </header>
+
+  <div class="container article-grid{{ if not $showToc }} no-toc{{ end }}{{ if .Params.wide }} wide{{ end }}">
+    <div class="article-main">
+      {{ with $img }}<figure class="article-figure"><img src="{{ . }}" alt="{{ replaceRE `^(?:[\p{So}\p{Sk}\x{FE0F}\x{200D}]|\s)+` "" $.Title }}"></figure>{{ end }}
+      <div class="prose">
+        {{ .Content }}
+      </div>
+
+      {{- if $isRelease }}{{ partial "servercow-teaser.html" "release" }}{{ end }}
+
+      {{- with .GetTerms "tags" }}
+      <div class="article-tags">
+        {{ partial "icon.html" "tag" }}
+        {{ range . }}<a class="chip chip-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      </div>
+      {{- end }}
+
+      <div class="article-footer">
+        {{ with .File }}<a class="edit-link" href="{{ site.Params.repo }}/edit/master/content/{{ .Path }}" target="_blank" rel="noopener">{{ partial "icon.html" "pencil" }}{{ i18n "editOnGitHub" }}</a>{{ end }}
+      </div>
+
+      {{- if $isPost }}
+      <nav class="article-nav">
+        {{- with .PrevInSection }}
+        <a class="card article-nav-link" href="{{ .RelPermalink }}"><span class="article-nav-label">{{ partial "icon.html" "arrow-left" }}{{ i18n "older" }}</span><span class="article-nav-title">{{ .Title }}</span></a>
+        {{- else }}<span></span>{{ end }}
+        {{- with .NextInSection }}
+        <a class="card article-nav-link next" href="{{ .RelPermalink }}"><span class="article-nav-label">{{ i18n "newer" }}{{ partial "icon.html" "arrow-right" }}</span><span class="article-nav-title">{{ .Title }}</span></a>
+        {{- end }}
+      </nav>
+      {{- end }}
+    </div>
+
+    {{- if $showToc }}
+    <aside class="article-toc">
+      <div class="toc-sticky">
+        <div class="toc-title">{{ partial "icon.html" "list" }}{{ i18n "onThisPage" }}</div>
+        {{ .TableOfContents }}
+      </div>
+    </aside>
+    {{- end }}
+  </div>
+</article>
+{{ end }}

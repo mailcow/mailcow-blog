@@ -1,0 +1,48 @@
+- name: Postfix
+  role:
+    en: "Mail transfer agent"
+    de: "Mail Transfer Agent"
+- name: Dovecot
+  role:
+    en: "IMAP, POP3 and Sieve"
+    de: "IMAP, POP3 und Sieve"
+- name: Rspamd
+  role:
+    en: "Spam filter and DKIM"
+    de: "Spamfilter und DKIM"
+- name: SOGo
+  role:
+    en: "Webmail, calendar and contacts"
+    de: "Webmail, Kalender und Kontakte"
+- name: ClamAV
+  role:
+    en: "Virus scanner"
+    de: "Virenscanner"
+- name: MariaDB
+  role:
+    en: "Database"
+    de: "Datenbank"
+- name: Redis
+  role:
+    en: "Cache and settings"
+    de: "Cache und Einstellungen"
+- name: Nginx
+  role:
+    en: "Web server"
+    de: "Webserver"
+- name: Unbound
+  role:
+    en: "DNSSEC resolver"
+    de: "DNSSEC-Resolver"
+- name: ACME
+  role:
+    en: "Let's Encrypt certificates"
+    de: "Let's-Encrypt-Zertifikate"
+- name: Netfilter
+  role:
+    en: "Brute-force protection"
+    de: "Schutz vor Brute-Force"
+- name: Olefy
+  role:
+    en: "Office macro scanner"
+    de: "Office-Makro-Scanner"

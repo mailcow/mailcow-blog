@@ -9,8 +9,8 @@ toc: true
 
 license: ""
 
-tags: ["2024", "info", "docker", "25.X", "ipv6", "changes"]
-categories: ["Status", "Hinweis"]
+tags: ["Docker", "IPv6"]
+categories: ["News"]
 
 ---
 

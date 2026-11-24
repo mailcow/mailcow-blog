@@ -1,0 +1,7 @@
+{{- $m := dict
+  "planned" (dict "label" (i18n "statusPlanned") "icon" "calendar-check")
+  "progress" (dict "label" (i18n "statusProgress") "icon" "hammer")
+  "nightly" (dict "label" (i18n "statusNightly") "icon" "flask-conical")
+  "released" (dict "label" (i18n "statusReleased") "icon" "rocket")
+-}}
+{{- return (index $m .) -}}

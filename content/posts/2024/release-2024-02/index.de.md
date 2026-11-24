@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2024", "update", "changelog", "clamav", "clamd", "security"]
+tags: ["Security", "ClamAV"]
 categories: ["Updates"]
 
 ---

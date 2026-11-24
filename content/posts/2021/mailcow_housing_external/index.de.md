@@ -6,7 +6,8 @@ draft: false
 author: "André Peters"
 authorLink: "https://github.com/andryyy"
   
-tags: ["2021", "empfehlungen"]
+tags: ["Hosting", "Community"]
+categories: ["News"]
 ---
 
 Da die Frage immer wieder aufkommt und es schwierig ist ein  für den Mailserverbetrieb geeignetes ASN zu finden, kann ich heute ruhigen Gewissens Lennarts ETH-Services empfehlen.
@@ -17,4 +18,4 @@ Für einen reibungslosen Betrieb einer mailcow empfehle ich den [VPS Gianfar](ht
 
 Es ist eine aufrichtige, nicht bezahlte und gut gemeinte Empfehlung.
 
-Zusammen mit unserem [mailcow Support](https://www.servercow.de/mailcow#support "mailcow Support") steht dem Betrieb nichts mehr im Weg. ;-)
+Zusammen mit unserem [mailcow Support](https://www.servercow.de/mailcow#help "mailcow Support") steht dem Betrieb nichts mehr im Weg. ;-)

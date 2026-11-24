@@ -8,8 +8,8 @@ toc: false
 
 license: ""
 
-tags: ["2022", "update", "security", "hotfix", "wichtig"]
-categories: ["Sicherheit", "Hotfix"]
+tags: ["Security", "Hotfix"]
+categories: ["Updates"]
 ---
 
 Hallo zusammen,

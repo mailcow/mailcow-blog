@@ -6,7 +6,8 @@ draft: false
 author: "André Peters"
 authorLink: "https://github.com/andryyy"
   
-tags: ["2021"]
+tags: ["Community"]
+categories: ["News"]
 ---
 
 Mädchen, Jungs und mailcows,

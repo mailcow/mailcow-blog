@@ -1,0 +1,11 @@
+{{- $p := false -}}
+{{- if eq .Kind "term" -}}
+  {{- $p = .Paginate .Pages -}}
+{{- else if eq .Kind "section" -}}
+  {{- if eq .Section "news" -}}
+    {{- $p = .Paginate (partial "post-groups.html" .).news -}}
+  {{- else if not (in (slice "releases" "posts" "roadmap") .Section) -}}
+    {{- $p = .Paginate .Pages -}}
+  {{- end -}}
+{{- end -}}
+{{- return $p -}}

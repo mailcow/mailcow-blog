@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "update", "changelog"]
+tags: ["Rspamd", "SOGo"]
 categories: ["Updates"]
 
 featuredImage: "/images/2023/April/netfilter_incremental_en.png"

@@ -8,7 +8,7 @@ authorLink: "https://github.com/DerLinkman"
 license: ""
 
 toc: false
-tags: ["2022", "update", "changelog", "bugfix"]
+tags: ["Bugfix"]
 categories: ["Updates"]
 ---
 

@@ -1,0 +1,77 @@
+{{- $current := "" -}}
+{{- if in (slice "news" "releases" "roadmap") .Section }}{{ $current = .Section }}{{ end -}}
+{{- if and .IsPage (eq .Section "posts") }}{{ $current = cond (partial "is-release.html" .) "releases" "news" }}{{ end -}}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="mailcow: dockerized">
+      <img src="{{ site.Params.logo | relURL }}" alt="" width="38" height="36">
+      <span class="brand-text"><span class="brand-name">mailcow</span><span class="brand-sub">: dockerized</span></span>
+    </a>
+    <button class="nav-toggle icon-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="{{ i18n "toggleMenu" }}">{{ partial "icon.html" "menu" }}</button>
+    <nav id="site-nav" class="site-nav">
+      <ul class="nav-list">
+        {{- range site.Menus.main }}
+        {{- if .HasChildren }}
+        {{- $childActive := false }}
+        {{- range .Children }}{{ if and .Page (eq .Page.RelPermalink $.RelPermalink) }}{{ $childActive = true }}{{ end }}{{ end }}
+        <li class="nav-item-dropdown">
+          <details class="dropdown nav-dropdown">
+            <summary class="nav-link{{ if $childActive }} active{{ end }}">{{ .Name }}{{ partial "icon.html" "chevron-down" }}</summary>
+            <div class="dropdown-menu nav-menu nav-menu-{{ .Identifier }}">
+              {{- $group := "" }}
+              {{- range .Children }}
+              {{- $external := and (not .Page) (hasPrefix .URL "http") }}
+              {{- $g := .Params.group | default "" }}
+              {{- if and $g (ne $g $group) }}{{ $group = $g }}
+              <div class="nav-menu-group">{{ $group }}</div>
+              {{- end }}
+              {{- if .HasChildren }}
+              <div class="nav-menu-item has-sub">
+                <span class="nav-menu-icon">{{ partial "icon.html" (.Params.icon | default "arrow-right") }}</span>
+                <span class="nav-menu-text">
+                  <a class="nav-menu-name" href="{{ .URL }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}{{ if $external }}{{ partial "icon.html" "arrow-up-right" }}{{ end }}</a>
+                  {{- with .Params.description }}<span class="nav-menu-desc">{{ . }}</span>{{ end }}
+                  <span class="nav-menu-sub">
+                    {{- range .Children }}
+                    <a href="{{ .URL }}" target="_blank" rel="noopener"><span class="lvl">{{ .Params.level }}</span>{{ .Name }}</a>
+                    {{- end }}
+                  </span>
+                </span>
+              </div>
+              {{- else }}
+              <a class="nav-menu-item{{ if and .Page (eq .Page.RelPermalink $.RelPermalink) }} active{{ end }}" href="{{ .URL }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+                <span class="nav-menu-icon">{{ partial "icon.html" (.Params.icon | default "arrow-right") }}</span>
+                <span class="nav-menu-text"><span class="nav-menu-name">{{ .Name }}{{ if $external }}{{ partial "icon.html" "arrow-up-right" }}{{ end }}</span>{{ with .Params.description }}<span class="nav-menu-desc">{{ . }}</span>{{ end }}</span>
+              </a>
+              {{- end }}
+              {{- end }}
+            </div>
+          </details>
+        </li>
+        {{- else }}
+        {{- $external := not .Page }}
+        {{- $active := or (eq .Identifier $current) (and .Page (eq .Page.RelPermalink $.RelPermalink)) }}
+        <li><a class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}{{ if $external }}{{ partial "icon.html" "arrow-up-right" }}{{ end }}</a></li>
+        {{- end }}
+        {{- end }}
+      </ul>
+      <div class="nav-actions">
+        <a class="icon-btn" href="{{ site.Params.links.github }}" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "icon.html" "brand-github" }}</a>
+        <details class="dropdown lang-menu">
+          <summary class="icon-btn" aria-label="{{ i18n "language" }}">{{ partial "icon.html" "languages" }}<span>{{ upper site.Language.Lang }}</span>{{ partial "icon.html" "chevron-down" }}</summary>
+          <ul class="dropdown-menu">
+            {{- range site.Sites }}
+            {{- $lang := .Language.Lang }}
+            {{- $href := .Home.RelPermalink }}
+            {{- range $.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+            {{- $active := eq $lang site.Language.Lang }}
+            <li><a href="{{ $href }}" hreflang="{{ .Language.LanguageCode }}" lang="{{ .Language.LanguageCode }}"{{ if $active }} class="active" aria-current="true"{{ end }}><span class="lang-code">{{ upper $lang }}</span>{{ .Language.LanguageName }}{{ if $active }}{{ partial "icon.html" "check" }}{{ end }}</a></li>
+            {{- end }}
+          </ul>
+        </details>
+        <button class="icon-btn theme-toggle" type="button" aria-label="{{ i18n "toggleTheme" }}">{{ partial "icon.html" "moon" }}{{ partial "icon.html" "sun" }}</button>
+        <a class="btn btn-primary btn-sm nav-cta" href="{{ site.Params.servercow }}" target="_blank" rel="noopener">{{ partial "icon.html" "server" }}{{ i18n "servicesNav" }}</a>
+      </div>
+    </nav>
+  </div>
+</header>

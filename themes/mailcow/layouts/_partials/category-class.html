@@ -1,0 +1,2 @@
+{{- $m := dict "Security" "danger" "Sicherheit" "danger" "News" "green" "Guides" "info" "Anleitungen" "info" -}}
+{{- return (index $m . | default "neutral") -}}

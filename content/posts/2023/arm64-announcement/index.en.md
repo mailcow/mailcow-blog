@@ -12,7 +12,7 @@ license: ""
 featuredImage: "/images/2023/May/arm64_announcement.jpg"
 featuredImagePreview: "/images/2023/May/arm64_announcement.jpg"
 
-tags: ["2023", "ARM64"]
+tags: ["ARM64"]
 categories: ["News"]
 
 ---

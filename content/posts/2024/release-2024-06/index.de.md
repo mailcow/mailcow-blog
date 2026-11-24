@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2024", "update", "changelog"]
+tags: ["Full-text search"]
 categories: ["Updates"]
 
 ---

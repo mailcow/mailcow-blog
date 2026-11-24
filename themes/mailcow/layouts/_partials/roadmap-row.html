@@ -1,0 +1,15 @@
+{{- $item := . -}}
+{{- $lang := site.Language.Lang -}}
+<li class="rm-item">
+  <span class="rm-item-title">{{ index $item.title $lang | default $item.title.en }}</span>
+  {{- with $item.description }}
+  <span class="rm-item-desc">{{ index . $lang | default .en }}</span>
+  {{- end }}
+  {{- if or $item.release $item.issue $item.pr }}
+  <span class="rm-item-meta">
+    {{- with $item.release }}<span class="chip chip-release">{{ i18n "targetRelease" }} {{ . }}</span>{{ end }}
+    {{- with $item.issue }}<a href="{{ site.Params.links.github }}/issues/{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "circle-dot" }}#{{ . }}</a>{{ end }}
+    {{- with $item.pr }}<a href="{{ site.Params.links.github }}/pull/{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "git-pull-request" }}#{{ . }}</a>{{ end }}
+  </span>
+  {{- end }}
+</li>

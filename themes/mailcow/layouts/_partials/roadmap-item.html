@@ -1,0 +1,28 @@
+{{- $lang := site.Language.Lang -}}
+{{- $item := .item -}}
+{{- $title := index $item.title $lang | default $item.title.en -}}
+{{- $desc := "" }}{{ with $item.description }}{{ $desc = index . $lang | default .en }}{{ end -}}
+<article class="roadmap-item status-{{ $item.status }}">
+  <div class="roadmap-item-head">
+    {{ with $item.area }}<span class="chip chip-area">{{ . }}</span>{{ end }}
+    {{- with $item.release }}
+    {{- $post := site.GetPage (printf "/posts/%s/release-%s" (substr . 0 4) (replaceRE `[a-z]$` "" .)) }}
+    {{- if and (eq $item.status "released") $post }}
+    <a class="chip chip-release" href="{{ $post.RelPermalink }}">{{ i18n "shippedIn" }} {{ . }}</a>
+    {{- else }}
+    <span class="chip chip-release">{{ if eq $item.status "released" }}{{ i18n "shippedIn" }}{{ else }}{{ i18n "targetRelease" }}{{ end }} {{ . }}</span>
+    {{- end }}
+    {{- end }}
+  </div>
+  <h3>{{ $title }}</h3>
+  {{ if and $desc (not .compact) }}<p>{{ $desc }}</p>{{ end }}
+  {{ if not .compact }}
+  {{- if or $item.issue $item.pr $item.docs }}
+  <div class="roadmap-links">
+    {{ with $item.issue }}<a href="{{ site.Params.links.github }}/issues/{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "circle-dot" }}#{{ . }}</a>{{ end }}
+    {{ with $item.pr }}<a href="{{ site.Params.links.github }}/pull/{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "git-pull-request" }}#{{ . }}</a>{{ end }}
+    {{ with $item.docs }}<a href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "book-open" }}Docs</a>{{ end }}
+  </div>
+  {{- end }}
+  {{ end }}
+</article>

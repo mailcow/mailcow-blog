@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2024", "update", "changelog", "ARM64", "major", "security"]
+tags: ["Security", "Major", "ARM64"]
 categories: ["Updates"]
 
 featuredImage: "/images/2024/January/release-arm64.jpg"

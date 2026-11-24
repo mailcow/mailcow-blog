@@ -7,7 +7,7 @@ authorLink: "https://github.com/DerLinkman"
 
 license: ""
 
-tags: ["2022", "update", "changelog", "bugfix"]
+tags: ["Bugfix", "Rspamd", "SOGo", "ClamAV"]
 categories: ["Updates"]
 ---
 

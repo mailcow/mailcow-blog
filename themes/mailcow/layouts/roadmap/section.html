@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{- $rm := site.Data.roadmap -}}
+{{- $updated := "" }}{{ with $rm.updated }}{{ $updated = partial "date.html" (time.AsTime .) }}{{ end -}}
+{{- $extra := "" }}{{ with $updated }}{{ $extra = printf `<div class="hero-meta">%s %s: %s</div>` (partial "icon.html" "clock") (i18n "roadmapUpdated") . | safeHTML }}{{ end -}}
+{{ partial "page-hero.html" (dict "title" .Title "description" .Description "extra" $extra) }}
+<section class="section section-tight">
+  <div class="container">
+    {{ with .Content }}<div class="prose roadmap-intro">{{ . }}</div>{{ end }}
+
+    <div class="rm-board">
+      {{- range slice "planned" "progress" "nightly" }}
+      {{ partial "roadmap-column.html" (dict "status" .) }}
+      {{- end }}
+    </div>
+
+    {{- $released := where $rm.items "status" "released" }}
+    {{- with $released }}
+    {{- $st := partial "roadmap-status.html" "released" }}
+    <div class="section-head released-head">
+      <h2>{{ partial "icon.html" $st.icon }}{{ $st.label }}</h2>
+    </div>
+    <div class="roadmap-released">
+      {{ range . }}{{ partial "roadmap-item.html" (dict "item" .) }}{{ end }}
+    </div>
+    {{- end }}
+  </div>
+</section>
+<section class="section section-band">
+  <div class="container">
+    {{ partial "support-project.html" . }}
+  </div>
+</section>
+{{ end }}

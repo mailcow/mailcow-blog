@@ -1,0 +1,40 @@
+{{- $p := .page -}}
+{{- $home := site.Home.Permalink -}}
+{{- $u := urls.Parse site.Params.copyrightLink -}}
+{{- $orgID := printf "%s#organization" site.Sites.Default.Home.Permalink -}}
+{{- $siteID := printf "%s#website" $home -}}
+{{- $same := slice -}}
+{{- range slice "github" "mastodon" "x" "telegram" }}{{ with index site.Params.links . }}{{ $same = $same | append . }}{{ end }}{{ end -}}
+{{- $org := dict "@type" "Organization" "@id" $orgID "name" site.Params.copyright "url" (printf "%s://%s/" $u.Scheme $u.Host) "logo" (dict "@type" "ImageObject" "url" ("android-chrome-512x512.png" | absURL) "width" 512 "height" 512) "sameAs" $same -}}
+{{- $website := dict "@type" "WebSite" "@id" $siteID "url" $home "name" site.Title "alternateName" "mailcow" "inLanguage" site.Language.LanguageCode "publisher" (dict "@id" $orgID) -}}
+{{- $graph := slice $org $website -}}
+
+{{- if $p.IsHome -}}
+  {{- $g := partial "post-groups.html" $p -}}
+  {{- $app := dict "@type" "SoftwareApplication" "@id" (printf "%s#software" $home) "name" site.Title "alternateName" "mailcow" "description" .description "url" $home "image" .image "applicationCategory" "CommunicationApplication" "applicationSubCategory" (i18n "seoAppCategory") "operatingSystem" "Linux (Docker)" "license" "https://www.gnu.org/licenses/gpl-3.0.html" "isAccessibleForFree" true "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "EUR") "downloadUrl" (printf "%s/releases" site.Params.links.github) "installUrl" site.Params.install "softwareHelp" (dict "@type" "CreativeWork" "url" site.Params.docs) "author" (dict "@id" $orgID) "publisher" (dict "@id" $orgID) -}}
+  {{- with $g.releases }}{{ with partial "versions.html" (index . 0) }}{{ $app = merge $app (dict "softwareVersion" (index . 0)) }}{{ end }}{{ end -}}
+  {{- $graph = $graph | append $app -}}
+{{- else -}}
+  {{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "mailcow" "item" $home) -}}
+  {{- $parent := "" -}}
+  {{- if and $p.IsPage (eq $p.Section "posts") }}{{ $parent = site.GetPage (cond (partial "is-release.html" $p) "/releases" "/news") -}}
+  {{- else if eq $p.Kind "term" }}{{ $parent = $p.Parent }}{{ end -}}
+  {{- with $parent }}{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) }}{{ end -}}
+  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add (len $crumbs) 1) "name" $p.Title "item" $p.Permalink) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumb" $p.Permalink) "itemListElement" $crumbs) -}}
+
+  {{- if and $p.IsPage (eq $p.Section "posts") -}}
+    {{- $mod := cond ($p.Lastmod.Before $p.Date) $p.Date $p.Lastmod -}}
+    {{- $author := dict "@id" $orgID -}}
+    {{- with $p.Params.author }}{{ if ne . site.Params.copyright }}{{ $author = dict "@type" "Person" "name" . }}{{ with $p.Params.authorLink }}{{ $author = merge $author (dict "url" .) }}{{ end }}{{ end }}{{ end -}}
+    {{- $art := dict "@type" "BlogPosting" "@id" (printf "%s#article" $p.Permalink) "headline" ($p.Title | truncate 110) "description" .description "image" (slice .image) "datePublished" ($p.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" ($mod.Format "2006-01-02T15:04:05Z07:00") "author" $author "publisher" (dict "@id" $orgID) "inLanguage" site.Language.LanguageCode "mainEntityOfPage" $p.Permalink "isPartOf" (dict "@id" $siteID) "breadcrumb" (dict "@id" (printf "%s#breadcrumb" $p.Permalink)) -}}
+    {{- with $p.Params.tags }}{{ $art = merge $art (dict "keywords" .) }}{{ end -}}
+    {{- with $p.Params.categories }}{{ $art = merge $art (dict "articleSection" (index . 0)) }}{{ end -}}
+    {{- $graph = $graph | append $art -}}
+  {{- else -}}
+    {{- $type := cond (or (eq $p.Kind "section") (eq $p.Kind "term") (eq $p.Kind "taxonomy")) "CollectionPage" "WebPage" -}}
+    {{- $graph = $graph | append (dict "@type" $type "@id" $p.Permalink "url" $p.Permalink "name" $p.Title "description" .description "inLanguage" site.Language.LanguageCode "isPartOf" (dict "@id" $siteID) "breadcrumb" (dict "@id" (printf "%s#breadcrumb" $p.Permalink))) -}}
+  {{- end -}}
+
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

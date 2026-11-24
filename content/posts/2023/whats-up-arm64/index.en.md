@@ -9,8 +9,8 @@ toc: false
 
 license: ""
 
-tags: ["2023", "faq", "news", "status", "arm64"]
-categories: ["What's up?", "News"]
+tags: ["ARM64", "Nightly"]
+categories: ["News"]
 
 ---
 

@@ -1,0 +1,19 @@
+{{- $release := eq . "release" -}}
+<aside class="sc-teaser">
+  <div class="sc-teaser-main">
+    {{ partial "sc-label.html" . }}
+    <h2 class="sc-teaser-title">{{ if $release }}{{ i18n "teaserReleaseTitle" }}{{ else }}{{ i18n "teaserVpsTitle" }}{{ end }}</h2>
+    <p>{{ if $release }}{{ i18n "teaserReleaseText" }}{{ else }}{{ i18n "teaserVpsText" }}{{ end }}</p>
+    {{- if not $release }}
+    <p class="sc-teaser-sub">{{ partial "icon.html" "life-buoy" }}<span>{{ i18n "teaserVpsSupport" }} <a href="{{ site.Params.support }}" target="_blank" rel="noopener">{{ i18n "supportPkgCta" }}</a></span></p>
+    {{- end }}
+  </div>
+  <div class="sc-teaser-actions">
+    <a class="btn btn-green" href="{{ site.Params.managed }}" target="_blank" rel="noopener">{{ i18n "managedCta" }}{{ partial "icon.html" "arrow-up-right" }}</a>
+    {{- if $release }}
+    <a class="btn btn-ghost-light" href="{{ site.Params.support }}" target="_blank" rel="noopener">{{ i18n "supportPkgCta" }}</a>
+    {{- else }}
+    <a class="btn btn-ghost-light" href="{{ site.Params.quote }}" target="_blank" rel="noopener">{{ i18n "managedQuote" }}</a>
+    {{- end }}
+  </div>
+</aside>

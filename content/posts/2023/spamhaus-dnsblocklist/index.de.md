@@ -9,8 +9,8 @@ toc: true
 
 license: ""
 
-tags: ["2023", "info"]
-categories: ["Hinweis", "Status"]
+tags: ["Spamhaus", "DNSBL"]
+categories: ["News"]
 
 ---
 

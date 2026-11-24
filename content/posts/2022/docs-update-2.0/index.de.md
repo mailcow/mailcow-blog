@@ -5,8 +5,8 @@ draft: false
 author: "Niklas Meyer"
 description: "Dieser Artikel enthält alle Informationen über das neue Docs Update 2.0"
   
-categories: ["Dokumentation", "Updates"]
-tags: ["2022", "Doku"]
+categories: ["News"]
+tags: ["Documentation"]
 ---
 
 **Moohoo alle!** \

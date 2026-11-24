@@ -9,7 +9,7 @@ toc: true
 
 license: ""
 
-tags: ["2023", "update", "changelog", "CORS", "Spamhaus", "DNSBL"]
+tags: ["Spamhaus", "DNSBL", "CORS"]
 categories: ["Updates"]
 
 ---

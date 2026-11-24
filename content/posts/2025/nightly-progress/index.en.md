@@ -8,7 +8,7 @@ toc: true
 
 license: ""
 
-tags: ["2025", "News", "nightly"]
+tags: ["Identity Provider", "LDAP", "Nightly"]
 categories: ["News"]
 
 ---

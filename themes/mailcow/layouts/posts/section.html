@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "title" .Title "description" .Description) }}
+<section class="section section-tight">
+  <div class="container narrow">
+    {{- range .Pages.GroupByDate "2006" }}
+    <div class="year-group">
+      <h2 class="year-title">{{ .Key }}</h2>
+      <ul class="card archive-list">
+        {{- range .Pages }}
+        {{- $rel := partial "is-release.html" . }}
+        <li><a href="{{ .RelPermalink }}"><span class="archive-date">{{ .Date.Format "02.01." }}</span><span class="archive-title">{{ .Title }}</span><span class="badge {{ if $rel }}badge-neutral{{ else }}badge-green{{ end }}">{{ if $rel }}{{ i18n "releaseWord" }}{{ else }}{{ index (.Params.categories | default (slice "News")) 0 }}{{ end }}</span></a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

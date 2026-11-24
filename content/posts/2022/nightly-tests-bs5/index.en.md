@@ -11,8 +11,8 @@ images: ["/images/demo_thumb.png"]
 featuredImage: "/images/demo_thumb.png"
 featuredImagePreview: "/images/demo_thumb.png"
 
-tags: ["2022", "nightly", "testing", "feedback"]
-categories: ["Nightly", "Beta"]
+tags: ["UI", "Nightly"]
+categories: ["News"]
 ---
 
 It took long enough, but here it is finally: The new mailcow UI!

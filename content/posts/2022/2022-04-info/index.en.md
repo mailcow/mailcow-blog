@@ -5,8 +5,8 @@ draft: false
 author: Niklas Meyer
 authorLink: "https://github.com/DerLinkman"
 
-tags: ["2022", "important", "hotfix"]
-categories: ["Hotfix"]
+tags: ["Hotfix"]
+categories: ["News"]
 ---
 
 Yesterday we released the 2022-04 update (Moopril) which included a change in the NGINX configuration. During the same day we received a message that SOGo would not work since the update, more precisely the login.
